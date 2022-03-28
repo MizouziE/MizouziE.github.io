@@ -676,10 +676,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-top-width: 1px;
 }
 
-.border-dashed {
-  border-style: dashed;
-}
-
 .border-double {
   border-style: double;
 }
@@ -767,6 +763,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pt-4 {
   padding-top: 1rem;
+}
+
+.text-justify {
+  text-align: justify;
 }
 
 .text-sm {
