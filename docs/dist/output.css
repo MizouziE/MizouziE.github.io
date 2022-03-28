@@ -680,6 +680,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-style: dashed;
 }
 
+.border-double {
+  border-style: double;
+}
+
 .border-gray-700 {
   --tw-border-opacity: 1;
   border-color: rgb(55 65 81 / var(--tw-border-opacity));
