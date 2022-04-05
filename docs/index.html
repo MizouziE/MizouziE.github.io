@@ -68,16 +68,6 @@
                                     </button>
                                 </div>
 
-                                <!--
-                  Dropdown menu, show/hide based on menu state.
-  
-                  Entering: "transition ease-out duration-100"
-                    From: "transform opacity-0 scale-95"
-                    To: "transform opacity-100 scale-100"
-                  Leaving: "transition ease-in duration-75"
-                    From: "transform opacity-100 scale-100"
-                    To: "transform opacity-0 scale-95"
-                -->
                                 <div
                                     x-show="isOpen"
                                     x-transition:enter="transition ease-out duration-100 transform"
@@ -134,25 +124,39 @@
             </div>
 
             <!-- Mobile menu, show/hide based on menu state. -->
-            <div class="md:hidden" id="mobile-menu">
+            <div x-data="accordion" class="md:hidden" id="mobile-menu">
+                <!-- Menu 1 -->
                 <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                     <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                    <a href="#" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium"
-                        aria-current="page">It Starts Here</a>
 
-                    <a href="#"
-                        class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Team</a>
+                    <!-- Head -->
+                    <button @click="selected != 1 ? selected = 1 : selected = null"
+                            class="bg-gray-900 w-full text-left text-white block px-3 py-2 rounded-md text-base font-medium"
+                            aria-current="page">It Starts Here</button>
 
-                    <a href="#"
-                        class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Projects</a>
+                    <!-- Content -->
+                    <div class="max-h-0 overflow-hidden transition-all duration-250"
+                        x-ref="tab1"
+                        :style="selected == 1 ? 'max-height: '+ $refs.tab1.scrollHeight+ 'px;':''">
+                        <a href="#"
+                        class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Something Cool</a>
+                        
+                        <a href="#"
+                        class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">My Projects</a>
+                        
+                        <a href="#"
+                        class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">My Calendar</a>
+                        
+                        <a href="#"
+                        class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Some Reports</a>
+                    </div>
 
-                    <a href="#"
-                        class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Calendar</a>
-
-                    <a href="#"
-                        class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Reports</a>
                 </div>
+
+                <!-- Menu 2 -->
                 <div class="pt-4 pb-3 border-t border-gray-700">
+
+                    <!-- Head -->
                     <div class="flex items-center px-5">
                         <div class="flex-shrink-0">
                             <img class="h-10 w-10 rounded-full"
@@ -189,6 +193,14 @@
                 </div>
             </div>
         </nav>
+
+        <script>
+            function accordion(){
+                return{
+                    selected : null
+                }
+            }
+        </script>
 
         <header class="bg-white shadow">
             <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
