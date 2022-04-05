@@ -18,8 +18,7 @@
                 <div class="flex items-center justify-between h-16">
                     <div class="flex items-center">
                         <div class="flex-shrink-0">
-                            <img class="h-12 w-12" src="public/coding-svgrepo-com.svg"
-                                alt="Workflow">
+                            <img class="h-12 w-12" src="public/coding-svgrepo-com.svg" alt="Workflow">
                         </div>
                         <div class="hidden md:block">
                             <div class="ml-10 flex items-baseline space-x-4">
@@ -27,17 +26,21 @@
                                 <a href="#" class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium"
                                     aria-current="page">It Starts Here</a>
 
-                                <a href="#"
-                                    class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Team</a>
+                                <a href="https://twitter.com/mizouzie/status/1511137744365436940?s=20&t=fSD1Kq5RhbdM6zIRBfAp6Q"
+                                    class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Something
+                                    Cool</a>
+
+                                <a href="https://github.com/MizouziE?tab=repositories"
+                                    class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">My
+                                    Projects</a>
 
                                 <a href="#"
-                                    class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Projects</a>
+                                    class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">My
+                                    Calendar</a>
 
                                 <a href="#"
-                                    class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Calendar</a>
-
-                                <a href="#"
-                                    class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Reports</a>
+                                    class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Some
+                                    Reports</a>
                             </div>
                         </div>
                     </div>
@@ -57,8 +60,7 @@
                             <!-- Profile dropdown -->
                             <div x-data="{ isOpen: false }" class="ml-3 relative">
                                 <div>
-                                    <button type="button"
-                                        @click="isOpen = !isOpen"
+                                    <button type="button" @click="isOpen = !isOpen"
                                         class="max-w-xs bg-gray-800 rounded-full flex items-center text-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
                                         id="user-menu-button" aria-expanded="false" aria-haspopup="true">
                                         <span class="sr-only">Open user menu</span>
@@ -68,9 +70,7 @@
                                     </button>
                                 </div>
 
-                                <div
-                                    x-show="isOpen"
-                                    x-transition:enter="transition ease-out duration-100 transform"
+                                <div x-show="isOpen" x-transition:enter="transition ease-out duration-100 transform"
                                     x-transition:enter-start="opacity-0 scale-95"
                                     x-transition:enter-end="opacity-100 scale-100"
                                     x-transition:leave="transition ease-in duration-75 transform"
@@ -80,14 +80,15 @@
                                     role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button"
                                     tabindex="-1">
                                     <!-- Active: "bg-gray-100", Not Active: "" -->
-                                    <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem"
-                                        tabindex="-1" id="user-menu-item-0">Option 1</a>
+                                    <a href="mailto:s.anglin@live.co.uk" class="block px-4 py-2 text-sm text-gray-700"
+                                        role="menuitem" tabindex="-1" id="user-menu-item-0">Email</a>
 
-                                    <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem"
-                                        tabindex="-1" id="user-menu-item-1">Option 2</a>
+                                    <a href="https://twitter.com/mizouzie" class="block px-4 py-2 text-sm text-gray-700"
+                                        role="menuitem" tabindex="-1" id="user-menu-item-1">Twitter</a>
 
-                                    <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem"
-                                        tabindex="-1" id="user-menu-item-2">This only needed AlpineJS!!</a>
+                                    <a href="https://alpinejs.dev/" class="block px-4 py-2 text-sm text-gray-700"
+                                        role="menuitem" tabindex="-1" id="user-menu-item-2">This only needed
+                                        AlpineJS!!</a>
                                 </div>
                             </div>
                         </div>
@@ -131,24 +132,27 @@
 
                     <!-- Head -->
                     <button @click="selected != 1 ? selected = 1 : selected = null"
-                            class="bg-gray-900 w-full text-left text-white block px-3 py-2 rounded-md text-base font-medium"
-                            aria-current="page">It Starts Here</button>
+                        class="bg-gray-900 w-full text-left text-white block px-3 py-2 rounded-md text-base font-medium"
+                        aria-current="page">It Starts Here</button>
 
                     <!-- Content -->
-                    <div class="max-h-0 overflow-hidden transition-all duration-250"
-                        x-ref="tab1"
+                    <div class="max-h-0 overflow-hidden transition-all duration-250" x-ref="tab1"
                         :style="selected == 1 ? 'max-height: '+ $refs.tab1.scrollHeight+ 'px;':''">
+                        <a href="https://twitter.com/mizouzie/status/1511137744365436940?s=20&t=fSD1Kq5RhbdM6zIRBfAp6Q"
+                            class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Something
+                            Cool</a>
+
+                        <a href="https://github.com/MizouziE?tab=repositories"
+                            class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">My
+                            Projects</a>
+
                         <a href="#"
-                        class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Something Cool</a>
-                        
+                            class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">My
+                            Calendar</a>
+
                         <a href="#"
-                        class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">My Projects</a>
-                        
-                        <a href="#"
-                        class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">My Calendar</a>
-                        
-                        <a href="#"
-                        class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Some Reports</a>
+                            class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Some
+                            Reports</a>
                     </div>
 
                 </div>
@@ -157,44 +161,37 @@
                 <div class="pt-4 pb-3 border-t border-gray-700">
 
                     <!-- Head -->
-                    <button @click="selected != 2 ? selected = 2 : selected = null"
-                            type="button"
-                            class="ml-auto w-full bg-gray-800 flex-shrink-0 p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
+                    <button @click="selected != 2 ? selected = 2 : selected = null" type="button"
+                        class="ml-auto w-full bg-gray-800 flex-shrink-0 p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
                         <span class="sr-only">View notifications</span>
-                    <div class="flex items-center px-5">
-                        <div class="flex-shrink-0">
-                            <img class="h-10 w-10 rounded-full"
-                                src="https://avatars.githubusercontent.com/u/90829439?s=400&u=41dcb3a5c8e97cd2900239a8c82c2020b85017b1&v=4"
-                                alt="">
-                        </div>
-                        <div class="ml-3">
-                            <div class="text-base py-1 font-medium leading-none text-white">Sam Anglin</div>
-                            <div class="text-sm font-medium leading-none text-gray-400">Contact Me</div>
-                        </div>
-                            <!-- Heroicon name: outline/bell -->
-                            <!-- <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor" aria-hidden="true">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
-                            </svg> -->
+                        <div class="flex items-center px-5">
+                            <div class="flex-shrink-0">
+                                <img class="h-10 w-10 rounded-full"
+                                    src="https://avatars.githubusercontent.com/u/90829439?s=400&u=41dcb3a5c8e97cd2900239a8c82c2020b85017b1&v=4"
+                                    alt="">
+                            </div>
+                            <div class="ml-3">
+                                <div class="text-base py-1 font-medium leading-none text-white">Sam Anglin</div>
+                                <div class="text-sm font-medium leading-none text-gray-400">Contact Me</div>
+                            </div>
                         </div>
                     </button>
 
                     <!-- Content -->
-                    <div class="max-h-0 overflow-hidden transition-all duration-250"
-                        x-ref="tab2"
+                    <div class="max-h-0 overflow-hidden transition-all duration-250" x-ref="tab2"
                         :style="selected == 2 ? 'max-height: '+ $refs.tab2.scrollHeight+ 'px;':''">
                         <div class="mt-3 px-2 space-y-1">
-                            <a href="#"
-                            class="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-white hover:bg-gray-700">Option 
-                            1</a>
-                            
-                            <a href="#"
-                            class="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-white hover:bg-gray-700">Option 2</a>
-                            
-                            <a href="#"
-                            class="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-white hover:bg-gray-700">This needs
-                            some JS!</a>
+                            <a href="mailto:s.anglin@live.co.uk"
+                                class="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-white hover:bg-gray-700">Email:
+                                s.anglin@live.co.uk</a>
+
+                            <a href="https://twitter.com/mizouzie"
+                                class="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-white hover:bg-gray-700">Twitter:
+                                @MizouziE</a>
+
+                            <a href="https://alpinejs.dev/"
+                                class="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-white hover:bg-gray-700">Made
+                                with AlpineJS</a>
                         </div>
                     </div>
                 </div>
@@ -202,9 +199,9 @@
         </nav>
 
         <script>
-            function accordion(){
-                return{
-                    selected : null
+            function accordion() {
+                return {
+                    selected: null
                 }
             }
         </script>
