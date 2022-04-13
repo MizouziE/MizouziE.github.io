@@ -1,0 +1,18 @@
+<div x-data="{ open: false }"
+    x-show.transition.duration.500ms="open"
+    class="fixed inset-0 bg-white bg-opacity-75 flex items-center justify-center px-4 md:px-0"
+>
+    <div class="flex flex-col bg-white shadow-2xl rounded-lg border-2 border-gray-400 p-6">
+        <div class="flex justify-between mb-">
+            <h3 class="font-bold text-2xl">Title</h3>
+            <button @click="open = false">&times;</button>
+        </div>
+        <section class="">
+            <p class="text-center mb-6">This will be where the main bit goes</p>
+            <img src="https://www.wallpaperbetter.com/es/hd-wallpaper-ticdd/download"
+                    alt="Space Cowboy"
+                    width="100%"
+                    height="315">
+        </section>
+    </div>
+</div>
