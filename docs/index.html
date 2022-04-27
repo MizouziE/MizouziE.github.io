@@ -23,18 +23,17 @@
                         <div class="hidden md:block">
                             <div class="ml-10 flex items-baseline space-x-4">
                                 <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                                <a href="https://enkle-word-game.github.io/enkle/" class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium" target="_blank"
-                                    aria-current="page">Latest Project</a>
+                                <a href="https://micro-nutri-track.herokuapp.com/food"
+                                    class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium"
+                                    target="_blank" aria-current="page">Latest Project</a>
 
-                                <a href="https://twitter.com/mizouzie/status/1511137744365436940?s=20&t=fSD1Kq5RhbdM6zIRBfAp6Q"
-                                    target="_blank"
-                                    class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Something
-                                    Cool</a>
+                                <a href="https://enkle-word-game.github.io/enkle/" target="_blank"
+                                    class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Another
+                                    Cool Project</a>
 
-                                <a href="https://github.com/MizouziE?tab=repositories"
-                                    target="_blank"
+                                <a href="https://github.com/MizouziE?tab=repositories" target="_blank"
                                     class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">My
-                                    Projects</a>
+                                    Repos</a>
 
                                 <!-- <a href="#"
                                     class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">My
@@ -85,11 +84,12 @@
                                     <a href="mailto:s.anglin@live.co.uk" class="block px-4 py-2 text-sm text-gray-700"
                                         role="menuitem" tabindex="-1" id="user-menu-item-0">Email</a>
 
-                                    <a href="https://twitter.com/mizouzie" class="block px-4 py-2 text-sm text-gray-700" target="_blank"
-                                        role="menuitem" tabindex="-1" id="user-menu-item-1">Twitter</a>
+                                    <a href="https://twitter.com/mizouzie" class="block px-4 py-2 text-sm text-gray-700"
+                                        target="_blank" role="menuitem" tabindex="-1" id="user-menu-item-1">Twitter</a>
 
-                                    <a href="https://alpinejs.dev/" class="block px-4 py-2 text-sm text-gray-700" target="_blank"
-                                        role="menuitem" tabindex="-1" id="user-menu-item-2">This only needed
+                                    <a href="https://alpinejs.dev/" class="block px-4 py-2 text-sm text-gray-700"
+                                        target="_blank" role="menuitem" tabindex="-1" id="user-menu-item-2">This only
+                                        needed
                                         AlpineJS!!</a>
                                 </div>
                             </div>
@@ -140,19 +140,19 @@
                     <!-- Content -->
                     <div class="max-h-0 overflow-hidden transition-all duration-250" x-ref="tab1"
                         :style="selected == 1 ? 'max-height: '+ $refs.tab1.scrollHeight+ 'px;':''">
-                        <a href="https://twitter.com/mizouzie/status/1511137744365436940?s=20&t=fSD1Kq5RhbdM6zIRBfAp6Q"
-                            class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Something
-                            Cool</a>
+                        <a href="https://enkle-word-game.github.io/enkle/"
+                            class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">A
+                            Cool Project</a>
 
                         <a href="https://github.com/MizouziE?tab=repositories"
                             class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">My
-                            Projects</a>
+                            Repos</a>
 
                         <!-- <a href="#"
                             class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">My
                             Calendar</a> -->
 
-                        <a href="https://enkle-word-game.github.io/enkle/"
+                        <a href="https://micro-nutri-track.herokuapp.com/food"
                             class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Latest
                             Project</a>
                     </div>
@@ -164,9 +164,9 @@
 
                     <!-- Head -->
                     <button @click="selected != 2 ? selected = 2 : selected = null" type="button"
-                        class="ml-auto w-full bg-gray-800 flex-shrink-0 p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
+                        class="ml-auto w-full bg-gray-800 flex-shrink-0 p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-0 focus:ring-offset-gray-800 focus:ring-white">
                         <span class="sr-only">View notifications</span>
-                        <div class="flex items-center px-5">
+                        <div class="flex items-center px-2">
                             <div class="flex-shrink-0">
                                 <img class="h-10 w-10 rounded-full"
                                     src="https://avatars.githubusercontent.com/u/90829439?s=400&u=41dcb3a5c8e97cd2900239a8c82c2020b85017b1&v=4"
@@ -218,37 +218,64 @@
                 <!-- Replace with your content -->
                 <div class="px-4 py-6 sm:px-0">
                     <div class="border-4 border-double text-justify border-gray-200 rounded-lg">
-                        <section class="my-4 mx-4">
+                        <section class="my-4 mx-4 flex flex-col space-y-4">
                             <h1 class="text-xl font-semibold">What's the point?</h1>
-                            <div>
+                            <div class=" flex flex-col space-y-4">
                                 <p>
                                     The whole point of this is to force me to be comfortable coding in front of others.
-                                    So many
-                                    developers experience some form of "imposter syndrome" and I'm no exception.
-                                    <br>
-                                    <br>
+                                    This is kind of my learning style, and it seems to be working.
+                                </p>
+                                <p>
                                     I figure, if I do this, in this way, I'll be more comfortable much quicker and
                                     therefore more
                                     productive.
-                                    <br>
-                                    <br>
+                                </p>
+                                <p>
                                     Please bear in mind that I am a PHP/Laravel developer first, so my actual abilities
                                     are probably
                                     beyond what I have on display here, being restricted to HTML/CSS/JavaScript.
                                 </p>
                             </div class="flex">
-                            <h2 class="text-xl font-semibold mt-4">Here we'll have:</h2>
-                            <ul class="list-disc list-inside">
-                                <li>"About Me" section</li>
-                                <li>More detailed description of what I have worked on</li>
-                                <li>What I'm currently working on</li>
-                                <li>CSS art appreciation, eventually my own rendition</li>
+                            <h2 class="text-xl font-semibold mt-4">My experience:</h2>
+                            <ul class="list-disc list-inside flex flex-col space-y-4">
+                                <li>Here are some examples of sites I have worked on. More so on the backend API, but
+                                    I've done small adjustments and am familiar with the frontend also. They are all
+                                    instances of the same frontend framework and are served by by a single API.</li>
+                                <ul class="ml-4">
+                                    <li class="mt-2"><a class="text-white rounded-md bg-blue-500 hover:bg-blue-600 p-1"
+                                            href="https://www.ladbrokes.com/en/blog/">Ladbrokes blog</a> Content managed
+                                        by publishers using the custom CMS attached to the API.</li>
+                                    <li class="mt-2"><a class="text-white rounded-md bg-blue-500 hover:bg-blue-600 p-1"
+                                            href="https://casino.partycasino.com/en/blog/">Party Casino blog</a> Same as
+                                        above, but also with different locale options.</li>
+                                    <li class="mt-2"><a class="text-white rounded-md bg-blue-500 hover:bg-blue-600 p-1"
+                                            href="https://casino.giocodigitale.it/it/blog/">Gioco Digitale blog</a>
+                                        Still served by the same API, but with slight customizations to the frontend
+                                        structure.</li>
+                                </ul>
+                                <li>What I'm currently working on is rebuilding a wordpress based learning portal on a
+                                    Laravel framework. Like the above examples there will be an admin panel which will
+                                    be made up of a number of Livewire components.</li>
+                                <li>I have a few personal projects online at the moment too, you'll find links to them
+                                    in the navigation bar at the top of the page:</li>
+                                <ul class="list-disc list-inside ml-4">
+                                    <li><strong>Enkle: </strong>This is a working project, originally developed on
+                                        Laravel but migrated to simple HTML/CSS/JS to be hosted as a
+                                        stand-alone site. A child-friendly version of the popular word game Wordle. Try
+                                        to find the word within the number of
+                                        allowed guesses.</li>
+                                    <li><strong>Minerals: </strong>A searchable web-app that uses a US Government API to
+                                        show micro nutritional values for different foods. An additional
+                                        API is called to provide images for each item. I am building this on a Laravel
+                                        framework and use Tailwind CSS to help
+                                        polish the front end.</li>
+                                </ul>
                                 <!-- <li></li>
                                 <li></li> -->
                             </ul>
 
                             <h2 class="text-xl font-semibold mt-4">What I want to include in all this:</h2>
-                            <ul class="list-disc list-inside">
+                            <ul class="list-disc list-inside flex flex-col space-y-4">
                                 <li>The about me section needs to clearly show that I like PHP development more
                                     regarding actual content
                                 </li>
@@ -278,19 +305,18 @@
         </main>
     </div>
     <!-- Modal -->
-<div x-data="{ open: false }">
-    <button @click="open = true" class="text-3xl font-bold">Click Me</button>
-    <div x-show.transition.duration.500ms="open"
-        class="fixed inset-0 bg-white bg-opacity-75 flex items-center justify-center px-4 md:px-0"
-    >
-        <div class="flex flex-col bg-white shadow-2xl w-3/4 h-3/4 rounded-lg border-2 border-gray-400 p-6">
-            <div class="flex justify-between mb-4">
-                <h3 class="font-bold text-2xl">Title</h3>
-                <button @click="open = false">&times;</button>
-            </div>
-            <section class="">
-                <h5 class="text-center mb-6">How good is your memory?</h5>
-                <div class="">
+    <div x-data="{ open: false }">
+        <button @click="open = true" class="text-3xl font-bold">Click Me</button>
+        <div x-show.transition.duration.500ms="open"
+            class="fixed inset-0 bg-white bg-opacity-75 flex items-center justify-center px-4 md:px-0">
+            <div class="flex flex-col bg-white shadow-2xl w-3/4 h-3/4 rounded-lg border-2 border-gray-400 p-6">
+                <div class="flex justify-between mb-4">
+                    <h3 class="font-bold text-2xl">Title</h3>
+                    <button @click="open = false">&times;</button>
+                </div>
+                <section class="">
+                    <h5 class="text-center mb-6">How good is your memory?</h5>
+                    <div class="">
                         <!-- Memory Game -->
                         <div x-data="game()"
                             class="px-10 flex items-center justify-center bg-gradient-to-br from-sky-500 to-indigo-500">
@@ -298,26 +324,29 @@
                                 <span x-text="points"></span>
                                 <span class="text-xs">pts</span>
                             </h1>
-                        
+
                             <div class="flex-1 grid grid-cols-4 gap-10">
                                 <template x-for="(card, index) in cards" :key="index">
                                     <div>
-                                        <button x-show="! card.cleared" :style="'background: ' + (card.flipped ? card.color : '#999')"
-                                            :disabled="flippedCards.length >= 2" class="w-full h-32 rounded" @click="flipCard(card)">
+                                        <button x-show="! card.cleared"
+                                            :style="'background: ' + (card.flipped ? card.color : '#999')"
+                                            :disabled="flippedCards.length >= 2" class="w-full h-32 rounded"
+                                            @click="flipCard(card)">
                                         </button>
                                     </div>
                                 </template>
                             </div>
                         </div>
-                        
+
                         <!-- Flash Message -->
-                        <div x-data="{ show: false, message: '' }" x-show.transition.opacity="show" x-text="message" @flash.window="
+                        <div x-data="{ show: false, message: '' }" x-show.transition.opacity="show" x-text="message"
+                            @flash.window="
                                     message = $event.detail.message;
                                     show = true;
                                     setTimeout(() => show = false, 1000)
                                 " class="fixed bottom-0 right-0 bg-green-500 text-white p-2 mb-4 mr-4 rounded">
                         </div>
-                        
+
                         <script>
                             function pause(milliseconds = 1000) {
                                 return new Promise(resolve => setTimeout(resolve, milliseconds));
@@ -386,11 +415,11 @@
                                 };
                             }
                         </script>
-                </div>
-            </section>
+                    </div>
+                </section>
+            </div>
         </div>
     </div>
-</div>
 
 
 </body>
