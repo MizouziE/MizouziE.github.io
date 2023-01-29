@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>laravel on web with mizouzie</title>
+    <link>https://mizouzie.github.io/web-with-mizouzie/tags/laravel/</link>
+    <description>Recent content in laravel on web with mizouzie</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>made by MizouziE</copyright>
+    <lastBuildDate>Sun, 15 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://mizouzie.github.io/web-with-mizouzie/tags/laravel/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>If it doesn&#39;t make sense, build a little version</title>
+      <link>https://mizouzie.github.io/web-with-mizouzie/articles/build-a-little-version/</link>
+      <pubDate>Sun, 15 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://mizouzie.github.io/web-with-mizouzie/articles/build-a-little-version/</guid>
+      <description>I have learnt a lot in the last few weeks and it was thanks to taking on a personal project that was a vastly scaled down version of what I have been working with this past year. What I have learnt was not necessarily fresh knowledge, but more an understanding that had previously evaded me. The reason I hadn&amp;rsquo;t understood a lot of the concepts I was facing was because I had not built the original codebase to the original specs, I was just introduced to it in small sections and asked to work on individual features.</description>
+    </item>
+    
+    <item>
+      <title>Heroku vs Laravel (vs me...)</title>
+      <link>https://mizouzie.github.io/web-with-mizouzie/articles/heroku-vs-laravel/</link>
+      <pubDate>Tue, 26 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://mizouzie.github.io/web-with-mizouzie/articles/heroku-vs-laravel/</guid>
+      <description>The first time I attempted to deploy a Laravel project onto the popular hosting service Heroku I did not get very far. I found a number of helpful tutorials just with a few google searches, but none of them actually got me across the finish line. It was my first actual attempt at &amp;ldquo;going live&amp;rdquo; and the whole thing left me somewhat bemused and painfully aware of my lack of understanding.</description>
+    </item>
+    
+    <item>
+      <title>Why I&#39;m glad I used QuickAdminPanel today</title>
+      <link>https://mizouzie.github.io/web-with-mizouzie/articles/quickadminpanel/</link>
+      <pubDate>Wed, 20 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://mizouzie.github.io/web-with-mizouzie/articles/quickadminpanel/</guid>
+      <description>I&amp;rsquo;m familiar with Laravel and I&amp;rsquo;m fairly familiar with Livewire and AlpineJS, so by rights I should be fine building admin panels from scratch with the tools provided by this framework and packages. In theory. In reality, for me, even though I&amp;rsquo;m not a total beginner it&amp;rsquo;d take me over an hour to build it properly and then another hour to get it all working properly with model relationships, views, components and routes all doing what they&amp;rsquo;re supposed to.</description>
+    </item>
+    
+  </channel>
+</rss>

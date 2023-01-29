@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Heroku vs Laravel (vs me...) | web with mizouzie</title>
+<meta name="keywords" content="web dev, heroku, laravel" />
+<meta name="description" content="Deploying a Laravel app on a (then) popular free hosting platform proved tricky, so here are the steps that no-one told me.">
+<meta name="author" content="Sam Anglin">
+<link rel="canonical" href="https://mizouzie.github.io/web-with-mizouzie/articles/heroku-vs-laravel/" />
+<link crossorigin="anonymous" href="/web-with-mizouzie/assets/css/stylesheet.min.8c816af5f286db5cdc3ec5ac88af776e52033d8fe0a1316a31967ea3bbe91b8b.css" integrity="sha256-jIFq9fKG21zcPsWsiK93blIDPY/goTFqMZZ&#43;o7vpG4s=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/web-with-mizouzie/assets/js/highlight.min.7680afc38aa6b15ddf158a4f3780b7b1f7dde7e91d26f073e6229bb7a0793c92.js" integrity="sha256-doCvw4qmsV3fFYpPN4C3sffd5&#43;kdJvBz5iKbt6B5PJI="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://mizouzie.github.io/images/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://mizouzie.github.io/images/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://mizouzie.github.io/images/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://mizouzie.github.io/images/apple-touch-icon.png">
+<link rel="mask-icon" href="https://mizouzie.github.io/images/apple-touch-icon.png">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://mizouzie.github.io/web-with-mizouzie/" accesskey="h" title="web with mizouzie (Alt + H)">web with mizouzie</a>
+            <span class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </span>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="/" title="Home"><span>Home</span></a>
+            </li>
+            <li>
+                <a href="https://mizouzie.github.io/web-with-mizouzie/articles/" title="Articles">
+                    <span>Articles</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://mizouzie.github.io/web-with-mizouzie/categories/" title="Categories">
+                    <span>Categories</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://mizouzie.github.io/web-with-mizouzie/projects/" title="Projects">
+                    <span>Projects</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://mizouzie.github.io/web-with-mizouzie/contact/" title="Contact">
+                    <span>Contact</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://mizouzie.github.io/web-with-mizouzie/">Home</a>&nbsp;»&nbsp;<a href="https://mizouzie.github.io/web-with-mizouzie/articles/">Articles</a></div>
+    <h1 class="post-title">
+      Heroku vs Laravel (vs me...)
+    </h1>
+    <div class="post-description">
+      Deploying a Laravel app on a (then) popular free hosting platform proved tricky, so here are the steps that no-one told me.
+    </div>
+    <div class="post-meta"><span title='2022-04-26 00:00:00 +0000 UTC'>April 26, 2022</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Sam Anglin</div>
+  </header> 
+
+  <div class="post-content">
+  <p><img loading="lazy" src="/images/heroku-vs-laravel.jpeg" alt="Heroku (Heihachi) against Laravel (Kazuya)"  />
+</p>
+<p>The first time I attempted to deploy a Laravel project onto the popular hosting service Heroku I did not get very far. I found a number of helpful tutorials just with a few google searches, but none of them actually got me across the finish line. It was my first actual attempt at &ldquo;going live&rdquo; and the whole thing left me somewhat bemused and painfully aware of my lack of understanding. Both Laravel and Heroku come with ample documentation, but it may as well have been written in a foreign language as I could not make heads nor tails of it.</p>
+<p>Today, thankfully, was a different story.</p>
+<p>Only a few weeks after my first failed attempts, I had been away and deployed a much more simple static site version of the failed project, <a href="https://enkle-word-game.github.io/enkle/">which you can see here</a>, using GitHub Pages. It wasn&rsquo;t very difficult to transfer my blade template over to an <code>index.html</code> file and make the necessary changes and imports of the JavaScript files that made it all tick. That in itself was a nice learning experience, but still left my Laravel-Deployment itch very much unscratched.</p>
+<p>I had a recent personal project on the back burner that was in danger of fizzling out, so I figured I had nothing to lose by firing it up again, trying to remember where I left off, making it presentable to a degree and then having one more crack at Heroku because I had read in a number of places that it was very much possible to run a PHP web-app on a framework like Laravel. The difference now was that I had gone up a level or two in my search engine ability and that made all the difference. I had hit a number of stumbling blocks in my first run and they&rsquo;d worn me down to the point I was unable to overcome the last few. I went right ahead and got to that same point, only this time more energized.</p>
+<p>I am using <a href="https://laravel.com/docs/9.x">Laravel 9</a> with <a href="https://tailwindcss.com/">Tailwind CSS</a> and deploying via the <a href="https://devcenter.heroku.com/articles/heroku-cli">Heroku CLI</a>.</p>
+<p>Here are the bits that were harder to find out about than the obvious googles:
+<img loading="lazy" src="/images/heroku-vs-laravel-01.png" alt="Procfile containing the string &amp;ldquo;web: vendor/bin/heroku-php-apache2 public/&amp;ldquo;​"  />
+</p>
+<p>The <code>Procfile</code> not only has to be capitalised, but MUST be present in and pushed to the heroku master branch <strong>from the local master branch</strong>. Being a fan of git and not a huge fan of Heroku, I always made heroku changes on a separate branch and pushed from there but continually saw &ldquo;no Procfile found&rdquo; and then that lead to the app not being run from my public/ folder on the route&hellip; which was <strong>clearly</strong> specified in the Procfile.
+<img loading="lazy" src="/images/heroku-vs-laravel-02.png" alt="config/logging.php where value for the key &amp;ldquo;driver&amp;quot;​ has been changed to &amp;ldquo;errorlog&amp;quot;​"  />
+</p>
+<p>Set the logging to &ldquo;errorlog&rdquo; so that Heroku can read and display the application&rsquo;s logs through both the CLI and the GUI on their handy dashboard.
+<img loading="lazy" src="/images/heroku-vs-laravel-03.png" alt="Laravel docs showing asset URL configuration"  />
+</p>
+<p>Tailwind will throw a curveball if your stylesheet reference is the same as the above, and I found the reason for this in the console of the browser. When I was looking at my &ldquo;deployed&rdquo; site it just seemed to be a garbled mess. I was so happy to no longer be getting 500 errors or 403 errors&hellip; but what I was looking at tainted my happiness. On inspection, it seemed that the CSS files were being called for, but on &ldquo;http://&rdquo; rather than &ldquo;https://&rdquo; and were therefore blocked. Heroku automatically makes your main page&rsquo;s root securely accessible, but it isn&rsquo;t automatic about anything else. You&rsquo;ll need to set a previously non-existent variable in the .env file on the server. This can be done painlessly in two ways. Either through the CLI with the command <code>heroku config:set ASSET_URL=&lt;insert your root url here&gt;</code> or if you already have the heroku dashboard open you can view settings and click on &ldquo;reveal config vars&rdquo; where you have a place to add/edit as many variables as you need.</p>
+<p>They were the final pieces to my puzzle that were not apparent to me the first time. I hope this list of them can save someone the pain I felt when I couldn&rsquo;t get it working before. At the very least, I hope that by writing it all out and going over the process once more I, myself, might have learnt some kind of valuable lesson. Time will tell.</p>
+<p>In the meantime, why don&rsquo;t you check out the micro nutrient tracking site I am <strong>still</strong> developing and let me know what you think of it. (<em>Editor note 2023-01-21: Of course Heroku is no longer free so this app is not live any more, sorry!</em>) If anything is a particular pain point then I&rsquo;d be very open to receiving issues or even pull requests on it&rsquo;s <a href="https://github.com/MizouziE/Minerals/issues">github repo</a>.</p>
+<p>Thanks for reading, and if you got the Tekken reference at the top of this article you NEED to send me a DM or email or something, we&rsquo;re basically already friends.</p>
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://mizouzie.github.io/web-with-mizouzie/tags/web-dev/">web dev</a></li>
+      <li><a href="https://mizouzie.github.io/web-with-mizouzie/tags/heroku/">heroku</a></li>
+      <li><a href="https://mizouzie.github.io/web-with-mizouzie/tags/laravel/">laravel</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>made by MizouziE</span>
+      
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerText = 'copy';
+
+        function copyingDone() {
+            copybutton.innerText = 'copied!';
+            setTimeout(() => {
+                copybutton.innerText = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

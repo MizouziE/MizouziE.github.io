@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>If it doesn&#39;t make sense, build a little version | web with mizouzie</title>
+<meta name="keywords" content="web dev, laravel, api, learning" />
+<meta name="description" content="Been a while since I wrote a longer article, so here&#39;s a longer article explaining what it is I have been doing. Basically levelling up a bit. Learning to build and building to learn!">
+<meta name="author" content="Sam Anglin">
+<link rel="canonical" href="https://mizouzie.github.io/web-with-mizouzie/articles/build-a-little-version/" />
+<link crossorigin="anonymous" href="/web-with-mizouzie/assets/css/stylesheet.min.8c816af5f286db5cdc3ec5ac88af776e52033d8fe0a1316a31967ea3bbe91b8b.css" integrity="sha256-jIFq9fKG21zcPsWsiK93blIDPY/goTFqMZZ&#43;o7vpG4s=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/web-with-mizouzie/assets/js/highlight.min.7680afc38aa6b15ddf158a4f3780b7b1f7dde7e91d26f073e6229bb7a0793c92.js" integrity="sha256-doCvw4qmsV3fFYpPN4C3sffd5&#43;kdJvBz5iKbt6B5PJI="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://mizouzie.github.io/images/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://mizouzie.github.io/images/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://mizouzie.github.io/images/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://mizouzie.github.io/images/apple-touch-icon.png">
+<link rel="mask-icon" href="https://mizouzie.github.io/images/apple-touch-icon.png">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://mizouzie.github.io/web-with-mizouzie/" accesskey="h" title="web with mizouzie (Alt + H)">web with mizouzie</a>
+            <span class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </span>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="/" title="Home"><span>Home</span></a>
+            </li>
+            <li>
+                <a href="https://mizouzie.github.io/web-with-mizouzie/articles/" title="Articles">
+                    <span>Articles</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://mizouzie.github.io/web-with-mizouzie/categories/" title="Categories">
+                    <span>Categories</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://mizouzie.github.io/web-with-mizouzie/projects/" title="Projects">
+                    <span>Projects</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://mizouzie.github.io/web-with-mizouzie/contact/" title="Contact">
+                    <span>Contact</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://mizouzie.github.io/web-with-mizouzie/">Home</a>&nbsp;»&nbsp;<a href="https://mizouzie.github.io/web-with-mizouzie/articles/">Articles</a></div>
+    <h1 class="post-title">
+      If it doesn&#39;t make sense, build a little version
+    </h1>
+    <div class="post-description">
+      Been a while since I wrote a longer article, so here&#39;s a longer article explaining what it is I have been doing. Basically levelling up a bit. Learning to build and building to learn!
+    </div>
+    <div class="post-meta"><span title='2022-05-15 00:00:00 +0000 UTC'>May 15, 2022</span>&nbsp;·&nbsp;5 min&nbsp;·&nbsp;Sam Anglin</div>
+  </header> 
+
+  <div class="post-content">
+  <p><img loading="lazy" src="/images/build-a-little-version.png" alt="shrugging builder"  />
+</p>
+<p>I have learnt a lot in the last few weeks and it was thanks to taking on a personal project that was a vastly scaled down version of what I have been working with this past year. What I have learnt was not necessarily fresh knowledge, but more an understanding that had previously evaded me. The reason I hadn&rsquo;t understood a lot of the concepts I was facing was because I had not built the original codebase to the original specs, I was just introduced to it in small sections and asked to work on individual features.</p>
+<p>The &ldquo;it&rdquo; in question is an API that serves various instances of a different company blog websites. The frontend app can be included in the &ldquo;it&rdquo;, but I worked predominantly on the backend. This backend is built on a <a href="https://laravel.com/">Laravel</a> framework and uses <a href="https://twill.io/">Twill</a> that was developed by the Area17 team. Both the framework and the add-on package are designed to make development quick and painless, which they do mostly, but can cause some upsets when out-of-the-ordinary requests start to come in from the clients. Stretching the capabilities of these things by having to hack the code that relies quite a lot on magic methods etc can be a cumbersome task.</p>
+<p>A lot of the time that I was asked to customise something I was left scratching my head at the bugs I&rsquo;d introduce and have to dive deeper than my limited understanding. It stretched me and taught me a lot, but not everything.</p>
+<p>So I decided to make a little version for myself. A simple blog. API with a MySQL database backend, Nuxt.js frontend. Yes, I could have used one of the thousands of pre-existing &ldquo;build-a-blog&rdquo; tools out there, but I wouldn&rsquo;t be a true backend developer if I didn&rsquo;t take the complicated route 😬.</p>
+<p>Starting out with the simple backend went great. I already had a repo that was the start of something with a decent set of models, routes and factories. I set up on a free hosting service that I could implement a (limited) MySQL database on, got familiar with the CLI for deployment and got on with it. Used the factories to populate the database and test my endpoints. All great.</p>
+<p>Frontend was more unexplored territory for me. I&rsquo;d dabbled in popular frameworks before and was comfortable with bog-standard HTML and CSS with a dash of JavaScript, but I&rsquo;d never started a Nuxt app from scratch. So I did. The mistake I made was that I was referring frequently to a tutorial that was for v3, while building on the stable v2&hellip; I wasted about half a day before I realised so <strong>that</strong> in itself was a valuable lesson in what to pay attention to! After figuring that out and delving into the differences between the versions I had something acceptable looking in a short time and even had it pulling data from the already live RESTful API in an even shorter space of time.</p>
+<p>I learnt a lot about making requests, CORS and props much better than when I&rsquo;d previously &ldquo;studied&rdquo; them on various courses I had done. It also made me consider things about the overall structure of the API I had been working with before that had never occurred to me. This is what I meant when I said I wasn&rsquo;t learning <strong>new</strong> knowledge but establishing an actual understanding of what I had previously experienced. A lot of small &ldquo;aaaaah ok, ok&rdquo; moments.</p>
+<p>The real mother-load of experience came from retro-fitting Twill into the already existing project on the backend. What I wanted it for was to allow me to add blog posts through a secure administration portal that would be totally separate from the public facing &ldquo;blog page&rdquo;. The thing was, as with a lot of &ldquo;easy to use&rdquo; packages, it would have been a lot better to use it from the very beginning and build using it&rsquo;s almost auto-complete-esque CLI. It works by you telling it what modules you want and it builds your models, controllers and views for you. All you really need to do is minor customisations and tweak one or two configuration files. It really should be very easy, especially seeing as the documentation has <strong>VASTLY</strong> improved since I first tangoed with it. But because my models already existed I had to do some digging.</p>
+<p>The benefit of <em>this</em> project is that it was a very basic version of a blog app, so it wasn&rsquo;t so daunting, so I got stuck right in and learnt a tonne about the inner workings of the tool and so much clicked about stuff I&rsquo;d been baffled about months beforehand in the much larger work project. It was actually enjoyable and I found that by the second day I was actually looking for small problems so that I could delve deeper in yet another direction. I ended up doing some really cool stuff I never would have had the confidence to try before.</p>
+<p>Overall, I am very glad that I did this and I am really looking forward to finishing it off and pushing the frontend live in the coming weeks because I really think I will feel genuinely proud of this once it&rsquo;s out there. I am a much much better developer because of this project because it elevated me closer to the level of the guys who built the monster project that used to frighten me, and they are very well established dudes.</p>
+<p>I should also mention that I originally decided to do this when I realised that these articles that I write here on this platform (at the time: LinkedIn) are limited to be viewed only by people with a profile on here&hellip; so all the one&rsquo;s I&rsquo;ve written previously will gradually be migrated over once the whole thing is live. I&rsquo;m excited about it.</p>
+<p>Moral of the story:</p>
+<ol>
+<li>I was scared of the codebase I first worked on as a junior</li>
+<li>I built a diddy version of it</li>
+<li>I learnt that it really wasn&rsquo;t that scary</li>
+<li>Even found a few areas that I could improve the scary codebase</li>
+<li>Now I&rsquo;m a way better developer</li>
+</ol>
+<p>I strongly encourage developers to learn by building. If you&rsquo;re like me it is incredibly valuable and makes all the hours you&rsquo;ve suffered in the past totally worth it.</p>
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://mizouzie.github.io/web-with-mizouzie/tags/web-dev/">web dev</a></li>
+      <li><a href="https://mizouzie.github.io/web-with-mizouzie/tags/laravel/">laravel</a></li>
+      <li><a href="https://mizouzie.github.io/web-with-mizouzie/tags/api/">api</a></li>
+      <li><a href="https://mizouzie.github.io/web-with-mizouzie/tags/learning/">learning</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>made by MizouziE</span>
+      
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerText = 'copy';
+
+        function copyingDone() {
+            copybutton.innerText = 'copied!';
+            setTimeout(() => {
+                copybutton.innerText = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

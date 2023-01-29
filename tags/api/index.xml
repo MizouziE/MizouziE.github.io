@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>api on web with mizouzie</title>
+    <link>https://mizouzie.github.io/web-with-mizouzie/tags/api/</link>
+    <description>Recent content in api on web with mizouzie</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>made by MizouziE</copyright>
+    <lastBuildDate>Sun, 15 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://mizouzie.github.io/web-with-mizouzie/tags/api/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>If it doesn&#39;t make sense, build a little version</title>
+      <link>https://mizouzie.github.io/web-with-mizouzie/articles/build-a-little-version/</link>
+      <pubDate>Sun, 15 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://mizouzie.github.io/web-with-mizouzie/articles/build-a-little-version/</guid>
+      <description>I have learnt a lot in the last few weeks and it was thanks to taking on a personal project that was a vastly scaled down version of what I have been working with this past year. What I have learnt was not necessarily fresh knowledge, but more an understanding that had previously evaded me. The reason I hadn&amp;rsquo;t understood a lot of the concepts I was facing was because I had not built the original codebase to the original specs, I was just introduced to it in small sections and asked to work on individual features.</description>
+    </item>
+    
+  </channel>
+</rss>

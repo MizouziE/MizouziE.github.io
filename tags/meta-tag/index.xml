@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>meta tag on web with mizouzie</title>
+    <link>https://mizouzie.github.io/web-with-mizouzie/tags/meta-tag/</link>
+    <description>Recent content in meta tag on web with mizouzie</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>made by MizouziE</copyright>
+    <lastBuildDate>Tue, 19 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://mizouzie.github.io/web-with-mizouzie/tags/meta-tag/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How I just customised my featured link thumbnail</title>
+      <link>https://mizouzie.github.io/web-with-mizouzie/articles/customised-featured-link-thumbnail/</link>
+      <pubDate>Tue, 19 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://mizouzie.github.io/web-with-mizouzie/articles/customised-featured-link-thumbnail/</guid>
+      <description>I had spent a few days building a demonstration of what I am capable of using HTML, CSS and JavaScript. The next step was to show it off! So after hosting it using GitHub pages it was time to share it around in as many places as possible in the hope of it being noticed.
+But there was one problem&amp;hellip; when I shared it on my LinkedIn profile, front and centre in the &amp;ldquo;Featured&amp;rdquo; section, the thumbnail was a bland and generic grey rectangle.</description>
+    </item>
+    
+  </channel>
+</rss>

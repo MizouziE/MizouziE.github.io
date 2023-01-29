@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>open source on web with mizouzie</title>
+    <link>https://mizouzie.github.io/web-with-mizouzie/tags/open-source/</link>
+    <description>Recent content in open source on web with mizouzie</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>made by MizouziE</copyright>
+    <lastBuildDate>Fri, 29 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://mizouzie.github.io/web-with-mizouzie/tags/open-source/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My Top 3 Benefits of Open Source Contribution</title>
+      <link>https://mizouzie.github.io/web-with-mizouzie/articles/benefits-of-os/</link>
+      <pubDate>Fri, 29 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://mizouzie.github.io/web-with-mizouzie/articles/benefits-of-os/</guid>
+      <description>You simply cannot be in web or software development and not have heard of Open Source Software. In case your computer/laptop/phone somehow has no internet connection, it&amp;rsquo;s a piece of software written by a group of developers in the public domain that can potentially accept help from anyone, anywhere. A beautifully utopian idea with roots as far back as the 60&amp;rsquo;s that has flourished over the last few decades as the world became more tech-dependant and interconnected.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>livewire on web with mizouzie</title>
+    <link>https://mizouzie.github.io/web-with-mizouzie/tags/livewire/</link>
+    <description>Recent content in livewire on web with mizouzie</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>made by MizouziE</copyright>
+    <lastBuildDate>Wed, 20 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://mizouzie.github.io/web-with-mizouzie/tags/livewire/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Why I&#39;m glad I used QuickAdminPanel today</title>
+      <link>https://mizouzie.github.io/web-with-mizouzie/articles/quickadminpanel/</link>
+      <pubDate>Wed, 20 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://mizouzie.github.io/web-with-mizouzie/articles/quickadminpanel/</guid>
+      <description>I&amp;rsquo;m familiar with Laravel and I&amp;rsquo;m fairly familiar with Livewire and AlpineJS, so by rights I should be fine building admin panels from scratch with the tools provided by this framework and packages. In theory. In reality, for me, even though I&amp;rsquo;m not a total beginner it&amp;rsquo;d take me over an hour to build it properly and then another hour to get it all working properly with model relationships, views, components and routes all doing what they&amp;rsquo;re supposed to.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>heroku on web with mizouzie</title>
+    <link>https://mizouzie.github.io/web-with-mizouzie/tags/heroku/</link>
+    <description>Recent content in heroku on web with mizouzie</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>made by MizouziE</copyright>
+    <lastBuildDate>Tue, 26 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://mizouzie.github.io/web-with-mizouzie/tags/heroku/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Heroku vs Laravel (vs me...)</title>
+      <link>https://mizouzie.github.io/web-with-mizouzie/articles/heroku-vs-laravel/</link>
+      <pubDate>Tue, 26 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://mizouzie.github.io/web-with-mizouzie/articles/heroku-vs-laravel/</guid>
+      <description>The first time I attempted to deploy a Laravel project onto the popular hosting service Heroku I did not get very far. I found a number of helpful tutorials just with a few google searches, but none of them actually got me across the finish line. It was my first actual attempt at &amp;ldquo;going live&amp;rdquo; and the whole thing left me somewhat bemused and painfully aware of my lack of understanding.</description>
+    </item>
+    
+  </channel>
+</rss>

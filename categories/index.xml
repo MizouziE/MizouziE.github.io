@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on web with mizouzie</title>
+    <link>https://mizouzie.github.io/web-with-mizouzie/categories/</link>
+    <description>Recent content in Categories on web with mizouzie</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>made by MizouziE</copyright>
+    <lastBuildDate>Tue, 09 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://mizouzie.github.io/web-with-mizouzie/categories/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

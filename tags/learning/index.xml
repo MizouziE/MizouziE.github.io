@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>learning on web with mizouzie</title>
+    <link>https://mizouzie.github.io/web-with-mizouzie/tags/learning/</link>
+    <description>Recent content in learning on web with mizouzie</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>made by MizouziE</copyright>
+    <lastBuildDate>Tue, 09 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://mizouzie.github.io/web-with-mizouzie/tags/learning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>-r(ead)w(rite)x(ecute): Documentation</title>
+      <link>https://mizouzie.github.io/web-with-mizouzie/articles/rwx/</link>
+      <pubDate>Tue, 09 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://mizouzie.github.io/web-with-mizouzie/articles/rwx/</guid>
+      <description>I&amp;rsquo;ve hit a year now working as part of a development team with PHP and Laravel. Before I was ever involved, the project I&amp;rsquo;ve worked most on was already running and comprised of a RESTful API, a CMS and umpteen instances of frontend applications that showed all the wonderfully managed data to the end users.
+Even though I&amp;rsquo;ve probably spent a few hours a day working here and there with the various code bases, I&amp;rsquo;ve only very recently felt like I know the ins and outs of how it works and that is thanks to having been given the task of writing the documentation for the whole thing.</description>
+    </item>
+    
+    <item>
+      <title>If it doesn&#39;t make sense, build a little version</title>
+      <link>https://mizouzie.github.io/web-with-mizouzie/articles/build-a-little-version/</link>
+      <pubDate>Sun, 15 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://mizouzie.github.io/web-with-mizouzie/articles/build-a-little-version/</guid>
+      <description>I have learnt a lot in the last few weeks and it was thanks to taking on a personal project that was a vastly scaled down version of what I have been working with this past year. What I have learnt was not necessarily fresh knowledge, but more an understanding that had previously evaded me. The reason I hadn&amp;rsquo;t understood a lot of the concepts I was facing was because I had not built the original codebase to the original specs, I was just introduced to it in small sections and asked to work on individual features.</description>
+    </item>
+    
+    <item>
+      <title>My Top 3 Benefits of Open Source Contribution</title>
+      <link>https://mizouzie.github.io/web-with-mizouzie/articles/benefits-of-os/</link>
+      <pubDate>Fri, 29 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://mizouzie.github.io/web-with-mizouzie/articles/benefits-of-os/</guid>
+      <description>You simply cannot be in web or software development and not have heard of Open Source Software. In case your computer/laptop/phone somehow has no internet connection, it&amp;rsquo;s a piece of software written by a group of developers in the public domain that can potentially accept help from anyone, anywhere. A beautifully utopian idea with roots as far back as the 60&amp;rsquo;s that has flourished over the last few decades as the world became more tech-dependant and interconnected.</description>
+    </item>
+    
+  </channel>
+</rss>

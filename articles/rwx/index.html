@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>-r(ead)w(rite)x(ecute): Documentation | web with mizouzie</title>
+<meta name="keywords" content="web dev, documentation, learning" />
+<meta name="description" content="I wrote a big piece of documentation  recently. Here&#39;s how it drastically improved my developer flow.">
+<meta name="author" content="Sam Anglin">
+<link rel="canonical" href="https://mizouzie.github.io/web-with-mizouzie/articles/rwx/" />
+<link crossorigin="anonymous" href="/web-with-mizouzie/assets/css/stylesheet.min.8c816af5f286db5cdc3ec5ac88af776e52033d8fe0a1316a31967ea3bbe91b8b.css" integrity="sha256-jIFq9fKG21zcPsWsiK93blIDPY/goTFqMZZ&#43;o7vpG4s=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/web-with-mizouzie/assets/js/highlight.min.7680afc38aa6b15ddf158a4f3780b7b1f7dde7e91d26f073e6229bb7a0793c92.js" integrity="sha256-doCvw4qmsV3fFYpPN4C3sffd5&#43;kdJvBz5iKbt6B5PJI="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://mizouzie.github.io/images/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://mizouzie.github.io/images/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://mizouzie.github.io/images/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://mizouzie.github.io/images/apple-touch-icon.png">
+<link rel="mask-icon" href="https://mizouzie.github.io/images/apple-touch-icon.png">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://mizouzie.github.io/web-with-mizouzie/" accesskey="h" title="web with mizouzie (Alt + H)">web with mizouzie</a>
+            <span class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </span>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="/" title="Home"><span>Home</span></a>
+            </li>
+            <li>
+                <a href="https://mizouzie.github.io/web-with-mizouzie/articles/" title="Articles">
+                    <span>Articles</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://mizouzie.github.io/web-with-mizouzie/categories/" title="Categories">
+                    <span>Categories</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://mizouzie.github.io/web-with-mizouzie/projects/" title="Projects">
+                    <span>Projects</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://mizouzie.github.io/web-with-mizouzie/contact/" title="Contact">
+                    <span>Contact</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://mizouzie.github.io/web-with-mizouzie/">Home</a>&nbsp;»&nbsp;<a href="https://mizouzie.github.io/web-with-mizouzie/articles/">Articles</a></div>
+    <h1 class="post-title">
+      -r(ead)w(rite)x(ecute): Documentation
+    </h1>
+    <div class="post-description">
+      I wrote a big piece of documentation  recently. Here&#39;s how it drastically improved my developer flow.
+    </div>
+    <div class="post-meta"><span title='2022-08-09 00:00:00 +0000 UTC'>August 9, 2022</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Sam Anglin</div>
+  </header> 
+
+  <div class="post-content">
+  <p><img loading="lazy" src="/images/rwx.jpeg" alt="working on a laptop"  />
+</p>
+<p>I&rsquo;ve hit a year now working as part of a development team with PHP and Laravel. Before I was ever involved, the project I&rsquo;ve worked most on was already running and comprised of a RESTful API, a CMS and umpteen instances of frontend applications that showed all the wonderfully managed data to the end users.</p>
+<p>Even though I&rsquo;ve probably spent a few hours a day working here and there with the various code bases, I&rsquo;ve only very recently felt like I <em>know</em> the ins and outs of how it works and that is thanks to having been given the task of writing the documentation for the whole thing. The project existed and was managed by a very small group of people, so up until now, there was no real need for docs as the group were the ones requesting features as and when they needed. However, there will soon be a new team introduced to the system and it became apparent that the application was far more complex than first envisaged.</p>
+<p>So, being the junior in the company, the template was chosen and the repo was handed over to me to fill in. At first I thought it&rsquo;d be a nice easy task as most of the application was fairly self explanatory. I was mistaken. There were corners of this thing I didn&rsquo;t have the first clue about&hellip; so how was I gonna write about how it is meant to be used?! I had to ask or just figure it out.</p>
+<p>A week had gone by and I&rsquo;d only managed to map everything out by headings plus some <code>lorem ipsum</code> filler and it was amounting to around about 40 pages&hellip; I couldn&rsquo;t believe it was possible to have worked so many hours on something and still have such a shallow understanding of it. I needed to get writing. So I started out with what I already understood.</p>
+<p>Once I&rsquo;d exhausted my comfort zones I had to research. I clicked through every single possible link and button and tried every preference and setting. I spent almost another week exploring this tool I&rsquo;d been staring at the bones of for the past year. And I&rsquo;ll tell you what, I was kinda proud of how good the tool was! It was powerful, fast and more sensibly laid out than most web apps I&rsquo;ve had to use in the past. I was amazed I&rsquo;d had no idea how good the thing I&rsquo;d contributed to turned out so good.</p>
+<p>The shocks did not stop there though.</p>
+<p>I completed the task, as far as writing and first draft and formatting goes, a week ago and have had a few days on other projects and traveling since. This morning I was told to investigate and fix a bug that, a few weeks ago, would have had me scratching my head for a good few days. No head scratching today though. Before I new it, I&rsquo;d checked out the reported bug, checked the raw API response that lead to it, browsed through the routes for the API and identified the controller and method for that particular endpoint and was running through the query builder string in my head to see just why the problem was occurring.</p>
+<p>I saw no obvious problem&hellip; But before that had a chance to stump me, one particular chapter which I&rsquo;d had to thoroughly investigate popped into my head and I went straight to that part of the CMS to see if what I predicted was present. IT WAS!</p>
+<p>Just from the new found deep understanding after writing the documentation, I was able to imagine exactly what might be causing the issue. It was a first for me with this project. My debugging had never flowed so smooth. I took this understanding, went back to the controller and added in what was missing to prevent the bug from existing. Done.</p>
+<p>It took me just over 50 minutes total. Never dealt with anything on this project in such a short timeframe.</p>
+<p>Before, I was just trying to -r-x (read the code and execute a task) and it was a painful and frustrating learning curve.</p>
+<p>Now that I am -rwx (read the code, write about the code and <strong>then</strong> execute a task) I feel like I am a level or three higher in my developer-acumen. It feels good.</p>
+<p>One more reason that writing the docs is incredibly important. It isn&rsquo;t just the app users that will benefit. The junior devs do too!</p>
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://mizouzie.github.io/web-with-mizouzie/tags/web-dev/">web dev</a></li>
+      <li><a href="https://mizouzie.github.io/web-with-mizouzie/tags/documentation/">documentation</a></li>
+      <li><a href="https://mizouzie.github.io/web-with-mizouzie/tags/learning/">learning</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>made by MizouziE</span>
+      
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerText = 'copy';
+
+        function copyingDone() {
+            copybutton.innerText = 'copied!';
+            setTimeout(() => {
+                copybutton.innerText = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

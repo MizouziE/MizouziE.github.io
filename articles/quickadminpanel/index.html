@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Why I&#39;m glad I used QuickAdminPanel today | web with mizouzie</title>
+<meta name="keywords" content="web dev, laravel, livewire, alpineJS" />
+<meta name="description" content="My first impression when using a third party tool to speed up the development process of a Laravel web app.">
+<meta name="author" content="Sam Anglin">
+<link rel="canonical" href="https://mizouzie.github.io/web-with-mizouzie/articles/quickadminpanel/" />
+<link crossorigin="anonymous" href="/web-with-mizouzie/assets/css/stylesheet.min.8c816af5f286db5cdc3ec5ac88af776e52033d8fe0a1316a31967ea3bbe91b8b.css" integrity="sha256-jIFq9fKG21zcPsWsiK93blIDPY/goTFqMZZ&#43;o7vpG4s=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/web-with-mizouzie/assets/js/highlight.min.7680afc38aa6b15ddf158a4f3780b7b1f7dde7e91d26f073e6229bb7a0793c92.js" integrity="sha256-doCvw4qmsV3fFYpPN4C3sffd5&#43;kdJvBz5iKbt6B5PJI="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://mizouzie.github.io/images/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://mizouzie.github.io/images/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://mizouzie.github.io/images/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://mizouzie.github.io/images/apple-touch-icon.png">
+<link rel="mask-icon" href="https://mizouzie.github.io/images/apple-touch-icon.png">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://mizouzie.github.io/web-with-mizouzie/" accesskey="h" title="web with mizouzie (Alt + H)">web with mizouzie</a>
+            <span class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </span>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="/" title="Home"><span>Home</span></a>
+            </li>
+            <li>
+                <a href="https://mizouzie.github.io/web-with-mizouzie/articles/" title="Articles">
+                    <span>Articles</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://mizouzie.github.io/web-with-mizouzie/categories/" title="Categories">
+                    <span>Categories</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://mizouzie.github.io/web-with-mizouzie/projects/" title="Projects">
+                    <span>Projects</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://mizouzie.github.io/web-with-mizouzie/contact/" title="Contact">
+                    <span>Contact</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://mizouzie.github.io/web-with-mizouzie/">Home</a>&nbsp;»&nbsp;<a href="https://mizouzie.github.io/web-with-mizouzie/articles/">Articles</a></div>
+    <h1 class="post-title">
+      Why I&#39;m glad I used QuickAdminPanel today
+    </h1>
+    <div class="post-description">
+      My first impression when using a third party tool to speed up the development process of a Laravel web app.
+    </div>
+    <div class="post-meta"><span title='2022-04-20 00:00:00 +0000 UTC'>April 20, 2022</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Sam Anglin</div>
+  </header> 
+
+  <div class="post-content">
+  <p><img loading="lazy" src="/images/quickAdminPanel.png" alt="QuickAdminPanel landing page"  />
+</p>
+<p>I&rsquo;m familiar with Laravel and I&rsquo;m fairly familiar with Livewire and AlpineJS, so by rights I should be fine building admin panels from scratch with the tools provided by this framework and packages. In theory. In reality, for me, even though I&rsquo;m not a total beginner it&rsquo;d take me over an hour to build it properly and then another hour to get it all working properly with model relationships, views, components and routes all doing what they&rsquo;re supposed to.</p>
+<p>To achieve this I&rsquo;d have to keep one eye on the documentation and one eye on the IDE and be having a very good day free from distractions, which with family in the house, is a rarity. So today I was given a go on QuickAdmin which is a tool for generating the boilerplate code for Admin panels in a Laravel project that utilises Livewire and AlpineJS. It does this from whatever you input into a number of dropdown menus and modals that make up the easy-to-use GUI and all you need do is copy and paste the files into your project.</p>
+<p>Now, my seasoned colleague is not a fan. Mostly because they could whip the whole thing up in a short space of time using native &ldquo;artisan generate&rdquo; commands in the terminal. But they have 20 years in the game and I do not. This QuickAdmin tool is a leveler though! I had it all up in the browser within 20 minutes with only another 10 minutes of tweaking and customization to fit perfectly with the already existing codebase.</p>
+<p>The argument against using such a tool is a fair one. You should know how to do it properly. I agree. Learning how to do it properly takes months, if not years because it isn&rsquo;t a short process and the length of time it takes to complete while referring to documentation means it is hard to see the code as single coordinated unit. Using this tool solves that! I was able to get a perspective of the process I would not have seen for another 6 months and it was like a revelation. Now I feel like I&rsquo;ll be able to construct an entire admin panel from the terminal in a matter of weeks rather than years.</p>
+<p>Moral of the story is&hellip; I think beginners should be encouraged to use tools like this BECAUSE it affords them the vision they&rsquo;d only acquire after a traditionally long time. I don&rsquo;t think I&rsquo;d use it forever, but I intend on using it for now and I&rsquo;ll be a much higher level of developer a lot sooner for it.</p>
+<p><a href="https://quickadminpanel.com/">Go try it out here!</a></p>
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://mizouzie.github.io/web-with-mizouzie/tags/web-dev/">web dev</a></li>
+      <li><a href="https://mizouzie.github.io/web-with-mizouzie/tags/laravel/">laravel</a></li>
+      <li><a href="https://mizouzie.github.io/web-with-mizouzie/tags/livewire/">livewire</a></li>
+      <li><a href="https://mizouzie.github.io/web-with-mizouzie/tags/alpinejs/">alpineJS</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>made by MizouziE</span>
+      
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerText = 'copy';
+
+        function copyingDone() {
+            copybutton.innerText = 'copied!';
+            setTimeout(() => {
+                copybutton.innerText = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>
