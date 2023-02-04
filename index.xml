@@ -6,7 +6,16 @@
     <description>Recent content on web with mizouzie</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>made by MizouziE</copyright>
-    <lastBuildDate>Tue, 09 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://mizouzie.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 02 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://mizouzie.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Re-reading my old blogs</title>
+      <link>https://mizouzie.github.io/articles/re-reading-old-blogs/</link>
+      <pubDate>Thu, 02 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://mizouzie.github.io/articles/re-reading-old-blogs/</guid>
+      <description>When I first started writing about the things I was doing while learning how to code, I honestly don’t think I had any particular future plans in mind. I’d read various sources on the web and saw that it could be beneficial in finding a job, and even though I didn’t necessarily believe it would make a huge difference, I did it anyway. Over the first few months I wrote 9 articles covering the things that stuck out the most for me at the time.</description>
+    </item>
+    
     <item>
       <title>-r(ead)w(rite)x(ecute): Documentation</title>
       <link>https://mizouzie.github.io/articles/rwx/</link>
