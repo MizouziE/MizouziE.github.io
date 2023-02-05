@@ -34,5 +34,14 @@
       <description>I&amp;rsquo;m familiar with Laravel and I&amp;rsquo;m fairly familiar with Livewire and AlpineJS, so by rights I should be fine building admin panels from scratch with the tools provided by this framework and packages. In theory. In reality, for me, even though I&amp;rsquo;m not a total beginner it&amp;rsquo;d take me over an hour to build it properly and then another hour to get it all working properly with model relationships, views, components and routes all doing what they&amp;rsquo;re supposed to.</description>
     </item>
     
+    <item>
+      <title>SEO Keyword Content Analysis</title>
+      <link>https://mizouzie.github.io/projects/seo-keyword-content-analysis/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mizouzie.github.io/projects/seo-keyword-content-analysis/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
