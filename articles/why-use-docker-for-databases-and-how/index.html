@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Why use Docker for databases and how | web with mizouzie</title>
+<meta name="keywords" content="web dev, docker, learning" />
+<meta property="og:image" content="https://mizouzie.github.io/images/Moby-Group-Docker.jpeg">
+<meta property="og:image:width" content="2560">
+<meta property="og:image:height" content="1724">
+<meta property="og:title" content="Why use Docker for databases and how | web with mizouzie">
+<meta name="og:description" content="Docker is an invaluable piece to add to any tech stack for a multitude of reasons, but it can often be confusing to work with. Here we&#39;ll dive into my favourite way to use Docker containers and explain every step   .">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://mizouzie.github.io/articles/why-use-docker-for-databases-and-how/">
+<meta property="twitter:title" content="Why use Docker for databases and how | web with mizouzie">
+<meta name="twitter:description" content="Docker is an invaluable piece to add to any tech stack for a multitude of reasons, but it can often be confusing to work with. Here we&#39;ll dive into my favourite way to use Docker containers and explain every step   .">
+<meta property="twitter:image" content="https://mizouzie.github.io/images/Moby-Group-Docker.jpeg">
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:site" content="@mizouzie">
+<meta property="twitter:creator" content="@mizouzie">
+<meta name="description" content="Docker is an invaluable piece to add to any tech stack for a multitude of reasons, but it can often be confusing to work with. Here we&#39;ll dive into my favourite way to use Docker containers and explain every step   .">
+<meta name="author" content="Sam Anglin">
+<link rel="canonical" href="https://mizouzie.github.io/articles/why-use-docker-for-databases-and-how/" />
+<link crossorigin="anonymous" href="/assets/css/stylesheet.min.94a14e98c1c10a7ef40ed383f26a8cbe4da5cbc24d8b599d7f5708b5747910c0.css" integrity="sha256-lKFOmMHBCn70DtOD8mqMvk2ly8JNi1mdf1cItXR5EMA=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.min.7680afc38aa6b15ddf158a4f3780b7b1f7dde7e91d26f073e6229bb7a0793c92.js" integrity="sha256-doCvw4qmsV3fFYpPN4C3sffd5&#43;kdJvBz5iKbt6B5PJI="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://mizouzie.github.io/images/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://mizouzie.github.io/images/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://mizouzie.github.io/images/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://mizouzie.github.io/images/apple-touch-icon.png">
+<link rel="mask-icon" href="https://mizouzie.github.io/images/apple-touch-icon.png">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://mizouzie.github.io/" accesskey="h" title="web with mizouzie (Alt + H)">web with mizouzie</a>
+            <span class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </span>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="/" title="Home"><span>Home</span></a>
+            </li>
+            <li>
+                <a href="https://mizouzie.github.io/articles/" title="Articles">
+                    <span>Articles</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://mizouzie.github.io/categories/" title="Categories">
+                    <span>Categories</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://mizouzie.github.io/projects/" title="Projects">
+                    <span>Projects</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://mizouzie.github.io/contact/" title="Contact">
+                    <span>Contact</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://mizouzie.github.io/">Home</a>&nbsp;»&nbsp;<a href="https://mizouzie.github.io/articles/">Articles</a></div>
+    <h1 class="post-title">
+      Why use Docker for databases and how
+    </h1>
+    <div class="post-description">
+      Docker is an invaluable piece to add to any tech stack for a multitude of reasons, but it can often be confusing to work with. Here we&#39;ll dive into my favourite way to use Docker containers and explain every step   .
+    </div>
+    <div class="post-meta"><span title='2023-02-05 00:00:00 +0000 UTC'>February 5, 2023</span>&nbsp;·&nbsp;14 min&nbsp;·&nbsp;Sam Anglin</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#what-is-docker" aria-label="What is Docker">What is Docker</a></li>
+                <li>
+                    <a href="#what-database-can-be-used" aria-label="What database can be used?">What database can be used?</a></li>
+                <li>
+                    <a href="#how-does-a-mariadb-container-work" aria-label="How does a MariaDB container work?">How does a MariaDB container work?</a></li>
+                <li>
+                    <a href="#how-to-set-it-up-from-the-terminal" aria-label="How to set it up from the terminal">How to set it up from the terminal</a><ul>
+                        
+                <li>
+                    <a href="#some-things-to-note" aria-label="Some things to note">Some things to note</a></li>
+                <li>
+                    <a href="#other-services-that-work-well-with-it" aria-label="Other services that work well with it">Other services that work well with it</a></li>
+                <li>
+                    <a href="#networking-containers" aria-label="Networking containers">Networking containers</a></li></ul>
+                </li>
+                <li>
+                    <a href="#how-to-set-it-all-up-with-docker-compose" aria-label="How to set it all up with docker compose">How to set it all up with docker compose</a><ul>
+                        
+                <li>
+                    <a href="#stopping-and-starting-containers" aria-label="Stopping and starting containers">Stopping and starting containers</a></li></ul>
+                </li>
+                <li>
+                    <a href="#how-i-keep-it-organised" aria-label="How I keep it organised">How I keep it organised</a><ul>
+                        
+                <li>
+                    <a href="#boilerplate-docker-composeyaml" aria-label="Boilerplate docker-compose.yaml">Boilerplate docker-compose.yaml</a></li>
+                <li>
+                    <a href="#storage-management" aria-label="Storage management">Storage management</a></li></ul>
+                </li>
+                <li>
+                    <a href="#benefits-over-local-installation-of-mariadb" aria-label="Benefits over local installation of MariaDB">Benefits over local installation of MariaDB</a></li>
+                <li>
+                    <a href="#summary" aria-label="Summary">Summary</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content">
+  <p><img loading="lazy" src="/images/Moby-Group-Docker.jpeg" alt="Moby the Docker whale and all his friends"  />
+</p>
+<p>Sections</p>
+<h2 id="what-is-docker">What is Docker</h2>
+<p>Docker is a tool used to create what are known as containers, yes you can imagine it like a shipping container on a cargo ship (hence the company&rsquo;s logo/mascot, Moby). The containers themselves are like small virtual machines that run a specific package of software that is defined by something called an image. The image tells Docker exactly what the small virtual machine needs to be and do and Docker creates a software only version of exactly that which runs <em>on</em> your host machine <strong>but</strong> still <em>completely</em> separate from your machine. You could consider it a separate node on a network that only the host machine <em>can</em> have access to. I say <em>can</em> have access because if you want to be able to communicate with the container, you will need to have a network set up, but we will look at this later.</p>
+<h2 id="what-database-can-be-used">What database can be used?</h2>
+<p>For the sake of this article, we will use MariaDB as our database example, but you could apply most of the theory we&rsquo;ll cover to any database of your choosing. I am a back-end-leaning-full-stack kind of developer, so my personal favourite is relational SQL over NoSQL, and although MySQL is the industry standard, I personally prefer to use MariaDB whenever possible because it&rsquo;s open source and I&rsquo;ll choose open source over corporations any day.</p>
+<p>Whatever your choice of database, there will be an image for you to pull and work from where the set up steps will;</p>
+<ol>
+<li>be very similar to what we will go over here</li>
+<li>any differences will be apparent when you read the necessary docs, because we all RTFM, right?&hellip;</li>
+</ol>
+<h2 id="how-does-a-mariadb-container-work">How does a MariaDB container work?</h2>
+<p>Like we saw before, the MariaDB container will just be like a stand-alone computer on the network that runs the version of MariaDB that you specify when you provide Docker with the image that you desire. If you <a href="https://hub.docker.com/_/mariadb/tags">take a look at the official documentation for tags</a>, you will see pages and pages of differnet versions that are available to suit any need imaginable.</p>
+<p>The official docs also give nice and clear instructions on setting up a basic instance, but I remember that the very first time I read them and followed them, I did not exactly know what I was doing or why it worked. I aim to make all that clear below!</p>
+<h2 id="how-to-set-it-up-from-the-terminal">How to set it up from the terminal</h2>
+<p>Firstly, we are going to skip over the installation process for docker, which <a href="https://docs.docker.com/get-docker/">you can find help with here</a> if you have not already done that.</p>
+<p>Now we will look at the basic command provided by the documentation and break down what each part is doing.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">docker run --detach --name mariadb-container --env <span class="nv">MARIADB_USER</span><span class="o">=</span>mizouzie --env <span class="nv">MARIADB_PASSWORD</span><span class="o">=</span>mizouzie_loves_mariadb --env <span class="nv">MARIADB_ROOT_PASSWORD</span><span class="o">=</span>root -p <span class="m">3306</span> -v mariadb-volume mariadb:latest
+</code></pre></div><table>
+<thead>
+<tr>
+<th>command / option</th>
+<th>explanation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>docker</td>
+<td>tells docker that we are talking to it, like shouting &lsquo;Hey!&rsquo;</td>
+</tr>
+<tr>
+<td>run</td>
+<td>we want what follows to be run BY docker</td>
+</tr>
+<tr>
+<td>--detach</td>
+<td>flag to say &lsquo;please carry this out in the background and don&rsquo;t occupy the terminal&rsquo; (the short version is <code>-d</code>)</td>
+</tr>
+<tr>
+<td>--name</td>
+<td>the string following this flag will be assigned as the container name</td>
+</tr>
+<tr>
+<td>--env</td>
+<td>the string following should be added as an environment variable, handy for passwords etc (the short version is <code>-e</code>)</td>
+</tr>
+<tr>
+<td>-p</td>
+<td>specify which port(s) to expose to the host machine</td>
+</tr>
+<tr>
+<td>-v</td>
+<td>create and specify the name of the volume for this container</td>
+</tr>
+<tr>
+<td>mariadb:latest</td>
+<td>the name and version of the image you wish docker to pull</td>
+</tr>
+</tbody>
+</table>
+<h3 id="some-things-to-note">Some things to note</h3>
+<p>After running this command with all you own details, docker will first check your local images for the one you have specified. If it doesn&rsquo;t find it already downloaded, it will then <code>pull</code> the image from <a href="https://hub.docker.com/">docker hub</a> and use that to build the container with any and all of your given arguments like the environment variables and name.</p>
+<p>The container will now be running and will not stop until you tell it to, which can be done by:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">docker stop &lt;the-name-you-gave-the-container&gt;
+</code></pre></div><p>The container will be accessible by a default network known as a bridge. You can read details of the network and other useful information about the container by running:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">docker inspect &lt;the-name-you-gave-the-container&gt;
+</code></pre></div><p>The huge display of information after running this command can seem daunting, but just make the terminal full screen and go through the layers one by one and you will soon start to understand the way these containers work. You will spot the environment variables you passed to it earlier, as well as all imaginable configuration key:value pairs which will mostly be set to whatever their default is, but all that is customizable if you wish to delve into the documentation.</p>
+<p>If you just want to know what port you can access the container on you can use <code>grep</code>, for example:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">docker inspect &lt;the-name-you-gave-the-container&gt; <span class="p">|</span> grep HostPort
+</code></pre></div><p>The <code>-v</code> flag to create a volume is an essential step if you want to be able to save data between stopping and starting the container. Omitting this means that on every stop/start, any data that was inserted into the database previously will be gone. Seeing as the point of a database is to <em>store</em> data, it&rsquo;s a good idea not to miss this out.</p>
+<h3 id="other-services-that-work-well-with-it">Other services that work well with it</h3>
+<p>It&rsquo;s all good and well having our database instance running, but while we are developing applications we often need to be able to peer inside or even feed in some raw SQL commands.</p>
+<p>The official image docs show how to connect a MySQL command line client, so again we&rsquo;ll break down what means what.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">docker run -it --network some-network --rm mariadb mariadb -hmariadb-container -umizouzie -p
+</code></pre></div><table>
+<thead>
+<tr>
+<th>command / option</th>
+<th>explanation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>docker</td>
+<td>tells docker that we are talking to it, like shouting &lsquo;Hey!&rsquo;</td>
+</tr>
+<tr>
+<td>run</td>
+<td>we want what follows to be run BY docker</td>
+</tr>
+<tr>
+<td>-it</td>
+<td>tells docker to keep an interactive terminal open to allow us to actually use the connection</td>
+</tr>
+<tr>
+<td>--network</td>
+<td>the name of the network the desired container is on, therefore we wish to join (don&rsquo;t worry, we will talk about these below)</td>
+</tr>
+<tr>
+<td>--rm</td>
+<td>remove this container once it is closed</td>
+</tr>
+<tr>
+<td>mariadb mariadb</td>
+<td>the first is the image we&rsquo;re using, the second is the command to run this container against the running container and connect using the following arguments</td>
+</tr>
+<tr>
+<td>-h</td>
+<td>the name of the host container <strong>must match what you put earlier</strong></td>
+</tr>
+<tr>
+<td>-u</td>
+<td>the name of the user we want to connect as, equal to the MARIADB_USER environment variable <strong>must match what you put earlier</strong></td>
+</tr>
+<tr>
+<td>-p</td>
+<td>upon creating the container, prompt me for the password which will be equal to the MARIADB_PASSWORD environment variable</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Notice that the <code>-u</code>, <code>-h</code> &amp; <code>-p</code> flags come after specifying the container? That is because they are &ldquo;arguments&rdquo; for the container itself rather than &ldquo;options&rdquo; for the command. Don&rsquo;t mix up the <code>-p</code> with the port exposing option from earlier!</p>
+<p>They also have a slightly different syntax in which there is no space between the flag and it&rsquo;s value.</p>
+</blockquote>
+<p>This will open up MySQL client right there in the terminal and you can interact with your database.</p>
+<p>However&hellip; I find this a little cumbersome for smooth development, so I much prefer to use Adminer, which as you may have guessed by now, can be spun up in it&rsquo;s very own container. The setup is similar to how we set up the MariaDB container and you can <a href="https://hub.docker.com/_/adminer">check out the official docs</a> for the details should you want to set it up in the terminal too. The only problem with doing this is that you must set up a named network and connect both the MariaDB container and the Adminer container to it so that they can communicate. I did it a few times just to see how it was, and it&rsquo;s a lot of work so I&rsquo;ll just briefly explain the part of creating a network, because you will see later that there is a much easier way to achieve the same results even if doing it all manually is far more educational.</p>
+<h3 id="networking-containers">Networking containers</h3>
+<p>Keeping things separate is kind of the essence of docker containers, but they&rsquo;re not much use if they can&rsquo;t communicate with one another. This is nice and straightforward to acieve by networking.</p>
+<p>Upon creating the MariaDB container above, it automatically made a bridge network with the host machine to expose the ports found by searching through the output of <code>docker inspect</code>, which is typically 3306, but was 5000 in our example. It gets a little out of that scope when we want to connect another service to both the MariaDB container and our host machine. This is where we must create a network which will connect all three.</p>
+<p>Networking in docker treats the network itself as a container that you can add other containers to. The only difference is that it is noticably more simple to set up. Just the following command, and we&rsquo;re good to go:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">docker network create &lt;name-of-your-network&gt;
+</code></pre></div><p>Now that the network exists, it gives us the option to connect a container to it during the <code>docker run</code> command by using the <code>--network</code> flag and naming this newly created network, or it is possible to add a running container by using:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">docker network connect &lt;name-of-your-network&gt; &lt;name-of-your-container&gt;
+</code></pre></div><p>Once the database is added to the network, you can add whatever method of interacting with it you choose using the same method.</p>
+<h2 id="how-to-set-it-all-up-with-docker-compose">How to set it all up with docker compose</h2>
+<p>There is a much more simple way to do all of what we have discussed in one go. Creating a file named <code>docker-compose.yaml</code> inside our working directory. This is like an instruction script for automating all the terminal commands we just painstakingly typed out. Now that we know the ins and outs of all the commands, we should be able to read through the file and know what is doing what. Here is an example:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;3&#34;</span><span class="w">
+</span><span class="w">
+</span><span class="w"></span><span class="nt">services</span><span class="p">:</span><span class="w">
+</span><span class="w">
+</span><span class="w">  </span><span class="nt">mariadb</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l">mariadb:10.7</span><span class="w">
+</span><span class="w">    </span><span class="nt">environment</span><span class="p">:</span><span class="w">
+</span><span class="w">      </span>- <span class="l">MARIADB_ROOT_PASSWORD=root</span><span class="w">
+</span><span class="w">      </span>- <span class="l">MARIADB_DATABASE=example_database</span><span class="w">
+</span><span class="w">      </span>- <span class="l">MARIADB_USER=mizouzie</span><span class="w">
+</span><span class="w">      </span>- <span class="l">MARIADB_PASSWORD=mizouzie_loves_mariadb</span><span class="w">
+</span><span class="w">      </span>- <span class="l">MARIADB_AUTO_UPGRADE=true</span><span class="w">
+</span><span class="w">    </span><span class="nt">volumes</span><span class="p">:</span><span class="w">
+</span><span class="w">      </span>- <span class="l">mariadb-volume:/var/lib/mysql</span><span class="w">
+</span><span class="w">    </span><span class="nt">ports</span><span class="p">:</span><span class="w">
+</span><span class="w">      </span>- <span class="s2">&#34;3306:3306&#34;</span><span class="w">
+</span><span class="w">
+</span><span class="w">  </span><span class="nt">adminer</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l">adminer:latest</span><span class="w">
+</span><span class="w">    </span><span class="nt">environment</span><span class="p">:</span><span class="w">
+</span><span class="w">      </span>- <span class="l">ADMINER_DEFAULT_SERVER=mariadb</span><span class="w">
+</span><span class="w">    </span><span class="nt">ports</span><span class="p">:</span><span class="w">
+</span><span class="w">      </span>- <span class="s2">&#34;8080:8080&#34;</span><span class="w">
+</span><span class="w">
+</span><span class="w"></span><span class="nt">volumes</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="nt">mariadb-volume</span><span class="p">:</span><span class="w">
+</span></code></pre></div><p>Once we have this file present in our working directory, it can be called using a built in feature of docker called <code>compose</code>. This feature used to be a separate thing to docker, but it has been fully integrated into the docker CLI and this makes things wonderfully easy for us. A simple command of,</p>
+<pre tabindex="0"><code>docker compose up -d
+</code></pre><p>run from the terminal inside our working directory tells docker to look for a file named <code>docker-compose.yaml</code>, read it&rsquo;s instructions, and spin up the containers with all the options included within the file. If you noticed the <code>-d</code> option at the end there, that is the same <code>--detach</code> flag we used earlier that tells docker to run it in the background and free up the terminal.</p>
+<p>Additionally to setting up the containers from the file, docker will do a couple of things automatically;</p>
+<ol>
+<li>Create a network container for the listed containers so that they may all communicate immediately.</li>
+<li>Prepend the name of the working directory to the container (and network) names</li>
+</ol>
+<p>This are handy because not only does it save you the trouble of setting up networks and making connections manually, but you can easily copy + paste the same yaml file between projects and use it again without worrying that your containers will overwrite one another.</p>
+<h3 id="stopping-and-starting-containers">Stopping and starting containers</h3>
+<p>Whether we start containers via the command line or a yaml file, once they are running it is easy to stop and start them as we please. We only need to make use of 3 simple commands to get the needed information and give the desired instructions. The below example shows 2 of these commands and the expected outputs:</p>
+<pre tabindex="0"><code class="language-linux" data-lang="linux">sam@MizouziE:~/code$ docker run --detach --name mariadb-container --env MARIADB_USER=mizouzie --env MARIADB_PASSWORD=mizouzie_loves_mariadb --env MARIADB_ROOT_PASSWORD=root -p 5000 mariadb:10.7
+36cef2546991c8c21e2011d0cc678026fc7258f4f922fea9d4aabfa0d4611815
+sam@MizouziE:~/code$ docker ps
+CONTAINER ID   IMAGE          COMMAND                  CREATED         STATUS         PORTS                                                   NAMES
+36cef2546991   mariadb:10.7   &quot;docker-entrypoint.s…&quot;   4 seconds ago   Up 3 seconds   3306/tcp, 0.0.0.0:32768-&gt;5000/tcp, :::32768-&gt;5000/tcp   mariadb-container
+sam@MizouziE:~/code$ docker stop mariadb-container 
+mariadb-container
+</code></pre><ul>
+<li>First we create a container
+<ul>
+<li>The output is the long ID of the created container</li>
+</ul>
+</li>
+<li>Use <code>docker ps</code>
+<ul>
+<li>The output a list of any running containers with the most important details</li>
+</ul>
+</li>
+<li>Use <code>docker stop &lt;container-name-OR-container-ID&gt;</code> to stop that container
+<ul>
+<li>The output is the name of the stopped container</li>
+</ul>
+</li>
+</ul>
+<p>After stopping the container, run <code>docker ps</code> again and we&rsquo;ll see that the specified container is no longer present in the list, but the container and all of it&rsquo;s data does still exist and can be restarted whenever desired. To restart a created container:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">docker start &lt;container-name-OR-container-ID&gt;
+</code></pre></div><p>Even if we forget the name or ID of a container we closed a while back, so long as we have not removed or pruned it from our system, we can call <code>docker container ls -a</code> to see a list of every container we have whether they are running or stopped.</p>
+<h2 id="how-i-keep-it-organised">How I keep it organised</h2>
+<p>One of the gripes that a lot of people have with docker is managing it. The levels of complexity introduced by the lashings of automation can make your machine choke when things get cluttered, but with a little further understanding it can be managed and painless. <a href="https://twitter.com/mizouzie/status/1600991700830552064?s=20&amp;t=Etdxf8rKEbmBgvrZMW_W7w">This tweet represents my approach</a>.</p>
+<h3 id="boilerplate-docker-composeyaml">Boilerplate docker-compose.yaml</h3>
+<p>Opt for the DRY approach and write yourself a reusable yaml file. As stated before, cross-contamination is avoided automatically with the naming conventions, so using the same boilerplate over and over is no problem. It makes it very easy for you to alter small details like the version between projects which is probably the main advantage of using docker for databases in the first place.</p>
+<p>This also makes it easy to micro-manage things like the storage should you wish to override docker&rsquo;s automatic volumes allocation.</p>
+<h3 id="storage-management">Storage management</h3>
+<p>I once ran into issues with docker filling up my hard drive partition because I always left it to automatically use &ldquo;volumes&rdquo;. These are great for ease of use, but after running multiple containers with large volumes, it can take up too much space. The problem comes from docker persisting data inside it&rsquo;s self-managed volumes which are associated with a container and sometimes removing a container does not remove the volume also, so it just sits there rent-free. To remove these freeloaders use:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">docker volume prune
+</code></pre></div><p>With that, any volume that exists but is not associated with a container will be destroyed. Bear in mind that you will loose any data if you are in between removing and rebuilding a certain container that you wish to reuse the old volume with.</p>
+<p>Another way to avoid volume clutter is to tell docker to use bind-mount instead of automatic volumes. This can be done through the command line or more easily in the yaml file. Here is the same example from before, but with a customised bind mount path:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;3&#34;</span><span class="w">
+</span><span class="w">
+</span><span class="w"></span><span class="nt">services</span><span class="p">:</span><span class="w">
+</span><span class="w">
+</span><span class="w">  </span><span class="nt">mariadb</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l">mariadb:10.7</span><span class="w">
+</span><span class="w">    </span><span class="nt">environment</span><span class="p">:</span><span class="w">
+</span><span class="w">      </span>- <span class="l">MARIADB_ROOT_PASSWORD=root</span><span class="w">
+</span><span class="w">      </span>- <span class="l">MARIADB_DATABASE=developer</span><span class="w">
+</span><span class="w">      </span>- <span class="l">MARIADB_USER=developer</span><span class="w">
+</span><span class="w">      </span>- <span class="l">MARIADB_PASSWORD=developer</span><span class="w">
+</span><span class="w">      </span>- <span class="l">MARIADB_AUTO_UPGRADE=true</span><span class="w">
+</span><span class="w">    </span><span class="nt">volumes</span><span class="p">:</span><span class="w">
+</span><span class="w">      </span>- <span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l">bind</span><span class="w">
+</span><span class="w">        </span><span class="nt">source</span><span class="p">:</span><span class="w"> </span><span class="l">~/../../usr/epn-api-db</span><span class="w">
+</span><span class="w">        </span><span class="nt">target</span><span class="p">:</span><span class="w"> </span><span class="l">/var/lib/mysql</span><span class="w">
+</span><span class="w">    </span><span class="nt">ports</span><span class="p">:</span><span class="w">
+</span><span class="w">      </span>- <span class="s2">&#34;${FORWARD_DB_PORT:-3306}:3306&#34;</span><span class="w">
+</span><span class="w">
+</span><span class="w">  </span><span class="nt">adminer</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l">adminer:latest</span><span class="w">
+</span><span class="w">    </span><span class="nt">environment</span><span class="p">:</span><span class="w">
+</span><span class="w">      </span>- <span class="l">ADMINER_DEFAULT_SERVER=mariadb</span><span class="w">
+</span><span class="w">    </span><span class="nt">ports</span><span class="p">:</span><span class="w">
+</span><span class="w">      </span>- <span class="s2">&#34;8080:8080&#34;</span><span class="w">
+</span><span class="w">
+</span><span class="w"></span><span class="nt">volumes</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="nt">mysql</span><span class="p">:</span><span class="w">
+</span></code></pre></div><p>Under volumes we can specify the type and give a source and target as arguments. What this does is makes a tunnel from the container (path inside container = target) to the host machine (relative path on host = source). This approach effectively renders the container as only a software layer and uses the storage on your machine the same way the software would if it were running on your machine.</p>
+<blockquote>
+<p><strong>Some things to consider using this approach</strong></p>
+<ul>
+<li>There is an issue of permissions when using this that will need to be set up for it to work</li>
+<li>Changing/deleting/corrupting this data on the host will be reflected in the container</li>
+</ul>
+</blockquote>
+<p>I do use this approach because I like to have full control, but it is advisable and more convenient to leave docker to manage it automatically. Just be sure to do housekeeping once in a while and clear out the dangling volumes.</p>
+<h2 id="benefits-over-local-installation-of-mariadb">Benefits over local installation of MariaDB</h2>
+<p>Although it feels at first as a lot to learn, what it boils down to is having yourself a simple setup that can be used time and time again. This is absolutely ideal when you work with multiple projects that use different versions or even different database management systems altogether because it&rsquo;s only required to modify a line or two of a template file and you can have the exact needed version of the exact needed system in seconds without ever installing and configuring on your machine.</p>
+<p>Also as a lot of applications are deployed to production using docker, so having a local development repository with as close to production environment variables is always a plus.</p>
+<p>I am not against having a DBMS installed locally at all, but having one also means that it needs to be managed and upgraded by you, whereas using prefabricated recipies from the open source community means that you can simply always <em>start</em> with the optimal setup.</p>
+<h2 id="summary">Summary</h2>
+<p>In closing, I think that docker is the perfect tool for database management within your projects and as a database is more often than not the essential foundation for an application or website, learning and using this approach is the perfect foot-in-the-door for any developer to see the expansive landscape of what docker is capable of. In all that we have detailed out and explained here, we&rsquo;ve barely touched on even 1% of what can be done.</p>
+<p>I honestly urge you to try it out with your next project, because after a while of using it you will begin to see that so much is possible thanks to this platform.</p>
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://mizouzie.github.io/tags/web-dev/">web dev</a></li>
+      <li><a href="https://mizouzie.github.io/tags/docker/">docker</a></li>
+      <li><a href="https://mizouzie.github.io/tags/learning/">learning</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>made by MizouziE</span>
+      
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerText = 'copy';
+
+        function copyingDone() {
+            copybutton.innerText = 'copied!';
+            setTimeout(() => {
+                copybutton.innerText = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

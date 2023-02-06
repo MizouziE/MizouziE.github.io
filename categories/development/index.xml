@@ -6,7 +6,17 @@
     <description>Recent content in Development on web with mizouzie</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>made by MizouziE</copyright>
-    <lastBuildDate>Thu, 02 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://mizouzie.github.io/categories/development/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 05 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://mizouzie.github.io/categories/development/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Why use Docker for databases and how</title>
+      <link>https://mizouzie.github.io/articles/why-use-docker-for-databases-and-how/</link>
+      <pubDate>Sun, 05 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://mizouzie.github.io/articles/why-use-docker-for-databases-and-how/</guid>
+      <description>Sections
+What is Docker Docker is a tool used to create what are known as containers, yes you can imagine it like a shipping container on a cargo ship (hence the company&amp;rsquo;s logo/mascot, Moby). The containers themselves are like small virtual machines that run a specific package of software that is defined by something called an image. The image tells Docker exactly what the small virtual machine needs to be and do and Docker creates a software only version of exactly that which runs on your host machine but still completely separate from your machine.</description>
+    </item>
+    
     <item>
       <title>Re-reading my old blogs</title>
       <link>https://mizouzie.github.io/articles/re-reading-old-blogs/</link>

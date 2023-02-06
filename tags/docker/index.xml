@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>docker on web with mizouzie</title>
+    <link>https://mizouzie.github.io/tags/docker/</link>
+    <description>Recent content in docker on web with mizouzie</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>made by MizouziE</copyright>
+    <lastBuildDate>Sun, 05 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://mizouzie.github.io/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Why use Docker for databases and how</title>
+      <link>https://mizouzie.github.io/articles/why-use-docker-for-databases-and-how/</link>
+      <pubDate>Sun, 05 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://mizouzie.github.io/articles/why-use-docker-for-databases-and-how/</guid>
+      <description>Sections
+What is Docker Docker is a tool used to create what are known as containers, yes you can imagine it like a shipping container on a cargo ship (hence the company&amp;rsquo;s logo/mascot, Moby). The containers themselves are like small virtual machines that run a specific package of software that is defined by something called an image. The image tells Docker exactly what the small virtual machine needs to be and do and Docker creates a software only version of exactly that which runs on your host machine but still completely separate from your machine.</description>
+    </item>
+    
+  </channel>
+</rss>
