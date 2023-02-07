@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>web with mizouzie</title>
-    <link>https://mizouzie.github.io/</link>
-    <description>Recent content on web with mizouzie</description>
+    <title>web development on web with mizouzie</title>
+    <link>https://mizouzie.github.io/categories/web-development/</link>
+    <description>Recent content in web development on web with mizouzie</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>made by MizouziE</copyright>
-    <lastBuildDate>Sun, 05 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://mizouzie.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 05 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://mizouzie.github.io/categories/web-development/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Why use Docker for databases and how</title>
       <link>https://mizouzie.github.io/articles/why-use-docker-for-databases-and-how/</link>
@@ -15,15 +15,6 @@
       <guid>https://mizouzie.github.io/articles/why-use-docker-for-databases-and-how/</guid>
       <description>Sections
 What is Docker Docker is a tool used to create what are known as containers, yes you can imagine it like a shipping container on a cargo ship (hence the company&amp;rsquo;s logo/mascot, Moby). The containers themselves are like small virtual machines that run a specific package of software that is defined by something called an image. The image tells Docker exactly what the small virtual machine needs to be and do and Docker creates a software only version of exactly that which runs on your host machine but still completely separate from your machine.</description>
-    </item>
-    
-    <item>
-      <title>Re-reading my old blogs</title>
-      <link>https://mizouzie.github.io/articles/re-reading-old-blogs/</link>
-      <pubDate>Thu, 02 Feb 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://mizouzie.github.io/articles/re-reading-old-blogs/</guid>
-      <description>When I first started writing about the things I was doing while learning how to code, I honestly don’t think I had any particular future plans in mind. I’d read various sources on the web and saw that it could be beneficial in finding a job, and even though I didn’t necessarily believe it would make a huge difference, I did it anyway. Over the first few months I wrote 9 articles covering the things that stuck out the most for me at the time.</description>
     </item>
     
     <item>
@@ -44,15 +35,6 @@ Even though I&amp;rsquo;ve probably spent a few hours a day working here and the
       <guid>https://mizouzie.github.io/articles/l-i-f-t/</guid>
       <description>Leave It For Tomorrow  Seemingly controversial advice to give, but hear me out.
 When coding, at least learning to code, you will not only find yourself facing brand new subject matter constantly, but often trying to implement that new thing at the same time. The code you write is always to solve a problem and there are always a multitude of ways to solve it. You&amp;rsquo;ll have to choose which path you take according to other dependencies and the structure you&amp;rsquo;re using.</description>
-    </item>
-    
-    <item>
-      <title>Recognise struggle for what it is</title>
-      <link>https://mizouzie.github.io/articles/recognise-struggle/</link>
-      <pubDate>Wed, 18 May 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://mizouzie.github.io/articles/recognise-struggle/</guid>
-      <description>In Greek mythology, Sisyphus or Sisyphos (/ˈsɪsɪfəs/; Ancient Greek: Σίσυφος Sísyphos) was the founder and king of Ephyra (now known as Corinth). Zeus punished him for cheating death twice by being forced to roll an immense boulder up a hill only for it to roll down every time it neared the top, repeating this action for eternity. Through the classical influence on modern culture, tasks that are both laborious and futile are therefore described as Sisyphean (/sɪsɪˈfiːən/).</description>
     </item>
     
     <item>
@@ -83,16 +65,6 @@ When coding, at least learning to code, you will not only find yourself facing b
     </item>
     
     <item>
-      <title>Starting is one thing, STOPPING is another</title>
-      <link>https://mizouzie.github.io/articles/know-when-to-stop/</link>
-      <pubDate>Fri, 22 Apr 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://mizouzie.github.io/articles/know-when-to-stop/</guid>
-      <description>Getting started in web development was one of the best decisions I ever made. It&amp;rsquo;s challenging, fulfilling and has so many avenues of opportunity. I will say, when I first started and began to recognise the scope of it I was a little taken aback. My main thoughts were:
- I&amp;rsquo;ll take forever to reach an employable level All of this is completely foreign to me This stuff is way more complicated under the nice polished UI  My natural instinct to such a seemingly daunting task was to go full throttle for as long as I possibly could to get as far ahead in a short space of time.</description>
-    </item>
-    
-    <item>
       <title>Why I&#39;m glad I used QuickAdminPanel today</title>
       <link>https://mizouzie.github.io/articles/quickadminpanel/</link>
       <pubDate>Wed, 20 Apr 2022 00:00:00 +0000</pubDate>
@@ -109,51 +81,6 @@ When coding, at least learning to code, you will not only find yourself facing b
       <guid>https://mizouzie.github.io/articles/customised-featured-link-thumbnail/</guid>
       <description>I had spent a few days building a demonstration of what I am capable of using HTML, CSS and JavaScript. The next step was to show it off! So after hosting it using GitHub pages it was time to share it around in as many places as possible in the hope of it being noticed.
 But there was one problem&amp;hellip; when I shared it on my LinkedIn profile, front and centre in the &amp;ldquo;Featured&amp;rdquo; section, the thumbnail was a bland and generic grey rectangle.</description>
-    </item>
-    
-    <item>
-      <title>Energy Price News API</title>
-      <link>https://mizouzie.github.io/projects/energy-price-news/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://mizouzie.github.io/projects/energy-price-news/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Enkle Word Game</title>
-      <link>https://mizouzie.github.io/projects/enkle-word-game/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://mizouzie.github.io/projects/enkle-word-game/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>self development</title>
-      <link>https://mizouzie.github.io/categories/self-development/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://mizouzie.github.io/categories/self-development/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>SEO Keyword Content Analysis</title>
-      <link>https://mizouzie.github.io/projects/seo-keyword-content-analysis/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://mizouzie.github.io/projects/seo-keyword-content-analysis/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>web development</title>
-      <link>https://mizouzie.github.io/categories/web-development/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://mizouzie.github.io/categories/web-development/</guid>
-      <description></description>
     </item>
     
   </channel>
