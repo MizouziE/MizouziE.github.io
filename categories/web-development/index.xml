@@ -6,7 +6,17 @@
     <description>Recent content in web development on web with mizouzie</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>made by MizouziE</copyright>
-    <lastBuildDate>Sun, 05 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://mizouzie.github.io/categories/web-development/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 08 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://mizouzie.github.io/categories/web-development/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Developing a Laravel Application using Tinker</title>
+      <link>https://mizouzie.github.io/articles/developing-a-laravel-app-using-tinker/</link>
+      <pubDate>Wed, 08 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://mizouzie.github.io/articles/developing-a-laravel-app-using-tinker/</guid>
+      <description>What is Laravel Tinker? The short answer is that it&amp;rsquo;s a super power they give you when you boot up your Laravel application. All you type into the terminal:
+./artisan tinker OR EVEN... ./artisan tink This command boots up the built in REPL that is based on PsySH. REPL stands for; Read the user input, Evaluate the input, Print the resulting output and Loop back again to await further input. What kind of input and what kind of output though?</description>
+    </item>
+    
     <item>
       <title>Why use Docker for databases and how</title>
       <link>https://mizouzie.github.io/articles/why-use-docker-for-databases-and-how/</link>

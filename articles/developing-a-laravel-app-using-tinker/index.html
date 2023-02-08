@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Developing a Laravel Application using Tinker | web with mizouzie</title>
+<meta name="keywords" content="web dev, laravel, productivity" />
+<meta name="google-site-verification" content="psw8-5863N9APj0ZK5Lg3BMygE0vQEYIB7q2uJq-FPo" />
+<meta property="og:image" content="https://mizouzie.github.io/images/laravel-artisan-tinker-command.png">
+<meta property="og:image:width" content="2200">
+<meta property="og:image:height" content="1125">
+<meta property="og:title" content="Developing a Laravel Application using Tinker | web with mizouzie">
+<meta name="og:description" content="The Laravel framework has a huge amount of helpful features, let&#39;s take a deeper look at one of the most powerful. Tinker.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://mizouzie.github.io/articles/developing-a-laravel-app-using-tinker/">
+<meta property="twitter:title" content="Developing a Laravel Application using Tinker | web with mizouzie">
+<meta name="twitter:description" content="The Laravel framework has a huge amount of helpful features, let&#39;s take a deeper look at one of the most powerful. Tinker.">
+<meta property="twitter:image" content="https://mizouzie.github.io/images/laravel-artisan-tinker-command.png">
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:site" content="@mizouzie">
+<meta property="twitter:creator" content="@mizouzie">
+<meta name="description" content="The Laravel framework has a huge amount of helpful features, let&#39;s take a deeper look at one of the most powerful. Tinker.">
+<meta name="author" content="Sam Anglin">
+<link rel="canonical" href="https://mizouzie.github.io/articles/developing-a-laravel-app-using-tinker/" />
+<link crossorigin="anonymous" href="/assets/css/stylesheet.min.94a14e98c1c10a7ef40ed383f26a8cbe4da5cbc24d8b599d7f5708b5747910c0.css" integrity="sha256-lKFOmMHBCn70DtOD8mqMvk2ly8JNi1mdf1cItXR5EMA=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.min.7680afc38aa6b15ddf158a4f3780b7b1f7dde7e91d26f073e6229bb7a0793c92.js" integrity="sha256-doCvw4qmsV3fFYpPN4C3sffd5&#43;kdJvBz5iKbt6B5PJI="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://mizouzie.github.io/images/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://mizouzie.github.io/images/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://mizouzie.github.io/images/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://mizouzie.github.io/images/apple-touch-icon.png">
+<link rel="mask-icon" href="https://mizouzie.github.io/images/apple-touch-icon.png">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://mizouzie.github.io/" accesskey="h" title="web with mizouzie (Alt + H)">web with mizouzie</a>
+            <span class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </span>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="/" title="Home"><span>Home</span></a>
+            </li>
+            <li>
+                <a href="https://mizouzie.github.io/articles/" title="Articles">
+                    <span>Articles</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://mizouzie.github.io/categories/" title="Categories">
+                    <span>Categories</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://mizouzie.github.io/projects/" title="Projects">
+                    <span>Projects</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://mizouzie.github.io/contact/" title="Contact">
+                    <span>Contact</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://mizouzie.github.io/">Home</a>&nbsp;»&nbsp;<a href="https://mizouzie.github.io/articles/">Articles</a></div>
+    <h1 class="post-title">
+      Developing a Laravel Application using Tinker
+    </h1>
+    <div class="post-description">
+      The Laravel framework has a huge amount of helpful features, let&#39;s take a deeper look at one of the most powerful. Tinker.
+    </div>
+    <div class="post-meta"><span title='2023-02-08 00:00:00 +0000 UTC'>February 8, 2023</span>&nbsp;·&nbsp;8 min&nbsp;·&nbsp;Sam Anglin</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#what-is-laravel-tinker" aria-label="What is Laravel Tinker?">What is Laravel Tinker?</a><ul>
+                        
+                <li>
+                    <a href="#input" aria-label="Input">Input</a></li>
+                <li>
+                    <a href="#output" aria-label="Output">Output</a></li></ul>
+                </li>
+                <li>
+                    <a href="#how-does-sam-use-tinker" aria-label="How does Sam use Tinker?">How does Sam use Tinker?</a><ul>
+                        
+                <li>
+                    <a href="#proofing" aria-label="Proofing">Proofing</a></li>
+                <li>
+                    <a href="#tweaking" aria-label="Tweaking">Tweaking</a></li>
+                <li>
+                    <a href="#padding" aria-label="Padding">Padding</a></li></ul>
+                </li>
+                <li>
+                    <a href="#where-can-tinker-be-used" aria-label="Where can Tinker be used?">Where can Tinker be used?</a></li>
+                <li>
+                    <a href="#what-are-the-things-they-dont-tell-you" aria-label="What are the things they don&amp;rsquo;t tell you?">What are the things they don&rsquo;t tell you?</a><ul>
+                        
+                <li>
+                    <a href="#updating-classes" aria-label="Updating classes">Updating classes</a></li>
+                <li>
+                    <a href="#using-fakerfaker-inside-tinker" aria-label="Using Faker/Faker inside Tinker">Using Faker/Faker inside Tinker</a></li>
+                <li>
+                    <a href="#time-savers" aria-label="Time savers">Time savers</a></li></ul>
+                </li>
+                <li>
+                    <a href="#wrap-up" aria-label="Wrap up">Wrap up</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content">
+  <p><img loading="lazy" src="/images/laravel-artisan-tinker-command.png" alt="Laravel Artisan Tinker"  />
+</p>
+<h2 id="what-is-laravel-tinker">What is Laravel Tinker?</h2>
+<p>The short answer is that it&rsquo;s a super power they give you when you boot up your Laravel application. All you type into the terminal:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">./artisan tinker
+
+OR EVEN...
+
+./artisan tink
+</code></pre></div><p>This command boots up the built in REPL that is based on PsySH. REPL stands for; <strong>Read</strong> the user input, <strong>Evaluate</strong> the input, <strong>Print</strong> the resulting output and <strong>Loop</strong> back again to await further input. What kind of input and what kind of output though?</p>
+<h3 id="input">Input</h3>
+<p>The Tinker shell takes good old PHP. It&rsquo;s like a little Laravel engine so it has every function within the framework at it&rsquo;s disposal. It makes running logic wonderful thanks to how &ldquo;fluent&rdquo; the Laravel function naming is, you feel like you&rsquo;re casting spells by speaking things into existence.</p>
+<h3 id="output">Output</h3>
+<p>Typically you&rsquo;re going to use Tinker for database interactions. You will be calling for eloquent collections or manipulating records on the database. When calling for eloquent collections, they&rsquo;ll be displayed with all relevant information in a format similar to JSON. When making alterations to records, it will give you <code>true</code>, <code>false</code> or an error message.</p>
+<h2 id="how-does-sam-use-tinker">How does Sam use Tinker?</h2>
+<p>I imagine that I use Tinker in a similar way to most. The most common use case is when I am building controllers. Seeing as that is usually where the business logic lives. It is like my test-dummy. When I need to perform weird and wonderful things with my models outside of the bog-standard CRUD stuff.</p>
+<h3 id="proofing">Proofing</h3>
+<p>Typically, I&rsquo;ll use it to test out and confirm that I&rsquo;ve use the correct relationships in my models. For example:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="o">&lt;?</span><span class="nx">php</span>
+
+<span class="k">namespace</span> <span class="nx">App\Models</span><span class="p">;</span>
+
+<span class="k">class</span> <span class="nc">User</span> <span class="k">extends</span> <span class="nx">Authenticatable</span>
+<span class="p">{</span>
+<span class="o">...</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">brand</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="k">return</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">belongsToMany</span><span class="p">(</span><span class="nx">Brand</span><span class="o">::</span><span class="na">class</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">sites</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="k">return</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">hasManyThrough</span><span class="p">(</span><span class="nx">Site</span><span class="o">::</span><span class="na">class</span><span class="p">,</span> <span class="nx">Project</span><span class="o">::</span><span class="na">class</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div><p>With a model like the above, some things I could run would look like:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">sam@MizouziE:~/code/laravel$ ./artisan tink
+Psy Shell v0.11.8 <span class="o">(</span>PHP 8.1.2-1ubuntu2.10 — cli<span class="o">)</span> by Justin Hileman
+&gt;&gt;&gt; User::first<span class="o">()</span>-&gt;sites<span class="o">()</span>-&gt;count<span class="o">()</span>
+<span class="o">=</span>&gt; <span class="m">76</span>
+
+&gt;&gt;&gt; User::first<span class="o">()</span>-&gt;sites<span class="o">()</span>-&gt;find<span class="o">(</span>13<span class="o">)</span>
+<span class="o">=</span>&gt; App<span class="se">\M</span>odels<span class="se">\S</span>ite <span class="o">{</span><span class="c1">#4797</span>
+     id: 13,
+     site: <span class="s2">&#34;Rebeka&#34;</span>,
+     url: <span class="s2">&#34;http://altenwerth.com/occaecati-magnam-molestias-hic-aperiam-qui-non-modi&#34;</span>,
+     competitor: 1,
+     project_id: 2,
+     created_at: <span class="s2">&#34;2023-02-02 10:19:35&#34;</span>,
+     updated_at: <span class="s2">&#34;2023-02-02 10:19:35&#34;</span>,
+     brand_id: null,
+     region_id: null,
+     match_count: 0,
+     opportunities_count: 0,
+     gaps_count: 0,
+     filename: null,
+     laravel_through_key: 1,
+   <span class="o">}</span>
+
+&gt;&gt;&gt; User::first<span class="o">()</span>-&gt;brand<span class="o">()</span>-&gt;first<span class="o">()</span>
+<span class="o">=</span>&gt; App<span class="se">\M</span>odels<span class="se">\B</span>rand <span class="o">{</span><span class="c1">#4803</span>
+     id: 1,
+     brand: <span class="s2">&#34;NU BALANCE SPORTS&#34;</span>,
+     key: <span class="s2">&#34;NBS&#34;</span>,
+     created_at: <span class="s2">&#34;2023-01-20 12:02:50&#34;</span>,
+     updated_at: <span class="s2">&#34;2023-01-20 12:09:45&#34;</span>,
+     pivot: Illuminate<span class="se">\D</span>atabase<span class="se">\E</span>loquent<span class="se">\R</span>elations<span class="se">\P</span>ivot <span class="o">{</span><span class="c1">#4784</span>
+       user_id: 1,
+       brand_id: 1,
+     <span class="o">}</span>,
+   <span class="o">}</span>
+</code></pre></div><p>So the code entered for the input is just your run of the mill eloquent, and this is exactly how I confirm that the functions I write in my controllers are doing exactly what I want them to do. It saves me loads of time debugging when I forget to end my chains with a <code>-&gt;get()</code> or something trivial like that.</p>
+<h3 id="tweaking">Tweaking</h3>
+<p>Another way I use it is to check that I get the desired results from a function in the database. I will often have the console open and a the table I wish to alter side by side, set a few variables in the Tinker session and copy + paste commands out of my controllers to ensure that the desired changes occur in my local development database. I find it best for spotting when I get relationships mixed up between <code>belongsTo()</code> and <code>hasOne()</code> or when I should have created a pivot table for example. This is facilitated by the excellent feedback you get from the error messages.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">
+&gt;&gt;&gt; Brand::whereHas<span class="o">(</span><span class="s1">&#39;projects&#39;</span><span class="o">)</span>-&gt;with<span class="o">(</span><span class="s1">&#39;sites&#39;</span><span class="o">)</span>-&gt;where<span class="o">(</span><span class="s1">&#39;user_id&#39;</span>, 1<span class="o">)</span>-&gt;get<span class="o">()</span>
+Illuminate<span class="se">\D</span>atabase<span class="se">\Q</span>ueryException with message <span class="s1">&#39;SQLSTATE[42S22]: Column not found: 
+</span><span class="s1">1054 Unknown column &#39;</span>user_id<span class="s1">&#39; in &#39;</span>where clause<span class="s1">&#39; (SQL: select * from `brands` where 
+</span><span class="s1">exists (select * from `projects` inner join `brand_project` on `projects`.`id` = 
+</span><span class="s1">`brand_project`.`project_id` where `brands`.`id` = `brand_project`.`brand_id`) and 
+</span><span class="s1">`user_id` = 1)&#39;</span>
+&gt;&gt;&gt; 
+
+</code></pre></div><p>I now know that calling for a collection of brands that have projects, with the sites of said projects included, cannot be filtered further by user ID using a where clause. This is because the <code>user_id</code> column does not exist on the brands table. So, I will need to alter my code to achieve the desired collection. Thanks to the verbosity of Tinker!</p>
+<p>I can easily recall the previous input and tweak it and try again until I get back exactly what I am looking for.</p>
+<h3 id="padding">Padding</h3>
+<p>My final most common use case is padding out my development database. Developing different actions within the app often calls for particular things to exist in the database, so I make use of model factories ran through the Tinker console to put some records in <strong>exactly</strong> as I need them before figuring out how to chop and change them. For example, if I need 2 users with the role of &lsquo;admin&rsquo;:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">&gt;&gt;&gt; User::factory<span class="o">(</span>2<span class="o">)</span>-&gt;create<span class="o">([</span><span class="s1">&#39;role&#39;</span> <span class="o">=</span>&gt; <span class="s1">&#39;admin&#39;</span><span class="o">])</span>
+<span class="o">=</span>&gt; Illuminate<span class="se">\D</span>atabase<span class="se">\E</span>loquent<span class="se">\C</span>ollection <span class="o">{</span><span class="c1">#4799</span>
+     all: <span class="o">[</span>
+       App<span class="se">\M</span>odels<span class="se">\U</span>ser <span class="o">{</span><span class="c1">#4891</span>
+         name: <span class="s2">&#34;Mr. Lowell Skiles III&#34;</span>,
+         email: <span class="s2">&#34;schaefer.ayana@example.net&#34;</span>,
+         email_verified_at: <span class="s2">&#34;2023-02-08 09:52:40&#34;</span>,
+         <span class="c1">#password: &#34;$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi&#34;,</span>
+         <span class="c1">#remember_token: &#34;JqwJILGkjh&#34;,</span>
+         role: <span class="s2">&#34;admin&#34;</span>,
+         updated_at: <span class="s2">&#34;2023-02-08 09:52:40&#34;</span>,
+         created_at: <span class="s2">&#34;2023-02-08 09:52:40&#34;</span>,
+         id: 15,
+       <span class="o">}</span>,
+       App<span class="se">\M</span>odels<span class="se">\U</span>ser <span class="o">{</span><span class="c1">#4784</span>
+         name: <span class="s2">&#34;Ms. Kari Wyman&#34;</span>,
+         email: <span class="s2">&#34;bboyer@example.com&#34;</span>,
+         email_verified_at: <span class="s2">&#34;2023-02-08 09:52:40&#34;</span>,
+         <span class="c1">#password: &#34;$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi&#34;,</span>
+         <span class="c1">#remember_token: &#34;mIvodB7xnA&#34;,</span>
+         role: <span class="s2">&#34;admin&#34;</span>,
+         updated_at: <span class="s2">&#34;2023-02-08 09:52:40&#34;</span>,
+         created_at: <span class="s2">&#34;2023-02-08 09:52:40&#34;</span>,
+         id: 16,
+       <span class="o">}</span>,
+     <span class="o">]</span>,
+   <span class="o">}</span>
+</code></pre></div><h2 id="where-can-tinker-be-used">Where can Tinker be used?</h2>
+<p>So far we&rsquo;ve only looked at using this tool in development and seen that it comes in useful in a number of ways. Some of these uses can come in handy in production also. Let me explain.</p>
+<p>Say you have a web application where users have access to shared information and private information. All the logic for showing and hiding data according to the authenticated user is in place and working fine, as well as having a role of &ldquo;admin&rdquo; that enables a user special privileges like being able to view all data and even some extra routes and views (i.e. and admin panel for making alterations to the data). However, there is no implementation of a way for an admin, or anyone for that matter, to toggle another user&rsquo;s role from non-admin to admin or back. Now the site is growing in the number of users and you need help quickly to manage some data. What can you do?</p>
+<p>One option is to go back to the code and implement that toggle function ASAP, passing tests and QA etc. <strong>Or</strong> you could use Tinker to quickly assign the role to another user directly on the server, providing you have ssh access. All you do once you are in the server is <code>cd</code> into the directory where your app lives and you can <code>./artisan tinker</code> right there and use it just like we showed in earlier examples. Any changes made here will have the same effect like they would if your actual application were to make them as it <strong>is</strong> your application and therefore has all the database credentials and connections in place. Assigning the role to a user is as simple as running an update command using eloquent.</p>
+<p>Of course this approach can be considered a little risky, but I just wanted to highlight the <em>possibilities</em> available with this tool.</p>
+<h2 id="what-are-the-things-they-dont-tell-you">What are the things they don&rsquo;t tell you?</h2>
+<p>Using this tool, like any other, gets better the more experience you have with it. So I want to share with you a few things that I only learnt after some time of using it so that you can have those benefits right away.</p>
+<h3 id="updating-classes">Updating classes</h3>
+<p>If you have a Tinker session initiated, when changes are made in the codebase, they are not reflected immediately in the session. You will need to end the session, exiting  by inputting <code>q</code>, and then restarting a new session. This is because it loads everything upon booting and does not have any &ldquo;hot refresh&rdquo; behaviour. This is not the hugest inconvenience. You also may have noticed in earlier examples that I was calling classes directly by name without specifying their namespace. This is thanks to Tinker&rsquo;s aliasing.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">&gt;&gt;&gt; User::first<span class="o">()</span>-&gt;sites<span class="o">()</span>-&gt;count<span class="o">()</span>
+<span class="o">[</span>!<span class="o">]</span> Aliasing <span class="s1">&#39;User&#39;</span> to <span class="s1">&#39;App\Models\User&#39;</span> <span class="k">for</span> this Tinker session.
+</code></pre></div><p>It does this with help of <code>autoload.php</code> the same way your application does when it is running. Sometimes, however, this doesn&rsquo;t work right away especially if you have been making major changes to classes and namespaces. What you will need to do in order to get this automatic aliasing back is close Tinker and run:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">composer dump-autoload -o
+</code></pre></div><blockquote>
+<p>the <code>-o</code> flag optimises the autoload file</p>
+</blockquote>
+<p>After this, restart Tinker and you can call your classes by their first names, which saves a little time.</p>
+<h3 id="using-fakerfaker-inside-tinker">Using Faker/Faker inside Tinker</h3>
+<p>As mentioned before, creating records on the fly is one of the most used things with Tinker. There will be times when you need to create things that may not already have a factory instance, so you can write a small factory right there. Often you will need the help of the <code>Faker/Faker</code> package, but that doesn&rsquo;t work right out of the box. It must be imported and assigned to a variable, which is easily done within the Tinker shell by:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">&gt;&gt;&gt; <span class="nv">$faker</span> <span class="o">=</span> Faker<span class="se">\F</span>actory::create<span class="o">()</span><span class="p">;</span>
+</code></pre></div><p>Now whenever it is needed, <code>$faker</code> can be called and chained with any of its methods for creating data to fill your database.</p>
+<h3 id="time-savers">Time savers</h3>
+<p>The biggest time saver for me is assigning commonly used classes to variables, just like that example above with faker. I&rsquo;ll often assign a <code>$user = User::first()</code> if I know I will be repeatedly calling on a single user instance.</p>
+<p>The only thing with variables is that they do not persist from session to session. If you close Tinker, you will lose all variables assigned during that session. However the history will be availble between sessions, so in true &ldquo;terminal user&rdquo; fashion, you can find all your previously entered commands by hitting the <code>↑</code> key (&hellip;repeatedly).</p>
+<h2 id="wrap-up">Wrap up</h2>
+<p>All in all, I think it is safe to say that if you are developing a Laravel application, you absolutely <strong>must</strong> have a go with Tinker. Laravel has such huge popularity mostly due to it&rsquo;s ease of use and streamlined features like the plethora of <code>./artisan</code> commands, and Tinker is one of them but more of an actual super power. So go, make use of it! Build amazing things at break-necking pace! It&rsquo;s all there for you.</p>
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://mizouzie.github.io/tags/web-dev/">web dev</a></li>
+      <li><a href="https://mizouzie.github.io/tags/laravel/">laravel</a></li>
+      <li><a href="https://mizouzie.github.io/tags/productivity/">productivity</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>made by MizouziE</span>
+      
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerText = 'copy';
+
+        function copyingDone() {
+            copybutton.innerText = 'copied!';
+            setTimeout(() => {
+                copybutton.innerText = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>
