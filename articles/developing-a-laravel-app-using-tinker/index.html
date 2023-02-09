@@ -334,7 +334,7 @@ Illuminate<span class="se">\D</span>atabase<span class="se">\Q</span>ueryExcepti
 </code></pre></div><p>Now whenever it is needed, <code>$faker</code> can be called and chained with any of its methods for creating data to fill your database.</p>
 <h3 id="time-savers">Time savers</h3>
 <p>The biggest time saver for me is assigning commonly used classes to variables, just like that example above with faker. I&rsquo;ll often assign a <code>$user = User::first()</code> if I know I will be repeatedly calling on a single user instance.</p>
-<p>The only thing with variables is that they do not persist from session to session. If you close Tinker, you will lose all variables assigned during that session. However the history will be availble between sessions, so in true &ldquo;terminal user&rdquo; fashion, you can find all your previously entered commands by hitting the <code>↑</code> key (&hellip;repeatedly).</p>
+<p>The only thing with variables is that they do not persist from session to session. If you close Tinker, you will lose all variables assigned during that session. However the history will be available between sessions, so in true &ldquo;terminal user&rdquo; fashion, you can find all your previously entered commands by hitting the <code>↑</code> key (&hellip;repeatedly).</p>
 <h2 id="wrap-up">Wrap up</h2>
 <p>All in all, I think it is safe to say that if you are developing a Laravel application, you absolutely <strong>must</strong> have a go with Tinker. Laravel has such huge popularity mostly due to it&rsquo;s ease of use and streamlined features like the plethora of <code>./artisan</code> commands, and Tinker is one of them but more of an actual super power. So go, make use of it! Build amazing things at break-necking pace! It&rsquo;s all there for you.</p>
 
@@ -347,6 +347,29 @@ Illuminate<span class="se">\D</span>atabase<span class="se">\Q</span>ueryExcepti
       <li><a href="https://mizouzie.github.io/tags/productivity/">productivity</a></li>
     </ul>
   </footer>
+  <div class="" style="margin-top: 1rem;">
+    <h4>Leave a comment</h4>
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "web-with-mizouzie" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  </div>
 </article>
     </main>
     

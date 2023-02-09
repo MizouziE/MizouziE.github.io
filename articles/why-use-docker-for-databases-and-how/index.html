@@ -212,7 +212,7 @@
 <li>any differences will be apparent when you read the necessary docs, because we all RTFM, right?&hellip;</li>
 </ol>
 <h2 id="how-does-a-mariadb-container-work">How does a MariaDB container work?</h2>
-<p>Like we saw before, the MariaDB container will just be like a stand-alone computer on the network that runs the version of MariaDB that you specify when you provide Docker with the image that you desire. If you <a href="https://hub.docker.com/_/mariadb/tags">take a look at the official documentation for tags</a>, you will see pages and pages of differnet versions that are available to suit any need imaginable.</p>
+<p>Like we saw before, the MariaDB container will just be like a stand-alone computer on the network that runs the version of MariaDB that you specify when you provide Docker with the image that you desire. If you <a href="https://hub.docker.com/_/mariadb/tags">take a look at the official documentation for tags</a>, you will see pages and pages of different versions that are available to suit any need imaginable.</p>
 <p>The official docs also give nice and clear instructions on setting up a basic instance, but I remember that the very first time I read them and followed them, I did not exactly know what I was doing or why it worked. I aim to make all that clear below!</p>
 <h2 id="how-to-set-it-up-from-the-terminal">How to set it up from the terminal</h2>
 <p>Firstly, we are going to skip over the installation process for docker, which <a href="https://docs.docker.com/get-docker/">you can find help with here</a> if you have not already done that.</p>
@@ -327,9 +327,9 @@
 <p>This will open up MySQL client right there in the terminal and you can interact with your database.</p>
 <p>However&hellip; I find this a little cumbersome for smooth development, so I much prefer to use Adminer, which as you may have guessed by now, can be spun up in it&rsquo;s very own container. The setup is similar to how we set up the MariaDB container and you can <a href="https://hub.docker.com/_/adminer">check out the official docs</a> for the details should you want to set it up in the terminal too. The only problem with doing this is that you must set up a named network and connect both the MariaDB container and the Adminer container to it so that they can communicate. I did it a few times just to see how it was, and it&rsquo;s a lot of work so I&rsquo;ll just briefly explain the part of creating a network, because you will see later that there is a much easier way to achieve the same results even if doing it all manually is far more educational.</p>
 <h3 id="networking-containers">Networking containers</h3>
-<p>Keeping things separate is kind of the essence of docker containers, but they&rsquo;re not much use if they can&rsquo;t communicate with one another. This is nice and straightforward to acieve by networking.</p>
+<p>Keeping things separate is kind of the essence of docker containers, but they&rsquo;re not much use if they can&rsquo;t communicate with one another. This is nice and straightforward to achieve by networking.</p>
 <p>Upon creating the MariaDB container above, it automatically made a bridge network with the host machine to expose the ports found by searching through the output of <code>docker inspect</code>, which is typically 3306, but was 5000 in our example. It gets a little out of that scope when we want to connect another service to both the MariaDB container and our host machine. This is where we must create a network which will connect all three.</p>
-<p>Networking in docker treats the network itself as a container that you can add other containers to. The only difference is that it is noticably more simple to set up. Just the following command, and we&rsquo;re good to go:</p>
+<p>Networking in docker treats the network itself as a container that you can add other containers to. The only difference is that it is noticeably more simple to set up. Just the following command, and we&rsquo;re good to go:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">docker network create &lt;name-of-your-network&gt;
 </code></pre></div><p>Now that the network exists, it gives us the option to connect a container to it during the <code>docker run</code> command by using the <code>--network</code> flag and naming this newly created network, or it is possible to add a running container by using:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">docker network connect &lt;name-of-your-network&gt; &lt;name-of-your-container&gt;
@@ -450,7 +450,7 @@ mariadb-container
 <h2 id="benefits-over-local-installation-of-mariadb">Benefits over local installation of MariaDB</h2>
 <p>Although it feels at first as a lot to learn, what it boils down to is having yourself a simple setup that can be used time and time again. This is absolutely ideal when you work with multiple projects that use different versions or even different database management systems altogether because it&rsquo;s only required to modify a line or two of a template file and you can have the exact needed version of the exact needed system in seconds without ever installing and configuring on your machine.</p>
 <p>Also as a lot of applications are deployed to production using docker, so having a local development repository with as close to production environment variables is always a plus.</p>
-<p>I am not against having a DBMS installed locally at all, but having one also means that it needs to be managed and upgraded by you, whereas using prefabricated recipies from the open source community means that you can simply always <em>start</em> with the optimal setup.</p>
+<p>I am not against having a DBMS installed locally at all, but having one also means that it needs to be managed and upgraded by you, whereas using prefabricated recipes from the open source community means that you can simply always <em>start</em> with the optimal setup.</p>
 <h2 id="summary">Summary</h2>
 <p>In closing, I think that docker is the perfect tool for database management within your projects and as a database is more often than not the essential foundation for an application or website, learning and using this approach is the perfect foot-in-the-door for any developer to see the expansive landscape of what docker is capable of. In all that we have detailed out and explained here, we&rsquo;ve barely touched on even 1% of what can be done.</p>
 <p>I honestly urge you to try it out with your next project, because after a while of using it you will begin to see that so much is possible thanks to this platform.</p>
@@ -464,6 +464,29 @@ mariadb-container
       <li><a href="https://mizouzie.github.io/tags/learning/">learning</a></li>
     </ul>
   </footer>
+  <div class="" style="margin-top: 1rem;">
+    <h4>Leave a comment</h4>
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "web-with-mizouzie" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  </div>
 </article>
     </main>
     
