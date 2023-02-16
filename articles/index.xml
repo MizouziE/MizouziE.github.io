@@ -6,7 +6,16 @@
     <description>Recent content in Articles on web with mizouzie</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>made by MizouziE</copyright>
-    <lastBuildDate>Tue, 14 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://mizouzie.github.io/articles/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 16 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://mizouzie.github.io/articles/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to make your GitHub project pop on social media</title>
+      <link>https://mizouzie.github.io/articles/make-your-github-project-stand-out/</link>
+      <pubDate>Thu, 16 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://mizouzie.github.io/articles/make-your-github-project-stand-out/</guid>
+      <description>The Problem Working on an open source project is one of the best things a developer can do. The opportunities to learn and network are huge compared working on solo projects. The only way I can think of getting even more out of open source than contributing is to actually create and manage a project yourself. I tried this, early on in my career in tech and it was like strapping two great big rockets to my back.</description>
+    </item>
+    
     <item>
       <title>Why I won&#39;t use AI on this blog</title>
       <link>https://mizouzie.github.io/articles/why-i-wont-use-ai/</link>

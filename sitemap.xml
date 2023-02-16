@@ -3,30 +3,45 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://mizouzie.github.io/articles/</loc>
-    <lastmod>2023-02-14T00:00:00+00:00</lastmod>
+    <lastmod>2023-02-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mizouzie.github.io/categories/</loc>
+    <lastmod>2023-02-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mizouzie.github.io/categories/</loc>
+    <lastmod>2023-02-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mizouzie.github.io/tags/github/</loc>
+    <lastmod>2023-02-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mizouzie.github.io/articles/make-your-github-project-stand-out/</loc>
+    <lastmod>2023-02-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mizouzie.github.io/tags/meta-tag/</loc>
+    <lastmod>2023-02-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mizouzie.github.io/tags/open-source/</loc>
+    <lastmod>2023-02-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mizouzie.github.io/tags/</loc>
+    <lastmod>2023-02-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mizouzie.github.io/tags/web-dev/</loc>
+    <lastmod>2023-02-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mizouzie.github.io/categories/web-development/</loc>
+    <lastmod>2023-02-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mizouzie.github.io/</loc>
+    <lastmod>2023-02-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mizouzie.github.io/tags/artificial-intelligence/</loc>
-    <lastmod>2023-02-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://mizouzie.github.io/categories/</loc>
-    <lastmod>2023-02-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://mizouzie.github.io/categories/</loc>
     <lastmod>2023-02-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mizouzie.github.io/tags/chatgpt/</loc>
     <lastmod>2023-02-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mizouzie.github.io/tags/midjourney/</loc>
-    <lastmod>2023-02-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://mizouzie.github.io/tags/</loc>
-    <lastmod>2023-02-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://mizouzie.github.io/categories/web-development/</loc>
-    <lastmod>2023-02-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://mizouzie.github.io/</loc>
     <lastmod>2023-02-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mizouzie.github.io/articles/why-i-wont-use-ai/</loc>
@@ -39,9 +54,6 @@
     <lastmod>2023-02-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mizouzie.github.io/tags/productivity/</loc>
-    <lastmod>2023-02-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://mizouzie.github.io/tags/web-dev/</loc>
     <lastmod>2023-02-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mizouzie.github.io/tags/docker/</loc>
@@ -86,9 +98,6 @@
     <loc>https://mizouzie.github.io/articles/benefits-of-os/</loc>
     <lastmod>2022-04-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mizouzie.github.io/tags/open-source/</loc>
-    <lastmod>2022-04-29T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://mizouzie.github.io/tags/heroku/</loc>
     <lastmod>2022-04-26T00:00:00+00:00</lastmod>
   </url><url>
@@ -113,9 +122,6 @@
     <loc>https://mizouzie.github.io/tags/html/</loc>
     <lastmod>2022-04-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mizouzie.github.io/tags/meta-tag/</loc>
-    <lastmod>2022-04-19T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://mizouzie.github.io/about/</loc>
   </url><url>
     <loc>https://mizouzie.github.io/contact/</loc>
@@ -123,8 +129,6 @@
     <loc>https://mizouzie.github.io/projects/energy-price-news/</loc>
   </url><url>
     <loc>https://mizouzie.github.io/projects/enkle-word-game/</loc>
-  </url><url>
-    <loc>https://mizouzie.github.io/tags/github/</loc>
   </url><url>
     <loc>https://mizouzie.github.io/tags/javascript/</loc>
   </url><url>
