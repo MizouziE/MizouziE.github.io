@@ -31,7 +31,11 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mizouzie.github.io/projects/energy-price-news/</guid>
-      <description></description>
+      <description>Energy Price News API 
+A project to create a public API that scrapes news sites for anything concerning the changes in energy prices.
+This project&amp;rsquo;s secondary aim is to help beginners learn how to contribute to open source projects and will be purposely kept as basic as possible.
+Up to date version hosted at: RapidAPI Hub
+Click here to see the site! Original Idea This project was first thought up after watching this video by Ania Kubów, so many thanks to her for the inspiration.</description>
     </item>
     
   </channel>

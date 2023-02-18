@@ -146,7 +146,11 @@ But there was one problem&amp;hellip; when I shared it on my LinkedIn profile, f
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mizouzie.github.io/projects/energy-price-news/</guid>
-      <description></description>
+      <description>Energy Price News API 
+A project to create a public API that scrapes news sites for anything concerning the changes in energy prices.
+This project&amp;rsquo;s secondary aim is to help beginners learn how to contribute to open source projects and will be purposely kept as basic as possible.
+Up to date version hosted at: RapidAPI Hub
+Click here to see the site! Original Idea This project was first thought up after watching this video by Ania Kubów, so many thanks to her for the inspiration.</description>
     </item>
     
     <item>
@@ -155,6 +159,16 @@ But there was one problem&amp;hellip; when I shared it on my LinkedIn profile, f
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mizouzie.github.io/projects/enkle-word-game/</guid>
+      <description>Enkle Word Game A copy of the popular word puzzle game Wordle made with JavaScript and hosted on a static site.
+Click here to play! The idea Seeing that my young son was able to stare at his tablet screen for hours if not interupted, I wanted to make something to at least give him some sort of lesson while he played. All his games are simple, noisy and colourful. I found a nice tutorial on Laracasts that showed how to make a Wordle clone on the popular (and my favourite) framework Laravel, but after follwoing along I realised that the whole framework was unnecessary.</description>
+    </item>
+    
+    <item>
+      <title>Go CLI User Input Experiment</title>
+      <link>https://mizouzie.github.io/projects/go-input-gist/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mizouzie.github.io/projects/go-input-gist/</guid>
       <description></description>
     </item>
     

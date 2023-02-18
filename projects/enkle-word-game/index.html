@@ -150,14 +150,62 @@
     <div class="post-description">
       A game built using JavaScript based on the same concepts as Wordle. Designed to be customizable for my young son to enjoy.
     </div>
-  </header> 
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
 
+        <div class="inner"><ul>
+                <li>
+                    <a href="#enkle-word-gamehttpsenkle-word-gamegithubioenkle" aria-label="Enkle Word Game"><a href="https://enkle-word-game.github.io/enkle/">Enkle Word Game</a></a><ul>
+                        
+                <li>
+                    <a href="#the-idea" aria-label="The idea">The idea</a></li>
+                <li>
+                    <a href="#stripped-down" aria-label="Stripped down">Stripped down</a></li>
+                <li>
+                    <a href="#built-up" aria-label="Built up">Built up</a><ul>
+                        
+                <li>
+                    <a href="#additions" aria-label="Additions">Additions</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content">
+    <h1 id="enkle-word-gamehttpsenkle-word-gamegithubioenkle"><a href="https://enkle-word-game.github.io/enkle/">Enkle Word Game</a></h1>
+<p>A copy of the popular word puzzle game Wordle made with JavaScript and hosted on a static site.</p>
+<ul class="post-tags"><li><a target="_blank" href="https://enkle-word-game.github.io/enkle/">Click here to play!</a></li></ul>
+<h2 id="the-idea">The idea</h2>
+<p>Seeing that my young son was able to stare at his tablet screen for hours if not interupted, I wanted to make something to at least give him some sort of lesson while he played. All his games are simple, noisy and colourful. I found a nice tutorial on Laracasts that showed how to make a Wordle clone on the popular (and my favourite) framework Laravel, but after follwoing along I realised that the whole framework was unnecessary.</p>
+<h2 id="stripped-down">Stripped down</h2>
+<p>I extracted all the JavaScript working logic from what I had built on the Laravel framework, and applied it to a standalone static site that could be hosted on GitHub pages for free.</p>
+<h2 id="built-up">Built up</h2>
+<p>After getting it working in it&rsquo;s primitive form on a static site, and it was stable, I spent a little time developing it further and adding a few features so that my son wouldn&rsquo;t get bored ofit too quickly.</p>
+<h3 id="additions">Additions</h3>
+<p>Beyond the standard 3x5 grid that the laracast tutorial shows you, I added a few buttons and features behind the scenes;</p>
+<ul>
+<li>Add or reduce number of guesses, like a difficulty setting</li>
+<li>Choose the length of the word to guess from 3, 4 or 5 letters</li>
+</ul>
+<p>Each addition required a little extra on the JavaScript side of things as well as increasing the size of the library of words that the app uses. It was an interesting challenge.</p>
+
+  </div>
 
   <footer class="post-footer">
     
     
     <h3>See Also</h3>
     <ul>
+      
+      <li><a href="/projects/go-input-gist/">Go CLI User Input Experiment</a></li>
       
       <li><a href="/articles/make-your-github-project-stand-out/">How to make your GitHub project pop on social media</a></li>
       
@@ -166,8 +214,6 @@
       <li><a href="/articles/re-reading-old-blogs/">Re-reading my old blogs</a></li>
       
       <li><a href="/articles/rwx/">-r(ead)w(rite)x(ecute): Documentation</a></li>
-      
-      <li><a href="/articles/build-a-little-version/">If it doesn&#39;t make sense, build a little version</a></li>
       
     </ul>
     
