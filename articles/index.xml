@@ -6,7 +6,17 @@
     <description>Recent content in Articles on web with mizouzie</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>made by MizouziE</copyright>
-    <lastBuildDate>Thu, 16 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://mizouzie.github.io/articles/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 20 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://mizouzie.github.io/articles/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>New Side Project - AI as a Creator</title>
+      <link>https://mizouzie.github.io/articles/new-side-project-ai-as-a-creator/</link>
+      <pubDate>Mon, 20 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://mizouzie.github.io/articles/new-side-project-ai-as-a-creator/</guid>
+      <description>I am excited to announce the launch of a side-project that acts as a sort of recycling plant for the content I will be generating over the course of a current work project. It will be like a document to what I learn about interacting with the machine learning language model Davinci from OpenAI and the image generating model from Midjourney.
+I was really taken aback by the abilities of these tools, much like everyone else that have tried them, and when I was told that I would get free reign to try out the language model and build something off the back of it I was excited to say the least.</description>
+    </item>
+    
     <item>
       <title>How to make your GitHub project pop on social media</title>
       <link>https://mizouzie.github.io/articles/make-your-github-project-stand-out/</link>

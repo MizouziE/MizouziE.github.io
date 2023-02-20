@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>artificial intelligence on web with mizouzie</title>
-    <link>https://mizouzie.github.io/tags/artificial-intelligence/</link>
-    <description>Recent content in artificial intelligence on web with mizouzie</description>
+    <title>OpenAI on web with mizouzie</title>
+    <link>https://mizouzie.github.io/tags/openai/</link>
+    <description>Recent content in OpenAI on web with mizouzie</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>made by MizouziE</copyright>
-    <lastBuildDate>Mon, 20 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://mizouzie.github.io/tags/artificial-intelligence/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 20 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://mizouzie.github.io/tags/openai/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>New Side Project - AI as a Creator</title>
       <link>https://mizouzie.github.io/articles/new-side-project-ai-as-a-creator/</link>
@@ -15,16 +15,6 @@
       <guid>https://mizouzie.github.io/articles/new-side-project-ai-as-a-creator/</guid>
       <description>I am excited to announce the launch of a side-project that acts as a sort of recycling plant for the content I will be generating over the course of a current work project. It will be like a document to what I learn about interacting with the machine learning language model Davinci from OpenAI and the image generating model from Midjourney.
 I was really taken aback by the abilities of these tools, much like everyone else that have tried them, and when I was told that I would get free reign to try out the language model and build something off the back of it I was excited to say the least.</description>
-    </item>
-    
-    <item>
-      <title>Why I won&#39;t use AI on this blog</title>
-      <link>https://mizouzie.github.io/articles/why-i-wont-use-ai/</link>
-      <pubDate>Tue, 14 Feb 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://mizouzie.github.io/articles/why-i-wont-use-ai/</guid>
-      <description>Where I won&amp;rsquo;t use AI As you&amp;rsquo;ve probably already spotted, the image for this article is, in fact, an AI generated image. I will go into detail about the image itself later in this post, but I want to assure you that I am not trying to pull the wool over your eyes!
-What I mean when I say that I won&amp;rsquo;t use artificial intelligence is that I will not use it for any of the written content that you will find here in this blog.</description>
     </item>
     
     <item>
