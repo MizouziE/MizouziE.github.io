@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>GitHub on web with mizouzie</title>
-    <link>https://mizouzie.github.io/tags/github/</link>
+    <link>https://www.mizouzie.dev/tags/github/</link>
     <description>Recent content in GitHub on web with mizouzie</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>made by MizouziE</copyright>
-    <lastBuildDate>Thu, 16 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://mizouzie.github.io/tags/github/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 16 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.mizouzie.dev/tags/github/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to make your GitHub project pop on social media</title>
-      <link>https://mizouzie.github.io/articles/make-your-github-project-stand-out/</link>
+      <link>https://www.mizouzie.dev/articles/make-your-github-project-stand-out/</link>
       <pubDate>Thu, 16 Feb 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://mizouzie.github.io/articles/make-your-github-project-stand-out/</guid>
+      <guid>https://www.mizouzie.dev/articles/make-your-github-project-stand-out/</guid>
       <description>The Problem Working on an open source project is one of the best things a developer can do. The opportunities to learn and network are huge compared working on solo projects. The only way I can think of getting even more out of open source than contributing is to actually create and manage a project yourself. I tried this, early on in my career in tech and it was like strapping two great big rockets to my back.</description>
     </item>
     
     <item>
       <title>Energy Price News API</title>
-      <link>https://mizouzie.github.io/projects/energy-price-news/</link>
+      <link>https://www.mizouzie.dev/projects/energy-price-news/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://mizouzie.github.io/projects/energy-price-news/</guid>
+      <guid>https://www.mizouzie.dev/projects/energy-price-news/</guid>
       <description>Energy Price News API 
 A project to create a public API that scrapes news sites for anything concerning the changes in energy prices.
 This project&amp;rsquo;s secondary aim is to help beginners learn how to contribute to open source projects and will be purposely kept as basic as possible.
@@ -31,20 +31,20 @@ Click here to see the site! Original Idea This project was first thought up afte
     
     <item>
       <title>Enkle Word Game</title>
-      <link>https://mizouzie.github.io/projects/enkle-word-game/</link>
+      <link>https://www.mizouzie.dev/projects/enkle-word-game/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://mizouzie.github.io/projects/enkle-word-game/</guid>
+      <guid>https://www.mizouzie.dev/projects/enkle-word-game/</guid>
       <description>Enkle Word Game A copy of the popular word puzzle game Wordle made with JavaScript and hosted on a static site.
 Click here to play! The idea Seeing that my young son was able to stare at his tablet screen for hours if not interupted, I wanted to make something to at least give him some sort of lesson while he played. All his games are simple, noisy and colourful. I found a nice tutorial on Laracasts that showed how to make a Wordle clone on the popular (and my favourite) framework Laravel, but after follwoing along I realised that the whole framework was unnecessary.</description>
     </item>
     
     <item>
       <title>Go CLI User Input Experiment</title>
-      <link>https://mizouzie.github.io/projects/go-input-gist/</link>
+      <link>https://www.mizouzie.dev/projects/go-input-gist/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://mizouzie.github.io/projects/go-input-gist/</guid>
+      <guid>https://www.mizouzie.dev/projects/go-input-gist/</guid>
       <description></description>
     </item>
     

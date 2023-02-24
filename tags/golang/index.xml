@@ -2,16 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Golang on web with mizouzie</title>
-    <link>https://mizouzie.github.io/tags/golang/</link>
+    <link>https://www.mizouzie.dev/tags/golang/</link>
     <description>Recent content in Golang on web with mizouzie</description>
     <generator>Hugo -- gohugo.io</generator>
-    <copyright>made by MizouziE</copyright><atom:link href="https://mizouzie.github.io/tags/golang/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>made by MizouziE</copyright>
+    <lastBuildDate>Thu, 23 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.mizouzie.dev/tags/golang/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>3 ways to read input with a Go CLI</title>
+      <link>https://www.mizouzie.dev/articles/3-ways-to-read-input-with-go-cli/</link>
+      <pubDate>Thu, 23 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.mizouzie.dev/articles/3-ways-to-read-input-with-go-cli/</guid>
+      <description>Go, or Golang, is a wonderfully simple and robust language for building back end and data processing applications. In order to process data, we will need to know how to read data. Here are 3 different ways to achieve that before your application gets to crunching bytes.
+Packages Go is a modular language with a strong standard library. We&amp;rsquo;ll remain inside the realms of standard and still have a comfortable amount of options.</description>
+    </item>
+    
     <item>
       <title>Go CLI User Input Experiment</title>
-      <link>https://mizouzie.github.io/projects/go-input-gist/</link>
+      <link>https://www.mizouzie.dev/projects/go-input-gist/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://mizouzie.github.io/projects/go-input-gist/</guid>
+      <guid>https://www.mizouzie.dev/projects/go-input-gist/</guid>
       <description></description>
     </item>
     

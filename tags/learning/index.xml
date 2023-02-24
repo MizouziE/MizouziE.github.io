@@ -2,74 +2,84 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>learning on web with mizouzie</title>
-    <link>https://mizouzie.github.io/tags/learning/</link>
+    <link>https://www.mizouzie.dev/tags/learning/</link>
     <description>Recent content in learning on web with mizouzie</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>made by MizouziE</copyright>
-    <lastBuildDate>Sun, 05 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://mizouzie.github.io/tags/learning/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 23 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.mizouzie.dev/tags/learning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>3 ways to read input with a Go CLI</title>
+      <link>https://www.mizouzie.dev/articles/3-ways-to-read-input-with-go-cli/</link>
+      <pubDate>Thu, 23 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.mizouzie.dev/articles/3-ways-to-read-input-with-go-cli/</guid>
+      <description>Go, or Golang, is a wonderfully simple and robust language for building back end and data processing applications. In order to process data, we will need to know how to read data. Here are 3 different ways to achieve that before your application gets to crunching bytes.
+Packages Go is a modular language with a strong standard library. We&amp;rsquo;ll remain inside the realms of standard and still have a comfortable amount of options.</description>
+    </item>
+    
     <item>
       <title>Why use Docker for databases and how</title>
-      <link>https://mizouzie.github.io/articles/why-use-docker-for-databases-and-how/</link>
+      <link>https://www.mizouzie.dev/articles/why-use-docker-for-databases-and-how/</link>
       <pubDate>Sun, 05 Feb 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://mizouzie.github.io/articles/why-use-docker-for-databases-and-how/</guid>
+      <guid>https://www.mizouzie.dev/articles/why-use-docker-for-databases-and-how/</guid>
       <description>Sections
 What is Docker Docker is a tool used to create what are known as containers, yes you can imagine it like a shipping container on a cargo ship (hence the company&amp;rsquo;s logo/mascot, Moby). The containers themselves are like small virtual machines that run a specific package of software that is defined by something called an image. The image tells Docker exactly what the small virtual machine needs to be and do and Docker creates a software only version of exactly that which runs on your host machine but still completely separate from your machine.</description>
     </item>
     
     <item>
       <title>Re-reading my old blogs</title>
-      <link>https://mizouzie.github.io/articles/re-reading-old-blogs/</link>
+      <link>https://www.mizouzie.dev/articles/re-reading-old-blogs/</link>
       <pubDate>Thu, 02 Feb 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://mizouzie.github.io/articles/re-reading-old-blogs/</guid>
+      <guid>https://www.mizouzie.dev/articles/re-reading-old-blogs/</guid>
       <description>When I first started writing about the things I was doing while learning how to code, I honestly don’t think I had any particular future plans in mind. I’d read various sources on the web and saw that it could be beneficial in finding a job, and even though I didn’t necessarily believe it would make a huge difference, I did it anyway. Over the first few months I wrote 9 articles covering the things that stuck out the most for me at the time.</description>
     </item>
     
     <item>
       <title>-r(ead)w(rite)x(ecute): Documentation</title>
-      <link>https://mizouzie.github.io/articles/rwx/</link>
+      <link>https://www.mizouzie.dev/articles/rwx/</link>
       <pubDate>Tue, 09 Aug 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://mizouzie.github.io/articles/rwx/</guid>
+      <guid>https://www.mizouzie.dev/articles/rwx/</guid>
       <description>I&amp;rsquo;ve hit a year now working as part of a development team with PHP and Laravel. Before I was ever involved, the project I&amp;rsquo;ve worked most on was already running and comprised of a RESTful API, a CMS and umpteen instances of frontend applications that showed all the wonderfully managed data to the end users.
 Even though I&amp;rsquo;ve probably spent a few hours a day working here and there with the various code bases, I&amp;rsquo;ve only very recently felt like I know the ins and outs of how it works and that is thanks to having been given the task of writing the documentation for the whole thing.</description>
     </item>
     
     <item>
       <title>If it doesn&#39;t make sense, build a little version</title>
-      <link>https://mizouzie.github.io/articles/build-a-little-version/</link>
+      <link>https://www.mizouzie.dev/articles/build-a-little-version/</link>
       <pubDate>Sun, 15 May 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://mizouzie.github.io/articles/build-a-little-version/</guid>
+      <guid>https://www.mizouzie.dev/articles/build-a-little-version/</guid>
       <description>I have learnt a lot in the last few weeks and it was thanks to taking on a personal project that was a vastly scaled down version of what I have been working with this past year. What I have learnt was not necessarily fresh knowledge, but more an understanding that had previously evaded me. The reason I hadn&amp;rsquo;t understood a lot of the concepts I was facing was because I had not built the original codebase to the original specs, I was just introduced to it in small sections and asked to work on individual features.</description>
     </item>
     
     <item>
       <title>My Top 3 Benefits of Open Source Contribution</title>
-      <link>https://mizouzie.github.io/articles/benefits-of-os/</link>
+      <link>https://www.mizouzie.dev/articles/benefits-of-os/</link>
       <pubDate>Fri, 29 Apr 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://mizouzie.github.io/articles/benefits-of-os/</guid>
+      <guid>https://www.mizouzie.dev/articles/benefits-of-os/</guid>
       <description>You simply cannot be in web or software development and not have heard of Open Source Software. In case your computer/laptop/phone somehow has no internet connection, it&amp;rsquo;s a piece of software written by a group of developers in the public domain that can potentially accept help from anyone, anywhere. A beautifully utopian idea with roots as far back as the 60&amp;rsquo;s that has flourished over the last few decades as the world became more tech-dependant and interconnected.</description>
     </item>
     
     <item>
       <title>Enkle Word Game</title>
-      <link>https://mizouzie.github.io/projects/enkle-word-game/</link>
+      <link>https://www.mizouzie.dev/projects/enkle-word-game/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://mizouzie.github.io/projects/enkle-word-game/</guid>
+      <guid>https://www.mizouzie.dev/projects/enkle-word-game/</guid>
       <description>Enkle Word Game A copy of the popular word puzzle game Wordle made with JavaScript and hosted on a static site.
 Click here to play! The idea Seeing that my young son was able to stare at his tablet screen for hours if not interupted, I wanted to make something to at least give him some sort of lesson while he played. All his games are simple, noisy and colourful. I found a nice tutorial on Laracasts that showed how to make a Wordle clone on the popular (and my favourite) framework Laravel, but after follwoing along I realised that the whole framework was unnecessary.</description>
     </item>
     
     <item>
       <title>Go CLI User Input Experiment</title>
-      <link>https://mizouzie.github.io/projects/go-input-gist/</link>
+      <link>https://www.mizouzie.dev/projects/go-input-gist/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://mizouzie.github.io/projects/go-input-gist/</guid>
+      <guid>https://www.mizouzie.dev/projects/go-input-gist/</guid>
       <description></description>
     </item>
     

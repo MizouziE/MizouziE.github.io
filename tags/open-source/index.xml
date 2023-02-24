@@ -2,35 +2,35 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>open source on web with mizouzie</title>
-    <link>https://mizouzie.github.io/tags/open-source/</link>
+    <link>https://www.mizouzie.dev/tags/open-source/</link>
     <description>Recent content in open source on web with mizouzie</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>made by MizouziE</copyright>
-    <lastBuildDate>Thu, 16 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://mizouzie.github.io/tags/open-source/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 16 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.mizouzie.dev/tags/open-source/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to make your GitHub project pop on social media</title>
-      <link>https://mizouzie.github.io/articles/make-your-github-project-stand-out/</link>
+      <link>https://www.mizouzie.dev/articles/make-your-github-project-stand-out/</link>
       <pubDate>Thu, 16 Feb 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://mizouzie.github.io/articles/make-your-github-project-stand-out/</guid>
+      <guid>https://www.mizouzie.dev/articles/make-your-github-project-stand-out/</guid>
       <description>The Problem Working on an open source project is one of the best things a developer can do. The opportunities to learn and network are huge compared working on solo projects. The only way I can think of getting even more out of open source than contributing is to actually create and manage a project yourself. I tried this, early on in my career in tech and it was like strapping two great big rockets to my back.</description>
     </item>
     
     <item>
       <title>My Top 3 Benefits of Open Source Contribution</title>
-      <link>https://mizouzie.github.io/articles/benefits-of-os/</link>
+      <link>https://www.mizouzie.dev/articles/benefits-of-os/</link>
       <pubDate>Fri, 29 Apr 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://mizouzie.github.io/articles/benefits-of-os/</guid>
+      <guid>https://www.mizouzie.dev/articles/benefits-of-os/</guid>
       <description>You simply cannot be in web or software development and not have heard of Open Source Software. In case your computer/laptop/phone somehow has no internet connection, it&amp;rsquo;s a piece of software written by a group of developers in the public domain that can potentially accept help from anyone, anywhere. A beautifully utopian idea with roots as far back as the 60&amp;rsquo;s that has flourished over the last few decades as the world became more tech-dependant and interconnected.</description>
     </item>
     
     <item>
       <title>Energy Price News API</title>
-      <link>https://mizouzie.github.io/projects/energy-price-news/</link>
+      <link>https://www.mizouzie.dev/projects/energy-price-news/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://mizouzie.github.io/projects/energy-price-news/</guid>
+      <guid>https://www.mizouzie.dev/projects/energy-price-news/</guid>
       <description>Energy Price News API 
 A project to create a public API that scrapes news sites for anything concerning the changes in energy prices.
 This project&amp;rsquo;s secondary aim is to help beginners learn how to contribute to open source projects and will be purposely kept as basic as possible.

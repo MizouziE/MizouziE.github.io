@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>chatGPT on web with mizouzie</title>
-    <link>https://mizouzie.github.io/tags/chatgpt/</link>
+    <link>https://www.mizouzie.dev/tags/chatgpt/</link>
     <description>Recent content in chatGPT on web with mizouzie</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>made by MizouziE</copyright>
-    <lastBuildDate>Tue, 14 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://mizouzie.github.io/tags/chatgpt/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 14 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.mizouzie.dev/tags/chatgpt/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Why I won&#39;t use AI on this blog</title>
-      <link>https://mizouzie.github.io/articles/why-i-wont-use-ai/</link>
+      <link>https://www.mizouzie.dev/articles/why-i-wont-use-ai/</link>
       <pubDate>Tue, 14 Feb 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://mizouzie.github.io/articles/why-i-wont-use-ai/</guid>
+      <guid>https://www.mizouzie.dev/articles/why-i-wont-use-ai/</guid>
       <description>Where I won&amp;rsquo;t use AI As you&amp;rsquo;ve probably already spotted, the image for this article is, in fact, an AI generated image. I will go into detail about the image itself later in this post, but I want to assure you that I am not trying to pull the wool over your eyes!
 What I mean when I say that I won&amp;rsquo;t use artificial intelligence is that I will not use it for any of the written content that you will find here in this blog.</description>
     </item>

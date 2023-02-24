@@ -2,54 +2,54 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>laravel on web with mizouzie</title>
-    <link>https://mizouzie.github.io/tags/laravel/</link>
+    <link>https://www.mizouzie.dev/tags/laravel/</link>
     <description>Recent content in laravel on web with mizouzie</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>made by MizouziE</copyright>
-    <lastBuildDate>Wed, 08 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://mizouzie.github.io/tags/laravel/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 08 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.mizouzie.dev/tags/laravel/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Developing a Laravel Application using Tinker</title>
-      <link>https://mizouzie.github.io/articles/developing-a-laravel-app-using-tinker/</link>
+      <link>https://www.mizouzie.dev/articles/developing-a-laravel-app-using-tinker/</link>
       <pubDate>Wed, 08 Feb 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://mizouzie.github.io/articles/developing-a-laravel-app-using-tinker/</guid>
+      <guid>https://www.mizouzie.dev/articles/developing-a-laravel-app-using-tinker/</guid>
       <description>What is Laravel Tinker? The short answer is that it&amp;rsquo;s a super power they give you when you boot up your Laravel application. All you type into the terminal:
 ./artisan tinker OR EVEN... ./artisan tink This command boots up the built in REPL that is based on PsySH. REPL stands for; Read the user input, Evaluate the input, Print the resulting output and Loop back again to await further input. What kind of input and what kind of output though?</description>
     </item>
     
     <item>
       <title>If it doesn&#39;t make sense, build a little version</title>
-      <link>https://mizouzie.github.io/articles/build-a-little-version/</link>
+      <link>https://www.mizouzie.dev/articles/build-a-little-version/</link>
       <pubDate>Sun, 15 May 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://mizouzie.github.io/articles/build-a-little-version/</guid>
+      <guid>https://www.mizouzie.dev/articles/build-a-little-version/</guid>
       <description>I have learnt a lot in the last few weeks and it was thanks to taking on a personal project that was a vastly scaled down version of what I have been working with this past year. What I have learnt was not necessarily fresh knowledge, but more an understanding that had previously evaded me. The reason I hadn&amp;rsquo;t understood a lot of the concepts I was facing was because I had not built the original codebase to the original specs, I was just introduced to it in small sections and asked to work on individual features.</description>
     </item>
     
     <item>
       <title>Heroku vs Laravel (vs me...)</title>
-      <link>https://mizouzie.github.io/articles/heroku-vs-laravel/</link>
+      <link>https://www.mizouzie.dev/articles/heroku-vs-laravel/</link>
       <pubDate>Tue, 26 Apr 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://mizouzie.github.io/articles/heroku-vs-laravel/</guid>
+      <guid>https://www.mizouzie.dev/articles/heroku-vs-laravel/</guid>
       <description>The first time I attempted to deploy a Laravel project onto the popular hosting service Heroku I did not get very far. I found a number of helpful tutorials just with a few google searches, but none of them actually got me across the finish line. It was my first actual attempt at &amp;ldquo;going live&amp;rdquo; and the whole thing left me somewhat bemused and painfully aware of my lack of understanding.</description>
     </item>
     
     <item>
       <title>Why I&#39;m glad I used QuickAdminPanel today</title>
-      <link>https://mizouzie.github.io/articles/quickadminpanel/</link>
+      <link>https://www.mizouzie.dev/articles/quickadminpanel/</link>
       <pubDate>Wed, 20 Apr 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://mizouzie.github.io/articles/quickadminpanel/</guid>
+      <guid>https://www.mizouzie.dev/articles/quickadminpanel/</guid>
       <description>I&amp;rsquo;m familiar with Laravel and I&amp;rsquo;m fairly familiar with Livewire and AlpineJS, so by rights I should be fine building admin panels from scratch with the tools provided by this framework and packages. In theory. In reality, for me, even though I&amp;rsquo;m not a total beginner it&amp;rsquo;d take me over an hour to build it properly and then another hour to get it all working properly with model relationships, views, components and routes all doing what they&amp;rsquo;re supposed to.</description>
     </item>
     
     <item>
       <title>SEO Keyword Content Analysis</title>
-      <link>https://mizouzie.github.io/projects/seo-keyword-content-analysis/</link>
+      <link>https://www.mizouzie.dev/projects/seo-keyword-content-analysis/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://mizouzie.github.io/projects/seo-keyword-content-analysis/</guid>
+      <guid>https://www.mizouzie.dev/projects/seo-keyword-content-analysis/</guid>
       <description></description>
     </item>
     

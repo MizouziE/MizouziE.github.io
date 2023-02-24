@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>3 ways to read input with a Go CLI | web with mizouzie</title>
+<meta name="keywords" content="web dev, Golang, CLI, learning" />
+<meta name="google-site-verification" content="psw8-5863N9APj0ZK5Lg3BMygE0vQEYIB7q2uJq-FPo" />
+<meta property="og:image" content="https://www.mizouzie.dev/images/command-line-interface.png">
+<meta property="og:image:width" content="1024">
+<meta property="og:image:height" content="1024">
+<meta property="og:title" content="3 ways to read input with a Go CLI | web with mizouzie">
+<meta name="og:description" content="Tutorial with examples showing 3 different ways to read user input when building a command line interface (CLI) with Go">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.mizouzie.dev/articles/3-ways-to-read-input-with-go-cli/">
+<meta property="twitter:title" content="3 ways to read input with a Go CLI | web with mizouzie">
+<meta name="twitter:description" content="Tutorial with examples showing 3 different ways to read user input when building a command line interface (CLI) with Go">
+<meta property="twitter:image" content="https://www.mizouzie.dev/images/command-line-interface.png">
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:site" content="@mizouzie">
+<meta property="twitter:creator" content="@mizouzie">
+<meta name="description" content="Tutorial with examples showing 3 different ways to read user input when building a command line interface (CLI) with Go">
+<meta name="author" content="Sam Anglin">
+<link rel="canonical" href="https://www.mizouzie.dev/articles/3-ways-to-read-input-with-go-cli/" />
+<link crossorigin="anonymous" href="/assets/css/stylesheet.min.0ac770afc45e80985c558011d8cee2422fedcc00570cc18ba1da4d97bbb4122e.css" integrity="sha256-Csdwr8RegJhcVYAR2M7iQi/tzABXDMGLodpNl7u0Ei4=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.min.7680afc38aa6b15ddf158a4f3780b7b1f7dde7e91d26f073e6229bb7a0793c92.js" integrity="sha256-doCvw4qmsV3fFYpPN4C3sffd5&#43;kdJvBz5iKbt6B5PJI="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://www.mizouzie.dev/images/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://www.mizouzie.dev/images/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://www.mizouzie.dev/images/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://www.mizouzie.dev/images/apple-touch-icon.png">
+<link rel="mask-icon" href="https://www.mizouzie.dev/images/apple-touch-icon.png">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://www.mizouzie.dev/" accesskey="h" title="web with mizouzie (Alt + H)">web with mizouzie</a>
+            <span class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </span>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="/" title="Home"><span>Home</span></a>
+            </li>
+            <li>
+                <a href="https://www.mizouzie.dev/articles/" title="Articles">
+                    <span>Articles</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.mizouzie.dev/categories/" title="Categories">
+                    <span>Categories</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.mizouzie.dev/projects/" title="Projects">
+                    <span>Projects</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.mizouzie.dev/contact/" title="Contact">
+                    <span>Contact</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://www.mizouzie.dev/">Home</a>&nbsp;»&nbsp;<a href="https://www.mizouzie.dev/articles/">Articles</a></div>
+    <h1 class="post-title">
+      3 ways to read input with a Go CLI
+    </h1>
+    <div class="post-description">
+      Tutorial with examples showing 3 different ways to read user input when building a command line interface (CLI) with Go
+    </div>
+    <div class="post-meta"><span title='2023-02-23 00:00:00 +0000 UTC'>February 23, 2023</span>&nbsp;·&nbsp;7 min&nbsp;·&nbsp;Sam Anglin</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#packages" aria-label="Packages">Packages</a></li>
+                <li>
+                    <a href="#reading-input" aria-label="Reading Input">Reading Input</a><ul>
+                        
+                <li>
+                    <a href="#cli-interaction-user-input" aria-label="CLI Interaction: User Input">CLI Interaction: User Input</a></li>
+                <li>
+                    <a href="#follow-the-path-read-a-file" aria-label="Follow the Path: Read a File">Follow the Path: Read a File</a></li>
+                <li>
+                    <a href="#executable-arguments-feed-it-from-the-start" aria-label="Executable Arguments: Feed it from the Start">Executable Arguments: Feed it from the Start</a></li></ul>
+                </li>
+                <li>
+                    <a href="#summary" aria-label="Summary">Summary</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content">
+    <p><img loading="lazy" src="/images/command-line-interface-go.png" alt="Simple but Powerful command line interface"  />
+</p>
+<p>Go, or Golang, is a wonderfully simple and robust language for building back end and data processing applications. In order to process data, we will need to know how to read data. Here are 3 different ways to achieve that before your application gets to crunching bytes.</p>
+<h2 id="packages">Packages</h2>
+<p>Go is a modular language with a strong standard library. We&rsquo;ll remain inside the realms of standard and still have a comfortable amount of options. The 2 packages that we&rsquo;ll look at are:</p>
+<ul>
+<li>&ldquo;os&rdquo;
+<blockquote>
+<p>Package os provides a platform-independent interface to operating system functionality.</p>
+</blockquote>
+</li>
+<li>&ldquo;bufio&rdquo;
+<blockquote>
+<p>Package bufio implements buffered Input/Output.</p>
+</blockquote>
+</li>
+</ul>
+<p>Even though it is only two packages, there are at least three options here. The best part is that <code>os</code> is actually involved in all three.</p>
+<p>Additionally, we&rsquo;ll call on some helper functions from 2 other standard library packages just for niceties and a little formatting when passing variables:</p>
+<ul>
+<li>&ldquo;fmt&rdquo;</li>
+<li>&ldquo;strings&rdquo;</li>
+</ul>
+<h2 id="reading-input">Reading Input</h2>
+<p>User input can come in a few forms. You may only need to set an environment variable like an API key or you may need to crawl through rows and rows of data in a spreadsheet. We can start small and simple.</p>
+<h3 id="cli-interaction-user-input">CLI Interaction: User Input</h3>
+<p><img loading="lazy" src="/images/go-cli-input.png" alt="CLI asking for user input"  />
+</p>
+<p>The example above demonstrates an interactive app requesting that the user enters some input. When a relatively small value is needed, this is an easy way to get it. The user can input a string, press <code>Enter</code> and the application is able to read that string and do something with it. Let&rsquo;s see how this works behind the scenes.</p>
+<p><code>./main.go</code></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="kn">package</span> <span class="nx">reader</span>
+
+<span class="kn">import</span> <span class="p">(</span>
+    <span class="s">&#34;bufio&#34;</span>
+    <span class="s">&#34;os&#34;</span>
+<span class="p">)</span>
+
+<span class="kd">func</span> <span class="nf">Reader</span><span class="p">()</span> <span class="o">*</span><span class="nx">bufio</span><span class="p">.</span><span class="nx">Reader</span> <span class="p">{</span>
+    <span class="c1">// Initiate user input reader
+</span><span class="c1"></span>    <span class="nx">reader</span> <span class="o">:=</span> <span class="nx">bufio</span><span class="p">.</span><span class="nf">NewReader</span><span class="p">(</span><span class="nx">os</span><span class="p">.</span><span class="nx">Stdin</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="nx">reader</span>
+<span class="p">}</span>
+</code></pre></div><p>What we see here is the <strong>initialization</strong> of a new <code>Reader</code> type by the bufio package. This type is actually from the &ldquo;io&rdquo; package and it looks like this:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="kd">type</span> <span class="nx">Reader</span> <span class="kd">interface</span> <span class="p">{</span>
+    <span class="nf">Read</span><span class="p">(</span><span class="nx">p</span> <span class="p">[]</span><span class="kt">byte</span><span class="p">)</span> <span class="p">(</span><span class="nx">n</span> <span class="kt">int</span><span class="p">,</span> <span class="nx">err</span> <span class="kt">error</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div><p>Bufio wraps this type in a buffer which gathers and temporarily holds the data before sending it along the line all together as one object, rather than streaming it.</p>
+<p>We also call upon the &ldquo;os&rdquo; package early on, in this case for the <code>os.Stdin</code> function which effectively stands for <u><strong>o</strong></u>perating <u><strong>s</strong></u>ystem <u><strong>St</strong></u>an<u><strong>d</strong></u> <u><strong>in</strong></u>put. This is being called as the argument for the <code>NewReader()</code> function to tell the reader to accept input from the console.</p>
+<p>Once created, this reader object has access to a few functions where you can specify exactly how it reads. We will use it to read the user&rsquo;s input from the command line. To do so we call the <code>ReadString()</code> function, in which we have to specify the delimiter which tells the function &ldquo;that&rsquo;s the end&rdquo;. Let&rsquo;s build on what we had earlier.</p>
+<p><code>./main.go</code></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="kn">package</span> <span class="nx">reader</span>
+
+<span class="kn">import</span> <span class="p">(</span>
+    <span class="s">&#34;bufio&#34;</span>
+    <span class="s">&#34;os&#34;</span>
+    <span class="s">&#34;fmt&#34;</span>
+<span class="p">)</span>
+
+<span class="kd">func</span> <span class="nf">Reader</span><span class="p">()</span> <span class="kt">string</span> <span class="p">{</span>
+    <span class="c1">// Initiate user input reader
+</span><span class="c1"></span>    <span class="nx">reader</span> <span class="o">:=</span> <span class="nx">bufio</span><span class="p">.</span><span class="nf">NewReader</span><span class="p">(</span><span class="nx">os</span><span class="p">.</span><span class="nx">Stdin</span><span class="p">)</span>
+
+    <span class="c1">// Print the instruction to the reader in the console
+</span><span class="c1"></span>    <span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="s">&#34;Please enter your API key below:&#34;</span><span class="p">)</span>
+
+    <span class="c1">// Call the reader to read user&#39;s input
+</span><span class="c1"></span>    <span class="nx">key</span><span class="p">,</span> <span class="nx">err</span> <span class="o">:=</span> <span class="nx">reader</span><span class="p">.</span><span class="nf">ReadString</span><span class="p">(</span><span class="sc">&#39;\n&#39;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="nx">err</span> <span class="o">!=</span> <span class="kc">nil</span> <span class="p">{</span>
+        <span class="nb">panic</span><span class="p">(</span><span class="nx">err</span><span class="p">)</span>
+    <span class="p">}</span>
+
+    <span class="k">return</span> <span class="nx">key</span>
+<span class="p">}</span>
+</code></pre></div><p>So here we can see:</p>
+<ol>
+<li>Addition of &ldquo;fmt&rdquo; package just to print the prompt for the user</li>
+<li>Calling the reader to return to us the user&rsquo;s input and an error</li>
+<li><code>ReadString()</code> expects one argument which is the delimiter, in this case the byte for a new line &lsquo;\n&rsquo;</li>
+<li>If the error is empty (nil) we have the string value stored in the variable <code>key</code></li>
+<li>Return type for the function is now <code>string</code></li>
+</ol>
+<p>This method of reading input is nice, quick and basic. Ideal for short string and integer values. What is also interesting is that you can combine it with another method when the data gets a little larger. We read a string, so what if that string was a path to a file? Maybe a csv file.</p>
+<h3 id="follow-the-path-read-a-file">Follow the Path: Read a File</h3>
+<p>Nobody is going to sit and type out an entire huge data-set. We are building an application to make it faster and easier for the user to process data! So let&rsquo;s read directly from a file. Say we used the first method to get a <strong>path</strong> to a config file and we have that string value saved in a variable&hellip; what can we do with it? Call &ldquo;os&rdquo; yet again.</p>
+<p><code>main.go</code></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="kn">package</span> <span class="nx">reader</span>
+
+<span class="kn">import</span> <span class="p">(</span>
+    <span class="s">&#34;bufio&#34;</span>
+    <span class="s">&#34;os&#34;</span>
+    <span class="s">&#34;fmt&#34;</span>
+    <span class="s">&#34;strings&#34;</span>
+<span class="p">)</span>
+
+<span class="kd">func</span> <span class="nf">Reader</span><span class="p">()</span> <span class="p">[]</span><span class="kt">byte</span> <span class="p">{</span>
+    <span class="c1">// Initiate user input reader
+</span><span class="c1"></span>    <span class="nx">reader</span> <span class="o">:=</span> <span class="nx">bufio</span><span class="p">.</span><span class="nf">NewReader</span><span class="p">(</span><span class="nx">os</span><span class="p">.</span><span class="nx">Stdin</span><span class="p">)</span>
+
+    <span class="c1">// Print the instruction to the reader in the console
+</span><span class="c1"></span>    <span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="s">&#34;Please enter your config file path:&#34;</span><span class="p">)</span>
+
+    <span class="c1">// Call the reader to read user&#39;s input
+</span><span class="c1"></span>    <span class="nx">path</span><span class="p">,</span> <span class="nx">err</span> <span class="o">:=</span> <span class="nx">reader</span><span class="p">.</span><span class="nf">ReadString</span><span class="p">(</span><span class="sc">&#39;\n&#39;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="nx">err</span> <span class="o">!=</span> <span class="kc">nil</span> <span class="p">{</span>
+    	<span class="nb">panic</span><span class="p">(</span><span class="nx">err</span><span class="p">)</span>
+    <span class="p">}</span>
+
+    <span class="c1">// Read config file from trimmed path string
+</span><span class="c1"></span>    <span class="nx">file</span><span class="p">,</span> <span class="nx">err</span> <span class="o">:=</span> <span class="nx">os</span><span class="p">.</span><span class="nf">ReadFile</span><span class="p">(</span><span class="nx">strings</span><span class="p">.</span><span class="nf">TrimSpace</span><span class="p">(</span><span class="nx">path</span><span class="p">))</span>
+    <span class="k">if</span> <span class="nx">err</span> <span class="o">!=</span> <span class="kc">nil</span> <span class="p">{</span>
+    	<span class="nb">panic</span><span class="p">(</span><span class="nx">err</span><span class="p">)</span>
+    <span class="p">}</span>
+
+    <span class="k">return</span> <span class="nx">file</span>
+<span class="p">}</span>
+</code></pre></div><p>What has been added?</p>
+<ol>
+<li><code>os.Readfile()</code> that accepts a string as an argument. The string is the path we extracted from the user earlier</li>
+<li>We use the helper <code>TrimSpace()</code> from the &ldquo;strings&rdquo; package to remove and whitespace characters from the start or end of the provided path</li>
+<li>If the error if empty (nil) we have the read contents of the file pointed to by <code>path</code></li>
+<li>Return type now <code>[]byte</code> as ReadFile returns as a slice of bytes in the variable <code>file</code></li>
+</ol>
+<p>This method helps to speed things up a great deal when there is a lot of data to feed into the application. There is a way, very similar to this, that we can open the file and read it line by line, but I will explain that in greater detail in another post as it allows you to do more interesting things when you involve loops and needs a little explanation regarding <code>Reader</code> types.</p>
+<h3 id="executable-arguments-feed-it-from-the-start">Executable Arguments: Feed it from the Start</h3>
+<p>One huge benefit of Go is that it is compilable into binary files. This means that once it is written, you can export it as a stand alone program that can be run on another machine once installed. In the case of a CLI, it is often a good idea to build it to be able to accept arguments when being invoked. What this means is that you can set it that when a user runs the compiled program we&rsquo;re building here, they can provide the input we need as argument following the invoking command. Like this.</p>
+<p><img loading="lazy" src="/images/go-cli-args.png" alt="Invoking the binary with an argument"  />
+</p>
+<p>For this example, it works almost exactly the same as reading the user input. Let&rsquo;s go back to that simple code and see what difference there is.</p>
+<p><code>main.go</code></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="kn">package</span> <span class="nx">reader</span>
+
+<span class="kn">import</span> <span class="p">(</span>
+    <span class="s">&#34;os&#34;</span>
+    <span class="s">&#34;strings&#34;</span>
+<span class="p">)</span>
+
+<span class="kd">func</span> <span class="nf">Reader</span><span class="p">()</span> <span class="p">[]</span><span class="kt">byte</span> <span class="p">{</span>
+    <span class="c1">// Get the path from the first argument
+</span><span class="c1"></span>    <span class="nx">path</span> <span class="o">:=</span> <span class="nx">os</span><span class="p">.</span><span class="nx">Args</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+
+    <span class="c1">// Read config file from trimmed path string
+</span><span class="c1"></span>    <span class="nx">file</span><span class="p">,</span> <span class="nx">err</span> <span class="o">:=</span> <span class="nx">os</span><span class="p">.</span><span class="nf">ReadFile</span><span class="p">(</span><span class="nx">strings</span><span class="p">.</span><span class="nf">TrimSpace</span><span class="p">(</span><span class="nx">path</span><span class="p">))</span>
+    <span class="k">if</span> <span class="nx">err</span> <span class="o">!=</span> <span class="kc">nil</span> <span class="p">{</span>
+    	<span class="nb">panic</span><span class="p">(</span><span class="nx">err</span><span class="p">)</span>
+    <span class="p">}</span>
+
+    <span class="k">return</span> <span class="nx">file</span>
+<span class="p">}</span>
+</code></pre></div><p>Here the difference is:</p>
+<ol>
+<li>Calling <code>os.Args</code> is all that is needed to access the array of arguments provided at the start</li>
+<li>That is assigned to a variable, which is then passed to our file reader function</li>
+</ol>
+<p>You may notice that we are calling index <code>1</code> on the array of <code>os.Args</code> and this is not a mistake. The reason for this is that the very first element of the array, index <code>0</code> is always the name of the program itself. The arguments actually begin from the second index position. It is possible to accept as many as you like, but be sure to add some sort of <code>--help</code> or manual for the tool if you are expecting a large number of variables to be passed this way. It is good practice to provide decent instructions anyway.</p>
+<h2 id="summary">Summary</h2>
+<p>There you have it. Three great ways to accept data to be used, analyzed and manipulated by your Go CLI application. Each has it&rsquo;s merits and best use cases, but at the end of the day it is up to you how and which you use. I tend to even include a combination and use nested <code>if</code> statements to check for presence/absence of one type or the other so that an appropriate prompt can be given or omitted.</p>
+<p>Of course, in this tutorial we have not looked at proper input sanitizing and the types of checks that can be done to ensure that a file/directory actually exists at the specified path. These are definitely a good idea to include in a real application as human error is a very real thing and a good application is a prepared application!</p>
+
+  </div>
+
+  <footer class="post-footer">
+    
+    
+    <h3>See Also</h3>
+    <ul>
+      
+      <li><a href="/articles/why-use-docker-for-databases-and-how/">Why use Docker for databases and how</a></li>
+      
+      <li><a href="/articles/rwx/">-r(ead)w(rite)x(ecute): Documentation</a></li>
+      
+      <li><a href="/articles/build-a-little-version/">If it doesn&#39;t make sense, build a little version</a></li>
+      
+      <li><a href="/articles/benefits-of-os/">My Top 3 Benefits of Open Source Contribution</a></li>
+      
+      <li><a href="/projects/go-input-gist/">Go CLI User Input Experiment</a></li>
+      
+    </ul>
+    
+    <ul class="post-tags">
+      <li><a href="https://www.mizouzie.dev/tags/web-dev/">web dev</a></li>
+      <li><a href="https://www.mizouzie.dev/tags/golang/">Golang</a></li>
+      <li><a href="https://www.mizouzie.dev/tags/cli/">CLI</a></li>
+      <li><a href="https://www.mizouzie.dev/tags/learning/">learning</a></li>
+    </ul>
+    <br>
+    <br>
+    <h4>Share this Post:</h4>
+
+<div class="share-buttons">
+    <a target="_blank" rel="noopener noreferrer" aria-label="share 3 ways to read input with a Go CLI on twitter"
+        href="https://twitter.com/intent/tweet/?text=3%20ways%20to%20read%20input%20with%20a%20Go%20CLI&amp;url=https%3a%2f%2fwww.mizouzie.dev%2farticles%2f3-ways-to-read-input-with-go-cli%2f">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-253.927,424.544c135.939,0 210.268,-112.643 210.268,-210.268c0,-3.218 0,-6.437 -0.153,-9.502c14.406,-10.421 26.973,-23.448 36.935,-38.314c-13.18,5.824 -27.433,9.809 -42.452,11.648c15.326,-9.196 26.973,-23.602 32.49,-40.92c-14.252,8.429 -30.038,14.56 -46.896,17.931c-13.487,-14.406 -32.644,-23.295 -53.946,-23.295c-40.767,0 -73.87,33.104 -73.87,73.87c0,5.824 0.613,11.494 1.992,16.858c-61.456,-3.065 -115.862,-32.49 -152.337,-77.241c-6.284,10.881 -9.962,23.601 -9.962,37.088c0,25.594 13.027,48.276 32.95,61.456c-12.107,-0.307 -23.448,-3.678 -33.41,-9.196l0,0.92c0,35.862 25.441,65.594 59.311,72.49c-6.13,1.686 -12.72,2.606 -19.464,2.606c-4.751,0 -9.348,-0.46 -13.946,-1.38c9.349,29.426 36.628,50.728 68.965,51.341c-25.287,19.771 -57.164,31.571 -91.8,31.571c-5.977,0 -11.801,-0.306 -17.625,-1.073c32.337,21.15 71.264,33.41 112.95,33.41Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share 3 ways to read input with a Go CLI on linkedin"
+        href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fwww.mizouzie.dev%2farticles%2f3-ways-to-read-input-with-go-cli%2f&amp;title=3%20ways%20to%20read%20input%20with%20a%20Go%20CLI&amp;summary=3%20ways%20to%20read%20input%20with%20a%20Go%20CLI&amp;source=https%3a%2f%2fwww.mizouzie.dev%2farticles%2f3-ways-to-read-input-with-go-cli%2f">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-288.985,423.278l0,-225.717l-75.04,0l0,225.717l75.04,0Zm270.539,0l0,-129.439c0,-69.333 -37.018,-101.586 -86.381,-101.586c-39.804,0 -57.634,21.891 -67.617,37.266l0,-31.958l-75.021,0c0.995,21.181 0,225.717 0,225.717l75.02,0l0,-126.056c0,-6.748 0.486,-13.492 2.474,-18.315c5.414,-13.475 17.767,-27.434 38.494,-27.434c27.135,0 38.007,20.707 38.007,51.037l0,120.768l75.024,0Zm-307.552,-334.556c-25.674,0 -42.448,16.879 -42.448,39.002c0,21.658 16.264,39.002 41.455,39.002l0.484,0c26.165,0 42.452,-17.344 42.452,-39.002c-0.485,-22.092 -16.241,-38.954 -41.943,-39.002Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share 3 ways to read input with a Go CLI on reddit"
+        href="https://reddit.com/submit?url=https%3a%2f%2fwww.mizouzie.dev%2farticles%2f3-ways-to-read-input-with-go-cli%2f&title=3%20ways%20to%20read%20input%20with%20a%20Go%20CLI">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-3.446,265.638c0,-22.964 -18.616,-41.58 -41.58,-41.58c-11.211,0 -21.361,4.457 -28.841,11.666c-28.424,-20.508 -67.586,-33.757 -111.204,-35.278l18.941,-89.121l61.884,13.157c0.756,15.734 13.642,28.29 29.56,28.29c16.407,0 29.706,-13.299 29.706,-29.701c0,-16.403 -13.299,-29.702 -29.706,-29.702c-11.666,0 -21.657,6.792 -26.515,16.578l-69.105,-14.69c-1.922,-0.418 -3.939,-0.042 -5.585,1.036c-1.658,1.073 -2.811,2.761 -3.224,4.686l-21.152,99.438c-44.258,1.228 -84.046,14.494 -112.837,35.232c-7.468,-7.164 -17.589,-11.591 -28.757,-11.591c-22.965,0 -41.585,18.616 -41.585,41.58c0,16.896 10.095,31.41 24.568,37.918c-0.639,4.135 -0.99,8.328 -0.99,12.576c0,63.977 74.469,115.836 166.33,115.836c91.861,0 166.334,-51.859 166.334,-115.836c0,-4.218 -0.347,-8.387 -0.977,-12.493c14.564,-6.47 24.735,-21.034 24.735,-38.001Zm-119.474,108.193c-20.27,20.241 -59.115,21.816 -70.534,21.816c-11.428,0 -50.277,-1.575 -70.522,-21.82c-3.007,-3.008 -3.007,-7.882 0,-10.889c3.003,-2.999 7.882,-3.003 10.885,0c12.777,12.781 40.11,17.317 59.637,17.317c19.522,0 46.86,-4.536 59.657,-17.321c3.016,-2.999 7.886,-2.995 10.885,0.008c3.008,3.011 3.003,7.882 -0.008,10.889Zm-5.23,-48.781c-16.373,0 -29.701,-13.324 -29.701,-29.698c0,-16.381 13.328,-29.714 29.701,-29.714c16.378,0 29.706,13.333 29.706,29.714c0,16.374 -13.328,29.698 -29.706,29.698Zm-160.386,-29.702c0,-16.381 13.328,-29.71 29.714,-29.71c16.369,0 29.689,13.329 29.689,29.71c0,16.373 -13.32,29.693 -29.689,29.693c-16.386,0 -29.714,-13.32 -29.714,-29.693Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share 3 ways to read input with a Go CLI on facebook"
+        href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fwww.mizouzie.dev%2farticles%2f3-ways-to-read-input-with-go-cli%2f">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-106.468,0l0,-192.915l66.6,0l12.672,-82.621l-79.272,0l0,-53.617c0,-22.603 11.073,-44.636 46.58,-44.636l36.042,0l0,-70.34c0,0 -32.71,-5.582 -63.982,-5.582c-65.288,0 -107.96,39.569 -107.96,111.204l0,62.971l-72.573,0l0,82.621l72.573,0l0,192.915l-191.104,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Z" />
+        </svg>
+    </a>
+    
+
+
+
+
+</div>
+<br><br>
+  </footer>
+  <div class="" style="margin-top: 1rem;">
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "web-with-mizouzie" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  </div>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>made by MizouziE</span>
+      
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerText = 'copy';
+
+        function copyingDone() {
+            copybutton.innerText = 'copied!';
+            setTimeout(() => {
+                copybutton.innerText = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

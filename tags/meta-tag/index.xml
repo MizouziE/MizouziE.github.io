@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>meta tag on web with mizouzie</title>
-    <link>https://mizouzie.github.io/tags/meta-tag/</link>
+    <link>https://www.mizouzie.dev/tags/meta-tag/</link>
     <description>Recent content in meta tag on web with mizouzie</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>made by MizouziE</copyright>
-    <lastBuildDate>Thu, 16 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://mizouzie.github.io/tags/meta-tag/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 16 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.mizouzie.dev/tags/meta-tag/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to make your GitHub project pop on social media</title>
-      <link>https://mizouzie.github.io/articles/make-your-github-project-stand-out/</link>
+      <link>https://www.mizouzie.dev/articles/make-your-github-project-stand-out/</link>
       <pubDate>Thu, 16 Feb 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://mizouzie.github.io/articles/make-your-github-project-stand-out/</guid>
+      <guid>https://www.mizouzie.dev/articles/make-your-github-project-stand-out/</guid>
       <description>The Problem Working on an open source project is one of the best things a developer can do. The opportunities to learn and network are huge compared working on solo projects. The only way I can think of getting even more out of open source than contributing is to actually create and manage a project yourself. I tried this, early on in my career in tech and it was like strapping two great big rockets to my back.</description>
     </item>
     
     <item>
       <title>How I just customised my featured link thumbnail</title>
-      <link>https://mizouzie.github.io/articles/customised-featured-link-thumbnail/</link>
+      <link>https://www.mizouzie.dev/articles/customised-featured-link-thumbnail/</link>
       <pubDate>Tue, 19 Apr 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://mizouzie.github.io/articles/customised-featured-link-thumbnail/</guid>
+      <guid>https://www.mizouzie.dev/articles/customised-featured-link-thumbnail/</guid>
       <description>I had spent a few days building a demonstration of what I am capable of using HTML, CSS and JavaScript. The next step was to show it off! So after hosting it using GitHub pages it was time to share it around in as many places as possible in the hope of it being noticed.
 But there was one problem&amp;hellip; when I shared it on my LinkedIn profile, front and centre in the &amp;ldquo;Featured&amp;rdquo; section, the thumbnail was a bland and generic grey rectangle.</description>
     </item>

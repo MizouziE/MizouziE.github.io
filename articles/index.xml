@@ -2,150 +2,160 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Articles on web with mizouzie</title>
-    <link>https://mizouzie.github.io/articles/</link>
+    <link>https://www.mizouzie.dev/articles/</link>
     <description>Recent content in Articles on web with mizouzie</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>made by MizouziE</copyright>
-    <lastBuildDate>Mon, 20 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://mizouzie.github.io/articles/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 23 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.mizouzie.dev/articles/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>3 ways to read input with a Go CLI</title>
+      <link>https://www.mizouzie.dev/articles/3-ways-to-read-input-with-go-cli/</link>
+      <pubDate>Thu, 23 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.mizouzie.dev/articles/3-ways-to-read-input-with-go-cli/</guid>
+      <description>Go, or Golang, is a wonderfully simple and robust language for building back end and data processing applications. In order to process data, we will need to know how to read data. Here are 3 different ways to achieve that before your application gets to crunching bytes.
+Packages Go is a modular language with a strong standard library. We&amp;rsquo;ll remain inside the realms of standard and still have a comfortable amount of options.</description>
+    </item>
+    
     <item>
       <title>New Side Project - AI as a Creator</title>
-      <link>https://mizouzie.github.io/articles/new-side-project-ai-as-a-creator/</link>
+      <link>https://www.mizouzie.dev/articles/new-side-project-ai-as-a-creator/</link>
       <pubDate>Mon, 20 Feb 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://mizouzie.github.io/articles/new-side-project-ai-as-a-creator/</guid>
+      <guid>https://www.mizouzie.dev/articles/new-side-project-ai-as-a-creator/</guid>
       <description>I am excited to announce the launch of a side-project that acts as a sort of recycling plant for the content I will be generating over the course of a current work project. It will be like a document to what I learn about interacting with the machine learning language model Davinci from OpenAI and the image generating model from Midjourney.
 I was really taken aback by the abilities of these tools, much like everyone else that have tried them, and when I was told that I would get free reign to try out the language model and build something off the back of it I was excited to say the least.</description>
     </item>
     
     <item>
       <title>How to make your GitHub project pop on social media</title>
-      <link>https://mizouzie.github.io/articles/make-your-github-project-stand-out/</link>
+      <link>https://www.mizouzie.dev/articles/make-your-github-project-stand-out/</link>
       <pubDate>Thu, 16 Feb 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://mizouzie.github.io/articles/make-your-github-project-stand-out/</guid>
+      <guid>https://www.mizouzie.dev/articles/make-your-github-project-stand-out/</guid>
       <description>The Problem Working on an open source project is one of the best things a developer can do. The opportunities to learn and network are huge compared working on solo projects. The only way I can think of getting even more out of open source than contributing is to actually create and manage a project yourself. I tried this, early on in my career in tech and it was like strapping two great big rockets to my back.</description>
     </item>
     
     <item>
       <title>Why I won&#39;t use AI on this blog</title>
-      <link>https://mizouzie.github.io/articles/why-i-wont-use-ai/</link>
+      <link>https://www.mizouzie.dev/articles/why-i-wont-use-ai/</link>
       <pubDate>Tue, 14 Feb 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://mizouzie.github.io/articles/why-i-wont-use-ai/</guid>
+      <guid>https://www.mizouzie.dev/articles/why-i-wont-use-ai/</guid>
       <description>Where I won&amp;rsquo;t use AI As you&amp;rsquo;ve probably already spotted, the image for this article is, in fact, an AI generated image. I will go into detail about the image itself later in this post, but I want to assure you that I am not trying to pull the wool over your eyes!
 What I mean when I say that I won&amp;rsquo;t use artificial intelligence is that I will not use it for any of the written content that you will find here in this blog.</description>
     </item>
     
     <item>
       <title>Developing a Laravel Application using Tinker</title>
-      <link>https://mizouzie.github.io/articles/developing-a-laravel-app-using-tinker/</link>
+      <link>https://www.mizouzie.dev/articles/developing-a-laravel-app-using-tinker/</link>
       <pubDate>Wed, 08 Feb 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://mizouzie.github.io/articles/developing-a-laravel-app-using-tinker/</guid>
+      <guid>https://www.mizouzie.dev/articles/developing-a-laravel-app-using-tinker/</guid>
       <description>What is Laravel Tinker? The short answer is that it&amp;rsquo;s a super power they give you when you boot up your Laravel application. All you type into the terminal:
 ./artisan tinker OR EVEN... ./artisan tink This command boots up the built in REPL that is based on PsySH. REPL stands for; Read the user input, Evaluate the input, Print the resulting output and Loop back again to await further input. What kind of input and what kind of output though?</description>
     </item>
     
     <item>
       <title>Why use Docker for databases and how</title>
-      <link>https://mizouzie.github.io/articles/why-use-docker-for-databases-and-how/</link>
+      <link>https://www.mizouzie.dev/articles/why-use-docker-for-databases-and-how/</link>
       <pubDate>Sun, 05 Feb 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://mizouzie.github.io/articles/why-use-docker-for-databases-and-how/</guid>
+      <guid>https://www.mizouzie.dev/articles/why-use-docker-for-databases-and-how/</guid>
       <description>Sections
 What is Docker Docker is a tool used to create what are known as containers, yes you can imagine it like a shipping container on a cargo ship (hence the company&amp;rsquo;s logo/mascot, Moby). The containers themselves are like small virtual machines that run a specific package of software that is defined by something called an image. The image tells Docker exactly what the small virtual machine needs to be and do and Docker creates a software only version of exactly that which runs on your host machine but still completely separate from your machine.</description>
     </item>
     
     <item>
       <title>Re-reading my old blogs</title>
-      <link>https://mizouzie.github.io/articles/re-reading-old-blogs/</link>
+      <link>https://www.mizouzie.dev/articles/re-reading-old-blogs/</link>
       <pubDate>Thu, 02 Feb 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://mizouzie.github.io/articles/re-reading-old-blogs/</guid>
+      <guid>https://www.mizouzie.dev/articles/re-reading-old-blogs/</guid>
       <description>When I first started writing about the things I was doing while learning how to code, I honestly don’t think I had any particular future plans in mind. I’d read various sources on the web and saw that it could be beneficial in finding a job, and even though I didn’t necessarily believe it would make a huge difference, I did it anyway. Over the first few months I wrote 9 articles covering the things that stuck out the most for me at the time.</description>
     </item>
     
     <item>
       <title>-r(ead)w(rite)x(ecute): Documentation</title>
-      <link>https://mizouzie.github.io/articles/rwx/</link>
+      <link>https://www.mizouzie.dev/articles/rwx/</link>
       <pubDate>Tue, 09 Aug 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://mizouzie.github.io/articles/rwx/</guid>
+      <guid>https://www.mizouzie.dev/articles/rwx/</guid>
       <description>I&amp;rsquo;ve hit a year now working as part of a development team with PHP and Laravel. Before I was ever involved, the project I&amp;rsquo;ve worked most on was already running and comprised of a RESTful API, a CMS and umpteen instances of frontend applications that showed all the wonderfully managed data to the end users.
 Even though I&amp;rsquo;ve probably spent a few hours a day working here and there with the various code bases, I&amp;rsquo;ve only very recently felt like I know the ins and outs of how it works and that is thanks to having been given the task of writing the documentation for the whole thing.</description>
     </item>
     
     <item>
       <title>L.I.F.T - the anti-advice that could save you</title>
-      <link>https://mizouzie.github.io/articles/l-i-f-t/</link>
+      <link>https://www.mizouzie.dev/articles/l-i-f-t/</link>
       <pubDate>Tue, 31 May 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://mizouzie.github.io/articles/l-i-f-t/</guid>
+      <guid>https://www.mizouzie.dev/articles/l-i-f-t/</guid>
       <description>Leave It For Tomorrow  Seemingly controversial advice to give, but hear me out.
 When coding, at least learning to code, you will not only find yourself facing brand new subject matter constantly, but often trying to implement that new thing at the same time. The code you write is always to solve a problem and there are always a multitude of ways to solve it. You&amp;rsquo;ll have to choose which path you take according to other dependencies and the structure you&amp;rsquo;re using.</description>
     </item>
     
     <item>
       <title>Recognise struggle for what it is</title>
-      <link>https://mizouzie.github.io/articles/recognise-struggle/</link>
+      <link>https://www.mizouzie.dev/articles/recognise-struggle/</link>
       <pubDate>Wed, 18 May 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://mizouzie.github.io/articles/recognise-struggle/</guid>
+      <guid>https://www.mizouzie.dev/articles/recognise-struggle/</guid>
       <description>In Greek mythology, Sisyphus or Sisyphos (/ˈsɪsɪfəs/; Ancient Greek: Σίσυφος Sísyphos) was the founder and king of Ephyra (now known as Corinth). Zeus punished him for cheating death twice by being forced to roll an immense boulder up a hill only for it to roll down every time it neared the top, repeating this action for eternity. Through the classical influence on modern culture, tasks that are both laborious and futile are therefore described as Sisyphean (/sɪsɪˈfiːən/).</description>
     </item>
     
     <item>
       <title>If it doesn&#39;t make sense, build a little version</title>
-      <link>https://mizouzie.github.io/articles/build-a-little-version/</link>
+      <link>https://www.mizouzie.dev/articles/build-a-little-version/</link>
       <pubDate>Sun, 15 May 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://mizouzie.github.io/articles/build-a-little-version/</guid>
+      <guid>https://www.mizouzie.dev/articles/build-a-little-version/</guid>
       <description>I have learnt a lot in the last few weeks and it was thanks to taking on a personal project that was a vastly scaled down version of what I have been working with this past year. What I have learnt was not necessarily fresh knowledge, but more an understanding that had previously evaded me. The reason I hadn&amp;rsquo;t understood a lot of the concepts I was facing was because I had not built the original codebase to the original specs, I was just introduced to it in small sections and asked to work on individual features.</description>
     </item>
     
     <item>
       <title>My Top 3 Benefits of Open Source Contribution</title>
-      <link>https://mizouzie.github.io/articles/benefits-of-os/</link>
+      <link>https://www.mizouzie.dev/articles/benefits-of-os/</link>
       <pubDate>Fri, 29 Apr 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://mizouzie.github.io/articles/benefits-of-os/</guid>
+      <guid>https://www.mizouzie.dev/articles/benefits-of-os/</guid>
       <description>You simply cannot be in web or software development and not have heard of Open Source Software. In case your computer/laptop/phone somehow has no internet connection, it&amp;rsquo;s a piece of software written by a group of developers in the public domain that can potentially accept help from anyone, anywhere. A beautifully utopian idea with roots as far back as the 60&amp;rsquo;s that has flourished over the last few decades as the world became more tech-dependant and interconnected.</description>
     </item>
     
     <item>
       <title>Heroku vs Laravel (vs me...)</title>
-      <link>https://mizouzie.github.io/articles/heroku-vs-laravel/</link>
+      <link>https://www.mizouzie.dev/articles/heroku-vs-laravel/</link>
       <pubDate>Tue, 26 Apr 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://mizouzie.github.io/articles/heroku-vs-laravel/</guid>
+      <guid>https://www.mizouzie.dev/articles/heroku-vs-laravel/</guid>
       <description>The first time I attempted to deploy a Laravel project onto the popular hosting service Heroku I did not get very far. I found a number of helpful tutorials just with a few google searches, but none of them actually got me across the finish line. It was my first actual attempt at &amp;ldquo;going live&amp;rdquo; and the whole thing left me somewhat bemused and painfully aware of my lack of understanding.</description>
     </item>
     
     <item>
       <title>Starting is one thing, STOPPING is another</title>
-      <link>https://mizouzie.github.io/articles/know-when-to-stop/</link>
+      <link>https://www.mizouzie.dev/articles/know-when-to-stop/</link>
       <pubDate>Fri, 22 Apr 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://mizouzie.github.io/articles/know-when-to-stop/</guid>
+      <guid>https://www.mizouzie.dev/articles/know-when-to-stop/</guid>
       <description>Getting started in web development was one of the best decisions I ever made. It&amp;rsquo;s challenging, fulfilling and has so many avenues of opportunity. I will say, when I first started and began to recognise the scope of it I was a little taken aback. My main thoughts were:
  I&amp;rsquo;ll take forever to reach an employable level All of this is completely foreign to me This stuff is way more complicated under the nice polished UI  My natural instinct to such a seemingly daunting task was to go full throttle for as long as I possibly could to get as far ahead in a short space of time.</description>
     </item>
     
     <item>
       <title>Why I&#39;m glad I used QuickAdminPanel today</title>
-      <link>https://mizouzie.github.io/articles/quickadminpanel/</link>
+      <link>https://www.mizouzie.dev/articles/quickadminpanel/</link>
       <pubDate>Wed, 20 Apr 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://mizouzie.github.io/articles/quickadminpanel/</guid>
+      <guid>https://www.mizouzie.dev/articles/quickadminpanel/</guid>
       <description>I&amp;rsquo;m familiar with Laravel and I&amp;rsquo;m fairly familiar with Livewire and AlpineJS, so by rights I should be fine building admin panels from scratch with the tools provided by this framework and packages. In theory. In reality, for me, even though I&amp;rsquo;m not a total beginner it&amp;rsquo;d take me over an hour to build it properly and then another hour to get it all working properly with model relationships, views, components and routes all doing what they&amp;rsquo;re supposed to.</description>
     </item>
     
     <item>
       <title>How I just customised my featured link thumbnail</title>
-      <link>https://mizouzie.github.io/articles/customised-featured-link-thumbnail/</link>
+      <link>https://www.mizouzie.dev/articles/customised-featured-link-thumbnail/</link>
       <pubDate>Tue, 19 Apr 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://mizouzie.github.io/articles/customised-featured-link-thumbnail/</guid>
+      <guid>https://www.mizouzie.dev/articles/customised-featured-link-thumbnail/</guid>
       <description>I had spent a few days building a demonstration of what I am capable of using HTML, CSS and JavaScript. The next step was to show it off! So after hosting it using GitHub pages it was time to share it around in as many places as possible in the hope of it being noticed.
 But there was one problem&amp;hellip; when I shared it on my LinkedIn profile, front and centre in the &amp;ldquo;Featured&amp;rdquo; section, the thumbnail was a bland and generic grey rectangle.</description>
     </item>
