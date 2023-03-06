@@ -2,37 +2,43 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.mizouzie.dev/articles/3-ways-to-read-input-with-go-cli/</loc>
-    <lastmod>2023-02-23T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://www.mizouzie.dev/articles/</loc>
-    <lastmod>2023-02-23T00:00:00+00:00</lastmod>
+    <lastmod>2023-03-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.mizouzie.dev/categories/</loc>
-    <lastmod>2023-02-23T00:00:00+00:00</lastmod>
+    <lastmod>2023-03-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.mizouzie.dev/categories/</loc>
+    <lastmod>2023-03-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.mizouzie.dev/articles/common-function-comparisons-in-php/</loc>
+    <lastmod>2023-03-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.mizouzie.dev/tags/learning/</loc>
+    <lastmod>2023-03-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.mizouzie.dev/tags/php/</loc>
+    <lastmod>2023-03-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.mizouzie.dev/tags/</loc>
+    <lastmod>2023-03-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.mizouzie.dev/tags/web-dev/</loc>
+    <lastmod>2023-03-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.mizouzie.dev/categories/web-development/</loc>
+    <lastmod>2023-03-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.mizouzie.dev/</loc>
+    <lastmod>2023-03-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.mizouzie.dev/articles/3-ways-to-read-input-with-go-cli/</loc>
     <lastmod>2023-02-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.mizouzie.dev/tags/cli/</loc>
     <lastmod>2023-02-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.mizouzie.dev/tags/golang/</loc>
-    <lastmod>2023-02-23T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.mizouzie.dev/tags/learning/</loc>
-    <lastmod>2023-02-23T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.mizouzie.dev/tags/</loc>
-    <lastmod>2023-02-23T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.mizouzie.dev/tags/web-dev/</loc>
-    <lastmod>2023-02-23T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.mizouzie.dev/categories/web-development/</loc>
-    <lastmod>2023-02-23T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.mizouzie.dev/</loc>
     <lastmod>2023-02-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.mizouzie.dev/tags/artificial-intelligence/</loc>

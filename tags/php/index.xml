@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PHP on web with mizouzie</title>
+    <link>https://www.mizouzie.dev/tags/php/</link>
+    <description>Recent content in PHP on web with mizouzie</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>made by MizouziE</copyright>
+    <lastBuildDate>Sat, 04 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.mizouzie.dev/tags/php/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Common Function Comparisons in PHP</title>
+      <link>https://www.mizouzie.dev/articles/common-function-comparisons-in-php/</link>
+      <pubDate>Sat, 04 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.mizouzie.dev/articles/common-function-comparisons-in-php/</guid>
+      <description>PHP Functions PHP is an arsenal of tools that can process data in a multitude of ways. This is one of the reasons that it powers ~75% of website server-side code. It is fast, has huge support and scales very well.
+If you were to investigate how many core functions PHP has on v8.1.2 you would find:
+&amp;gt;&amp;gt;&amp;gt; $funcs = get_defined_functions(); =&amp;gt; [ &amp;#34;internal&amp;#34; =&amp;gt; [ &amp;#34;zend_version&amp;#34;, &amp;#34;func_num_args&amp;#34;, &amp;#34;func_get_arg&amp;#34;, &amp;#34;func_get_args&amp;#34;, &amp;#34;strlen&amp;#34;, &amp;#34;strcmp&amp;#34;, &amp;#34;strncmp&amp;#34;, &amp;#34;strcasecmp&amp;#34;, &amp;#34;strncasecmp&amp;#34;, &amp;#34;error_reporting&amp;#34;, &amp;#34;define&amp;#34;, &amp;#34;defined&amp;#34;, &amp;#34;get_class&amp;#34;, &amp;#34;get_called_class&amp;#34;, &amp;#34;get_parent_class&amp;#34;, &amp;#34;is_subclass_of&amp;#34;, &amp;#34;is_a&amp;#34;, &amp;#34;get_class_vars&amp;#34;, &amp;#34;get_object_vars&amp;#34;, &amp;#34;get_mangled_object_vars&amp;#34;, &amp;#34;get_class_methods&amp;#34;, : &amp;gt;&amp;gt;&amp;gt; echo count($funcs[&amp;#39;internal&amp;#39;]); =&amp;gt; 1735 That is not a small amount by any means, so it is impossible to know them all.</description>
+    </item>
+    
+  </channel>
+</rss>

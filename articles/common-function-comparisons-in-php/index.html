@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Common Function Comparisons in PHP | web with mizouzie</title>
+<meta name="keywords" content="web dev, PHP, learning" />
+<meta name="google-site-verification" content="psw8-5863N9APj0ZK5Lg3BMygE0vQEYIB7q2uJq-FPo" />
+<meta property="og:image" content="https://www.mizouzie.dev/images/php-function-comparison.png">
+<meta property="og:image:width" content="605">
+<meta property="og:image:height" content="485">
+<meta property="og:title" content="Common Function Comparisons in PHP | web with mizouzie">
+<meta name="og:description" content="How do you decide between two functions that, at a glance, seem to do the same thing? Let&#39;s pick apart the differences to try and make it easier.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.mizouzie.dev/articles/common-function-comparisons-in-php/">
+<meta property="twitter:title" content="Common Function Comparisons in PHP | web with mizouzie">
+<meta name="twitter:description" content="How do you decide between two functions that, at a glance, seem to do the same thing? Let&#39;s pick apart the differences to try and make it easier.">
+<meta property="twitter:image" content="https://www.mizouzie.dev/images/php-function-comparison.png">
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:site" content="@mizouzie">
+<meta property="twitter:creator" content="@mizouzie">
+<meta name="description" content="How do you decide between two functions that, at a glance, seem to do the same thing? Let&#39;s pick apart the differences to try and make it easier.">
+<meta name="author" content="Sam Anglin">
+<link rel="canonical" href="https://www.mizouzie.dev/articles/common-function-comparisons-in-php/" />
+<link crossorigin="anonymous" href="/assets/css/stylesheet.min.0ac770afc45e80985c558011d8cee2422fedcc00570cc18ba1da4d97bbb4122e.css" integrity="sha256-Csdwr8RegJhcVYAR2M7iQi/tzABXDMGLodpNl7u0Ei4=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.min.7680afc38aa6b15ddf158a4f3780b7b1f7dde7e91d26f073e6229bb7a0793c92.js" integrity="sha256-doCvw4qmsV3fFYpPN4C3sffd5&#43;kdJvBz5iKbt6B5PJI="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://www.mizouzie.dev/images/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://www.mizouzie.dev/images/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://www.mizouzie.dev/images/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://www.mizouzie.dev/images/apple-touch-icon.png">
+<link rel="mask-icon" href="https://www.mizouzie.dev/images/apple-touch-icon.png">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://www.mizouzie.dev/" accesskey="h" title="web with mizouzie (Alt + H)">web with mizouzie</a>
+            <span class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </span>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="/" title="Home"><span>Home</span></a>
+            </li>
+            <li>
+                <a href="https://www.mizouzie.dev/articles/" title="Articles">
+                    <span>Articles</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.mizouzie.dev/categories/" title="Categories">
+                    <span>Categories</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.mizouzie.dev/projects/" title="Projects">
+                    <span>Projects</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.mizouzie.dev/contact/" title="Contact">
+                    <span>Contact</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://www.mizouzie.dev/">Home</a>&nbsp;»&nbsp;<a href="https://www.mizouzie.dev/articles/">Articles</a></div>
+    <h1 class="post-title">
+      Common Function Comparisons in PHP
+    </h1>
+    <div class="post-description">
+      How do you decide between two functions that, at a glance, seem to do the same thing? Let&#39;s pick apart the differences to try and make it easier.
+    </div>
+    <div class="post-meta"><span title='2023-03-04 00:00:00 +0000 UTC'>March 4, 2023</span>&nbsp;·&nbsp;7 min&nbsp;·&nbsp;Sam Anglin</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#php-functions" aria-label="PHP Functions">PHP Functions</a><ul>
+                        
+                <li>
+                    <a href="#most-commonly-used" aria-label="Most commonly used">Most commonly used</a></li></ul>
+                </li>
+                <li>
+                    <a href="#compared-to-their-closest-cousins" aria-label="Compared to their closest cousins">Compared to their closest cousins</a><ul>
+                        
+                <li>
+                    <a href="#implode-vs-join" aria-label="implode() vs join()">implode() vs join()</a></li>
+                <li>
+                    <a href="#count-vs-if-count" aria-label="count() vs if (!count())">count() vs if (!count())</a></li>
+                <li>
+                    <a href="#explode-vs-str_split-vs-str_tok" aria-label="explode() vs str_split() vs str_tok()">explode() vs str_split() vs str_tok()</a></li>
+                <li>
+                    <a href="#trim-vs-ltrim-vs-rtrim-vs-preg_replace" aria-label="trim() vs ltrim() vs rtrim() vs preg_replace()">trim() vs ltrim() vs rtrim() vs preg_replace()</a></li>
+                <li>
+                    <a href="#strtr-vs-str_replace" aria-label="strtr() vs str_replace()">strtr() vs str_replace()</a></li></ul>
+                </li>
+                <li>
+                    <a href="#summary" aria-label="Summary">Summary</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content">
+    <p><img loading="lazy" src="/images/php-function-comparison.png" alt="Making up your mind which PHP function to use"  />
+</p>
+<h2 id="php-functions">PHP Functions</h2>
+<p>PHP is an arsenal of tools that can process data in a multitude of ways. This is one of the reasons that it powers ~75% of website server-side code. It is fast, has huge support and scales very well.</p>
+<p>If you were to investigate how many core functions PHP has on v8.1.2 you would find:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">&gt;&gt;&gt; <span class="nv">$funcs</span> <span class="o">=</span> get_defined_functions<span class="o">()</span><span class="p">;</span>
+<span class="o">=</span>&gt; <span class="o">[</span>
+     <span class="s2">&#34;internal&#34;</span> <span class="o">=</span>&gt; <span class="o">[</span>
+       <span class="s2">&#34;zend_version&#34;</span>,
+       <span class="s2">&#34;func_num_args&#34;</span>,
+       <span class="s2">&#34;func_get_arg&#34;</span>,
+       <span class="s2">&#34;func_get_args&#34;</span>,
+       <span class="s2">&#34;strlen&#34;</span>,
+       <span class="s2">&#34;strcmp&#34;</span>,
+       <span class="s2">&#34;strncmp&#34;</span>,
+       <span class="s2">&#34;strcasecmp&#34;</span>,
+       <span class="s2">&#34;strncasecmp&#34;</span>,
+       <span class="s2">&#34;error_reporting&#34;</span>,
+       <span class="s2">&#34;define&#34;</span>,
+       <span class="s2">&#34;defined&#34;</span>,
+       <span class="s2">&#34;get_class&#34;</span>,
+       <span class="s2">&#34;get_called_class&#34;</span>,
+       <span class="s2">&#34;get_parent_class&#34;</span>,
+       <span class="s2">&#34;is_subclass_of&#34;</span>,
+       <span class="s2">&#34;is_a&#34;</span>,
+       <span class="s2">&#34;get_class_vars&#34;</span>,
+       <span class="s2">&#34;get_object_vars&#34;</span>,
+       <span class="s2">&#34;get_mangled_object_vars&#34;</span>,
+       <span class="s2">&#34;get_class_methods&#34;</span>,
+:
+
+&gt;&gt;&gt; <span class="nb">echo</span> count<span class="o">(</span><span class="nv">$funcs</span><span class="o">[</span><span class="s1">&#39;internal&#39;</span><span class="o">])</span><span class="p">;</span>
+<span class="o">=</span>&gt; <span class="m">1735</span>
+</code></pre></div><p>That is not a small amount by any means, so it is impossible to know them all. Even the most experienced PHP developers will regularly refer to <a href="https://www.php.net/">php.net</a> to look up which they can use for what.</p>
+<p>With 1735 functions being available, surely some must overlap or be similar. In this discussion we will look at the ones that seem like they could be the same thing and see if we can decide best use cases for each.</p>
+<h3 id="most-commonly-used">Most commonly used</h3>
+<p>Looking through <a href="https://www.exakat.io/en/the-100-php-functions-in-2022/">Exakat</a>&rsquo;s <em>top 100 php functions 2022</em>, we can see a few likely candidates to choose from. Lets take:</p>
+<ul>
+<li><a href="https://www.php.net/manual/en/function.implode">implode()</a></li>
+<li><a href="https://www.php.net/manual/en/function.count">count()</a></li>
+<li><a href="https://www.php.net/manual/en/function.explode">explode()</a></li>
+<li><a href="https://www.php.net/manual/en/function.trim">trim()</a></li>
+<li><a href="https://www.php.net/manual/en/function.strtr">strtr()</a></li>
+</ul>
+<blockquote>
+<p><sup>click on any to see the official definitions<sup></p>
+</blockquote>
+<h2 id="compared-to-their-closest-cousins">Compared to their closest cousins</h2>
+<h3 id="implode-vs-join">implode() vs join()</h3>
+<p>Join is actually just an alias, so they&rsquo;re exactly the same. Implode works like running:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="k">function</span> <span class="nf">implode</span><span class="p">(</span><span class="nx">string</span> <span class="nv">$separator</span><span class="p">,</span> <span class="k">array</span> <span class="nv">$arr</span><span class="p">)</span><span class="o">:</span> <span class="nx">string</span>
+<span class="p">{</span>
+    <span class="nv">$imploded</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">;</span>
+
+    <span class="k">foreach</span> <span class="p">(</span><span class="nv">$arr</span> <span class="k">as</span> <span class="nv">$index</span> <span class="o">=&gt;</span> <span class="nv">$str</span><span class="p">)</span> <span class="p">{</span>
+
+        <span class="k">switch</span> <span class="p">(</span><span class="nv">$index</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">case</span> <span class="o">!</span><span class="mi">0</span><span class="o">:</span>
+                <span class="nv">$imploded</span> <span class="o">.=</span> <span class="nv">$separator</span><span class="p">;</span>
+            <span class="k">default</span><span class="o">:</span>
+                <span class="nv">$imploded</span> <span class="o">.=</span> <span class="nv">$str</span><span class="p">;</span>
+                <span class="k">break</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+    <span class="k">return</span> <span class="nv">$imploded</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div><p>Going through the steps above, it does something along the lines of:</p>
+<ol>
+<li>Initiate an empty string variable as <code>$imploded</code></li>
+<li>Loop through the input array</li>
+<li>If the element of the array is at index 0, <strong>do not</strong> concatenate the separator to <code>$imploded</code></li>
+<li>Otherwise concatenate given separator string</li>
+<li>Concatenate element to <code>$imploded</code></li>
+<li>Repeat until all elements of array have been cycled</li>
+<li>Return fully constructed string <code>$imploded</code></li>
+</ol>
+<h3 id="count-vs-if-count">count() vs if (!count())</h3>
+<p>This function has such high popularity due to it being used commonly for frontend &ldquo;decision making&rdquo;. When choosing whether or not to display a particular component depending on there being any instances of something in the backend database, developers will call count() on a parameter passed to the view being displayed. The idea is that if it returns a &ldquo;truthy&rdquo; value, as in <strong>not</strong> 0, then it confirms the existence of at least one instance that parameter in the database.</p>
+<p>This can be fine for a single call and if there is not an enormous number of instances of that parameter. Often though, there will be a large number of conditional components which means multiple calls to count() which ends up counting an enormous amount of your database. This is not ideal for UX as it can make the page load excruciatingly slowly. There is a simple optimization demonstrated below:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="c1">// Rather than calling count() on everything like so...
+</span><span class="c1"></span><span class="o">&lt;?</span><span class="nx">php</span> <span class="k">if</span> <span class="p">(</span><span class="nv">$param</span><span class="o">-&gt;</span><span class="na">count</span><span class="p">())</span> <span class="p">{</span> <span class="cp">?&gt;</span><span class="err">
+</span><span class="err">  &lt;div&gt;Show this example HTML component!&lt;/div&gt;
+</span><span class="err">&lt;?php } else { ?&gt;
+</span><span class="err">  &lt;div&gt;Show alternate HTML or Nothing 🤷&lt;/div&gt;
+</span><span class="err">&lt;?php } ?&gt;
+</span><span class="err">
+</span><span class="err">// ...we can check NOT == 0 like this instead
+</span><span class="err">&lt;?php if (!$param-&gt;count()) { ?&gt;
+</span><span class="err">  &lt;div&gt;Show alternate HTML or Nothing 🤷&lt;/div&gt;
+</span><span class="err">&lt;?php } else { ?&gt;
+</span><span class="err">  &lt;div&gt;Show this example HTML component!&lt;/div&gt;
+</span><span class="err">&lt;?php } ?&gt;
+</span><span class="err">
+</span></code></pre></div><p>The optimized second option flips the original and checks only for a <strong>non-falsey</strong> value which is satisfied by the very first counter beyond 0. After that first 1 is counted, the rest of the code can move on and display the non-existent case or the existent case accordingly. We are effectively only &ldquo;counting&rdquo; a maximum of the number of calls to count as opposed to counting the number of calls to count <strong>multiplied</strong> by the number of instances of the counted records in the database. That time can add up! Count one or zero and move on.</p>
+<h3 id="explode-vs-str_split-vs-str_tok">explode() vs str_split() vs str_tok()</h3>
+<p>These functions are all about creating an iterable out of a given string, each splitting the string at a chosen point. The way that point is chosen differs depending on which function is called.</p>
+<ul>
+<li><code>explode()</code> searched through the string for a given sub-string and splits around that</li>
+<li><code>str_split()</code> simply counts out the specified number of bytes (i.e. characters in the ASCII set) and divides the string there, then starts counting again from the split to find the next split location.</li>
+<li><code>str_tok()</code> the same as explode() but does not return the whole split up string at once.</li>
+</ul>
+<p>The first two will return an array of the &ldquo;pieces&rdquo; of strings they have cut. This is handy when you need to derive a string from a url string, for example you can call:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="o">&gt;&gt;&gt;</span> <span class="nv">$string</span> <span class="o">=</span> <span class="s2">&#34;https://mizouzie.dev/articles/that/help/developers/learn&#34;</span><span class="p">;</span>
+<span class="o">=&gt;</span> <span class="s2">&#34;https://mizouzie.dev/articles/that/help/developers/learn&#34;</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">explode</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">,</span> <span class="nv">$string</span><span class="p">);</span>
+<span class="o">=&gt;</span> <span class="p">[</span>
+     <span class="s2">&#34;https:&#34;</span><span class="p">,</span>
+     <span class="s2">&#34;&#34;</span><span class="p">,</span>
+     <span class="s2">&#34;mizouzie.dev&#34;</span><span class="p">,</span>
+     <span class="s2">&#34;articles&#34;</span><span class="p">,</span>
+     <span class="s2">&#34;that&#34;</span><span class="p">,</span>
+     <span class="s2">&#34;help&#34;</span><span class="p">,</span>
+     <span class="s2">&#34;developers&#34;</span><span class="p">,</span>
+     <span class="s2">&#34;learn&#34;</span><span class="p">,</span>
+   <span class="p">]</span>
+</code></pre></div><p>While with str_split() you will give an integer value (n) and it splits the string after each nth character.</p>
+<p>The function str_tok() is the outlier here as it only returns the first section (or token, as the name suggests) on it&rsquo;s first call. The interesting thing is that it will return the <strong>next</strong> section on the next call, and the next one only on the next call after that and so on until it has none left to return and returns <code>false</code>. This makes it ideal for use within a loop, as the returning of a falsey value will break out of the loop. It just removes the step of <em>creating</em> the iterable array to <em>then</em> do something with it. You can just get right down to business with this one.</p>
+<h3 id="trim-vs-ltrim-vs-rtrim-vs-preg_replace">trim() vs ltrim() vs rtrim() vs preg_replace()</h3>
+<p>Trimming strings is a common necessity as many strings have invisible and undesirable baggage in the form of whitespace either lurking before or behind them. A string ending in a <em>new line</em> or <em>carriage return</em> character can wreak havoc on simple processing functions or scripts, so it is always wise to sanitize them with some sort of trim at the very least.</p>
+<ul>
+<li><code>trim()</code> indiscriminately removes whitespace from in front and behind a string</li>
+<li><code>ltrim()</code> &amp; <code>rtirm()</code> remove whitespace from the left and right of a string respectively</li>
+<li><code>preg_replace()</code> requires a little knowhow of the dark-art of regular expressions</li>
+</ul>
+<p>Should you be familiar or at least comfortable with regex, you may specify exactly what type of whitespace is removed, where it is removed from or even only remove it given certain conditions. It is like the super-max-pro Premium fully licensed version of the trimming functions before it, as well as much more.</p>
+<h3 id="strtr-vs-str_replace">strtr() vs str_replace()</h3>
+<p>For me, these two do the same thing. Search a string for a given substring, and then return that string with the substring replaced with a given alternative substring. Both accept arguments as strings or arrays, but there is a slight difference in <em>how</em> they accept the arrays.</p>
+<p>The arrays passed to str_replace() (notice the plural <strong>arrays</strong>) will be one array of search values and a second array of the search value&rsquo;s replacements. The search values and replacements will need to match up according to index in order to be executed properly.</p>
+<p>The <strong>single</strong> array passed to strtr() feels like a shortcut as the index <em>is</em> the search value and the value is the replacement. i.e. <code>['from this' =&gt; 'to that']</code>.</p>
+<p>The usefulness of this is determined by how you go about construction your arrays to be passed. In many cases it may be easier or faster to construct a single array with string indexes. For me, that option just feels more sensible, less room for error.</p>
+<h2 id="summary">Summary</h2>
+<p>Now that we have looked at some of the most common similarities and differences, I hope you will consider yourself well armed and well informed on the great choice of incredibly powerful weapons at your disposal!</p>
+<p><em>Now go slay some data.</em></p>
+<p><img loading="lazy" src="/images/choose-your-weapon.png" alt="choose your weapon"  />
+</p>
+
+  </div>
+
+  <footer class="post-footer">
+    
+    
+    <h3>See Also</h3>
+    <ul>
+      
+      <li><a href="/articles/3-ways-to-read-input-with-go-cli/">3 ways to read input with a Go CLI</a></li>
+      
+      <li><a href="/articles/why-use-docker-for-databases-and-how/">Why use Docker for databases and how</a></li>
+      
+      <li><a href="/articles/rwx/">-r(ead)w(rite)x(ecute): Documentation</a></li>
+      
+      <li><a href="/articles/build-a-little-version/">If it doesn&#39;t make sense, build a little version</a></li>
+      
+      <li><a href="/articles/benefits-of-os/">My Top 3 Benefits of Open Source Contribution</a></li>
+      
+    </ul>
+    
+    <ul class="post-tags">
+      <li><a href="https://www.mizouzie.dev/tags/web-dev/">web dev</a></li>
+      <li><a href="https://www.mizouzie.dev/tags/php/">PHP</a></li>
+      <li><a href="https://www.mizouzie.dev/tags/learning/">learning</a></li>
+    </ul>
+    <br>
+    <br>
+    <h4>Share this Post:</h4>
+
+<div class="share-buttons">
+    <a target="_blank" rel="noopener noreferrer" aria-label="share Common Function Comparisons in PHP on twitter"
+        href="https://twitter.com/intent/tweet/?text=Common%20Function%20Comparisons%20in%20PHP&amp;url=https%3a%2f%2fwww.mizouzie.dev%2farticles%2fcommon-function-comparisons-in-php%2f">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-253.927,424.544c135.939,0 210.268,-112.643 210.268,-210.268c0,-3.218 0,-6.437 -0.153,-9.502c14.406,-10.421 26.973,-23.448 36.935,-38.314c-13.18,5.824 -27.433,9.809 -42.452,11.648c15.326,-9.196 26.973,-23.602 32.49,-40.92c-14.252,8.429 -30.038,14.56 -46.896,17.931c-13.487,-14.406 -32.644,-23.295 -53.946,-23.295c-40.767,0 -73.87,33.104 -73.87,73.87c0,5.824 0.613,11.494 1.992,16.858c-61.456,-3.065 -115.862,-32.49 -152.337,-77.241c-6.284,10.881 -9.962,23.601 -9.962,37.088c0,25.594 13.027,48.276 32.95,61.456c-12.107,-0.307 -23.448,-3.678 -33.41,-9.196l0,0.92c0,35.862 25.441,65.594 59.311,72.49c-6.13,1.686 -12.72,2.606 -19.464,2.606c-4.751,0 -9.348,-0.46 -13.946,-1.38c9.349,29.426 36.628,50.728 68.965,51.341c-25.287,19.771 -57.164,31.571 -91.8,31.571c-5.977,0 -11.801,-0.306 -17.625,-1.073c32.337,21.15 71.264,33.41 112.95,33.41Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share Common Function Comparisons in PHP on linkedin"
+        href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fwww.mizouzie.dev%2farticles%2fcommon-function-comparisons-in-php%2f&amp;title=Common%20Function%20Comparisons%20in%20PHP&amp;summary=Common%20Function%20Comparisons%20in%20PHP&amp;source=https%3a%2f%2fwww.mizouzie.dev%2farticles%2fcommon-function-comparisons-in-php%2f">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-288.985,423.278l0,-225.717l-75.04,0l0,225.717l75.04,0Zm270.539,0l0,-129.439c0,-69.333 -37.018,-101.586 -86.381,-101.586c-39.804,0 -57.634,21.891 -67.617,37.266l0,-31.958l-75.021,0c0.995,21.181 0,225.717 0,225.717l75.02,0l0,-126.056c0,-6.748 0.486,-13.492 2.474,-18.315c5.414,-13.475 17.767,-27.434 38.494,-27.434c27.135,0 38.007,20.707 38.007,51.037l0,120.768l75.024,0Zm-307.552,-334.556c-25.674,0 -42.448,16.879 -42.448,39.002c0,21.658 16.264,39.002 41.455,39.002l0.484,0c26.165,0 42.452,-17.344 42.452,-39.002c-0.485,-22.092 -16.241,-38.954 -41.943,-39.002Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share Common Function Comparisons in PHP on reddit"
+        href="https://reddit.com/submit?url=https%3a%2f%2fwww.mizouzie.dev%2farticles%2fcommon-function-comparisons-in-php%2f&title=Common%20Function%20Comparisons%20in%20PHP">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-3.446,265.638c0,-22.964 -18.616,-41.58 -41.58,-41.58c-11.211,0 -21.361,4.457 -28.841,11.666c-28.424,-20.508 -67.586,-33.757 -111.204,-35.278l18.941,-89.121l61.884,13.157c0.756,15.734 13.642,28.29 29.56,28.29c16.407,0 29.706,-13.299 29.706,-29.701c0,-16.403 -13.299,-29.702 -29.706,-29.702c-11.666,0 -21.657,6.792 -26.515,16.578l-69.105,-14.69c-1.922,-0.418 -3.939,-0.042 -5.585,1.036c-1.658,1.073 -2.811,2.761 -3.224,4.686l-21.152,99.438c-44.258,1.228 -84.046,14.494 -112.837,35.232c-7.468,-7.164 -17.589,-11.591 -28.757,-11.591c-22.965,0 -41.585,18.616 -41.585,41.58c0,16.896 10.095,31.41 24.568,37.918c-0.639,4.135 -0.99,8.328 -0.99,12.576c0,63.977 74.469,115.836 166.33,115.836c91.861,0 166.334,-51.859 166.334,-115.836c0,-4.218 -0.347,-8.387 -0.977,-12.493c14.564,-6.47 24.735,-21.034 24.735,-38.001Zm-119.474,108.193c-20.27,20.241 -59.115,21.816 -70.534,21.816c-11.428,0 -50.277,-1.575 -70.522,-21.82c-3.007,-3.008 -3.007,-7.882 0,-10.889c3.003,-2.999 7.882,-3.003 10.885,0c12.777,12.781 40.11,17.317 59.637,17.317c19.522,0 46.86,-4.536 59.657,-17.321c3.016,-2.999 7.886,-2.995 10.885,0.008c3.008,3.011 3.003,7.882 -0.008,10.889Zm-5.23,-48.781c-16.373,0 -29.701,-13.324 -29.701,-29.698c0,-16.381 13.328,-29.714 29.701,-29.714c16.378,0 29.706,13.333 29.706,29.714c0,16.374 -13.328,29.698 -29.706,29.698Zm-160.386,-29.702c0,-16.381 13.328,-29.71 29.714,-29.71c16.369,0 29.689,13.329 29.689,29.71c0,16.373 -13.32,29.693 -29.689,29.693c-16.386,0 -29.714,-13.32 -29.714,-29.693Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share Common Function Comparisons in PHP on facebook"
+        href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fwww.mizouzie.dev%2farticles%2fcommon-function-comparisons-in-php%2f">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-106.468,0l0,-192.915l66.6,0l12.672,-82.621l-79.272,0l0,-53.617c0,-22.603 11.073,-44.636 46.58,-44.636l36.042,0l0,-70.34c0,0 -32.71,-5.582 -63.982,-5.582c-65.288,0 -107.96,39.569 -107.96,111.204l0,62.971l-72.573,0l0,82.621l72.573,0l0,192.915l-191.104,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Z" />
+        </svg>
+    </a>
+    
+
+
+
+
+</div>
+<br><br>
+  </footer>
+  <div class="" style="margin-top: 1rem;">
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "web-with-mizouzie" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  </div>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>made by MizouziE</span>
+      
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerText = 'copy';
+
+        function copyingDone() {
+            copybutton.innerText = 'copied!';
+            setTimeout(() => {
+                copybutton.innerText = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>
