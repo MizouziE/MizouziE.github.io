@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>How to Unlock Formkit Multistep forms on a Laravel Inertia app with Vue 3 | web with mizouzie</title>
+<meta name="keywords" content="web dev, laravel, vue, inertia, formkit" />
+<meta name="google-site-verification" content="psw8-5863N9APj0ZK5Lg3BMygE0vQEYIB7q2uJq-FPo" />
+<meta property="og:image" content="https://www.mizouzie.dev/images/unlock-formkit-in-vue.png">
+<meta property="og:image:width" content="629">
+<meta property="og:image:height" content="421">
+<meta property="og:title" content="How to Unlock Formkit Multistep forms on a Laravel Inertia app with Vue 3 | web with mizouzie">
+<meta name="og:description" content="Formkit offers a great Multi-Step tool for building forms in your Vue app, but getting it to work inside a Laravel Inertia app is a little tricky. Here is how to get it running.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.mizouzie.dev/articles/how-to-unlock-formkit-multistep-forms-on-laravel-inertia-app-with-vue-3/">
+<meta property="twitter:title" content="How to Unlock Formkit Multistep forms on a Laravel Inertia app with Vue 3 | web with mizouzie">
+<meta name="twitter:description" content="Formkit offers a great Multi-Step tool for building forms in your Vue app, but getting it to work inside a Laravel Inertia app is a little tricky. Here is how to get it running.">
+<meta property="twitter:image" content="https://www.mizouzie.dev/images/unlock-formkit-in-vue.png">
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:site" content="@mizouzie">
+<meta property="twitter:creator" content="@mizouzie">
+<meta name="description" content="Formkit offers a great Multi-Step tool for building forms in your Vue app, but getting it to work inside a Laravel Inertia app is a little tricky. Here is how to get it running.">
+<meta name="author" content="Sam Anglin">
+<link rel="canonical" href="https://www.mizouzie.dev/articles/how-to-unlock-formkit-multistep-forms-on-laravel-inertia-app-with-vue-3/" />
+<link crossorigin="anonymous" href="/assets/css/stylesheet.min.4afa54defc4d07364e3af84353a9681b92cb332cb1a4d77e657e43fd12bcf071.css" integrity="sha256-SvpU3vxNBzZOOvhDU6loG5LLMyyxpNd&#43;ZX5D/RK88HE=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.min.7680afc38aa6b15ddf158a4f3780b7b1f7dde7e91d26f073e6229bb7a0793c92.js" integrity="sha256-doCvw4qmsV3fFYpPN4C3sffd5&#43;kdJvBz5iKbt6B5PJI="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://www.mizouzie.dev/images/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://www.mizouzie.dev/images/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://www.mizouzie.dev/images/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://www.mizouzie.dev/images/apple-touch-icon.png">
+<link rel="mask-icon" href="https://www.mizouzie.dev/images/apple-touch-icon.png">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://www.mizouzie.dev/" accesskey="h" title="web with mizouzie (Alt + H)">web with mizouzie</a>
+            <span class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </span>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="/" title="Home"><span>Home</span></a>
+            </li>
+            <li>
+                <a href="https://www.mizouzie.dev/articles/" title="Articles">
+                    <span>Articles</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.mizouzie.dev/categories/" title="Categories">
+                    <span>Categories</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.mizouzie.dev/projects/" title="Projects">
+                    <span>Projects</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.mizouzie.dev/contact/" title="Contact">
+                    <span>Contact</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://www.mizouzie.dev/">Home</a>&nbsp;»&nbsp;<a href="https://www.mizouzie.dev/articles/">Articles</a></div>
+    <h1 class="post-title">
+      How to Unlock Formkit Multistep forms on a Laravel Inertia app with Vue 3
+    </h1>
+    <div class="post-description">
+      Formkit offers a great Multi-Step tool for building forms in your Vue app, but getting it to work inside a Laravel Inertia app is a little tricky. Here is how to get it running.
+    </div>
+    <div class="post-meta"><span title='2023-03-09 00:00:00 +0000 UTC'>March 9, 2023</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Sam Anglin</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#multi-step-forms" aria-label="Multi-Step Forms">Multi-Step Forms</a></li>
+                <li>
+                    <a href="#installing-formkit" aria-label="Installing Formkit">Installing Formkit</a><ul>
+                        
+                <li>
+                    <a href="#what-do-the-docs-say" aria-label="What do the docs say?">What do the docs say?</a></li>
+                <li>
+                    <a href="#the-slight-difference-for-inertia" aria-label="The slight difference for Inertia">The slight difference for Inertia</a></li></ul>
+                </li>
+                <li>
+                    <a href="#installing-multi-step-addon" aria-label="Installing Multi-Step addon">Installing Multi-Step addon</a><ul>
+                        
+                <li>
+                    <a href="#what-do-the-docs-say-1" aria-label="What do the docs say?">What do the docs say?</a></li>
+                <li>
+                    <a href="#the-slight-difference-for-inertia-1" aria-label="The slight difference for Inertia">The slight difference for Inertia</a></li></ul>
+                </li>
+                <li>
+                    <a href="#using-formkit" aria-label="Using Formkit">Using Formkit</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content">
+    <p><img loading="lazy" src="/images/unlock-formkit-in-vue.png" alt="unlocking formkit in vue 3 for laravel inertia"  />
+</p>
+<p>Formkit is a supercharger for developing applications on the already turbo platform of Laravel Inertia with Vue 3. It is a library of ready made components for building forms that make it very easy to construct any kind of form for retrieving user input. One of the features of this library that stood out the most for me was the <code>Multi-Step</code> forms.</p>
+<h2 id="multi-step-forms">Multi-Step Forms</h2>
+<p>So what is a multi-step form?</p>
+<p>It is a format that breaks the usual monotony of filling out a form for the user. It splits the form into smaller form-lets that helps to give a much nicer UX because they&rsquo;re not faced with such a huge list of questions all at once. The multi-step form can be split and navigated by tabs or a progress-map that resembles a London Underground map 😍</p>
+<p><img loading="lazy" src="/images/formkit-example.png" alt="An example of Formkit Multi-Step"  />
+</p>
+<p>So as developers, we want to provide this kind of experience for our application users. Formkit is a very well provided for library with extensive documentation for it&rsquo;s implementation into a standard Vue 3 project, but when I tried to put it into a Laravel Inertia app <em>using</em> Vue 3, it needed a little thinking outside of the dox.</p>
+<h2 id="installing-formkit">Installing Formkit</h2>
+<h3 id="what-do-the-docs-say">What do the docs say?</h3>
+<p><a href="https://formkit.com/getting-started/installation#with-vue">Here you can check the Vue specific docs</a> for the initial Formkit installation. They are nice and straightforward, but following these to the letter does not give us the desired result.</p>
+<p>We will install with npm:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">npm install @formkit/vue
+</code></pre></div><h3 id="the-slight-difference-for-inertia">The slight difference for Inertia</h3>
+<p>Now to get it working in our case, we need to have our <code>app.js</code> looking like this:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="kr">import</span> <span class="s1">&#39;./bootstrap&#39;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="s1">&#39;../css/app.css&#39;</span><span class="p">;</span>
+
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">createApp</span><span class="p">,</span> <span class="nx">h</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;vue&#39;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">createInertiaApp</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;@inertiajs/vue3&#39;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">resolvePageComponent</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;laravel-vite-plugin/inertia-helpers&#39;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">ZiggyVue</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;../../vendor/tightenco/ziggy/dist/vue.m&#39;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">plugin</span> <span class="nx">as</span> <span class="nx">formkitPlugin</span><span class="p">,</span> <span class="nx">defaultConfig</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;@formkit/vue&#39;</span><span class="p">;</span>
+
+<span class="kr">const</span> <span class="nx">appName</span> <span class="o">=</span> <span class="nb">window</span><span class="p">.</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="s1">&#39;title&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span><span class="o">?</span><span class="p">.</span><span class="nx">innerText</span> <span class="o">||</span> <span class="s1">&#39;Laravel&#39;</span><span class="p">;</span>
+
+<span class="nx">createInertiaApp</span><span class="p">({</span>
+    <span class="nx">title</span><span class="o">:</span> <span class="p">(</span><span class="nx">title</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="sb">`</span><span class="si">${</span><span class="nx">title</span><span class="si">}</span><span class="sb"> - </span><span class="si">${</span><span class="nx">appName</span><span class="si">}</span><span class="sb">`</span><span class="p">,</span>
+    <span class="nx">resolve</span><span class="o">:</span> <span class="p">(</span><span class="nx">name</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="nx">resolvePageComponent</span><span class="p">(</span><span class="sb">`./Pages/</span><span class="si">${</span><span class="nx">name</span><span class="si">}</span><span class="sb">.vue`</span><span class="p">,</span> <span class="kr">import</span><span class="p">.</span><span class="nx">meta</span><span class="p">.</span><span class="nx">glob</span><span class="p">(</span><span class="s1">&#39;./Pages/**/*.vue&#39;</span><span class="p">)),</span>
+    <span class="nx">setup</span><span class="p">({</span> <span class="nx">el</span><span class="p">,</span> <span class="nx">App</span><span class="p">,</span> <span class="nx">props</span><span class="p">,</span> <span class="nx">plugin</span> <span class="p">})</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="nx">createApp</span><span class="p">({</span> <span class="nx">render</span><span class="o">:</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="nx">h</span><span class="p">(</span><span class="nx">App</span><span class="p">,</span> <span class="nx">props</span><span class="p">)</span> <span class="p">})</span>
+            <span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="nx">plugin</span><span class="p">)</span>
+            <span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="nx">ZiggyVue</span><span class="p">,</span> <span class="nx">Ziggy</span><span class="p">)</span>
+            <span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="nx">formkitPlugin</span><span class="p">,</span> <span class="nx">defaultConfig</span><span class="p">)</span>
+            <span class="p">.</span><span class="nx">mount</span><span class="p">(</span><span class="nx">el</span><span class="p">);</span>
+    <span class="p">},</span>
+    <span class="nx">progress</span><span class="o">:</span> <span class="p">{</span>
+        <span class="nx">color</span><span class="o">:</span> <span class="s1">&#39;#4B5563&#39;</span><span class="p">,</span>
+    <span class="p">},</span>
+<span class="p">});</span>
+</code></pre></div><p>The slight tweaks are evident on the <code>import</code> and then that same tweak is repeated inside the <code>use()</code> before the app is mounted.</p>
+<p>As we need to import &ldquo;plugin&rdquo; from formkit and we already <em>have</em> a &ldquo;plugin&rdquo; named in our <code>setup()</code> function, it is necessary to give the Formkit imported &ldquo;plugin&rdquo; an alias. Then later down the chain of <code>use()</code>&rsquo;s, we can provide that alias.</p>
+<h2 id="installing-multi-step-addon">Installing Multi-Step addon</h2>
+<h3 id="what-do-the-docs-say-1">What do the docs say?</h3>
+<p><a href="https://formkit.com/plugins/multi-step#installation">Here you can check the official docs</a> for installing the Multi-Step addon for Formkit.</p>
+<blockquote>
+<p>TLDR: It suggests the use of a <code>formkit.config.js</code> file, which is fine if you&rsquo;re just using Vue&hellip; but we&rsquo;re not!</p>
+</blockquote>
+<p>One other thing to note, is that it&rsquo;s not <strong>very</strong> obvious that you actually need to install this separately with:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">npm i @formkit/addons
+</code></pre></div><h3 id="the-slight-difference-for-inertia-1">The slight difference for Inertia</h3>
+<p>As you may have noticed, we&rsquo;ve seen a part of that before. The importing <code>defaultConfig</code> was in our first setup. We will use that to our advantage and do so inline stuff to get where we want to be.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="kr">import</span> <span class="s1">&#39;./bootstrap&#39;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="s1">&#39;../css/app.css&#39;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="s1">&#39;@formkit/addons/css/multistep&#39;</span><span class="p">;</span>
+
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">createApp</span><span class="p">,</span> <span class="nx">h</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;vue&#39;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">createInertiaApp</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;@inertiajs/vue3&#39;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">resolvePageComponent</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;laravel-vite-plugin/inertia-helpers&#39;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">ZiggyVue</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;../../vendor/tightenco/ziggy/dist/vue.m&#39;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">plugin</span> <span class="nx">as</span> <span class="nx">formkitPlugin</span><span class="p">,</span> <span class="nx">defaultConfig</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;@formkit/vue&#39;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">createMultiStepPlugin</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;@formkit/addons&#39;</span><span class="p">;</span>
+
+<span class="kr">const</span> <span class="nx">appName</span> <span class="o">=</span> <span class="nb">window</span><span class="p">.</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="s1">&#39;title&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span><span class="o">?</span><span class="p">.</span><span class="nx">innerText</span> <span class="o">||</span> <span class="s1">&#39;Laravel&#39;</span><span class="p">;</span>
+
+<span class="nx">createInertiaApp</span><span class="p">({</span>
+    <span class="nx">title</span><span class="o">:</span> <span class="p">(</span><span class="nx">title</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="sb">`</span><span class="si">${</span><span class="nx">title</span><span class="si">}</span><span class="sb"> - </span><span class="si">${</span><span class="nx">appName</span><span class="si">}</span><span class="sb">`</span><span class="p">,</span>
+    <span class="nx">resolve</span><span class="o">:</span> <span class="p">(</span><span class="nx">name</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="nx">resolvePageComponent</span><span class="p">(</span><span class="sb">`./Pages/</span><span class="si">${</span><span class="nx">name</span><span class="si">}</span><span class="sb">.vue`</span><span class="p">,</span> <span class="kr">import</span><span class="p">.</span><span class="nx">meta</span><span class="p">.</span><span class="nx">glob</span><span class="p">(</span><span class="s1">&#39;./Pages/**/*.vue&#39;</span><span class="p">)),</span>
+    <span class="nx">setup</span><span class="p">({</span> <span class="nx">el</span><span class="p">,</span> <span class="nx">App</span><span class="p">,</span> <span class="nx">props</span><span class="p">,</span> <span class="nx">plugin</span> <span class="p">})</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="nx">createApp</span><span class="p">({</span> <span class="nx">render</span><span class="o">:</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="nx">h</span><span class="p">(</span><span class="nx">App</span><span class="p">,</span> <span class="nx">props</span><span class="p">)</span> <span class="p">})</span>
+            <span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="nx">plugin</span><span class="p">)</span>
+            <span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="nx">ZiggyVue</span><span class="p">,</span> <span class="nx">Ziggy</span><span class="p">)</span>
+            <span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="nx">formkitPlugin</span><span class="p">,</span> <span class="nx">defaultConfig</span><span class="p">({</span>
+                <span class="nx">plugins</span><span class="o">:</span> <span class="p">[</span><span class="nx">createMultiStepPlugin</span><span class="p">()],</span>
+            <span class="p">}))</span>
+            <span class="p">.</span><span class="nx">mount</span><span class="p">(</span><span class="nx">el</span><span class="p">);</span>
+    <span class="p">},</span>
+    <span class="nx">progress</span><span class="o">:</span> <span class="p">{</span>
+        <span class="nx">color</span><span class="o">:</span> <span class="s1">&#39;#4B5563&#39;</span><span class="p">,</span>
+    <span class="p">},</span>
+<span class="p">});</span>
+</code></pre></div><p>As you can see, we&rsquo;ve added;</p>
+<ul>
+<li>a CSS import</li>
+<li>an addon module import</li>
+<li>that extra module <em>inside</em> the previously added <code>defaultConfig</code></li>
+</ul>
+<h2 id="using-formkit">Using Formkit</h2>
+<p>Now that it is setup, we are free to use the super speedy form building tool to it&rsquo;s fullest potential, stacking form sections in beautiful multi-step glory. For example:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="o">&lt;</span><span class="nx">script</span> <span class="nx">setup</span><span class="o">&gt;</span>
+<span class="kr">import</span> <span class="nx">PrimaryButton</span> <span class="nx">from</span> <span class="s1">&#39;@/Components/PrimaryButton.vue&#39;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="nx">SecondaryButton</span> <span class="nx">from</span> <span class="s1">&#39;@/Components/SecondaryButton.vue&#39;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">FormKit</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;@formkit/vue&#39;</span><span class="p">;</span>
+
+<span class="kd">function</span> <span class="nx">clearForm</span><span class="p">()</span> <span class="p">{</span>
+    <span class="c1">// Your clear form handler
+</span><span class="c1"></span><span class="p">}</span>
+
+<span class="kd">function</span> <span class="nx">submitForm</span><span class="p">()</span> <span class="p">{</span>
+    <span class="c1">// Your submit handler
+</span><span class="c1"></span><span class="p">}</span>
+<span class="o">&lt;</span><span class="err">/script&gt;</span>
+
+<span class="o">&lt;</span><span class="nx">template</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="nx">FormKit</span> <span class="nx">type</span><span class="o">=</span><span class="s2">&#34;form&#34;</span> <span class="o">:</span><span class="nx">actions</span><span class="o">=</span><span class="s2">&#34;false&#34;</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="nx">FormKit</span> <span class="nx">type</span><span class="o">=</span><span class="s2">&#34;multi-step&#34;</span> <span class="nx">tab</span><span class="o">-</span><span class="nx">style</span><span class="o">=</span><span class="s2">&#34;progress&#34;</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="nx">FormKit</span> <span class="nx">type</span><span class="o">=</span><span class="s2">&#34;step&#34;</span> <span class="nx">name</span><span class="o">=</span><span class="s2">&#34;csv&#34;</span><span class="o">&gt;</span>
+                <span class="o">&lt;</span><span class="nx">FormKit</span> <span class="nx">type</span><span class="o">=</span><span class="s2">&#34;file&#34;</span> <span class="nx">label</span><span class="o">=</span><span class="s2">&#34;Spreadsheet&#34;</span> <span class="nx">accept</span><span class="o">=</span><span class="s2">&#34;.xls,.xlsx,.csv,.txt&#34;</span> <span class="nx">validation</span><span class="o">=</span><span class="s2">&#34;required&#34;</span>
+                    <span class="nx">help</span><span class="o">=</span><span class="s2">&#34;Upload a csv, xls or xlsx file.&#34;</span> <span class="o">/&gt;</span>
+                <span class="o">&lt;</span><span class="nx">div</span> <span class="kr">class</span><span class="o">=</span><span class="s2">&#34;my-6&#34;</span><span class="o">&gt;</span>
+                    <span class="nx">When</span> <span class="nx">a</span> <span class="nx">csv</span> <span class="nx">file</span> <span class="nx">is</span> <span class="nx">uploaded</span> <span class="nx">here</span><span class="p">,</span> <span class="nx">we</span> <span class="nx">will</span> <span class="nx">read</span> <span class="nx">the</span> <span class="nx">heading</span> <span class="nx">row</span> <span class="nx">so</span> <span class="nx">that</span> <span class="nx">you</span> <span class="nx">can</span> <span class="nx">choose</span> <span class="nx">from</span> <span class="nx">the</span> <span class="nx">list</span> <span class="nx">on</span>
+                    <span class="nx">the</span> <span class="nx">next</span> <span class="nx">section</span> <span class="k">of</span> <span class="k">this</span> <span class="nx">form</span> <span class="nx">which</span> <span class="nx">columns</span> <span class="nx">contain</span> <span class="nx">the</span> <span class="nx">variable</span> <span class="nx">values</span><span class="p">.</span>
+                <span class="o">&lt;</span><span class="err">/div&gt;</span>
+
+            <span class="o">&lt;</span><span class="err">/FormKit&gt;</span>
+            <span class="o">&lt;</span><span class="nx">FormKit</span> <span class="nx">type</span><span class="o">=</span><span class="s2">&#34;step&#34;</span> <span class="nx">name</span><span class="o">=</span><span class="s2">&#34;columns&#34;</span><span class="o">&gt;</span>
+                <span class="o">&lt;</span><span class="nx">FormKit</span> <span class="nx">type</span><span class="o">=</span><span class="s2">&#34;text&#34;</span> <span class="nx">label</span><span class="o">=</span><span class="s2">&#34;Columns&#34;</span> <span class="nx">validation</span><span class="o">=</span><span class="s2">&#34;required&#34;</span> <span class="o">/&gt;</span>
+
+            <span class="o">&lt;</span><span class="err">/FormKit&gt;</span>
+            <span class="o">&lt;</span><span class="nx">FormKit</span> <span class="nx">type</span><span class="o">=</span><span class="s2">&#34;step&#34;</span> <span class="nx">name</span><span class="o">=</span><span class="s2">&#34;rows&#34;</span><span class="o">&gt;</span>
+                <span class="o">&lt;</span><span class="nx">FormKit</span> <span class="nx">type</span><span class="o">=</span><span class="s2">&#34;text&#34;</span> <span class="nx">label</span><span class="o">=</span><span class="s2">&#34;Rows&#34;</span> <span class="nx">validation</span><span class="o">=</span><span class="s2">&#34;required&#34;</span> <span class="o">/&gt;</span>
+
+            <span class="o">&lt;</span><span class="err">/FormKit&gt;</span>
+            <span class="o">&lt;</span><span class="nx">FormKit</span> <span class="nx">type</span><span class="o">=</span><span class="s2">&#34;step&#34;</span> <span class="nx">name</span><span class="o">=</span><span class="s2">&#34;maxLength&#34;</span><span class="o">&gt;</span>
+                <span class="o">&lt;</span><span class="nx">FormKit</span> <span class="nx">type</span><span class="o">=</span><span class="s2">&#34;number&#34;</span> <span class="nx">label</span><span class="o">=</span><span class="s2">&#34;Max Length&#34;</span> <span class="o">:</span><span class="nx">value</span><span class="o">=</span><span class="s2">&#34;500&#34;</span> <span class="nx">validation</span><span class="o">=</span><span class="s2">&#34;required&#34;</span> <span class="o">/&gt;</span>
+
+            <span class="o">&lt;</span><span class="err">/FormKit&gt;</span>
+            <span class="o">&lt;</span><span class="nx">FormKit</span> <span class="nx">type</span><span class="o">=</span><span class="s2">&#34;step&#34;</span> <span class="nx">name</span><span class="o">=</span><span class="s2">&#34;submit&#34;</span><span class="o">&gt;</span>
+                <span class="o">&lt;</span><span class="nx">SecondaryButton</span> <span class="o">:</span><span class="nx">onClick</span><span class="o">=</span><span class="s2">&#34;clearForm&#34;</span><span class="o">&gt;</span>
+                    <span class="nx">Cancel</span>
+                <span class="o">&lt;</span><span class="err">/SecondaryButton&gt;</span>
+
+                <span class="o">&lt;</span><span class="nx">PrimaryButton</span> <span class="o">:</span><span class="nx">onclick</span><span class="o">=</span><span class="s2">&#34;submitForm&#34;</span><span class="o">&gt;</span>
+                    <span class="nx">Submit</span>
+                <span class="o">&lt;</span><span class="err">/PrimaryButton&gt;</span>
+            <span class="o">&lt;</span><span class="err">/FormKit&gt;</span>
+        <span class="o">&lt;</span><span class="err">/FormKit&gt;</span>
+    <span class="o">&lt;</span><span class="err">/FormKit&gt;</span>
+<span class="o">&lt;</span><span class="err">/template&gt;</span>
+</code></pre></div><p>For the full documentation on actually <em>using</em> Formkit (now that it&rsquo;s working 😉) <a href="https://formkit.com/plugins/multi-step#usage">click here</a></p>
+<p>Happy Form-Building!</p>
+
+  </div>
+
+  <footer class="post-footer">
+    
+    
+    <h3>See Also</h3>
+    <ul>
+      
+      <li><a href="/articles/developing-a-laravel-app-using-tinker/">Developing a Laravel Application using Tinker</a></li>
+      
+      <li><a href="/articles/build-a-little-version/">If it doesn&#39;t make sense, build a little version</a></li>
+      
+      <li><a href="/articles/heroku-vs-laravel/">Heroku vs Laravel (vs me...)</a></li>
+      
+      <li><a href="/articles/quickadminpanel/">Why I&#39;m glad I used QuickAdminPanel today</a></li>
+      
+      <li><a href="/articles/common-function-comparisons-in-php/">Common Function Comparisons in PHP</a></li>
+      
+    </ul>
+    
+    <ul class="post-tags">
+      <li><a href="https://www.mizouzie.dev/tags/web-dev/">web dev</a></li>
+      <li><a href="https://www.mizouzie.dev/tags/laravel/">laravel</a></li>
+      <li><a href="https://www.mizouzie.dev/tags/vue/">vue</a></li>
+      <li><a href="https://www.mizouzie.dev/tags/inertia/">inertia</a></li>
+      <li><a href="https://www.mizouzie.dev/tags/formkit/">formkit</a></li>
+    </ul>
+    <br>
+    <br>
+    <h4>Share this Post:</h4>
+
+<div class="share-buttons">
+    <a target="_blank" rel="noopener noreferrer" aria-label="share How to Unlock Formkit Multistep forms on a Laravel Inertia app with Vue 3 on twitter"
+        href="https://twitter.com/intent/tweet/?text=How%20to%20Unlock%20Formkit%20Multistep%20forms%20on%20a%20Laravel%20Inertia%20app%20with%20Vue%203&amp;url=https%3a%2f%2fwww.mizouzie.dev%2farticles%2fhow-to-unlock-formkit-multistep-forms-on-laravel-inertia-app-with-vue-3%2f">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-253.927,424.544c135.939,0 210.268,-112.643 210.268,-210.268c0,-3.218 0,-6.437 -0.153,-9.502c14.406,-10.421 26.973,-23.448 36.935,-38.314c-13.18,5.824 -27.433,9.809 -42.452,11.648c15.326,-9.196 26.973,-23.602 32.49,-40.92c-14.252,8.429 -30.038,14.56 -46.896,17.931c-13.487,-14.406 -32.644,-23.295 -53.946,-23.295c-40.767,0 -73.87,33.104 -73.87,73.87c0,5.824 0.613,11.494 1.992,16.858c-61.456,-3.065 -115.862,-32.49 -152.337,-77.241c-6.284,10.881 -9.962,23.601 -9.962,37.088c0,25.594 13.027,48.276 32.95,61.456c-12.107,-0.307 -23.448,-3.678 -33.41,-9.196l0,0.92c0,35.862 25.441,65.594 59.311,72.49c-6.13,1.686 -12.72,2.606 -19.464,2.606c-4.751,0 -9.348,-0.46 -13.946,-1.38c9.349,29.426 36.628,50.728 68.965,51.341c-25.287,19.771 -57.164,31.571 -91.8,31.571c-5.977,0 -11.801,-0.306 -17.625,-1.073c32.337,21.15 71.264,33.41 112.95,33.41Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share How to Unlock Formkit Multistep forms on a Laravel Inertia app with Vue 3 on linkedin"
+        href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fwww.mizouzie.dev%2farticles%2fhow-to-unlock-formkit-multistep-forms-on-laravel-inertia-app-with-vue-3%2f&amp;title=How%20to%20Unlock%20Formkit%20Multistep%20forms%20on%20a%20Laravel%20Inertia%20app%20with%20Vue%203&amp;summary=How%20to%20Unlock%20Formkit%20Multistep%20forms%20on%20a%20Laravel%20Inertia%20app%20with%20Vue%203&amp;source=https%3a%2f%2fwww.mizouzie.dev%2farticles%2fhow-to-unlock-formkit-multistep-forms-on-laravel-inertia-app-with-vue-3%2f">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-288.985,423.278l0,-225.717l-75.04,0l0,225.717l75.04,0Zm270.539,0l0,-129.439c0,-69.333 -37.018,-101.586 -86.381,-101.586c-39.804,0 -57.634,21.891 -67.617,37.266l0,-31.958l-75.021,0c0.995,21.181 0,225.717 0,225.717l75.02,0l0,-126.056c0,-6.748 0.486,-13.492 2.474,-18.315c5.414,-13.475 17.767,-27.434 38.494,-27.434c27.135,0 38.007,20.707 38.007,51.037l0,120.768l75.024,0Zm-307.552,-334.556c-25.674,0 -42.448,16.879 -42.448,39.002c0,21.658 16.264,39.002 41.455,39.002l0.484,0c26.165,0 42.452,-17.344 42.452,-39.002c-0.485,-22.092 -16.241,-38.954 -41.943,-39.002Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share How to Unlock Formkit Multistep forms on a Laravel Inertia app with Vue 3 on reddit"
+        href="https://reddit.com/submit?url=https%3a%2f%2fwww.mizouzie.dev%2farticles%2fhow-to-unlock-formkit-multistep-forms-on-laravel-inertia-app-with-vue-3%2f&title=How%20to%20Unlock%20Formkit%20Multistep%20forms%20on%20a%20Laravel%20Inertia%20app%20with%20Vue%203">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-3.446,265.638c0,-22.964 -18.616,-41.58 -41.58,-41.58c-11.211,0 -21.361,4.457 -28.841,11.666c-28.424,-20.508 -67.586,-33.757 -111.204,-35.278l18.941,-89.121l61.884,13.157c0.756,15.734 13.642,28.29 29.56,28.29c16.407,0 29.706,-13.299 29.706,-29.701c0,-16.403 -13.299,-29.702 -29.706,-29.702c-11.666,0 -21.657,6.792 -26.515,16.578l-69.105,-14.69c-1.922,-0.418 -3.939,-0.042 -5.585,1.036c-1.658,1.073 -2.811,2.761 -3.224,4.686l-21.152,99.438c-44.258,1.228 -84.046,14.494 -112.837,35.232c-7.468,-7.164 -17.589,-11.591 -28.757,-11.591c-22.965,0 -41.585,18.616 -41.585,41.58c0,16.896 10.095,31.41 24.568,37.918c-0.639,4.135 -0.99,8.328 -0.99,12.576c0,63.977 74.469,115.836 166.33,115.836c91.861,0 166.334,-51.859 166.334,-115.836c0,-4.218 -0.347,-8.387 -0.977,-12.493c14.564,-6.47 24.735,-21.034 24.735,-38.001Zm-119.474,108.193c-20.27,20.241 -59.115,21.816 -70.534,21.816c-11.428,0 -50.277,-1.575 -70.522,-21.82c-3.007,-3.008 -3.007,-7.882 0,-10.889c3.003,-2.999 7.882,-3.003 10.885,0c12.777,12.781 40.11,17.317 59.637,17.317c19.522,0 46.86,-4.536 59.657,-17.321c3.016,-2.999 7.886,-2.995 10.885,0.008c3.008,3.011 3.003,7.882 -0.008,10.889Zm-5.23,-48.781c-16.373,0 -29.701,-13.324 -29.701,-29.698c0,-16.381 13.328,-29.714 29.701,-29.714c16.378,0 29.706,13.333 29.706,29.714c0,16.374 -13.328,29.698 -29.706,29.698Zm-160.386,-29.702c0,-16.381 13.328,-29.71 29.714,-29.71c16.369,0 29.689,13.329 29.689,29.71c0,16.373 -13.32,29.693 -29.689,29.693c-16.386,0 -29.714,-13.32 -29.714,-29.693Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share How to Unlock Formkit Multistep forms on a Laravel Inertia app with Vue 3 on facebook"
+        href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fwww.mizouzie.dev%2farticles%2fhow-to-unlock-formkit-multistep-forms-on-laravel-inertia-app-with-vue-3%2f">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-106.468,0l0,-192.915l66.6,0l12.672,-82.621l-79.272,0l0,-53.617c0,-22.603 11.073,-44.636 46.58,-44.636l36.042,0l0,-70.34c0,0 -32.71,-5.582 -63.982,-5.582c-65.288,0 -107.96,39.569 -107.96,111.204l0,62.971l-72.573,0l0,82.621l72.573,0l0,192.915l-191.104,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Z" />
+        </svg>
+    </a>
+    
+
+
+
+
+</div>
+<br><br>
+  </footer>
+  <div class="" style="margin-top: 1rem;">
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "web-with-mizouzie" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  </div>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>made by MizouziE</span>
+      
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerText = 'copy';
+
+        function copyingDone() {
+            copybutton.innerText = 'copied!';
+            setTimeout(() => {
+                copybutton.innerText = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

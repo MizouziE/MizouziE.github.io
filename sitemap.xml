@@ -3,13 +3,40 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://www.mizouzie.dev/articles/</loc>
-    <lastmod>2023-03-04T00:00:00+00:00</lastmod>
+    <lastmod>2023-03-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.mizouzie.dev/categories/</loc>
-    <lastmod>2023-03-04T00:00:00+00:00</lastmod>
+    <lastmod>2023-03-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.mizouzie.dev/categories/</loc>
-    <lastmod>2023-03-04T00:00:00+00:00</lastmod>
+    <lastmod>2023-03-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.mizouzie.dev/tags/formkit/</loc>
+    <lastmod>2023-03-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.mizouzie.dev/articles/how-to-unlock-formkit-multistep-forms-on-laravel-inertia-app-with-vue-3/</loc>
+    <lastmod>2023-03-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.mizouzie.dev/tags/inertia/</loc>
+    <lastmod>2023-03-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.mizouzie.dev/tags/laravel/</loc>
+    <lastmod>2023-03-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.mizouzie.dev/tags/</loc>
+    <lastmod>2023-03-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.mizouzie.dev/tags/vue/</loc>
+    <lastmod>2023-03-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.mizouzie.dev/tags/web-dev/</loc>
+    <lastmod>2023-03-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.mizouzie.dev/categories/web-development/</loc>
+    <lastmod>2023-03-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.mizouzie.dev/</loc>
+    <lastmod>2023-03-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.mizouzie.dev/articles/common-function-comparisons-in-php/</loc>
     <lastmod>2023-03-04T00:00:00+00:00</lastmod>
@@ -18,18 +45,6 @@
     <lastmod>2023-03-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.mizouzie.dev/tags/php/</loc>
-    <lastmod>2023-03-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.mizouzie.dev/tags/</loc>
-    <lastmod>2023-03-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.mizouzie.dev/tags/web-dev/</loc>
-    <lastmod>2023-03-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.mizouzie.dev/categories/web-development/</loc>
-    <lastmod>2023-03-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.mizouzie.dev/</loc>
     <lastmod>2023-03-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.mizouzie.dev/articles/3-ways-to-read-input-with-go-cli/</loc>
@@ -72,9 +87,6 @@
     <lastmod>2023-02-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.mizouzie.dev/articles/developing-a-laravel-app-using-tinker/</loc>
-    <lastmod>2023-02-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.mizouzie.dev/tags/laravel/</loc>
     <lastmod>2023-02-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.mizouzie.dev/tags/productivity/</loc>

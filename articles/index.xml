@@ -6,7 +6,17 @@
     <description>Recent content in Articles on web with mizouzie</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>made by MizouziE</copyright>
-    <lastBuildDate>Sat, 04 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.mizouzie.dev/articles/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 09 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.mizouzie.dev/articles/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Unlock Formkit Multistep forms on a Laravel Inertia app with Vue 3</title>
+      <link>https://www.mizouzie.dev/articles/how-to-unlock-formkit-multistep-forms-on-laravel-inertia-app-with-vue-3/</link>
+      <pubDate>Thu, 09 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.mizouzie.dev/articles/how-to-unlock-formkit-multistep-forms-on-laravel-inertia-app-with-vue-3/</guid>
+      <description>Formkit is a supercharger for developing applications on the already turbo platform of Laravel Inertia with Vue 3. It is a library of ready made components for building forms that make it very easy to construct any kind of form for retrieving user input. One of the features of this library that stood out the most for me was the Multi-Step forms.
+Multi-Step Forms So what is a multi-step form?</description>
+    </item>
+    
     <item>
       <title>Common Function Comparisons in PHP</title>
       <link>https://www.mizouzie.dev/articles/common-function-comparisons-in-php/</link>
