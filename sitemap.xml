@@ -26,6 +26,9 @@
     <loc>https://www.mizouzie.dev/tags/</loc>
     <lastmod>2023-03-09T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://www.mizouzie.dev/categories/tutorial/</loc>
+    <lastmod>2023-03-09T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://www.mizouzie.dev/tags/vue/</loc>
     <lastmod>2023-03-09T00:00:00+00:00</lastmod>
   </url><url>
@@ -54,6 +57,9 @@
     <lastmod>2023-02-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.mizouzie.dev/tags/golang/</loc>
+    <lastmod>2023-02-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.mizouzie.dev/tags/tutorial/</loc>
     <lastmod>2023-02-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.mizouzie.dev/tags/artificial-intelligence/</loc>
@@ -159,6 +165,8 @@
   </url><url>
     <loc>https://www.mizouzie.dev/projects/ai-as-a-creator/</loc>
   </url><url>
+    <loc>https://www.mizouzie.dev/products/atomic-habits/</loc>
+  </url><url>
     <loc>https://www.mizouzie.dev/contact/</loc>
   </url><url>
     <loc>https://www.mizouzie.dev/projects/energy-price-news/</loc>
@@ -169,13 +177,23 @@
   </url><url>
     <loc>https://www.mizouzie.dev/tags/javascript/</loc>
   </url><url>
+    <loc>https://www.mizouzie.dev/products/trial-copy-3/</loc>
+  </url><url>
+    <loc>https://www.mizouzie.dev/tags/metaphysics/</loc>
+  </url><url>
     <loc>https://www.mizouzie.dev/tags/nodejs/</loc>
   </url><url>
+    <loc>https://www.mizouzie.dev/products/</loc>
+  </url><url>
     <loc>https://www.mizouzie.dev/projects/</loc>
+  </url><url>
+    <loc>https://www.mizouzie.dev/products/rework/</loc>
   </url><url>
     <loc>https://www.mizouzie.dev/categories/self-development/</loc>
   </url><url>
     <loc>https://www.mizouzie.dev/projects/seo-keyword-content-analysis/</loc>
+  </url><url>
+    <loc>https://www.mizouzie.dev/categories/tutorial/</loc>
   </url><url>
     <loc>https://www.mizouzie.dev/categories/web-development/</loc>
   </url>

@@ -17,5 +17,23 @@
 ./artisan tinker OR EVEN... ./artisan tink This command boots up the built in REPL that is based on PsySH. REPL stands for; Read the user input, Evaluate the input, Print the resulting output and Loop back again to await further input. What kind of input and what kind of output though?</description>
     </item>
     
+    <item>
+      <title>Atomic Habits</title>
+      <link>https://www.mizouzie.dev/products/atomic-habits/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.mizouzie.dev/products/atomic-habits/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>REWORK</title>
+      <link>https://www.mizouzie.dev/products/rework/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.mizouzie.dev/products/rework/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

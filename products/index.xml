@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Products on web with mizouzie</title>
+    <link>https://www.mizouzie.dev/products/</link>
+    <description>Recent content in Products on web with mizouzie</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>made by MizouziE</copyright><atom:link href="https://www.mizouzie.dev/products/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Atomic Habits</title>
+      <link>https://www.mizouzie.dev/products/atomic-habits/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.mizouzie.dev/products/atomic-habits/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Lila</title>
+      <link>https://www.mizouzie.dev/products/trial-copy-3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.mizouzie.dev/products/trial-copy-3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>REWORK</title>
+      <link>https://www.mizouzie.dev/products/rework/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.mizouzie.dev/products/rework/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
