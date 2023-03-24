@@ -6,7 +6,17 @@
     <description>Recent content in productivity on web with mizouzie</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>made by MizouziE</copyright>
-    <lastBuildDate>Wed, 08 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.mizouzie.dev/tags/productivity/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 24 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.mizouzie.dev/tags/productivity/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>3 things the best senior developers do</title>
+      <link>https://www.mizouzie.dev/articles/best-senior-developer/</link>
+      <pubDate>Fri, 24 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.mizouzie.dev/articles/best-senior-developer/</guid>
+      <description>Senior Developers A senior developer has earned that title. They&amp;rsquo;ve waged wars and won, faced long days and nights, overcome the most obscure of obstacles. Now, for all their troubles they have to deal with you. Wet behind the ears and a danger if left unmonitored. Hardly seems fair, does it?
+This is the curse of such a vast wealth of knowledge. They&amp;rsquo;ve built up so much over the years they can&amp;rsquo;t possibly apply it all at the same time.</description>
+    </item>
+    
     <item>
       <title>Developing a Laravel Application using Tinker</title>
       <link>https://www.mizouzie.dev/articles/developing-a-laravel-app-using-tinker/</link>
