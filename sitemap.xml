@@ -3,13 +3,37 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://www.mizouzie.dev/articles/</loc>
-    <lastmod>2023-03-28T00:00:00+00:00</lastmod>
+    <lastmod>2023-04-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.mizouzie.dev/categories/</loc>
-    <lastmod>2023-03-28T00:00:00+00:00</lastmod>
+    <lastmod>2023-04-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.mizouzie.dev/categories/</loc>
-    <lastmod>2023-03-28T00:00:00+00:00</lastmod>
+    <lastmod>2023-04-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.mizouzie.dev/tags/laravel/</loc>
+    <lastmod>2023-04-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.mizouzie.dev/tags/php/</loc>
+    <lastmod>2023-04-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.mizouzie.dev/tags/</loc>
+    <lastmod>2023-04-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.mizouzie.dev/articles/undefined-type-spatie-permission/</loc>
+    <lastmod>2023-04-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.mizouzie.dev/tags/vscode/</loc>
+    <lastmod>2023-04-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.mizouzie.dev/tags/web-dev/</loc>
+    <lastmod>2023-04-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.mizouzie.dev/categories/web-development/</loc>
+    <lastmod>2023-04-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.mizouzie.dev/</loc>
+    <lastmod>2023-04-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.mizouzie.dev/tags/learning/</loc>
     <lastmod>2023-03-28T00:00:00+00:00</lastmod>
@@ -17,19 +41,7 @@
     <loc>https://www.mizouzie.dev/articles/space-is-the-place/</loc>
     <lastmod>2023-03-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.mizouzie.dev/tags/</loc>
-    <lastmod>2023-03-28T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://www.mizouzie.dev/tags/twitter/</loc>
-    <lastmod>2023-03-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.mizouzie.dev/tags/web-dev/</loc>
-    <lastmod>2023-03-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.mizouzie.dev/categories/web-development/</loc>
-    <lastmod>2023-03-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.mizouzie.dev/</loc>
     <lastmod>2023-03-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.mizouzie.dev/articles/best-senior-developer/</loc>
@@ -50,9 +62,6 @@
     <loc>https://www.mizouzie.dev/tags/inertia/</loc>
     <lastmod>2023-03-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.mizouzie.dev/tags/laravel/</loc>
-    <lastmod>2023-03-09T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://www.mizouzie.dev/categories/tutorial/</loc>
     <lastmod>2023-03-09T00:00:00+00:00</lastmod>
   </url><url>
@@ -60,9 +69,6 @@
     <lastmod>2023-03-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.mizouzie.dev/articles/common-function-comparisons-in-php/</loc>
-    <lastmod>2023-03-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.mizouzie.dev/tags/php/</loc>
     <lastmod>2023-03-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.mizouzie.dev/articles/3-ways-to-read-input-with-go-cli/</loc>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>VSCode on web with mizouzie</title>
+    <link>https://www.mizouzie.dev/tags/vscode/</link>
+    <description>Recent content in VSCode on web with mizouzie</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>made by MizouziE</copyright>
+    <lastBuildDate>Thu, 13 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.mizouzie.dev/tags/vscode/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Undefined type &#39;Spatie\Permission\Models\&#39; . &#39;Permission&#39; | &#39;Role&#39; | &#39;HasRoles&#39;</title>
+      <link>https://www.mizouzie.dev/articles/undefined-type-spatie-permission/</link>
+      <pubDate>Thu, 13 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.mizouzie.dev/articles/undefined-type-spatie-permission/</guid>
+      <description>I was very frustrated for more than a few minutes with this after installing the great Spatie package for permissions in a project I am working on that requires teams, roles and permissions. Click the link above to check out the documentation and you&amp;rsquo;ll see immediately the appeal it has for any Laravel developer.
+ Sidenote: These guys really do churn out an ever growing collection of the most helpful packages that will save you hours of thinking and development, so if you don&amp;rsquo;t know about them&amp;hellip; get to know!</description>
+    </item>
+    
+  </channel>
+</rss>
