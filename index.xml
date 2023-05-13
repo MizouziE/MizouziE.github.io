@@ -6,7 +6,16 @@
     <description>Recent content on web with mizouzie</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>made by MizouziE</copyright>
-    <lastBuildDate>Thu, 13 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.mizouzie.dev/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 13 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.mizouzie.dev/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to test protected functions with PHPUnit in your Laravel app</title>
+      <link>https://www.mizouzie.dev/articles/how-to-test-protected-functions-with-phpunit/</link>
+      <pubDate>Sat, 13 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.mizouzie.dev/articles/how-to-test-protected-functions-with-phpunit/</guid>
+      <description>Typical places this arises Building an application in PHP with Laravel means that we can call on a great number of classes to do various parts of the overall process we wish to achieve. For the purposes of this example (and where I first came across this issue) we will look at writing tests for a Job Class. A job class is one which will be sent some data and then process that data in the background via a worker so that the application is free to continue processing other commands.</description>
+    </item>
+    
     <item>
       <title>Undefined type &#39;Spatie\Permission\Models\&#39; . &#39;Permission&#39; | &#39;Role&#39; | &#39;HasRoles&#39;</title>
       <link>https://www.mizouzie.dev/articles/undefined-type-spatie-permission/</link>
