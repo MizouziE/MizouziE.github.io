@@ -5,8 +5,8 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>3 things the best senior developers do | web with mizouzie</title>
-<meta name="keywords" content="web dev, career, productivity, learning" />
+<title>Send SMTP Mail from Hetzner Server with Firewall | web with mizouzie</title>
+<meta name="keywords" content="PHP, web dev, documentation, Dev Ops" />
 <script src="https://cdn.jsdelivr.net/gh/manucaralmo/GlowCookies@3.1.7/src/glowCookies.min.js"></script>
 <script>
     glowCookies.start('en', { 
@@ -26,22 +26,22 @@
     });
 </script>
 <meta name="google-site-verification" content="psw8-5863N9APj0ZK5Lg3BMygE0vQEYIB7q2uJq-FPo" />
-<meta property="og:image" content="https://www.mizouzie.dev/images/senior-dev.jpg">
-<meta property="og:image:width" content="2032">
-<meta property="og:image:height" content="2794">
-<meta property="og:title" content="3 things the best senior developers do | web with mizouzie">
-<meta name="og:description" content="Working under the care of a more experienced developer can make or break a junior developer&#39;s career. Here are 3 things the best senior developers do.">
+<meta property="og:image" content="https://www.mizouzie.dev/images/stream_socket_client-error.png">
+<meta property="og:image:width" content="769">
+<meta property="og:image:height" content="265">
+<meta property="og:title" content="Send SMTP Mail from Hetzner Server with Firewall | web with mizouzie">
+<meta name="og:description" content="Laravel Mail Working locally but not on server. Getting stream_socket_client timeout error. We must allow outgoing TCP Connections in Hetzner Firewall.">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://www.mizouzie.dev/articles/best-senior-developer/">
-<meta property="twitter:title" content="3 things the best senior developers do | web with mizouzie">
-<meta name="twitter:description" content="Working under the care of a more experienced developer can make or break a junior developer&#39;s career. Here are 3 things the best senior developers do.">
-<meta property="twitter:image" content="https://www.mizouzie.dev/images/senior-dev.jpg">
+<meta property="og:url" content="https://www.mizouzie.dev/articles/send-smtp-mail-from-hetzner-server/">
+<meta property="twitter:title" content="Send SMTP Mail from Hetzner Server with Firewall | web with mizouzie">
+<meta name="twitter:description" content="Laravel Mail Working locally but not on server. Getting stream_socket_client timeout error. We must allow outgoing TCP Connections in Hetzner Firewall.">
+<meta property="twitter:image" content="https://www.mizouzie.dev/images/stream_socket_client-error.png">
 <meta property="twitter:card" content="summary_large_image">
 <meta property="twitter:site" content="@mizouzie">
 <meta property="twitter:creator" content="@mizouzie">
-<meta name="description" content="Working under the care of a more experienced developer can make or break a junior developer&#39;s career. Here are 3 things the best senior developers do.">
+<meta name="description" content="Laravel Mail Working locally but not on server. Getting stream_socket_client timeout error. We must allow outgoing TCP Connections in Hetzner Firewall.">
 <meta name="author" content="Sam Anglin">
-<link rel="canonical" href="https://www.mizouzie.dev/articles/best-senior-developer/" />
+<link rel="canonical" href="https://www.mizouzie.dev/articles/send-smtp-mail-from-hetzner-server/" />
 <link crossorigin="anonymous" href="/assets/css/stylesheet.min.0023fee7fec5528a0c5f22e6800e893c5458542f625b2e4975b77acd921f7774.css" integrity="sha256-ACP&#43;5/7FUooMXyLmgA6JPFRYVC9iWy5Jdbd6zZIfd3Q=" rel="preload stylesheet" as="style">
 <script defer crossorigin="anonymous" src="/assets/js/highlight.min.7680afc38aa6b15ddf158a4f3780b7b1f7dde7e91d26f073e6229bb7a0793c92.js" integrity="sha256-doCvw4qmsV3fFYpPN4C3sffd5&#43;kdJvBz5iKbt6B5PJI="
     onload="hljs.initHighlightingOnLoad();"></script>
@@ -166,12 +166,12 @@
   <header class="post-header">
     <div class="breadcrumbs"><a href="https://www.mizouzie.dev/">Home</a>&nbsp;»&nbsp;<a href="https://www.mizouzie.dev/articles/">Articles</a></div>
     <h1 class="post-title">
-      3 things the best senior developers do
+      Send SMTP Mail from Hetzner Server with Firewall
     </h1>
     <div class="post-description">
-      Working under the care of a more experienced developer can make or break a junior developer&#39;s career. Here are 3 things the best senior developers do.&nbsp;
+      Laravel Mail Working locally but not on server. Getting stream_socket_client timeout error. We must allow outgoing TCP Connections in Hetzner Firewall.&nbsp;
     </div>
-    <div class="post-meta"><span title='2023-03-24 00:00:00 +0000 UTC'>March 24, 2023</span>&nbsp;·&nbsp;7 min&nbsp;·&nbsp;Sam Anglin</div>
+    <div class="post-meta"><span title='2023-06-30 00:00:00 +0000 UTC'>June 30, 2023</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Sam Anglin</div>
   </header> <div class="toc">
     <details >
         <summary accesskey="c" title="(Alt + C)">
@@ -180,23 +180,21 @@
 
         <div class="inner"><ul>
                 <li>
-                    <a href="#senior-developers" aria-label="Senior Developers">Senior Developers</a></li>
+                    <a href="#the-error---stream_socket_client-unable-to-connect-connection-timed-out" aria-label="The Error - stream_socket_client unable to connect (connection timed out)">The Error - stream_socket_client unable to connect (connection timed out)</a></li>
                 <li>
-                    <a href="#essential-traits" aria-label="Essential traits">Essential traits</a><ul>
+                    <a href="#the-reason" aria-label="The Reason">The Reason</a><ul>
                         
                 <li>
-                    <a href="#attentive" aria-label="Attentive">Attentive</a></li>
+                    <a href="#hetzner-firewall" aria-label="Hetzner Firewall">Hetzner Firewall</a></li>
                 <li>
-                    <a href="#patient" aria-label="Patient">Patient</a></li>
+                    <a href="#hetzner-documentation-or-lack-thereof" aria-label="Hetzner Documentation, or lack thereof">Hetzner Documentation, or lack thereof</a><ul>
+                        
                 <li>
-                    <a href="#optimistic" aria-label="Optimistic">Optimistic</a></li></ul>
+                    <a href="#tldr" aria-label="TL;DR">TL;DR</a></li></ul>
+                </li></ul>
                 </li>
                 <li>
-                    <a href="#some-examples" aria-label="Some examples">Some examples</a></li>
-                <li>
-                    <a href="#created-environment" aria-label="Created Environment">Created Environment</a></li>
-                <li>
-                    <a href="#results" aria-label="Results">Results</a>
+                    <a href="#the-solution" aria-label="The Solution">The Solution</a>
                 </li>
             </ul>
         </div>
@@ -204,47 +202,31 @@
 </div>
 
   <div class="post-content">
-    <img loading="lazy" src="/images/senior-dev.jpg" alt="A wise old senior dev" height="990" width="720"/>
-<h2 id="senior-developers">Senior Developers</h2>
-<p>A senior developer has earned that title. They&rsquo;ve waged wars and won, faced long days and nights, overcome the most obscure of obstacles. Now, for all their troubles they have to deal with you. Wet behind the ears and a danger if left unmonitored. Hardly seems fair, does it?</p>
-<p>This is the curse of such a vast wealth of knowledge. They&rsquo;ve built up so much over the years they can&rsquo;t possibly apply it all at the same time. They <strong>must</strong> delegate to be efficient. How do they choose what to pass down the line and to whom? Well that&rsquo;s all part of their new challenge.</p>
-<p>I&rsquo;ve had some time now as a junior developer and I have been lucky enough to be under the care of a couple of seniors who have made my experience a very pleasant one, considering the mountain of varying knowledge I have acquired in such a short time. I want to point out the characteristics they display that I admire most and deeply appreciate.</p>
-<h2 id="essential-traits">Essential traits</h2>
-<p>Given that the responsibility of overseeing a project or even multiple projects is a stressful one, it is crazy to think that the senior developers of the tech industry <em>also</em> have to essentially baby-sit at the same time. A lot can go wrong even before they have to throw inexperienced developers into the mix. 3 of the <strong>most important traits</strong> for a successful senior developer to posses, in my opinion, are;</p>
-<ul>
-<li>Attentiveness</li>
-<li>Patience</li>
-<li>Optimism</li>
-</ul>
-<p>Let me explain to <strong>you</strong>, who like me, is the junior developer in this arrangement.</p>
-<h3 id="attentive">Attentive</h3>
-<p>I don&rsquo;t mean they need to be all lovey-dovey and sweep your hair out of you eyes when you talk, I mean they need to pay attention even when it&rsquo;s from afar. They need to have a good gauge of how you are feeling both in regard to your workload and in life in general. Not necessarily all the details of your every move, but are you happy?</p>
-<p>The reason for this is that if you&rsquo;re not happy, you won&rsquo;t produce good work which means more work down the line because the code you commit is not good enough or within the deadlines. Simply checking in with you daily is all a good senior will do, but a great senior will take action when needed as they have the experience to be able to do so effectively.</p>
-<p>The action does not have to be some grand gesture, sometimes just a few words of guidance or a &ldquo;don&rsquo;t worry, I still have days like that&rdquo; go a very long way in helping an overwhelmed junior developer get a handle on things.</p>
-<h3 id="patient">Patient</h3>
-<p>Often the team&rsquo;s senior developer is the one that is really face to face with the deadlines. They see the whole project in the &ldquo;big picture&rdquo; sense so will also forsee the knock-on effects of a missed deadline before anyone else. Despite this burden, the best senior developers are able to balance the pressure while displaying great patience with their team, affording them the time needed to discover solutions in their own ways and therefore build themselves into stronger developers in the process. It is an investment that will only pay dividends in the future, but of course, our highly esteemed senior knows that already.</p>
-<p>A part of this patience is the ability to block the rage and fury of the dreaded (and often agitated) client. They soak up the barrage of questions like &ldquo;well, why isn&rsquo;t it done yet?&rdquo; so that those in their care can keep a clear head and just focus on the task before them. They know that once deployment and delivery is accomplished, all that negative energy will evaporate anyway.</p>
-<h3 id="optimistic">Optimistic</h3>
-<p>It is important to understand that this does not mean <em>naive</em> optimism. Programming requires an air of pragmatism, and years of thinking like that will lead to a senior developer being so inclined. The optimism I mean is a type of faith. Faith in their juniors to overcome the obstacles they need to, faith that they will ask if they really do get stuck and faith in their own abilities to provide the necessary learning resources and road maps to becoming a capable developer.</p>
-<p>It is a type of self control that a father displays when their child first rides a bicycle without stabilizers. As much as they want to step in a protect, they know they must leave the space to fail in order for the kid to grow, to get stronger, better, to develop. They know if they can just hold off, it will pay off.</p>
-<h2 id="some-examples">Some examples</h2>
-<p>I&rsquo;ve had a terrible week this past week after having a project I delivered utterly trashed by the client and had to take it almost right back to the drawing board and implement a bunch of (front end) stuff that I am very unfamiliar and very <strong>very</strong> uncomfortable with. I wasted an entire week, if not more, trying out various JavaScript libraries to get an input form to perform more tricks than a circus and was  seriously losing my mind over it. I couldn&rsquo;t believe it was taking so long <strong>and</strong> just not progressing as well.</p>
-<p>I was angry. At both the situation and myself. My senior dev, however;</p>
-<ul>
-<li>never swept in and bossed me around</li>
-<li>never complained about the amount of time I wasted</li>
-<li>checked in with me regularly</li>
-<li>afforded me the time to explore so many options</li>
-</ul>
-<p>As if that wasn&rsquo;t enough, after about a week and without me even realising, he threw me a totally different small project that was in PHP which I am far more proficient in. I knocked that out in an afternoon, so he fed me a bonus task of dockerizing the application which I also managed relatively quickly. Two things, that if compared side by side with what I was so stuck on, would probably be considered slightly more advanced. It was definitely a morale boost.</p>
-<p>The next day, same project and this time just looking into refactoring some SQL queries (which is a favourite of mine) and <em>that</em> had me feeling like bullets would bounce off me. I went back to the JavaScript that was torturing me, deleted the entire branch I&rsquo;d spent a week tied up in and banged out a perfectly fine working solution in a couple of hours. Thanks to the previous day&rsquo;s distraction techniques, I didn&rsquo;t get hung up on the wasted time too!</p>
-<p>Thanks to my senior&rsquo;s attention, patience and faith in me I managed to eventually overcome something that I clearly wasn&rsquo;t able to do a week ago, plus I have gained the experience that will hopefully help me avoid getting so caught up in a problem in the future.</p>
-<p>I&rsquo;m grateful.</p>
-<h2 id="created-environment">Created Environment</h2>
-<p>You can see from just that one recent example that you have every right to be jealous of my working environment because my goodness, it is nurturing. Thanks to having this sort of support for the last 2 years, I can confidently say that I am more able as a developer than I should be for the number of years I have had in the industry. I have justifiable confidence because I have worked on real software used by some huge companies because I was not only taught the right stuff but given the opportunity to <em>use</em> that knowledge to build something that is a part of something of real significance.</p>
-<p>I look forward to working every day because it is always challenging but never frightening and because I can look back at what I&rsquo;ve made and been a part of with pride. It is a great team to be a part of.</p>
-<h2 id="results">Results</h2>
-<p>I won&rsquo;t repeat that I&rsquo;ve gained a huge amount of experience in a short time&hellip; but I really have. Not only that, though, I really believe that the future of the group I am a part of will be a great one because the next wave of junior developers after me are in for a solid support system and incredible guidance. This team has already achieved some great feats while getting little old me up to speed, so I can only see exponential success on the horizon.</p>
+    <p><img loading="lazy" src="/images/stream_socket_client-error.png" alt="stream_socket_client timeout error"  />
+</p>
+<h2 id="the-error---stream_socket_client-unable-to-connect-connection-timed-out">The Error - stream_socket_client unable to connect (connection timed out)</h2>
+<p>After building a cool little app using Laravel which makes use of the fantastic (and seemingly dead simple) <code>symfony/mailer</code> and you want to send a simple email via SMTP directly from the app by setting up the necessary <code>.env</code> variables you will undoubtedly test it out on a local/dev environment and will hopefully see that it works very well. Now the fun part of deploying it to a production server using Hetzner&rsquo;s great cloud services. Everything is set; apache/nginx, ssl, workers, the lot and the moment of truth arrives and you go through the actions to trigger an email being sent to your email address of choice.</p>
+<p>Click send.</p>
+<p>Wait.</p>
+<p>Wait some more.</p>
+<p>Refresh inbox&hellip;</p>
+<p>Start to wonder&hellip;</p>
+<p>Why didn&rsquo;t it send?</p>
+<p>After checking you set everything correctly you finally check the logs and see something like the above image. But why?</p>
+<h2 id="the-reason">The Reason</h2>
+<p>It is a timeout error on a standard PHP function <code>stream_socket_client()</code> which aims to create the secure socket between your application and the mail server so that you may start to send emails via your email server&rsquo;s SMTP connection. It is an unusual error to encounter as it&rsquo;s more common to just work or return a &ldquo;connection refused&rdquo; error, but in our case it just times out. There is not a great deal of feedback or evidence to point to why this is happening, but long story short, our request never even makes it out of our server.</p>
+<h3 id="hetzner-firewall">Hetzner Firewall</h3>
+<p>If you are like me, you wanted to save some CPU %s by utilizing the great firewall offered for free as a part of your Hetzner cloud account and have set up the firewall with various rules for incoming traffic and left it blank for outgoing traffic, which, according to the display window means that there are no restrictions whatsoever. In theory, that means that all outbound requests should be 100% unrestricted.</p>
+<p>There is something we are not seeing here though.</p>
+<h3 id="hetzner-documentation-or-lack-thereof">Hetzner Documentation, or lack thereof</h3>
+<p>There is apparently no (or very little) mention of the fact that Hetzner <strong>automatically block</strong> outbound ports <strong>25</strong> &amp; <strong>465</strong>. <a href="https://blog.hqcodeshop.fi/archives/553-Hetzner-outgoing-mail-SMTP-blocked-on-TCP25.html">Find more details by clicking here</a>.</p>
+<h4 id="tldr">TL;DR</h4>
+<p>Hetzner are savvy to scammers building spam email servers and just making people miserable by assaulting their inboxes until the IP is blocked so they do not allow any outbound traffic on these ports typically used for SMTP mail connections. Smart. But annoying they don&rsquo;t really tell you until you delve into the support section of their site and notice they have a dropdown option for addressing this very specific problem.</p>
+<h2 id="the-solution">The Solution</h2>
+<p>So once you have found the super specific technical support like the below by clicking on your account icon in the top right and selecting <code>Support</code> from the dropdown menu:</p>
+<p><img loading="lazy" src="/images/hetzner-support-technical-mails.png" alt="Hetzner Technical Support - Mail not possible"  />
+</p>
+<p>You will then notice that there is a small mention of how you must send a request to have the ports unblocked and that is it. That is the solution. Send them a request via this dialogue box and after a short wait you&rsquo;ll be able to send mail from your Laravel app hosted on a Hetzner server just like how you can in a local environment. Fantastic.</p>
 
   </div>
 
@@ -254,52 +236,52 @@
     <h3>See Also</h3>
     <ul>
       
+      <li><a href="/articles/how-to-test-protected-functions-with-phpunit/">How to test protected functions with PHPUnit in your Laravel app</a></li>
+      
+      <li><a href="/articles/undefined-type-spatie-permission/">Undefined type &#39;Spatie\Permission\Models\&#39; . &#39;Permission&#39; | &#39;Role&#39; | &#39;HasRoles&#39;</a></li>
+      
       <li><a href="/articles/common-function-comparisons-in-php/">Common Function Comparisons in PHP</a></li>
       
-      <li><a href="/articles/3-ways-to-read-input-with-go-cli/">3 ways to read input with a Go CLI</a></li>
-      
-      <li><a href="/articles/developing-a-laravel-app-using-tinker/">Developing a Laravel Application using Tinker</a></li>
-      
-      <li><a href="/articles/why-use-docker-for-databases-and-how/">Why use Docker for databases and how</a></li>
-      
       <li><a href="/articles/rwx/">-r(ead)w(rite)x(ecute): Documentation</a></li>
+      
+      <li><a href="/articles/space-is-the-place/">Space is the Place: Reasons to explore Twitter Spaces</a></li>
       
     </ul>
     
     <ul class="post-tags">
+      <li><a href="https://www.mizouzie.dev/tags/php/">PHP</a></li>
       <li><a href="https://www.mizouzie.dev/tags/web-dev/">web dev</a></li>
-      <li><a href="https://www.mizouzie.dev/tags/career/">career</a></li>
-      <li><a href="https://www.mizouzie.dev/tags/productivity/">productivity</a></li>
-      <li><a href="https://www.mizouzie.dev/tags/learning/">learning</a></li>
+      <li><a href="https://www.mizouzie.dev/tags/documentation/">documentation</a></li>
+      <li><a href="https://www.mizouzie.dev/tags/dev-ops/">Dev Ops</a></li>
     </ul>
     <br>
     <br>
     <h4>Share this Post:</h4>
 
 <div class="share-buttons">
-    <a target="_blank" rel="noopener noreferrer" aria-label="share 3 things the best senior developers do on twitter"
-        href="https://twitter.com/intent/tweet/?text=3%20things%20the%20best%20senior%20developers%20do&amp;url=https%3a%2f%2fwww.mizouzie.dev%2farticles%2fbest-senior-developer%2f">
+    <a target="_blank" rel="noopener noreferrer" aria-label="share Send SMTP Mail from Hetzner Server with Firewall on twitter"
+        href="https://twitter.com/intent/tweet/?text=Send%20SMTP%20Mail%20from%20Hetzner%20Server%20with%20Firewall&amp;url=https%3a%2f%2fwww.mizouzie.dev%2farticles%2fsend-smtp-mail-from-hetzner-server%2f">
         <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
             <path
                 d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-253.927,424.544c135.939,0 210.268,-112.643 210.268,-210.268c0,-3.218 0,-6.437 -0.153,-9.502c14.406,-10.421 26.973,-23.448 36.935,-38.314c-13.18,5.824 -27.433,9.809 -42.452,11.648c15.326,-9.196 26.973,-23.602 32.49,-40.92c-14.252,8.429 -30.038,14.56 -46.896,17.931c-13.487,-14.406 -32.644,-23.295 -53.946,-23.295c-40.767,0 -73.87,33.104 -73.87,73.87c0,5.824 0.613,11.494 1.992,16.858c-61.456,-3.065 -115.862,-32.49 -152.337,-77.241c-6.284,10.881 -9.962,23.601 -9.962,37.088c0,25.594 13.027,48.276 32.95,61.456c-12.107,-0.307 -23.448,-3.678 -33.41,-9.196l0,0.92c0,35.862 25.441,65.594 59.311,72.49c-6.13,1.686 -12.72,2.606 -19.464,2.606c-4.751,0 -9.348,-0.46 -13.946,-1.38c9.349,29.426 36.628,50.728 68.965,51.341c-25.287,19.771 -57.164,31.571 -91.8,31.571c-5.977,0 -11.801,-0.306 -17.625,-1.073c32.337,21.15 71.264,33.41 112.95,33.41Z" />
         </svg>
     </a>
-    <a target="_blank" rel="noopener noreferrer" aria-label="share 3 things the best senior developers do on linkedin"
-        href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fwww.mizouzie.dev%2farticles%2fbest-senior-developer%2f&amp;title=3%20things%20the%20best%20senior%20developers%20do&amp;summary=3%20things%20the%20best%20senior%20developers%20do&amp;source=https%3a%2f%2fwww.mizouzie.dev%2farticles%2fbest-senior-developer%2f">
+    <a target="_blank" rel="noopener noreferrer" aria-label="share Send SMTP Mail from Hetzner Server with Firewall on linkedin"
+        href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fwww.mizouzie.dev%2farticles%2fsend-smtp-mail-from-hetzner-server%2f&amp;title=Send%20SMTP%20Mail%20from%20Hetzner%20Server%20with%20Firewall&amp;summary=Send%20SMTP%20Mail%20from%20Hetzner%20Server%20with%20Firewall&amp;source=https%3a%2f%2fwww.mizouzie.dev%2farticles%2fsend-smtp-mail-from-hetzner-server%2f">
         <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
             <path
                 d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-288.985,423.278l0,-225.717l-75.04,0l0,225.717l75.04,0Zm270.539,0l0,-129.439c0,-69.333 -37.018,-101.586 -86.381,-101.586c-39.804,0 -57.634,21.891 -67.617,37.266l0,-31.958l-75.021,0c0.995,21.181 0,225.717 0,225.717l75.02,0l0,-126.056c0,-6.748 0.486,-13.492 2.474,-18.315c5.414,-13.475 17.767,-27.434 38.494,-27.434c27.135,0 38.007,20.707 38.007,51.037l0,120.768l75.024,0Zm-307.552,-334.556c-25.674,0 -42.448,16.879 -42.448,39.002c0,21.658 16.264,39.002 41.455,39.002l0.484,0c26.165,0 42.452,-17.344 42.452,-39.002c-0.485,-22.092 -16.241,-38.954 -41.943,-39.002Z" />
         </svg>
     </a>
-    <a target="_blank" rel="noopener noreferrer" aria-label="share 3 things the best senior developers do on reddit"
-        href="https://reddit.com/submit?url=https%3a%2f%2fwww.mizouzie.dev%2farticles%2fbest-senior-developer%2f&title=3%20things%20the%20best%20senior%20developers%20do">
+    <a target="_blank" rel="noopener noreferrer" aria-label="share Send SMTP Mail from Hetzner Server with Firewall on reddit"
+        href="https://reddit.com/submit?url=https%3a%2f%2fwww.mizouzie.dev%2farticles%2fsend-smtp-mail-from-hetzner-server%2f&title=Send%20SMTP%20Mail%20from%20Hetzner%20Server%20with%20Firewall">
         <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
             <path
                 d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-3.446,265.638c0,-22.964 -18.616,-41.58 -41.58,-41.58c-11.211,0 -21.361,4.457 -28.841,11.666c-28.424,-20.508 -67.586,-33.757 -111.204,-35.278l18.941,-89.121l61.884,13.157c0.756,15.734 13.642,28.29 29.56,28.29c16.407,0 29.706,-13.299 29.706,-29.701c0,-16.403 -13.299,-29.702 -29.706,-29.702c-11.666,0 -21.657,6.792 -26.515,16.578l-69.105,-14.69c-1.922,-0.418 -3.939,-0.042 -5.585,1.036c-1.658,1.073 -2.811,2.761 -3.224,4.686l-21.152,99.438c-44.258,1.228 -84.046,14.494 -112.837,35.232c-7.468,-7.164 -17.589,-11.591 -28.757,-11.591c-22.965,0 -41.585,18.616 -41.585,41.58c0,16.896 10.095,31.41 24.568,37.918c-0.639,4.135 -0.99,8.328 -0.99,12.576c0,63.977 74.469,115.836 166.33,115.836c91.861,0 166.334,-51.859 166.334,-115.836c0,-4.218 -0.347,-8.387 -0.977,-12.493c14.564,-6.47 24.735,-21.034 24.735,-38.001Zm-119.474,108.193c-20.27,20.241 -59.115,21.816 -70.534,21.816c-11.428,0 -50.277,-1.575 -70.522,-21.82c-3.007,-3.008 -3.007,-7.882 0,-10.889c3.003,-2.999 7.882,-3.003 10.885,0c12.777,12.781 40.11,17.317 59.637,17.317c19.522,0 46.86,-4.536 59.657,-17.321c3.016,-2.999 7.886,-2.995 10.885,0.008c3.008,3.011 3.003,7.882 -0.008,10.889Zm-5.23,-48.781c-16.373,0 -29.701,-13.324 -29.701,-29.698c0,-16.381 13.328,-29.714 29.701,-29.714c16.378,0 29.706,13.333 29.706,29.714c0,16.374 -13.328,29.698 -29.706,29.698Zm-160.386,-29.702c0,-16.381 13.328,-29.71 29.714,-29.71c16.369,0 29.689,13.329 29.689,29.71c0,16.373 -13.32,29.693 -29.689,29.693c-16.386,0 -29.714,-13.32 -29.714,-29.693Z" />
         </svg>
     </a>
-    <a target="_blank" rel="noopener noreferrer" aria-label="share 3 things the best senior developers do on facebook"
-        href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fwww.mizouzie.dev%2farticles%2fbest-senior-developer%2f">
+    <a target="_blank" rel="noopener noreferrer" aria-label="share Send SMTP Mail from Hetzner Server with Firewall on facebook"
+        href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fwww.mizouzie.dev%2farticles%2fsend-smtp-mail-from-hetzner-server%2f">
         <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
             <path
                 d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-106.468,0l0,-192.915l66.6,0l12.672,-82.621l-79.272,0l0,-53.617c0,-22.603 11.073,-44.636 46.58,-44.636l36.042,0l0,-70.34c0,0 -32.71,-5.582 -63.982,-5.582c-65.288,0 -107.96,39.569 -107.96,111.204l0,62.971l-72.573,0l0,82.621l72.573,0l0,192.915l-191.104,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Z" />

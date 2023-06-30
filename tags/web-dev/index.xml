@@ -6,7 +6,16 @@
     <description>Recent content in web dev on web with mizouzie</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>made by MizouziE</copyright>
-    <lastBuildDate>Sat, 13 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.mizouzie.dev/tags/web-dev/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 30 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.mizouzie.dev/tags/web-dev/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Send SMTP Mail from Hetzner Server with Firewall</title>
+      <link>https://www.mizouzie.dev/articles/send-smtp-mail-from-hetzner-server/</link>
+      <pubDate>Fri, 30 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.mizouzie.dev/articles/send-smtp-mail-from-hetzner-server/</guid>
+      <description>The Error - stream_socket_client unable to connect (connection timed out) After building a cool little app using Laravel which makes use of the fantastic (and seemingly dead simple) symfony/mailer and you want to send a simple email via SMTP directly from the app by setting up the necessary .env variables you will undoubtedly test it out on a local/dev environment and will hopefully see that it works very well. Now the fun part of deploying it to a production server using Hetzner&amp;rsquo;s great cloud services.</description>
+    </item>
+    
     <item>
       <title>How to test protected functions with PHPUnit in your Laravel app</title>
       <link>https://www.mizouzie.dev/articles/how-to-test-protected-functions-with-phpunit/</link>

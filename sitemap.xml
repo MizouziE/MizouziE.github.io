@@ -3,13 +3,37 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://www.mizouzie.dev/articles/</loc>
-    <lastmod>2023-05-13T00:00:00+00:00</lastmod>
+    <lastmod>2023-06-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.mizouzie.dev/categories/</loc>
-    <lastmod>2023-05-13T00:00:00+00:00</lastmod>
+    <lastmod>2023-06-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.mizouzie.dev/categories/</loc>
-    <lastmod>2023-05-13T00:00:00+00:00</lastmod>
+    <lastmod>2023-06-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.mizouzie.dev/tags/dev-ops/</loc>
+    <lastmod>2023-06-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.mizouzie.dev/tags/documentation/</loc>
+    <lastmod>2023-06-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.mizouzie.dev/tags/php/</loc>
+    <lastmod>2023-06-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.mizouzie.dev/articles/send-smtp-mail-from-hetzner-server/</loc>
+    <lastmod>2023-06-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.mizouzie.dev/tags/</loc>
+    <lastmod>2023-06-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.mizouzie.dev/tags/web-dev/</loc>
+    <lastmod>2023-06-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.mizouzie.dev/categories/web-development/</loc>
+    <lastmod>2023-06-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.mizouzie.dev/</loc>
+    <lastmod>2023-06-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.mizouzie.dev/articles/how-to-test-protected-functions-with-phpunit/</loc>
     <lastmod>2023-05-13T00:00:00+00:00</lastmod>
@@ -20,22 +44,7 @@
     <loc>https://www.mizouzie.dev/tags/learning/</loc>
     <lastmod>2023-05-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.mizouzie.dev/tags/php/</loc>
-    <lastmod>2023-05-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.mizouzie.dev/tags/</loc>
-    <lastmod>2023-05-13T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://www.mizouzie.dev/categories/tutorial/</loc>
-    <lastmod>2023-05-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.mizouzie.dev/tags/web-dev/</loc>
-    <lastmod>2023-05-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.mizouzie.dev/categories/web-development/</loc>
-    <lastmod>2023-05-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.mizouzie.dev/</loc>
     <lastmod>2023-05-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.mizouzie.dev/articles/undefined-type-spatie-permission/</loc>
@@ -138,9 +147,6 @@
     <lastmod>2023-02-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.mizouzie.dev/articles/rwx/</loc>
-    <lastmod>2022-08-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.mizouzie.dev/tags/documentation/</loc>
     <lastmod>2022-08-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.mizouzie.dev/articles/l-i-f-t/</loc>
