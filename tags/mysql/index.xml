@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mysql on web with mizouzie</title>
+    <link>https://www.mizouzie.dev/tags/mysql/</link>
+    <description>Recent content in mysql on web with mizouzie</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>made by MizouziE</copyright>
+    <lastBuildDate>Sat, 01 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.mizouzie.dev/tags/mysql/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MySQL Database Migration to a Remote Server from a .gz mysqldump file</title>
+      <link>https://www.mizouzie.dev/articles/mysql-database-migration-to-remote-server-from-gz-file/</link>
+      <pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.mizouzie.dev/articles/mysql-database-migration-to-remote-server-from-gz-file/</guid>
+      <description>Introduction I had a task a few months back of discovering the cause of a bug in a production environment that just was not presenting itself in development, mostly due to the creators and users of the application having ever so slightly differing ideas about how the app should be used. This meant that in all of our testing while making the application, we never saw the bug that was being reported.</description>
+    </item>
+    
+  </channel>
+</rss>
