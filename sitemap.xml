@@ -3,13 +3,34 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://www.mizouzie.dev/articles/</loc>
-    <lastmod>2023-07-01T00:00:00+00:00</lastmod>
+    <lastmod>2023-07-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.mizouzie.dev/categories/</loc>
-    <lastmod>2023-07-01T00:00:00+00:00</lastmod>
+    <lastmod>2023-07-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.mizouzie.dev/categories/</loc>
-    <lastmod>2023-07-01T00:00:00+00:00</lastmod>
+    <lastmod>2023-07-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.mizouzie.dev/articles/tried-working-at-30000ft/</loc>
+    <lastmod>2023-07-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.mizouzie.dev/categories/self-development/</loc>
+    <lastmod>2023-07-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.mizouzie.dev/tags/self-care/</loc>
+    <lastmod>2023-07-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.mizouzie.dev/tags/</loc>
+    <lastmod>2023-07-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.mizouzie.dev/tags/web-dev/</loc>
+    <lastmod>2023-07-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.mizouzie.dev/categories/web-development/</loc>
+    <lastmod>2023-07-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.mizouzie.dev/</loc>
+    <lastmod>2023-07-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.mizouzie.dev/tags/cli/</loc>
     <lastmod>2023-07-01T00:00:00+00:00</lastmod>
@@ -26,19 +47,10 @@
     <loc>https://www.mizouzie.dev/articles/mysql-database-migration-to-remote-server-from-gz-file/</loc>
     <lastmod>2023-07-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.mizouzie.dev/tags/</loc>
-    <lastmod>2023-07-01T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://www.mizouzie.dev/tags/tutorial/</loc>
     <lastmod>2023-07-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.mizouzie.dev/categories/tutorial/</loc>
-    <lastmod>2023-07-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.mizouzie.dev/categories/web-development/</loc>
-    <lastmod>2023-07-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.mizouzie.dev/</loc>
     <lastmod>2023-07-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.mizouzie.dev/tags/dev-ops/</loc>
@@ -51,9 +63,6 @@
     <lastmod>2023-06-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.mizouzie.dev/articles/send-smtp-mail-from-hetzner-server/</loc>
-    <lastmod>2023-06-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.mizouzie.dev/tags/web-dev/</loc>
     <lastmod>2023-06-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.mizouzie.dev/articles/how-to-test-protected-functions-with-phpunit/</loc>
@@ -147,12 +156,6 @@
     <lastmod>2023-02-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.mizouzie.dev/articles/re-reading-old-blogs/</loc>
-    <lastmod>2023-02-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.mizouzie.dev/categories/self-development/</loc>
-    <lastmod>2023-02-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.mizouzie.dev/tags/self-care/</loc>
     <lastmod>2023-02-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.mizouzie.dev/articles/rwx/</loc>
