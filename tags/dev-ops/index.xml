@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dev Ops on web with mizouzie</title>
+    <link>https://www.mizouzie.dev/tags/dev-ops/</link>
+    <description>Recent content in Dev Ops on web with mizouzie</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>made by MizouziE</copyright>
+    <lastBuildDate>Fri, 30 Jun 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://www.mizouzie.dev/tags/dev-ops/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Send SMTP Mail from Hetzner Server with Firewall</title>
+      <link>https://www.mizouzie.dev/articles/send-smtp-mail-from-hetzner-server/</link>
+      <pubDate>Fri, 30 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/articles/send-smtp-mail-from-hetzner-server/</guid>
+      <description>Laravel Mail Working locally but not on server. Getting stream_socket_client timeout error. We must allow outgoing TCP Connections in Hetzner Firewall.</description>
+    </item>
+  </channel>
+</rss>

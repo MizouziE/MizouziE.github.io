@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docker on web with mizouzie</title>
+    <link>https://www.mizouzie.dev/tags/docker/</link>
+    <description>Recent content in Docker on web with mizouzie</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>made by MizouziE</copyright>
+    <lastBuildDate>Sun, 05 Feb 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://www.mizouzie.dev/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Why use Docker for databases and how</title>
+      <link>https://www.mizouzie.dev/articles/why-use-docker-for-databases-and-how/</link>
+      <pubDate>Sun, 05 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/articles/why-use-docker-for-databases-and-how/</guid>
+      <description>Docker is an invaluable piece to add to any tech stack for a multitude of reasons, but it can often be confusing to work with. Here we&amp;rsquo;ll dive into my favourite way to use Docker containers and explain every step   .</description>
+    </item>
+  </channel>
+</rss>

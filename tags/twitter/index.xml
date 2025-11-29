@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Twitter on web with mizouzie</title>
+    <link>https://www.mizouzie.dev/tags/twitter/</link>
+    <description>Recent content in Twitter on web with mizouzie</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>made by MizouziE</copyright>
+    <lastBuildDate>Tue, 28 Mar 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://www.mizouzie.dev/tags/twitter/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Space is the Place: Reasons to explore Twitter Spaces</title>
+      <link>https://www.mizouzie.dev/articles/space-is-the-place/</link>
+      <pubDate>Tue, 28 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/articles/space-is-the-place/</guid>
+      <description>Space! The Final Frontier&amp;hellip; but what if it is the beginning? Twitter spaces are a great way to meet and trade ideas with people from across the globe from the comfort of your sofa!</description>
+    </item>
+  </channel>
+</rss>

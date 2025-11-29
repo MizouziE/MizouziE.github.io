@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Self-Care on web with mizouzie</title>
+    <link>https://www.mizouzie.dev/tags/self-care/</link>
+    <description>Recent content in Self-Care on web with mizouzie</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>made by MizouziE</copyright>
+    <lastBuildDate>Wed, 05 Jul 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://www.mizouzie.dev/tags/self-care/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>I Tried Working at 30,000ft</title>
+      <link>https://www.mizouzie.dev/articles/tried-working-at-30000ft/</link>
+      <pubDate>Wed, 05 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/articles/tried-working-at-30000ft/</guid>
+      <description>The rare occasion of me traveling alone came up and I was excited to have a few hours alone with my thoughts and make the most of the opportunity to get loads of work done.</description>
+    </item>
+    <item>
+      <title>Re-reading my old blogs</title>
+      <link>https://www.mizouzie.dev/articles/re-reading-old-blogs/</link>
+      <pubDate>Thu, 02 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/articles/re-reading-old-blogs/</guid>
+      <description>Having finally made a site to house my own work, using old material from a year ago had some unexpected benefits.</description>
+    </item>
+    <item>
+      <title>L.I.F.T - the anti-advice that could save you</title>
+      <link>https://www.mizouzie.dev/articles/l-i-f-t/</link>
+      <pubDate>Tue, 31 May 2022 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/articles/l-i-f-t/</guid>
+      <description>It&amp;rsquo;s not bad advice when I say Leave It For Tomorrow!</description>
+    </item>
+    <item>
+      <title>Recognise struggle for what it is</title>
+      <link>https://www.mizouzie.dev/articles/recognise-struggle/</link>
+      <pubDate>Wed, 18 May 2022 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/articles/recognise-struggle/</guid>
+      <description>It is what it is. Learn what you can.</description>
+    </item>
+    <item>
+      <title>Starting is one thing, STOPPING is another</title>
+      <link>https://www.mizouzie.dev/articles/know-when-to-stop/</link>
+      <pubDate>Fri, 22 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/articles/know-when-to-stop/</guid>
+      <description>It is vitally important to keep track of yourself when working. Let&amp;rsquo;s explore a few of the pitfalls.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Laravel on web with mizouzie</title>
+    <link>https://www.mizouzie.dev/tags/laravel/</link>
+    <description>Recent content in Laravel on web with mizouzie</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>made by MizouziE</copyright>
+    <lastBuildDate>Sat, 13 May 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://www.mizouzie.dev/tags/laravel/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to test protected functions with PHPUnit in your Laravel app</title>
+      <link>https://www.mizouzie.dev/articles/how-to-test-protected-functions-with-phpunit/</link>
+      <pubDate>Sat, 13 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/articles/how-to-test-protected-functions-with-phpunit/</guid>
+      <description>An essential part of developing an app is testing your code. My preferred method of testing my Laravel code is using PHPUnit and this is how I use reflection to test those &amp;lsquo;harder to reach&amp;rsquo; protected and private methods inside classes.</description>
+    </item>
+    <item>
+      <title>Undefined type &#39;Spatie\Permission\Models\&#39; . &#39;Permission&#39; | &#39;Role&#39; | &#39;HasRoles&#39;</title>
+      <link>https://www.mizouzie.dev/articles/undefined-type-spatie-permission/</link>
+      <pubDate>Thu, 13 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/articles/undefined-type-spatie-permission/</guid>
+      <description>VSCode with intelephense throws a strange and hard to debug error when using the spatie/laravel-permissions package even when you follow the docs to the letter. Here is how to fix it.</description>
+    </item>
+    <item>
+      <title>How to Unlock Formkit Multistep forms on a Laravel Inertia app with Vue 3</title>
+      <link>https://www.mizouzie.dev/articles/how-to-unlock-formkit-multistep-forms-on-laravel-inertia-app-with-vue-3/</link>
+      <pubDate>Thu, 09 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/articles/how-to-unlock-formkit-multistep-forms-on-laravel-inertia-app-with-vue-3/</guid>
+      <description>Formkit offers a great Multi-Step tool for building forms in your Vue app, but getting it to work inside a Laravel Inertia app is a little tricky. Here is how to get it running.</description>
+    </item>
+    <item>
+      <title>SEO Keyword Content Analysis</title>
+      <link>https://www.mizouzie.dev/projects/seo-keyword-content-analysis/</link>
+      <pubDate>Fri, 17 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/projects/seo-keyword-content-analysis/</guid>
+      <description>This laravel application analyzes data gathered from your site and your competitor’s sites and gives you a comparative report to highlight where you are missing out on providing content that could help you to rank higher in search engine results. This is an example of the documentation I wrote during the development.</description>
+    </item>
+    <item>
+      <title>Developing a Laravel Application using Tinker</title>
+      <link>https://www.mizouzie.dev/articles/developing-a-laravel-app-using-tinker/</link>
+      <pubDate>Wed, 08 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/articles/developing-a-laravel-app-using-tinker/</guid>
+      <description>The Laravel framework has a huge amount of helpful features, let&amp;rsquo;s take a deeper look at one of the most powerful. Tinker.</description>
+    </item>
+    <item>
+      <title>If it doesn&#39;t make sense, build a little version</title>
+      <link>https://www.mizouzie.dev/articles/build-a-little-version/</link>
+      <pubDate>Sun, 15 May 2022 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/articles/build-a-little-version/</guid>
+      <description>Been a while since I wrote a longer article, so here&amp;rsquo;s a longer article explaining what it is I have been doing. Basically levelling up a bit. Learning to build and building to learn!</description>
+    </item>
+    <item>
+      <title>Heroku vs Laravel (vs me...)</title>
+      <link>https://www.mizouzie.dev/articles/heroku-vs-laravel/</link>
+      <pubDate>Tue, 26 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/articles/heroku-vs-laravel/</guid>
+      <description>Deploying a Laravel app on a (then) popular free hosting platform proved tricky, so here are the steps that no-one told me.</description>
+    </item>
+    <item>
+      <title>Why I&#39;m glad I used QuickAdminPanel today</title>
+      <link>https://www.mizouzie.dev/articles/quickadminpanel/</link>
+      <pubDate>Wed, 20 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/articles/quickadminpanel/</guid>
+      <description>My first impression when using a third party tool to speed up the development process of a Laravel web app.</description>
+    </item>
+  </channel>
+</rss>

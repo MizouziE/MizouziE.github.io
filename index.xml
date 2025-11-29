@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>web with mizouzie</title>
+    <link>https://www.mizouzie.dev/</link>
+    <description>Recent content on web with mizouzie</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>made by MizouziE</copyright>
+    <lastBuildDate>Wed, 05 Jul 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://www.mizouzie.dev/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>I Tried Working at 30,000ft</title>
+      <link>https://www.mizouzie.dev/articles/tried-working-at-30000ft/</link>
+      <pubDate>Wed, 05 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/articles/tried-working-at-30000ft/</guid>
+      <description>The rare occasion of me traveling alone came up and I was excited to have a few hours alone with my thoughts and make the most of the opportunity to get loads of work done.</description>
+    </item>
+    <item>
+      <title>MySQL Database Migration to a Remote Server from a .gz mysqldump file</title>
+      <link>https://www.mizouzie.dev/articles/mysql-database-migration-to-remote-server-from-gz-file/</link>
+      <pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/articles/mysql-database-migration-to-remote-server-from-gz-file/</guid>
+      <description>Some bugs only appear when your web application is truly tested out in production. The actual use cases of your data structure may differ from what you imagined, so make a dump of the prod DB and play around on a development server.</description>
+    </item>
+    <item>
+      <title>Send SMTP Mail from Hetzner Server with Firewall</title>
+      <link>https://www.mizouzie.dev/articles/send-smtp-mail-from-hetzner-server/</link>
+      <pubDate>Fri, 30 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/articles/send-smtp-mail-from-hetzner-server/</guid>
+      <description>Laravel Mail Working locally but not on server. Getting stream_socket_client timeout error. We must allow outgoing TCP Connections in Hetzner Firewall.</description>
+    </item>
+    <item>
+      <title>How to test protected functions with PHPUnit in your Laravel app</title>
+      <link>https://www.mizouzie.dev/articles/how-to-test-protected-functions-with-phpunit/</link>
+      <pubDate>Sat, 13 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/articles/how-to-test-protected-functions-with-phpunit/</guid>
+      <description>An essential part of developing an app is testing your code. My preferred method of testing my Laravel code is using PHPUnit and this is how I use reflection to test those &amp;lsquo;harder to reach&amp;rsquo; protected and private methods inside classes.</description>
+    </item>
+    <item>
+      <title>Undefined type &#39;Spatie\Permission\Models\&#39; . &#39;Permission&#39; | &#39;Role&#39; | &#39;HasRoles&#39;</title>
+      <link>https://www.mizouzie.dev/articles/undefined-type-spatie-permission/</link>
+      <pubDate>Thu, 13 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/articles/undefined-type-spatie-permission/</guid>
+      <description>VSCode with intelephense throws a strange and hard to debug error when using the spatie/laravel-permissions package even when you follow the docs to the letter. Here is how to fix it.</description>
+    </item>
+    <item>
+      <title>Space is the Place: Reasons to explore Twitter Spaces</title>
+      <link>https://www.mizouzie.dev/articles/space-is-the-place/</link>
+      <pubDate>Tue, 28 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/articles/space-is-the-place/</guid>
+      <description>Space! The Final Frontier&amp;hellip; but what if it is the beginning? Twitter spaces are a great way to meet and trade ideas with people from across the globe from the comfort of your sofa!</description>
+    </item>
+    <item>
+      <title>3 things the best senior developers do</title>
+      <link>https://www.mizouzie.dev/articles/best-senior-developer/</link>
+      <pubDate>Fri, 24 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/articles/best-senior-developer/</guid>
+      <description>Working under the care of a more experienced developer can make or break a junior developer&amp;rsquo;s career. Here are 3 things the best senior developers do.</description>
+    </item>
+    <item>
+      <title>How to Unlock Formkit Multistep forms on a Laravel Inertia app with Vue 3</title>
+      <link>https://www.mizouzie.dev/articles/how-to-unlock-formkit-multistep-forms-on-laravel-inertia-app-with-vue-3/</link>
+      <pubDate>Thu, 09 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/articles/how-to-unlock-formkit-multistep-forms-on-laravel-inertia-app-with-vue-3/</guid>
+      <description>Formkit offers a great Multi-Step tool for building forms in your Vue app, but getting it to work inside a Laravel Inertia app is a little tricky. Here is how to get it running.</description>
+    </item>
+    <item>
+      <title>Common Function Comparisons in PHP</title>
+      <link>https://www.mizouzie.dev/articles/common-function-comparisons-in-php/</link>
+      <pubDate>Sat, 04 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/articles/common-function-comparisons-in-php/</guid>
+      <description>How do you decide between two functions that, at a glance, seem to do the same thing? Let&amp;rsquo;s pick apart the differences to try and make it easier.</description>
+    </item>
+    <item>
+      <title>3 ways to read input with a Go CLI</title>
+      <link>https://www.mizouzie.dev/articles/3-ways-to-read-input-with-go-cli/</link>
+      <pubDate>Thu, 23 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/articles/3-ways-to-read-input-with-go-cli/</guid>
+      <description>Tutorial with examples showing 3 different ways to read user input when building a command line interface (CLI) with Go</description>
+    </item>
+    <item>
+      <title>AI as a Creator</title>
+      <link>https://www.mizouzie.dev/projects/ai-as-a-creator/</link>
+      <pubDate>Tue, 21 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/projects/ai-as-a-creator/</guid>
+      <description>A project using the bi-products of an ongoing AI application development.</description>
+    </item>
+    <item>
+      <title>New Side Project - AI as a Creator</title>
+      <link>https://www.mizouzie.dev/articles/new-side-project-ai-as-a-creator/</link>
+      <pubDate>Mon, 20 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/articles/new-side-project-ai-as-a-creator/</guid>
+      <description>Working with AI tools is taking the web development world by storm. This is how I plan to make use of it though.</description>
+    </item>
+    <item>
+      <title>Go CLI User Input Experiment</title>
+      <link>https://www.mizouzie.dev/projects/go-input-gist/</link>
+      <pubDate>Sat, 18 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/projects/go-input-gist/</guid>
+      <description>While building a CLI with Go, I ran a few little experiments without business logic to ensure that I was able to read user input exactly as expected.</description>
+    </item>
+    <item>
+      <title>Enkle Word Game</title>
+      <link>https://www.mizouzie.dev/projects/enkle-word-game/</link>
+      <pubDate>Fri, 17 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/projects/enkle-word-game/</guid>
+      <description>A game built using JavaScript based on the same concepts as Wordle. Designed to be customizable for my young son to enjoy.</description>
+    </item>
+    <item>
+      <title>SEO Keyword Content Analysis</title>
+      <link>https://www.mizouzie.dev/projects/seo-keyword-content-analysis/</link>
+      <pubDate>Fri, 17 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/projects/seo-keyword-content-analysis/</guid>
+      <description>This laravel application analyzes data gathered from your site and your competitor’s sites and gives you a comparative report to highlight where you are missing out on providing content that could help you to rank higher in search engine results. This is an example of the documentation I wrote during the development.</description>
+    </item>
+    <item>
+      <title>How to make your GitHub project pop on social media</title>
+      <link>https://www.mizouzie.dev/articles/make-your-github-project-stand-out/</link>
+      <pubDate>Thu, 16 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/articles/make-your-github-project-stand-out/</guid>
+      <description>Half the battle of progressing your open source project is getting it noticed and attracting contributors. So make the most of this simple trick.</description>
+    </item>
+    <item>
+      <title>Why I won&#39;t use AI on this blog</title>
+      <link>https://www.mizouzie.dev/articles/why-i-wont-use-ai/</link>
+      <pubDate>Tue, 14 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/articles/why-i-wont-use-ai/</guid>
+      <description>Artificial Intelligence is the hottest topic in a long while and we are certain to see it creep into content on the web. However, I will try to avoid the trend.</description>
+    </item>
+    <item>
+      <title>Developing a Laravel Application using Tinker</title>
+      <link>https://www.mizouzie.dev/articles/developing-a-laravel-app-using-tinker/</link>
+      <pubDate>Wed, 08 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/articles/developing-a-laravel-app-using-tinker/</guid>
+      <description>The Laravel framework has a huge amount of helpful features, let&amp;rsquo;s take a deeper look at one of the most powerful. Tinker.</description>
+    </item>
+    <item>
+      <title>Energy Price News API</title>
+      <link>https://www.mizouzie.dev/projects/energy-price-news/</link>
+      <pubDate>Sun, 05 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/projects/energy-price-news/</guid>
+      <description>A project to create a public API that scrapes news sites for anything concerning the changes in energy prices.</description>
+    </item>
+    <item>
+      <title>Why use Docker for databases and how</title>
+      <link>https://www.mizouzie.dev/articles/why-use-docker-for-databases-and-how/</link>
+      <pubDate>Sun, 05 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/articles/why-use-docker-for-databases-and-how/</guid>
+      <description>Docker is an invaluable piece to add to any tech stack for a multitude of reasons, but it can often be confusing to work with. Here we&amp;rsquo;ll dive into my favourite way to use Docker containers and explain every step   .</description>
+    </item>
+    <item>
+      <title>Re-reading my old blogs</title>
+      <link>https://www.mizouzie.dev/articles/re-reading-old-blogs/</link>
+      <pubDate>Thu, 02 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/articles/re-reading-old-blogs/</guid>
+      <description>Having finally made a site to house my own work, using old material from a year ago had some unexpected benefits.</description>
+    </item>
+    <item>
+      <title>-r(ead)w(rite)x(ecute): Documentation</title>
+      <link>https://www.mizouzie.dev/articles/rwx/</link>
+      <pubDate>Tue, 09 Aug 2022 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/articles/rwx/</guid>
+      <description>I wrote a big piece of documentation recently. Here&amp;rsquo;s how it drastically improved my developer flow.</description>
+    </item>
+    <item>
+      <title>L.I.F.T - the anti-advice that could save you</title>
+      <link>https://www.mizouzie.dev/articles/l-i-f-t/</link>
+      <pubDate>Tue, 31 May 2022 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/articles/l-i-f-t/</guid>
+      <description>It&amp;rsquo;s not bad advice when I say Leave It For Tomorrow!</description>
+    </item>
+    <item>
+      <title>Recognise struggle for what it is</title>
+      <link>https://www.mizouzie.dev/articles/recognise-struggle/</link>
+      <pubDate>Wed, 18 May 2022 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/articles/recognise-struggle/</guid>
+      <description>It is what it is. Learn what you can.</description>
+    </item>
+    <item>
+      <title>If it doesn&#39;t make sense, build a little version</title>
+      <link>https://www.mizouzie.dev/articles/build-a-little-version/</link>
+      <pubDate>Sun, 15 May 2022 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/articles/build-a-little-version/</guid>
+      <description>Been a while since I wrote a longer article, so here&amp;rsquo;s a longer article explaining what it is I have been doing. Basically levelling up a bit. Learning to build and building to learn!</description>
+    </item>
+    <item>
+      <title>My Top 3 Benefits of Open Source Contribution</title>
+      <link>https://www.mizouzie.dev/articles/benefits-of-os/</link>
+      <pubDate>Fri, 29 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/articles/benefits-of-os/</guid>
+      <description>There are so many good things about Open Source, but here are my current top 3 from the perspective of an emerging developer</description>
+    </item>
+    <item>
+      <title>Heroku vs Laravel (vs me...)</title>
+      <link>https://www.mizouzie.dev/articles/heroku-vs-laravel/</link>
+      <pubDate>Tue, 26 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/articles/heroku-vs-laravel/</guid>
+      <description>Deploying a Laravel app on a (then) popular free hosting platform proved tricky, so here are the steps that no-one told me.</description>
+    </item>
+    <item>
+      <title>Starting is one thing, STOPPING is another</title>
+      <link>https://www.mizouzie.dev/articles/know-when-to-stop/</link>
+      <pubDate>Fri, 22 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/articles/know-when-to-stop/</guid>
+      <description>It is vitally important to keep track of yourself when working. Let&amp;rsquo;s explore a few of the pitfalls.</description>
+    </item>
+    <item>
+      <title>Why I&#39;m glad I used QuickAdminPanel today</title>
+      <link>https://www.mizouzie.dev/articles/quickadminpanel/</link>
+      <pubDate>Wed, 20 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/articles/quickadminpanel/</guid>
+      <description>My first impression when using a third party tool to speed up the development process of a Laravel web app.</description>
+    </item>
+    <item>
+      <title>How I just customised my featured link thumbnail</title>
+      <link>https://www.mizouzie.dev/articles/customised-featured-link-thumbnail/</link>
+      <pubDate>Tue, 19 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/articles/customised-featured-link-thumbnail/</guid>
+      <description>How to make sure that any thumbnail of a link shared to my page looked how I wanted it to.</description>
+    </item>
+  </channel>
+</rss>

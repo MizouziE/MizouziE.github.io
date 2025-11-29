@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>OpenAI on web with mizouzie</title>
+    <link>https://www.mizouzie.dev/tags/openai/</link>
+    <description>Recent content in OpenAI on web with mizouzie</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>made by MizouziE</copyright>
+    <lastBuildDate>Tue, 21 Feb 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://www.mizouzie.dev/tags/openai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI as a Creator</title>
+      <link>https://www.mizouzie.dev/projects/ai-as-a-creator/</link>
+      <pubDate>Tue, 21 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/projects/ai-as-a-creator/</guid>
+      <description>A project using the bi-products of an ongoing AI application development.</description>
+    </item>
+    <item>
+      <title>New Side Project - AI as a Creator</title>
+      <link>https://www.mizouzie.dev/articles/new-side-project-ai-as-a-creator/</link>
+      <pubDate>Mon, 20 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/articles/new-side-project-ai-as-a-creator/</guid>
+      <description>Working with AI tools is taking the web development world by storm. This is how I plan to make use of it though.</description>
+    </item>
+  </channel>
+</rss>

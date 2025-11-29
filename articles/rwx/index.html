@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>-r(ead)w(rite)x(ecute): Documentation | web with mizouzie</title>
+<meta name="keywords" content="web dev, documentation, learning" />
+<script src="https://cdn.jsdelivr.net/gh/manucaralmo/GlowCookies@3.1.7/src/glowCookies.min.js"></script>
+<script>
+    glowCookies.start('en', { 
+        style: 2,
+        analytics: "G-MN6WKZ3S7T", 
+        hideAfterClick: true,
+        policyLink: '/privacy-policy',
+        bannerDescription: '<p align="center">As I am a web developer, I use cookies to learn about ways to make this site better, nothing sinister.</p><br><p align="center">However, feel free to disable them here.</p>',
+        bannerLinkText: '<p align="center">Read Privacy policy<p>',
+        bannerHeading: '<h2 align="center">Cookies</h2>',
+        acceptBtnText: 'Accept',
+        acceptBtnColor: '#097969',
+        acceptBtnBackground: '#ECFFDC',
+        rejectBtnText: 'Disable',
+        rejectBtnBackground: '#cd5c5c',
+        rejectBtnColor: '#880808'
+    });
+</script>
+<meta name="google-site-verification" content="psw8-5863N9APj0ZK5Lg3BMygE0vQEYIB7q2uJq-FPo" />
+<meta property="og:image" content="https://www.mizouzie.dev/images/rwx.jpeg">
+<meta property="og:image:width" content="510">
+<meta property="og:image:height" content="340">
+<meta property="og:title" content="-r(ead)w(rite)x(ecute): Documentation | web with mizouzie">
+<meta name="og:description" content="I wrote a big piece of documentation recently. Here&#39;s how it drastically improved my developer flow.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.mizouzie.dev/articles/rwx/">
+<meta property="twitter:title" content="-r(ead)w(rite)x(ecute): Documentation | web with mizouzie">
+<meta name="twitter:description" content="I wrote a big piece of documentation recently. Here&#39;s how it drastically improved my developer flow.">
+<meta property="twitter:image" content="https://www.mizouzie.dev/images/rwx.jpeg">
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:site" content="@mizouzie">
+<meta property="twitter:creator" content="@mizouzie">
+<meta name="description" content="I wrote a big piece of documentation recently. Here&#39;s how it drastically improved my developer flow.">
+<meta name="author" content="Sam Anglin">
+<link rel="canonical" href="https://www.mizouzie.dev/articles/rwx/" />
+      <link rel="stylesheet" href="/css/share-buttons.min.2873e064430e65b4201815f6d108ce98cc136accfec877acffc67f41d37b8044.css" integrity="sha256-KHPgZEMOZbQgGBX20QjOmMwTasz&#43;yHes/8Z/QdN7gEQ=" crossorigin="anonymous">
+      <link rel="stylesheet" href="/css/root.min.0e732b812b9751962e01a7c4798a1211cd5f8ac8abec7f99793fe306989e459f.css" integrity="sha256-DnMrgSuXUZYuAafEeYoSEc1fisir7H&#43;ZeT/jBpieRZ8=" crossorigin="anonymous">
+      <link rel="stylesheet" href="/css/bundle.min.d95a325399a05b50fe47dcf35b8229b8a2a014fcee5435cfb28204c6ac335fc5.css" integrity="sha256-2VoyU5mgW1D&#43;R9zzW4IpuKKgFPzuVDXPsoIExqwzX8U=" crossorigin="anonymous">
+
+      <script src="/js/bundle.cc8ae9952dbfb731affafabdf26e5c60a6910047ff59ccdeaf1daebaa26c8830.js" integrity="sha256-zIrplS2/tzGv&#43;vq98m5cYKaRAEf/Wczerx2uuqJsiDA=" crossorigin="anonymous"></script><script defer src="/js/search/flexsearch.compact.64594b125f7b78bdf4fa8316955922bbebb1cd6baef3f16654bfca20309f18f8.js" integrity="sha256-ZFlLEl97eL30&#43;oMWlVkiu&#43;uxzWuu8/FmVL/KIDCfGPg="></script>
+<script defer src="/js/search/search.221545f425507db36bacce69b81457d3a83ecea5140ee7ecb6fc130736d5021f.js" integrity="sha256-IhVF9CVQfbNrrM5puBRX06g&#43;zqUUDufstvwTBzbVAh8="></script>
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+<link rel="icon" href="https://www.mizouzie.dev/images/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://www.mizouzie.dev/images/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://www.mizouzie.dev/images/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://www.mizouzie.dev/images/apple-touch-icon.png">
+<link rel="mask-icon" href="https://www.mizouzie.dev/images/apple-touch-icon.png">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://www.mizouzie.dev/articles/rwx/" />
+
+</head>
+<body class="notransition">
+  <div id="container">
+    <header id="main-header"><div role="navigation" aria-label="Main">
+  <div class="nav-left">
+    <a href="https://www.mizouzie.dev/" style="color: inherit;">web with mizouzie</a>
+  </div>
+  <div class="nav-right">
+    <div style="position:absolute;width:0px;height:0px;">
+      <div id="nav-dropdown-menu" class="hidden" href="#">
+    <div class="nav-item">
+      <a href="/articles/"
+      >Articles</a>
+    </div>
+    <div class="nav-item">
+      <a href="/categories/"
+      >Categories</a>
+    </div>
+    <div class="nav-item">
+      <a href="/projects/"
+      >Projects</a>
+    </div>
+    <div class="nav-item">
+      <a href="/contact/"
+      >Contact</a>
+    </div>
+</div>
+    </div>
+    <a id="nav-dropdown-button" href="#"><svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 6H20M4 12H20M4 18H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</a>
+    <div id="nav-menu">
+    <div class="nav-item">
+      <a href="/articles/"
+      >Articles</a>
+    </div>
+    <div class="nav-item">
+      <a href="/categories/"
+      >Categories</a>
+    </div>
+    <div class="nav-item">
+      <a href="/projects/"
+      >Projects</a>
+    </div>
+    <div class="nav-item">
+      <a href="/contact/"
+      >Contact</a>
+    </div>
+</div>
+    <a id="theme-switcher" href="#">
+<svg class="light-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 3V4M12 20V21M4 12H3M6.31412 6.31412L5.5 5.5M17.6859 6.31412L18.5 5.5M6.31412 17.69L5.5 18.5001M17.6859 17.69L18.5 18.5001M21 12H20M16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+<svg class="dark-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.32031 11.6835C3.32031 16.6541 7.34975 20.6835 12.3203 20.6835C16.1075 20.6835 19.3483 18.3443 20.6768 15.032C19.6402 15.4486 18.5059 15.6834 17.3203 15.6834C12.3497 15.6834 8.32031 11.654 8.32031 6.68342C8.32031 5.50338 8.55165 4.36259 8.96453 3.32996C5.65605 4.66028 3.32031 7.89912 3.32031 11.6835Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</a>
+  </div>
+</div>
+</header>
+    <div class="flex grow">
+      <div id="main-pane">
+        <main id="main-content"><div class="single-header">
+<ol class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <a itemprop="item" href="https://www.mizouzie.dev/">
+        <span itemprop="name">Home</span>
+      </a>
+      <meta itemprop="position" content='1' />
+    </li>
+    <span>&nbsp»&nbsp</span>
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <a itemprop="item" href="https://www.mizouzie.dev/articles/">
+        <span itemprop="name">Articles</span>
+      </a>
+      <meta itemprop="position" content='2' />
+    </li>
+    <span>&nbsp»&nbsp</span>
+</ol>
+<h1>-r(ead)w(rite)x(ecute): Documentation</h1><time class="dim" datetime="2022-08-09T00:00:00&#43;00:00">August 9, 2022</time><div class="term-container"><div class="tag">
+        <a href="https://www.mizouzie.dev/tags/web-dev/">#web dev</a>
+      </div><div class="tag">
+        <a href="https://www.mizouzie.dev/tags/documentation/">#documentation</a>
+      </div><div class="tag">
+        <a href="https://www.mizouzie.dev/tags/learning/">#learning</a>
+      </div></ol></div>
+  <section class="page-section"><p><img src="/images/rwx.jpeg" alt="working on a laptop"></p>
+<p>I&rsquo;ve hit a year now working as part of a development team with PHP and Laravel. Before I was ever involved, the project I&rsquo;ve worked most on was already running and comprised of a RESTful API, a CMS and umpteen instances of frontend applications that showed all the wonderfully managed data to the end users.</p>
+<p>Even though I&rsquo;ve probably spent a few hours a day working here and there with the various code bases, I&rsquo;ve only very recently felt like I <em>know</em> the ins and outs of how it works and that is thanks to having been given the task of writing the documentation for the whole thing. The project existed and was managed by a very small group of people, so up until now, there was no real need for docs as the group were the ones requesting features as and when they needed. However, there will soon be a new team introduced to the system and it became apparent that the application was far more complex than first envisaged.</p>
+<p>So, being the junior in the company, the template was chosen and the repo was handed over to me to fill in. At first I thought it&rsquo;d be a nice easy task as most of the application was fairly self explanatory. I was mistaken. There were corners of this thing I didn&rsquo;t have the first clue about&hellip; so how was I gonna write about how it is meant to be used?! I had to ask or just figure it out.</p>
+<p>A week had gone by and I&rsquo;d only managed to map everything out by headings plus some <code>lorem ipsum</code> filler and it was amounting to around about 40 pages&hellip; I couldn&rsquo;t believe it was possible to have worked so many hours on something and still have such a shallow understanding of it. I needed to get writing. So I started out with what I already understood.</p>
+<p>Once I&rsquo;d exhausted my comfort zones I had to research. I clicked through every single possible link and button and tried every preference and setting. I spent almost another week exploring this tool I&rsquo;d been staring at the bones of for the past year. And I&rsquo;ll tell you what, I was kinda proud of how good the tool was! It was powerful, fast and more sensibly laid out than most web apps I&rsquo;ve had to use in the past. I was amazed I&rsquo;d had no idea how good the thing I&rsquo;d contributed to turned out so good.</p>
+<p>The shocks did not stop there though.</p>
+<p>I completed the task, as far as writing and first draft and formatting goes, a week ago and have had a few days on other projects and traveling since. This morning I was told to investigate and fix a bug that, a few weeks ago, would have had me scratching my head for a good few days. No head scratching today though. Before I new it, I&rsquo;d checked out the reported bug, checked the raw API response that lead to it, browsed through the routes for the API and identified the controller and method for that particular endpoint and was running through the query builder string in my head to see just why the problem was occurring.</p>
+<p>I saw no obvious problem&hellip; But before that had a chance to stump me, one particular chapter which I&rsquo;d had to thoroughly investigate popped into my head and I went straight to that part of the CMS to see if what I predicted was present. IT WAS!</p>
+<p>Just from the new found deep understanding after writing the documentation, I was able to imagine exactly what might be causing the issue. It was a first for me with this project. My debugging had never flowed so smooth. I took this understanding, went back to the controller and added in what was missing to prevent the bug from existing. Done.</p>
+<p>It took me just over 50 minutes total. Never dealt with anything on this project in such a short timeframe.</p>
+<p>Before, I was just trying to -r-x (read the code and execute a task) and it was a painful and frustrating learning curve.</p>
+<p>Now that I am -rwx (read the code, write about the code and <strong>then</strong> execute a task) I feel like I am a level or three higher in my developer-acumen. It feels good.</p>
+<p>One more reason that writing the docs is incredibly important. It isn&rsquo;t just the app users that will benefit. The junior devs do too!</p>
+<div class="footer-copyright">
+      <div class="footer">
+        <h4>Share this Post:</h4>
+
+<div class="share-buttons">
+    <a target="_blank" rel="noopener noreferrer" aria-label="share -r(ead)w(rite)x(ecute): Documentation on twitter"
+        href="https://twitter.com/intent/tweet/?text=-r%28ead%29w%28rite%29x%28ecute%29%3a%20Documentation&amp;url=https%3a%2f%2fwww.mizouzie.dev%2farticles%2frwx%2f">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-253.927,424.544c135.939,0 210.268,-112.643 210.268,-210.268c0,-3.218 0,-6.437 -0.153,-9.502c14.406,-10.421 26.973,-23.448 36.935,-38.314c-13.18,5.824 -27.433,9.809 -42.452,11.648c15.326,-9.196 26.973,-23.602 32.49,-40.92c-14.252,8.429 -30.038,14.56 -46.896,17.931c-13.487,-14.406 -32.644,-23.295 -53.946,-23.295c-40.767,0 -73.87,33.104 -73.87,73.87c0,5.824 0.613,11.494 1.992,16.858c-61.456,-3.065 -115.862,-32.49 -152.337,-77.241c-6.284,10.881 -9.962,23.601 -9.962,37.088c0,25.594 13.027,48.276 32.95,61.456c-12.107,-0.307 -23.448,-3.678 -33.41,-9.196l0,0.92c0,35.862 25.441,65.594 59.311,72.49c-6.13,1.686 -12.72,2.606 -19.464,2.606c-4.751,0 -9.348,-0.46 -13.946,-1.38c9.349,29.426 36.628,50.728 68.965,51.341c-25.287,19.771 -57.164,31.571 -91.8,31.571c-5.977,0 -11.801,-0.306 -17.625,-1.073c32.337,21.15 71.264,33.41 112.95,33.41Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share -r(ead)w(rite)x(ecute): Documentation on linkedin"
+        href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fwww.mizouzie.dev%2farticles%2frwx%2f&amp;title=-r%28ead%29w%28rite%29x%28ecute%29%3a%20Documentation&amp;summary=-r%28ead%29w%28rite%29x%28ecute%29%3a%20Documentation&amp;source=https%3a%2f%2fwww.mizouzie.dev%2farticles%2frwx%2f">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-288.985,423.278l0,-225.717l-75.04,0l0,225.717l75.04,0Zm270.539,0l0,-129.439c0,-69.333 -37.018,-101.586 -86.381,-101.586c-39.804,0 -57.634,21.891 -67.617,37.266l0,-31.958l-75.021,0c0.995,21.181 0,225.717 0,225.717l75.02,0l0,-126.056c0,-6.748 0.486,-13.492 2.474,-18.315c5.414,-13.475 17.767,-27.434 38.494,-27.434c27.135,0 38.007,20.707 38.007,51.037l0,120.768l75.024,0Zm-307.552,-334.556c-25.674,0 -42.448,16.879 -42.448,39.002c0,21.658 16.264,39.002 41.455,39.002l0.484,0c26.165,0 42.452,-17.344 42.452,-39.002c-0.485,-22.092 -16.241,-38.954 -41.943,-39.002Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share -r(ead)w(rite)x(ecute): Documentation on reddit"
+        href="https://reddit.com/submit?url=https%3a%2f%2fwww.mizouzie.dev%2farticles%2frwx%2f&title=-r%28ead%29w%28rite%29x%28ecute%29%3a%20Documentation">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-3.446,265.638c0,-22.964 -18.616,-41.58 -41.58,-41.58c-11.211,0 -21.361,4.457 -28.841,11.666c-28.424,-20.508 -67.586,-33.757 -111.204,-35.278l18.941,-89.121l61.884,13.157c0.756,15.734 13.642,28.29 29.56,28.29c16.407,0 29.706,-13.299 29.706,-29.701c0,-16.403 -13.299,-29.702 -29.706,-29.702c-11.666,0 -21.657,6.792 -26.515,16.578l-69.105,-14.69c-1.922,-0.418 -3.939,-0.042 -5.585,1.036c-1.658,1.073 -2.811,2.761 -3.224,4.686l-21.152,99.438c-44.258,1.228 -84.046,14.494 -112.837,35.232c-7.468,-7.164 -17.589,-11.591 -28.757,-11.591c-22.965,0 -41.585,18.616 -41.585,41.58c0,16.896 10.095,31.41 24.568,37.918c-0.639,4.135 -0.99,8.328 -0.99,12.576c0,63.977 74.469,115.836 166.33,115.836c91.861,0 166.334,-51.859 166.334,-115.836c0,-4.218 -0.347,-8.387 -0.977,-12.493c14.564,-6.47 24.735,-21.034 24.735,-38.001Zm-119.474,108.193c-20.27,20.241 -59.115,21.816 -70.534,21.816c-11.428,0 -50.277,-1.575 -70.522,-21.82c-3.007,-3.008 -3.007,-7.882 0,-10.889c3.003,-2.999 7.882,-3.003 10.885,0c12.777,12.781 40.11,17.317 59.637,17.317c19.522,0 46.86,-4.536 59.657,-17.321c3.016,-2.999 7.886,-2.995 10.885,0.008c3.008,3.011 3.003,7.882 -0.008,10.889Zm-5.23,-48.781c-16.373,0 -29.701,-13.324 -29.701,-29.698c0,-16.381 13.328,-29.714 29.701,-29.714c16.378,0 29.706,13.333 29.706,29.714c0,16.374 -13.328,29.698 -29.706,29.698Zm-160.386,-29.702c0,-16.381 13.328,-29.71 29.714,-29.71c16.369,0 29.689,13.329 29.689,29.71c0,16.373 -13.32,29.693 -29.689,29.693c-16.386,0 -29.714,-13.32 -29.714,-29.693Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share -r(ead)w(rite)x(ecute): Documentation on facebook"
+        href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fwww.mizouzie.dev%2farticles%2frwx%2f">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-106.468,0l0,-192.915l66.6,0l12.672,-82.621l-79.272,0l0,-53.617c0,-22.603 11.073,-44.636 46.58,-44.636l36.042,0l0,-70.34c0,0 -32.71,-5.582 -63.982,-5.582c-65.288,0 -107.96,39.569 -107.96,111.204l0,62.971l-72.573,0l0,82.621l72.573,0l0,192.915l-191.104,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Z" />
+        </svg>
+    </a>
+    
+
+
+
+
+</div>
+</div>
+    </div>
+  </section></main>
+        <footer id="main-footer"><div class="footer">
+  <a href="#">Scroll to Top</a>
+  <div class="footer-copyright">
+    <div class="dim">© 2025 Sam Anglin</div>
+    <div>
+      <a href="/privacy-policy">Privacy Policy</a>
+    </div>
+  </div>
+</div>
+</footer>
+      </div><aside id="side-pane" class="side-sticky"><div class="side-details">
+    <span>746 words</span>
+    <span>3 - 4 minutes read</span><div class="side-details-taxonomy">
+        <small>categories: 
+          <span class="details-taxonomy"><a href="https://www.mizouzie.dev/categories/web-development">web development</a></span></small>
+      </div></div><h3>Related</h3>
+    <ul><li><a href="/articles/build-a-little-version/">If it doesn&#39;t make sense, build a little version</a></li><li><a href="/articles/benefits-of-os/">My Top 3 Benefits of Open Source Contribution</a></li><li><a href="/articles/l-i-f-t/">L.I.F.T - the anti-advice that could save you</a></li><li><a href="/articles/recognise-struggle/">Recognise struggle for what it is</a></li><li><a href="/articles/heroku-vs-laravel/">Heroku vs Laravel (vs me...)</a></li></ul></aside></div>
+  </div>
+</body>
+</html>

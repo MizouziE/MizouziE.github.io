@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ChatGPT on web with mizouzie</title>
+    <link>https://www.mizouzie.dev/tags/chatgpt/</link>
+    <description>Recent content in ChatGPT on web with mizouzie</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>made by MizouziE</copyright>
+    <lastBuildDate>Tue, 14 Feb 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://www.mizouzie.dev/tags/chatgpt/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Why I won&#39;t use AI on this blog</title>
+      <link>https://www.mizouzie.dev/articles/why-i-wont-use-ai/</link>
+      <pubDate>Tue, 14 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/articles/why-i-wont-use-ai/</guid>
+      <description>Artificial Intelligence is the hottest topic in a long while and we are certain to see it creep into content on the web. However, I will try to avoid the trend.</description>
+    </item>
+  </channel>
+</rss>

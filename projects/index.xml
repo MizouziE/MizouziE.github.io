@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on web with mizouzie</title>
+    <link>https://www.mizouzie.dev/projects/</link>
+    <description>Recent content in Projects on web with mizouzie</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>made by MizouziE</copyright>
+    <lastBuildDate>Tue, 21 Feb 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://www.mizouzie.dev/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI as a Creator</title>
+      <link>https://www.mizouzie.dev/projects/ai-as-a-creator/</link>
+      <pubDate>Tue, 21 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/projects/ai-as-a-creator/</guid>
+      <description>A project using the bi-products of an ongoing AI application development.</description>
+    </item>
+    <item>
+      <title>Go CLI User Input Experiment</title>
+      <link>https://www.mizouzie.dev/projects/go-input-gist/</link>
+      <pubDate>Sat, 18 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/projects/go-input-gist/</guid>
+      <description>While building a CLI with Go, I ran a few little experiments without business logic to ensure that I was able to read user input exactly as expected.</description>
+    </item>
+    <item>
+      <title>Enkle Word Game</title>
+      <link>https://www.mizouzie.dev/projects/enkle-word-game/</link>
+      <pubDate>Fri, 17 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/projects/enkle-word-game/</guid>
+      <description>A game built using JavaScript based on the same concepts as Wordle. Designed to be customizable for my young son to enjoy.</description>
+    </item>
+    <item>
+      <title>SEO Keyword Content Analysis</title>
+      <link>https://www.mizouzie.dev/projects/seo-keyword-content-analysis/</link>
+      <pubDate>Fri, 17 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/projects/seo-keyword-content-analysis/</guid>
+      <description>This laravel application analyzes data gathered from your site and your competitor’s sites and gives you a comparative report to highlight where you are missing out on providing content that could help you to rank higher in search engine results. This is an example of the documentation I wrote during the development.</description>
+    </item>
+    <item>
+      <title>Energy Price News API</title>
+      <link>https://www.mizouzie.dev/projects/energy-price-news/</link>
+      <pubDate>Sun, 05 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/projects/energy-price-news/</guid>
+      <description>A project to create a public API that scrapes news sites for anything concerning the changes in energy prices.</description>
+    </item>
+  </channel>
+</rss>

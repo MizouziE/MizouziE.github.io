@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tutorial on web with mizouzie</title>
+    <link>https://www.mizouzie.dev/categories/tutorial/</link>
+    <description>Recent content in Tutorial on web with mizouzie</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>made by MizouziE</copyright>
+    <lastBuildDate>Sat, 01 Jul 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://www.mizouzie.dev/categories/tutorial/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MySQL Database Migration to a Remote Server from a .gz mysqldump file</title>
+      <link>https://www.mizouzie.dev/articles/mysql-database-migration-to-remote-server-from-gz-file/</link>
+      <pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/articles/mysql-database-migration-to-remote-server-from-gz-file/</guid>
+      <description>Some bugs only appear when your web application is truly tested out in production. The actual use cases of your data structure may differ from what you imagined, so make a dump of the prod DB and play around on a development server.</description>
+    </item>
+    <item>
+      <title>How to test protected functions with PHPUnit in your Laravel app</title>
+      <link>https://www.mizouzie.dev/articles/how-to-test-protected-functions-with-phpunit/</link>
+      <pubDate>Sat, 13 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/articles/how-to-test-protected-functions-with-phpunit/</guid>
+      <description>An essential part of developing an app is testing your code. My preferred method of testing my Laravel code is using PHPUnit and this is how I use reflection to test those &amp;lsquo;harder to reach&amp;rsquo; protected and private methods inside classes.</description>
+    </item>
+    <item>
+      <title>How to Unlock Formkit Multistep forms on a Laravel Inertia app with Vue 3</title>
+      <link>https://www.mizouzie.dev/articles/how-to-unlock-formkit-multistep-forms-on-laravel-inertia-app-with-vue-3/</link>
+      <pubDate>Thu, 09 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/articles/how-to-unlock-formkit-multistep-forms-on-laravel-inertia-app-with-vue-3/</guid>
+      <description>Formkit offers a great Multi-Step tool for building forms in your Vue app, but getting it to work inside a Laravel Inertia app is a little tricky. Here is how to get it running.</description>
+    </item>
+    <item>
+      <title>3 ways to read input with a Go CLI</title>
+      <link>https://www.mizouzie.dev/articles/3-ways-to-read-input-with-go-cli/</link>
+      <pubDate>Thu, 23 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/articles/3-ways-to-read-input-with-go-cli/</guid>
+      <description>Tutorial with examples showing 3 different ways to read user input when building a command line interface (CLI) with Go</description>
+    </item>
+  </channel>
+</rss>

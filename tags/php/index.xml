@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PHP on web with mizouzie</title>
+    <link>https://www.mizouzie.dev/tags/php/</link>
+    <description>Recent content in PHP on web with mizouzie</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>made by MizouziE</copyright>
+    <lastBuildDate>Fri, 30 Jun 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://www.mizouzie.dev/tags/php/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Send SMTP Mail from Hetzner Server with Firewall</title>
+      <link>https://www.mizouzie.dev/articles/send-smtp-mail-from-hetzner-server/</link>
+      <pubDate>Fri, 30 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/articles/send-smtp-mail-from-hetzner-server/</guid>
+      <description>Laravel Mail Working locally but not on server. Getting stream_socket_client timeout error. We must allow outgoing TCP Connections in Hetzner Firewall.</description>
+    </item>
+    <item>
+      <title>How to test protected functions with PHPUnit in your Laravel app</title>
+      <link>https://www.mizouzie.dev/articles/how-to-test-protected-functions-with-phpunit/</link>
+      <pubDate>Sat, 13 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/articles/how-to-test-protected-functions-with-phpunit/</guid>
+      <description>An essential part of developing an app is testing your code. My preferred method of testing my Laravel code is using PHPUnit and this is how I use reflection to test those &amp;lsquo;harder to reach&amp;rsquo; protected and private methods inside classes.</description>
+    </item>
+    <item>
+      <title>Undefined type &#39;Spatie\Permission\Models\&#39; . &#39;Permission&#39; | &#39;Role&#39; | &#39;HasRoles&#39;</title>
+      <link>https://www.mizouzie.dev/articles/undefined-type-spatie-permission/</link>
+      <pubDate>Thu, 13 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/articles/undefined-type-spatie-permission/</guid>
+      <description>VSCode with intelephense throws a strange and hard to debug error when using the spatie/laravel-permissions package even when you follow the docs to the letter. Here is how to fix it.</description>
+    </item>
+    <item>
+      <title>Common Function Comparisons in PHP</title>
+      <link>https://www.mizouzie.dev/articles/common-function-comparisons-in-php/</link>
+      <pubDate>Sat, 04 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/articles/common-function-comparisons-in-php/</guid>
+      <description>How do you decide between two functions that, at a glance, seem to do the same thing? Let&amp;rsquo;s pick apart the differences to try and make it easier.</description>
+    </item>
+  </channel>
+</rss>

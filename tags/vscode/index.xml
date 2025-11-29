@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>VSCode on web with mizouzie</title>
+    <link>https://www.mizouzie.dev/tags/vscode/</link>
+    <description>Recent content in VSCode on web with mizouzie</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>made by MizouziE</copyright>
+    <lastBuildDate>Thu, 13 Apr 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://www.mizouzie.dev/tags/vscode/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Undefined type &#39;Spatie\Permission\Models\&#39; . &#39;Permission&#39; | &#39;Role&#39; | &#39;HasRoles&#39;</title>
+      <link>https://www.mizouzie.dev/articles/undefined-type-spatie-permission/</link>
+      <pubDate>Thu, 13 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/articles/undefined-type-spatie-permission/</guid>
+      <description>VSCode with intelephense throws a strange and hard to debug error when using the spatie/laravel-permissions package even when you follow the docs to the letter. Here is how to fix it.</description>
+    </item>
+  </channel>
+</rss>

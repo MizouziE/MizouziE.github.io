@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GitHub on web with mizouzie</title>
+    <link>https://www.mizouzie.dev/tags/github/</link>
+    <description>Recent content in GitHub on web with mizouzie</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>made by MizouziE</copyright>
+    <lastBuildDate>Sat, 18 Feb 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://www.mizouzie.dev/tags/github/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Go CLI User Input Experiment</title>
+      <link>https://www.mizouzie.dev/projects/go-input-gist/</link>
+      <pubDate>Sat, 18 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/projects/go-input-gist/</guid>
+      <description>While building a CLI with Go, I ran a few little experiments without business logic to ensure that I was able to read user input exactly as expected.</description>
+    </item>
+    <item>
+      <title>Enkle Word Game</title>
+      <link>https://www.mizouzie.dev/projects/enkle-word-game/</link>
+      <pubDate>Fri, 17 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/projects/enkle-word-game/</guid>
+      <description>A game built using JavaScript based on the same concepts as Wordle. Designed to be customizable for my young son to enjoy.</description>
+    </item>
+    <item>
+      <title>How to make your GitHub project pop on social media</title>
+      <link>https://www.mizouzie.dev/articles/make-your-github-project-stand-out/</link>
+      <pubDate>Thu, 16 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/articles/make-your-github-project-stand-out/</guid>
+      <description>Half the battle of progressing your open source project is getting it noticed and attracting contributors. So make the most of this simple trick.</description>
+    </item>
+    <item>
+      <title>Energy Price News API</title>
+      <link>https://www.mizouzie.dev/projects/energy-price-news/</link>
+      <pubDate>Sun, 05 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/projects/energy-price-news/</guid>
+      <description>A project to create a public API that scrapes news sites for anything concerning the changes in energy prices.</description>
+    </item>
+  </channel>
+</rss>

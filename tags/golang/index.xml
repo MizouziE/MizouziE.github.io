@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Golang on web with mizouzie</title>
+    <link>https://www.mizouzie.dev/tags/golang/</link>
+    <description>Recent content in Golang on web with mizouzie</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>made by MizouziE</copyright>
+    <lastBuildDate>Thu, 23 Feb 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://www.mizouzie.dev/tags/golang/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>3 ways to read input with a Go CLI</title>
+      <link>https://www.mizouzie.dev/articles/3-ways-to-read-input-with-go-cli/</link>
+      <pubDate>Thu, 23 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/articles/3-ways-to-read-input-with-go-cli/</guid>
+      <description>Tutorial with examples showing 3 different ways to read user input when building a command line interface (CLI) with Go</description>
+    </item>
+    <item>
+      <title>Go CLI User Input Experiment</title>
+      <link>https://www.mizouzie.dev/projects/go-input-gist/</link>
+      <pubDate>Sat, 18 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/projects/go-input-gist/</guid>
+      <description>While building a CLI with Go, I ran a few little experiments without business logic to ensure that I was able to read user input exactly as expected.</description>
+    </item>
+  </channel>
+</rss>

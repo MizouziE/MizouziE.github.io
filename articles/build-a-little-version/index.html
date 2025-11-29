@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>If it doesn&#39;t make sense, build a little version | web with mizouzie</title>
+<meta name="keywords" content="web dev, laravel, api, learning" />
+<script src="https://cdn.jsdelivr.net/gh/manucaralmo/GlowCookies@3.1.7/src/glowCookies.min.js"></script>
+<script>
+    glowCookies.start('en', { 
+        style: 2,
+        analytics: "G-MN6WKZ3S7T", 
+        hideAfterClick: true,
+        policyLink: '/privacy-policy',
+        bannerDescription: '<p align="center">As I am a web developer, I use cookies to learn about ways to make this site better, nothing sinister.</p><br><p align="center">However, feel free to disable them here.</p>',
+        bannerLinkText: '<p align="center">Read Privacy policy<p>',
+        bannerHeading: '<h2 align="center">Cookies</h2>',
+        acceptBtnText: 'Accept',
+        acceptBtnColor: '#097969',
+        acceptBtnBackground: '#ECFFDC',
+        rejectBtnText: 'Disable',
+        rejectBtnBackground: '#cd5c5c',
+        rejectBtnColor: '#880808'
+    });
+</script>
+<meta name="google-site-verification" content="psw8-5863N9APj0ZK5Lg3BMygE0vQEYIB7q2uJq-FPo" />
+<meta property="og:image" content="https://www.mizouzie.dev/images/build-a-little-version.png">
+<meta property="og:image:width" content="568">
+<meta property="og:image:height" content="257">
+<meta property="og:title" content="If it doesn&#39;t make sense, build a little version | web with mizouzie">
+<meta name="og:description" content="Been a while since I wrote a longer article, so here&#39;s a longer article explaining what it is I have been doing. Basically levelling up a bit. Learning to build and building to learn!">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.mizouzie.dev/articles/build-a-little-version/">
+<meta property="twitter:title" content="If it doesn&#39;t make sense, build a little version | web with mizouzie">
+<meta name="twitter:description" content="Been a while since I wrote a longer article, so here&#39;s a longer article explaining what it is I have been doing. Basically levelling up a bit. Learning to build and building to learn!">
+<meta property="twitter:image" content="https://www.mizouzie.dev/images/build-a-little-version.png">
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:site" content="@mizouzie">
+<meta property="twitter:creator" content="@mizouzie">
+<meta name="description" content="Been a while since I wrote a longer article, so here&#39;s a longer article explaining what it is I have been doing. Basically levelling up a bit. Learning to build and building to learn!">
+<meta name="author" content="Sam Anglin">
+<link rel="canonical" href="https://www.mizouzie.dev/articles/build-a-little-version/" />
+      <link rel="stylesheet" href="/css/share-buttons.min.2873e064430e65b4201815f6d108ce98cc136accfec877acffc67f41d37b8044.css" integrity="sha256-KHPgZEMOZbQgGBX20QjOmMwTasz&#43;yHes/8Z/QdN7gEQ=" crossorigin="anonymous">
+      <link rel="stylesheet" href="/css/root.min.0e732b812b9751962e01a7c4798a1211cd5f8ac8abec7f99793fe306989e459f.css" integrity="sha256-DnMrgSuXUZYuAafEeYoSEc1fisir7H&#43;ZeT/jBpieRZ8=" crossorigin="anonymous">
+      <link rel="stylesheet" href="/css/bundle.min.d95a325399a05b50fe47dcf35b8229b8a2a014fcee5435cfb28204c6ac335fc5.css" integrity="sha256-2VoyU5mgW1D&#43;R9zzW4IpuKKgFPzuVDXPsoIExqwzX8U=" crossorigin="anonymous">
+
+      <script src="/js/bundle.cc8ae9952dbfb731affafabdf26e5c60a6910047ff59ccdeaf1daebaa26c8830.js" integrity="sha256-zIrplS2/tzGv&#43;vq98m5cYKaRAEf/Wczerx2uuqJsiDA=" crossorigin="anonymous"></script><script defer src="/js/search/flexsearch.compact.64594b125f7b78bdf4fa8316955922bbebb1cd6baef3f16654bfca20309f18f8.js" integrity="sha256-ZFlLEl97eL30&#43;oMWlVkiu&#43;uxzWuu8/FmVL/KIDCfGPg="></script>
+<script defer src="/js/search/search.221545f425507db36bacce69b81457d3a83ecea5140ee7ecb6fc130736d5021f.js" integrity="sha256-IhVF9CVQfbNrrM5puBRX06g&#43;zqUUDufstvwTBzbVAh8="></script>
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+<link rel="icon" href="https://www.mizouzie.dev/images/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://www.mizouzie.dev/images/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://www.mizouzie.dev/images/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://www.mizouzie.dev/images/apple-touch-icon.png">
+<link rel="mask-icon" href="https://www.mizouzie.dev/images/apple-touch-icon.png">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://www.mizouzie.dev/articles/build-a-little-version/" />
+
+</head>
+<body class="notransition">
+  <div id="container">
+    <header id="main-header"><div role="navigation" aria-label="Main">
+  <div class="nav-left">
+    <a href="https://www.mizouzie.dev/" style="color: inherit;">web with mizouzie</a>
+  </div>
+  <div class="nav-right">
+    <div style="position:absolute;width:0px;height:0px;">
+      <div id="nav-dropdown-menu" class="hidden" href="#">
+    <div class="nav-item">
+      <a href="/articles/"
+      >Articles</a>
+    </div>
+    <div class="nav-item">
+      <a href="/categories/"
+      >Categories</a>
+    </div>
+    <div class="nav-item">
+      <a href="/projects/"
+      >Projects</a>
+    </div>
+    <div class="nav-item">
+      <a href="/contact/"
+      >Contact</a>
+    </div>
+</div>
+    </div>
+    <a id="nav-dropdown-button" href="#"><svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 6H20M4 12H20M4 18H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</a>
+    <div id="nav-menu">
+    <div class="nav-item">
+      <a href="/articles/"
+      >Articles</a>
+    </div>
+    <div class="nav-item">
+      <a href="/categories/"
+      >Categories</a>
+    </div>
+    <div class="nav-item">
+      <a href="/projects/"
+      >Projects</a>
+    </div>
+    <div class="nav-item">
+      <a href="/contact/"
+      >Contact</a>
+    </div>
+</div>
+    <a id="theme-switcher" href="#">
+<svg class="light-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 3V4M12 20V21M4 12H3M6.31412 6.31412L5.5 5.5M17.6859 6.31412L18.5 5.5M6.31412 17.69L5.5 18.5001M17.6859 17.69L18.5 18.5001M21 12H20M16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+<svg class="dark-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.32031 11.6835C3.32031 16.6541 7.34975 20.6835 12.3203 20.6835C16.1075 20.6835 19.3483 18.3443 20.6768 15.032C19.6402 15.4486 18.5059 15.6834 17.3203 15.6834C12.3497 15.6834 8.32031 11.654 8.32031 6.68342C8.32031 5.50338 8.55165 4.36259 8.96453 3.32996C5.65605 4.66028 3.32031 7.89912 3.32031 11.6835Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</a>
+  </div>
+</div>
+</header>
+    <div class="flex grow">
+      <div id="main-pane">
+        <main id="main-content"><div class="single-header">
+<ol class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <a itemprop="item" href="https://www.mizouzie.dev/">
+        <span itemprop="name">Home</span>
+      </a>
+      <meta itemprop="position" content='1' />
+    </li>
+    <span>&nbsp»&nbsp</span>
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <a itemprop="item" href="https://www.mizouzie.dev/articles/">
+        <span itemprop="name">Articles</span>
+      </a>
+      <meta itemprop="position" content='2' />
+    </li>
+    <span>&nbsp»&nbsp</span>
+</ol>
+<h1>If it doesn&#39;t make sense, build a little version</h1><time class="dim" datetime="2022-05-15T00:00:00&#43;00:00">May 15, 2022</time><div class="term-container"><div class="tag">
+        <a href="https://www.mizouzie.dev/tags/web-dev/">#web dev</a>
+      </div><div class="tag">
+        <a href="https://www.mizouzie.dev/tags/laravel/">#laravel</a>
+      </div><div class="tag">
+        <a href="https://www.mizouzie.dev/tags/api/">#api</a>
+      </div><div class="tag">
+        <a href="https://www.mizouzie.dev/tags/learning/">#learning</a>
+      </div></ol></div>
+  <section class="page-section"><p><img src="/images/build-a-little-version.png" alt="shrugging builder"></p>
+<p>I have learnt a lot in the last few weeks and it was thanks to taking on a personal project that was a vastly scaled down version of what I have been working with this past year. What I have learnt was not necessarily fresh knowledge, but more an understanding that had previously evaded me. The reason I hadn&rsquo;t understood a lot of the concepts I was facing was because I had not built the original codebase to the original specs, I was just introduced to it in small sections and asked to work on individual features.</p>
+<p>The &ldquo;it&rdquo; in question is an API that serves various instances of a different company blog websites. The frontend app can be included in the &ldquo;it&rdquo;, but I worked predominantly on the backend. This backend is built on a <a href="https://laravel.com/">Laravel</a> framework and uses <a href="https://twill.io/">Twill</a> that was developed by the Area17 team. Both the framework and the add-on package are designed to make development quick and painless, which they do mostly, but can cause some upsets when out-of-the-ordinary requests start to come in from the clients. Stretching the capabilities of these things by having to hack the code that relies quite a lot on magic methods etc can be a cumbersome task.</p>
+<p>A lot of the time that I was asked to customise something I was left scratching my head at the bugs I&rsquo;d introduce and have to dive deeper than my limited understanding. It stretched me and taught me a lot, but not everything.</p>
+<p>So I decided to make a little version for myself. A simple blog. API with a MySQL database backend, Nuxt.js frontend. Yes, I could have used one of the thousands of pre-existing &ldquo;build-a-blog&rdquo; tools out there, but I wouldn&rsquo;t be a true backend developer if I didn&rsquo;t take the complicated route 😬.</p>
+<p>Starting out with the simple backend went great. I already had a repo that was the start of something with a decent set of models, routes and factories. I set up on a free hosting service that I could implement a (limited) MySQL database on, got familiar with the CLI for deployment and got on with it. Used the factories to populate the database and test my endpoints. All great.</p>
+<p>Frontend was more unexplored territory for me. I&rsquo;d dabbled in popular frameworks before and was comfortable with bog-standard HTML and CSS with a dash of JavaScript, but I&rsquo;d never started a Nuxt app from scratch. So I did. The mistake I made was that I was referring frequently to a tutorial that was for v3, while building on the stable v2&hellip; I wasted about half a day before I realised so <strong>that</strong> in itself was a valuable lesson in what to pay attention to! After figuring that out and delving into the differences between the versions I had something acceptable looking in a short time and even had it pulling data from the already live RESTful API in an even shorter space of time.</p>
+<p>I learnt a lot about making requests, CORS and props much better than when I&rsquo;d previously &ldquo;studied&rdquo; them on various courses I had done. It also made me consider things about the overall structure of the API I had been working with before that had never occurred to me. This is what I meant when I said I wasn&rsquo;t learning <strong>new</strong> knowledge but establishing an actual understanding of what I had previously experienced. A lot of small &ldquo;aaaaah ok, ok&rdquo; moments.</p>
+<p>The real mother-load of experience came from retro-fitting Twill into the already existing project on the backend. What I wanted it for was to allow me to add blog posts through a secure administration portal that would be totally separate from the public facing &ldquo;blog page&rdquo;. The thing was, as with a lot of &ldquo;easy to use&rdquo; packages, it would have been a lot better to use it from the very beginning and build using it&rsquo;s almost auto-complete-esque CLI. It works by you telling it what modules you want and it builds your models, controllers and views for you. All you really need to do is minor customisations and tweak one or two configuration files. It really should be very easy, especially seeing as the documentation has <strong>VASTLY</strong> improved since I first tangoed with it. But because my models already existed I had to do some digging.</p>
+<p>The benefit of <em>this</em> project is that it was a very basic version of a blog app, so it wasn&rsquo;t so daunting, so I got stuck right in and learnt a tonne about the inner workings of the tool and so much clicked about stuff I&rsquo;d been baffled about months beforehand in the much larger work project. It was actually enjoyable and I found that by the second day I was actually looking for small problems so that I could delve deeper in yet another direction. I ended up doing some really cool stuff I never would have had the confidence to try before.</p>
+<p>Overall, I am very glad that I did this and I am really looking forward to finishing it off and pushing the frontend live in the coming weeks because I really think I will feel genuinely proud of this once it&rsquo;s out there. I am a much much better developer because of this project because it elevated me closer to the level of the guys who built the monster project that used to frighten me, and they are very well established dudes.</p>
+<p>I should also mention that I originally decided to do this when I realised that these articles that I write here on this platform (at the time: LinkedIn) are limited to be viewed only by people with a profile on here&hellip; so all the one&rsquo;s I&rsquo;ve written previously will gradually be migrated over once the whole thing is live. I&rsquo;m excited about it.</p>
+<p>Moral of the story:</p>
+<ol>
+<li>I was scared of the codebase I first worked on as a junior</li>
+<li>I built a diddy version of it</li>
+<li>I learnt that it really wasn&rsquo;t that scary</li>
+<li>Even found a few areas that I could improve the scary codebase</li>
+<li>Now I&rsquo;m a way better developer</li>
+</ol>
+<p>I strongly encourage developers to learn by building. If you&rsquo;re like me it is incredibly valuable and makes all the hours you&rsquo;ve suffered in the past totally worth it.</p>
+<div class="footer-copyright">
+      <div class="footer">
+        <h4>Share this Post:</h4>
+
+<div class="share-buttons">
+    <a target="_blank" rel="noopener noreferrer" aria-label="share If it doesn&#39;t make sense, build a little version on twitter"
+        href="https://twitter.com/intent/tweet/?text=If%20it%20doesn%27t%20make%20sense%2c%20build%20a%20little%20version&amp;url=https%3a%2f%2fwww.mizouzie.dev%2farticles%2fbuild-a-little-version%2f">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-253.927,424.544c135.939,0 210.268,-112.643 210.268,-210.268c0,-3.218 0,-6.437 -0.153,-9.502c14.406,-10.421 26.973,-23.448 36.935,-38.314c-13.18,5.824 -27.433,9.809 -42.452,11.648c15.326,-9.196 26.973,-23.602 32.49,-40.92c-14.252,8.429 -30.038,14.56 -46.896,17.931c-13.487,-14.406 -32.644,-23.295 -53.946,-23.295c-40.767,0 -73.87,33.104 -73.87,73.87c0,5.824 0.613,11.494 1.992,16.858c-61.456,-3.065 -115.862,-32.49 -152.337,-77.241c-6.284,10.881 -9.962,23.601 -9.962,37.088c0,25.594 13.027,48.276 32.95,61.456c-12.107,-0.307 -23.448,-3.678 -33.41,-9.196l0,0.92c0,35.862 25.441,65.594 59.311,72.49c-6.13,1.686 -12.72,2.606 -19.464,2.606c-4.751,0 -9.348,-0.46 -13.946,-1.38c9.349,29.426 36.628,50.728 68.965,51.341c-25.287,19.771 -57.164,31.571 -91.8,31.571c-5.977,0 -11.801,-0.306 -17.625,-1.073c32.337,21.15 71.264,33.41 112.95,33.41Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share If it doesn&#39;t make sense, build a little version on linkedin"
+        href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fwww.mizouzie.dev%2farticles%2fbuild-a-little-version%2f&amp;title=If%20it%20doesn%27t%20make%20sense%2c%20build%20a%20little%20version&amp;summary=If%20it%20doesn%27t%20make%20sense%2c%20build%20a%20little%20version&amp;source=https%3a%2f%2fwww.mizouzie.dev%2farticles%2fbuild-a-little-version%2f">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-288.985,423.278l0,-225.717l-75.04,0l0,225.717l75.04,0Zm270.539,0l0,-129.439c0,-69.333 -37.018,-101.586 -86.381,-101.586c-39.804,0 -57.634,21.891 -67.617,37.266l0,-31.958l-75.021,0c0.995,21.181 0,225.717 0,225.717l75.02,0l0,-126.056c0,-6.748 0.486,-13.492 2.474,-18.315c5.414,-13.475 17.767,-27.434 38.494,-27.434c27.135,0 38.007,20.707 38.007,51.037l0,120.768l75.024,0Zm-307.552,-334.556c-25.674,0 -42.448,16.879 -42.448,39.002c0,21.658 16.264,39.002 41.455,39.002l0.484,0c26.165,0 42.452,-17.344 42.452,-39.002c-0.485,-22.092 -16.241,-38.954 -41.943,-39.002Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share If it doesn&#39;t make sense, build a little version on reddit"
+        href="https://reddit.com/submit?url=https%3a%2f%2fwww.mizouzie.dev%2farticles%2fbuild-a-little-version%2f&title=If%20it%20doesn%27t%20make%20sense%2c%20build%20a%20little%20version">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-3.446,265.638c0,-22.964 -18.616,-41.58 -41.58,-41.58c-11.211,0 -21.361,4.457 -28.841,11.666c-28.424,-20.508 -67.586,-33.757 -111.204,-35.278l18.941,-89.121l61.884,13.157c0.756,15.734 13.642,28.29 29.56,28.29c16.407,0 29.706,-13.299 29.706,-29.701c0,-16.403 -13.299,-29.702 -29.706,-29.702c-11.666,0 -21.657,6.792 -26.515,16.578l-69.105,-14.69c-1.922,-0.418 -3.939,-0.042 -5.585,1.036c-1.658,1.073 -2.811,2.761 -3.224,4.686l-21.152,99.438c-44.258,1.228 -84.046,14.494 -112.837,35.232c-7.468,-7.164 -17.589,-11.591 -28.757,-11.591c-22.965,0 -41.585,18.616 -41.585,41.58c0,16.896 10.095,31.41 24.568,37.918c-0.639,4.135 -0.99,8.328 -0.99,12.576c0,63.977 74.469,115.836 166.33,115.836c91.861,0 166.334,-51.859 166.334,-115.836c0,-4.218 -0.347,-8.387 -0.977,-12.493c14.564,-6.47 24.735,-21.034 24.735,-38.001Zm-119.474,108.193c-20.27,20.241 -59.115,21.816 -70.534,21.816c-11.428,0 -50.277,-1.575 -70.522,-21.82c-3.007,-3.008 -3.007,-7.882 0,-10.889c3.003,-2.999 7.882,-3.003 10.885,0c12.777,12.781 40.11,17.317 59.637,17.317c19.522,0 46.86,-4.536 59.657,-17.321c3.016,-2.999 7.886,-2.995 10.885,0.008c3.008,3.011 3.003,7.882 -0.008,10.889Zm-5.23,-48.781c-16.373,0 -29.701,-13.324 -29.701,-29.698c0,-16.381 13.328,-29.714 29.701,-29.714c16.378,0 29.706,13.333 29.706,29.714c0,16.374 -13.328,29.698 -29.706,29.698Zm-160.386,-29.702c0,-16.381 13.328,-29.71 29.714,-29.71c16.369,0 29.689,13.329 29.689,29.71c0,16.373 -13.32,29.693 -29.689,29.693c-16.386,0 -29.714,-13.32 -29.714,-29.693Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share If it doesn&#39;t make sense, build a little version on facebook"
+        href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fwww.mizouzie.dev%2farticles%2fbuild-a-little-version%2f">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-106.468,0l0,-192.915l66.6,0l12.672,-82.621l-79.272,0l0,-53.617c0,-22.603 11.073,-44.636 46.58,-44.636l36.042,0l0,-70.34c0,0 -32.71,-5.582 -63.982,-5.582c-65.288,0 -107.96,39.569 -107.96,111.204l0,62.971l-72.573,0l0,82.621l72.573,0l0,192.915l-191.104,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Z" />
+        </svg>
+    </a>
+    
+
+
+
+
+</div>
+</div>
+    </div>
+  </section></main>
+        <footer id="main-footer"><div class="footer">
+  <a href="#">Scroll to Top</a>
+  <div class="footer-copyright">
+    <div class="dim">© 2025 Sam Anglin</div>
+    <div>
+      <a href="/privacy-policy">Privacy Policy</a>
+    </div>
+  </div>
+</div>
+</footer>
+      </div><aside id="side-pane" class="side-sticky"><div class="side-details">
+    <span>1053 words</span>
+    <span>5 - 6 minutes read</span><div class="side-details-taxonomy">
+        <small>categories: 
+          <span class="details-taxonomy"><a href="https://www.mizouzie.dev/categories/web-development">web development</a></span></small>
+      </div></div><h3>Related</h3>
+    <ul><li><a href="/articles/benefits-of-os/">My Top 3 Benefits of Open Source Contribution</a></li><li><a href="/articles/heroku-vs-laravel/">Heroku vs Laravel (vs me...)</a></li><li><a href="/articles/quickadminpanel/">Why I&#39;m glad I used QuickAdminPanel today</a></li><li><a href="/articles/know-when-to-stop/">Starting is one thing, STOPPING is another</a></li><li><a href="/articles/customised-featured-link-thumbnail/">How I just customised my featured link thumbnail</a></li></ul></aside></div>
+  </div>
+</body>
+</html>
