@@ -2,12 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.mizouzie.dev/search/</loc>
-    <lastmod>2025-03-24T23:00:00-03:00</lastmod>
-  </url><url>
-    <loc>https://www.mizouzie.dev/</loc>
-    <lastmod>2025-03-24T23:00:00-03:00</lastmod>
-  </url><url>
     <loc>https://www.mizouzie.dev/articles/</loc>
     <lastmod>2023-07-05T00:00:00+00:00</lastmod>
   </url><url>
@@ -30,6 +24,9 @@
     <lastmod>2023-07-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.mizouzie.dev/categories/web-development/</loc>
+    <lastmod>2023-07-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.mizouzie.dev/</loc>
     <lastmod>2023-07-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.mizouzie.dev/tags/cli/</loc>
@@ -229,5 +226,7 @@
     <loc>https://www.mizouzie.dev/contact/</loc>
   </url><url>
     <loc>https://www.mizouzie.dev/privacy-policy/</loc>
+  </url><url>
+    <loc>https://www.mizouzie.dev/search/</loc>
   </url>
 </urlset>
