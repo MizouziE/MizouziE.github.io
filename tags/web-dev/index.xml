@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>made by MizouziE</copyright>
-    <lastBuildDate>Wed, 05 Jul 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 01 Dec 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://www.mizouzie.dev/tags/web-dev/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tum | Modo | Postea</title>
+      <link>https://www.mizouzie.dev/articles/then-now-after/</link>
+      <pubDate>Mon, 01 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/articles/then-now-after/</guid>
+      <description>A retrospective look at what I came from, assessment of where I currently am, and a prospective look at where I see myself going</description>
+    </item>
     <item>
       <title>I Tried Working at 30,000ft</title>
       <link>https://www.mizouzie.dev/articles/tried-working-at-30000ft/</link>

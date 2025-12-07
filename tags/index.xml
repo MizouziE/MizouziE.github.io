@@ -7,19 +7,33 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>made by MizouziE</copyright>
-    <lastBuildDate>Wed, 05 Jul 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 01 Dec 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://www.mizouzie.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Learning</title>
+      <link>https://www.mizouzie.dev/tags/learning/</link>
+      <pubDate>Mon, 01 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/tags/learning/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mental Health</title>
+      <link>https://www.mizouzie.dev/tags/mental-health/</link>
+      <pubDate>Mon, 01 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/tags/mental-health/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Self-Care</title>
       <link>https://www.mizouzie.dev/tags/self-care/</link>
-      <pubDate>Wed, 05 Jul 2023 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Dec 2025 00:00:00 +0000</pubDate>
       <guid>https://www.mizouzie.dev/tags/self-care/</guid>
       <description></description>
     </item>
     <item>
       <title>Web Dev</title>
       <link>https://www.mizouzie.dev/tags/web-dev/</link>
-      <pubDate>Wed, 05 Jul 2023 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Dec 2025 00:00:00 +0000</pubDate>
       <guid>https://www.mizouzie.dev/tags/web-dev/</guid>
       <description></description>
     </item>
@@ -28,13 +42,6 @@
       <link>https://www.mizouzie.dev/tags/cli/</link>
       <pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate>
       <guid>https://www.mizouzie.dev/tags/cli/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Learning</title>
-      <link>https://www.mizouzie.dev/tags/learning/</link>
-      <pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>https://www.mizouzie.dev/tags/learning/</guid>
       <description></description>
     </item>
     <item>
@@ -217,13 +224,6 @@
       <link>https://www.mizouzie.dev/tags/nodejs/</link>
       <pubDate>Sun, 05 Feb 2023 00:00:00 +0000</pubDate>
       <guid>https://www.mizouzie.dev/tags/nodejs/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Mental Health</title>
-      <link>https://www.mizouzie.dev/tags/mental-health/</link>
-      <pubDate>Thu, 02 Feb 2023 00:00:00 +0000</pubDate>
-      <guid>https://www.mizouzie.dev/tags/mental-health/</guid>
       <description></description>
     </item>
     <item>
