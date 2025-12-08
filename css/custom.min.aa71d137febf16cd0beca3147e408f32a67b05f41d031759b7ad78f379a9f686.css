@@ -1,0 +1,1 @@
+#main-content p{text-align:justify}@media screen and (width > 900px){img.master-roshi{float:left;margin-right:12px!important;max-height:240px}}section.page-section p:has(>img:not(.custom-img)){display:flex;justify-content:center}
