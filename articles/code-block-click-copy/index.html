@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Code Block Click Copy | web with mizouzie</title>
+<meta name="keywords" content="web dev, open source, learning, hugo, javascript, no build" />
+<script src="https://cdn.jsdelivr.net/gh/manucaralmo/GlowCookies@3.1.7/src/glowCookies.min.js"></script>
+<script>
+    glowCookies.start('en', { 
+        style: 2,
+        analytics: "G-MN6WKZ3S7T", 
+        hideAfterClick: true,
+        policyLink: '/privacy-policy',
+        bannerDescription: '<p align="center">As I am a web developer, I use cookies to learn about ways to make this site better, nothing sinister.</p><br><p align="center">However, feel free to disable them here.</p>',
+        bannerLinkText: '<p align="center">Read Privacy policy<p>',
+        bannerHeading: '<h2 align="center">Cookies</h2>',
+        acceptBtnText: 'Accept',
+        acceptBtnColor: '#097969',
+        acceptBtnBackground: '#ECFFDC',
+        rejectBtnText: 'Disable',
+        rejectBtnBackground: '#cd5c5c',
+        rejectBtnColor: '#880808'
+    });
+</script>
+<meta name="google-site-verification" content="psw8-5863N9APj0ZK5Lg3BMygE0vQEYIB7q2uJq-FPo" />
+<meta property="og:image" content="https://www.mizouzie.dev/images/clipboard.avif">
+<meta property="og:image:width" content="360">
+<meta property="og:image:height" content="360">
+<meta property="og:title" content="Code Block Click Copy | web with mizouzie">
+<meta name="og:description" content="How to swap a Clipboard.js dependency for vanilla JavaScript">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.mizouzie.dev/articles/code-block-click-copy/">
+<meta property="twitter:title" content="Code Block Click Copy | web with mizouzie">
+<meta name="twitter:description" content="How to swap a Clipboard.js dependency for vanilla JavaScript">
+<meta property="twitter:image" content="https://www.mizouzie.dev/images/clipboard.avif">
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:site" content="@mizouzie">
+<meta property="twitter:creator" content="@mizouzie">
+<meta name="description" content="How to swap a Clipboard.js dependency for vanilla JavaScript">
+<meta name="author" content="Sam Anglin">
+<link rel="canonical" href="https://www.mizouzie.dev/articles/code-block-click-copy/" />
+      <link rel="stylesheet" href="/css/about.min.18edcb8cec83177e608ae70124de05a34b3f1d26ce8278837b62a6641e537bdf.css" integrity="sha256-GO3LjOyDF35giucBJN4Fo0s/HSbOgniDe2KmZB5Te98=" crossorigin="anonymous">
+      <link rel="stylesheet" href="/css/code-blocks.min.f24ec20c08410022a16ef09343a4cbbc363e435b7567f1398fb8e30d25cfb80e.css" integrity="sha256-8k7CDAhBACKhbvCTQ6TLvDY&#43;Q1t1Z/E5j7jjDSXPuA4=" crossorigin="anonymous">
+      <link rel="stylesheet" href="/css/custom.min.aa71d137febf16cd0beca3147e408f32a67b05f41d031759b7ad78f379a9f686.css" integrity="sha256-qnHRN/6/Fs0L7KMUfkCPMqZ7BfQdAxdZt61483mp9oY=" crossorigin="anonymous">
+      <link rel="stylesheet" href="/css/share-buttons.min.2873e064430e65b4201815f6d108ce98cc136accfec877acffc67f41d37b8044.css" integrity="sha256-KHPgZEMOZbQgGBX20QjOmMwTasz&#43;yHes/8Z/QdN7gEQ=" crossorigin="anonymous">
+      <link rel="stylesheet" href="/css/root.min.0e732b812b9751962e01a7c4798a1211cd5f8ac8abec7f99793fe306989e459f.css" integrity="sha256-DnMrgSuXUZYuAafEeYoSEc1fisir7H&#43;ZeT/jBpieRZ8=" crossorigin="anonymous">
+      <link rel="stylesheet" href="/css/bundle.min.d95a325399a05b50fe47dcf35b8229b8a2a014fcee5435cfb28204c6ac335fc5.css" integrity="sha256-2VoyU5mgW1D&#43;R9zzW4IpuKKgFPzuVDXPsoIExqwzX8U=" crossorigin="anonymous">
+
+      <script src="/js/main.a67363d931941ba3c0feb9ff74a8e824a37f8a1623f7eabd23a0fc4e7a4919fc.js" integrity="sha256-pnNj2TGUG6PA/rn/dKjoJKN/ihYj9&#43;q9I6D8TnpJGfw=" crossorigin="anonymous"></script>
+      <script src="/js/bundle.cc8ae9952dbfb731affafabdf26e5c60a6910047ff59ccdeaf1daebaa26c8830.js" integrity="sha256-zIrplS2/tzGv&#43;vq98m5cYKaRAEf/Wczerx2uuqJsiDA=" crossorigin="anonymous"></script><script defer src="/js/search/flexsearch.compact.64594b125f7b78bdf4fa8316955922bbebb1cd6baef3f16654bfca20309f18f8.js" integrity="sha256-ZFlLEl97eL30&#43;oMWlVkiu&#43;uxzWuu8/FmVL/KIDCfGPg="></script>
+<script defer src="/js/search/search.221545f425507db36bacce69b81457d3a83ecea5140ee7ecb6fc130736d5021f.js" integrity="sha256-IhVF9CVQfbNrrM5puBRX06g&#43;zqUUDufstvwTBzbVAh8="></script>
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+<link rel="icon" href="https://www.mizouzie.dev/images/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://www.mizouzie.dev/images/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://www.mizouzie.dev/images/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://www.mizouzie.dev/images/apple-touch-icon.png">
+<link rel="mask-icon" href="https://www.mizouzie.dev/images/apple-touch-icon.png">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://www.mizouzie.dev/articles/code-block-click-copy/" />
+
+</head>
+<body class="notransition">
+  <div id="container">
+    <header id="main-header"><div role="navigation" aria-label="Main">
+  <div class="nav-left">
+    <a href="https://www.mizouzie.dev/" style="color: inherit;">web with mizouzie</a>
+  </div>
+  <div class="nav-right">
+    <div style="position:absolute;width:0px;height:0px;">
+      <div id="nav-dropdown-menu" class="hidden" href="#">
+    <div class="nav-item">
+      <a href="/articles/"
+      >Articles</a>
+    </div>
+    <div class="nav-item">
+      <a href="/categories/"
+      >Categories</a>
+    </div>
+    <div class="nav-item">
+      <a href="/projects/"
+      >Projects</a>
+    </div>
+    <div class="nav-item">
+      <a href="/contact/"
+      >Contact</a>
+    </div>
+</div>
+    </div>
+    <a id="nav-dropdown-button" href="#"><svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 6H20M4 12H20M4 18H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</a>
+    <div id="nav-menu">
+    <div class="nav-item">
+      <a href="/articles/"
+      >Articles</a>
+    </div>
+    <div class="nav-item">
+      <a href="/categories/"
+      >Categories</a>
+    </div>
+    <div class="nav-item">
+      <a href="/projects/"
+      >Projects</a>
+    </div>
+    <div class="nav-item">
+      <a href="/contact/"
+      >Contact</a>
+    </div>
+</div>
+    <a id="theme-switcher" href="#">
+<svg class="light-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 3V4M12 20V21M4 12H3M6.31412 6.31412L5.5 5.5M17.6859 6.31412L18.5 5.5M6.31412 17.69L5.5 18.5001M17.6859 17.69L18.5 18.5001M21 12H20M16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+<svg class="dark-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.32031 11.6835C3.32031 16.6541 7.34975 20.6835 12.3203 20.6835C16.1075 20.6835 19.3483 18.3443 20.6768 15.032C19.6402 15.4486 18.5059 15.6834 17.3203 15.6834C12.3497 15.6834 8.32031 11.654 8.32031 6.68342C8.32031 5.50338 8.55165 4.36259 8.96453 3.32996C5.65605 4.66028 3.32031 7.89912 3.32031 11.6835Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</a>
+  </div>
+</div>
+</header>
+    <div class="flex grow">
+      <div id="main-pane">
+        <main id="main-content"><div class="single-header">
+<ol class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <a itemprop="item" href="https://www.mizouzie.dev/">
+        <span itemprop="name">Home</span>
+      </a>
+      <meta itemprop="position" content='1' />
+    </li>
+    <span>&nbsp»&nbsp</span>
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <a itemprop="item" href="https://www.mizouzie.dev/articles/">
+        <span itemprop="name">Articles</span>
+      </a>
+      <meta itemprop="position" content='2' />
+    </li>
+    <span>&nbsp»&nbsp</span>
+</ol>
+<h1>Code Block Click Copy</h1><time class="dim" datetime="2025-12-09T00:00:00&#43;00:00">December 9, 2025</time><div class="term-container"><div class="tag">
+        <a href="https://www.mizouzie.dev/tags/web-dev/">#web dev</a>
+      </div><div class="tag">
+        <a href="https://www.mizouzie.dev/tags/open-source/">#open source</a>
+      </div><div class="tag">
+        <a href="https://www.mizouzie.dev/tags/learning/">#learning</a>
+      </div><div class="tag">
+        <a href="https://www.mizouzie.dev/tags/hugo/">#hugo</a>
+      </div><div class="tag">
+        <a href="https://www.mizouzie.dev/tags/javascript/">#javascript</a>
+      </div><div class="tag">
+        <a href="https://www.mizouzie.dev/tags/no-build/">#no build</a>
+      </div></ol></div>
+  <section class="page-section"><p>I&rsquo;m a back-end leaning full stack developer, so after a whole day of combing through and fixing someone else&rsquo;s JavaScript code all day at work, there was no better way to blow off some steam while I sat waiting for my kid to finish his Taekwondo lesson than to read through and re-write my latest addition to this site.</p>
+<h2 id="adding-copy-to-clipboard-functionality-to-code-blocks">Adding copy to clipboard functionality to code blocks</h2>
+<p>The latest addition I refer to was adding little &ldquo;copy to clipboard&rdquo; buttons in the corners of my example code blocks throughout this site. I always find them helpful when they&rsquo;re available on documentation or tutorial sites, so I&rsquo;d spent a couple of hours last night  adding the necessary stylesheets for pretty code blocks and then going through the Hugo forums seeing how others had tackled this. I was grateful to stumble across a discussion in which someone had kindly provided a whole example repo/branch so I pulled it down and cherry-picked the parts that made it all tick, created a <code>package.json</code> file and ran <code>npm ci</code>. Boom! We had a cool little copy icon in the corner of every code block.</p>
+<p>Excitedly I pushed all my changes, which triggered the deployment workflows, and a minute later it was live and I was going through all my old articles marvelling at the copy-pasta-ness of it all. But&hellip; the pages felt that tiny bit slower to load. They had lost that <em>snap</em> that had been the whole reason I was so enamored with Hugo built static sites in the first place. So before going to bed, I had a closer look at the actual contents of the <code>package.json</code> and was reminded of why the JavaScript ecosystem gets so much stick all the time. No less than <strong>four</strong> libraries were &ldquo;required&rdquo; to render these tiny icons and copy stuff to the user&rsquo;s clipboard. That&rsquo;s bonkers. So I did some [over]due diligence and learned about the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Clipboard_API">Clipboard API</a> which had full support in most browsers since ages ago. Why wasn&rsquo;t I just using that?</p>
+<p>Let&rsquo;s just use that!</p>
+<h2 id="using-clipboardjs-in-a-hugo-site">Using Clipboard.js in a Hugo site</h2>
+<p>I would certainly not have been able to write this all from scratch, even with a solid understanding of the API, but I didn&rsquo;t have to. I already had <a href="https://discourse.gohugo.io/t/how-to-add-a-copy-to-clipboard-button-to-code-blocks/49633/4?u=mizouzie">what was shown here</a> as a starting point, so it was simple to break down the steps of what needed to be done. We&rsquo;ll break down the function that does the heavy lifting <code>addCopyToClipboardButtons(containerClass, buttonClass = 'copy-button')</code> here:</p>
+<ol>
+<li>Create and add the button to each of the code block &lsquo;containers&rsquo;</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl">  <span class="kr">const</span> <span class="nx">containers</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="sb">`.</span><span class="si">${</span><span class="nx">containerClass</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="nx">containers</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="nx">container</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">const</span> <span class="nx">button</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s1">&#39;button&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">button</span><span class="p">.</span><span class="nx">className</span> <span class="o">=</span> <span class="nx">buttonClass</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">button</span><span class="p">.</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="nx">icons</span><span class="p">.</span><span class="nx">faCopyRegular</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">container</span><span class="p">.</span><span class="nx">prepend</span><span class="p">(</span><span class="nx">button</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">});</span>
+</span></span></code></pre></div><ol start="2">
+<li>Create the clipboard object, the most of which is handled by the main dependency</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl">  <span class="kr">const</span> <span class="nx">clipboard</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">ClipboardJS</span><span class="p">(</span><span class="sb">`.</span><span class="si">${</span><span class="nx">buttonClass</span><span class="si">}</span><span class="sb">`</span><span class="p">,</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">target</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">trigger</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="k">return</span> <span class="nx">trigger</span><span class="p">.</span><span class="nx">nextElementSibling</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="p">});</span>
+</span></span></code></pre></div><ol start="3">
+<li>Handle a successful copy operation</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl">  <span class="nx">clipboard</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;success&#39;</span><span class="p">,</span> <span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="nx">e</span><span class="p">.</span><span class="nx">action</span> <span class="o">===</span> <span class="s1">&#39;copy&#39;</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="kr">const</span> <span class="nx">originalIcon</span> <span class="o">=</span> <span class="nx">e</span><span class="p">.</span><span class="nx">trigger</span><span class="p">.</span><span class="nx">innerHTML</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">e</span><span class="p">.</span><span class="nx">trigger</span><span class="p">.</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="nx">icons</span><span class="p">.</span><span class="nx">faCheck</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">      <span class="nx">setTimeout</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">e</span><span class="p">.</span><span class="nx">trigger</span><span class="p">.</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="nx">originalIcon</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">e</span><span class="p">.</span><span class="nx">clearSelection</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">      <span class="p">},</span> <span class="nx">iconChangeTimeout</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="p">});</span>
+</span></span></code></pre></div><ol start="4">
+<li>Handle an error during a copy operation</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl">  <span class="nx">clipboard</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;error&#39;</span><span class="p">,</span> <span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="s1">&#39;ClipboardJS Error:&#39;</span><span class="p">,</span> <span class="nx">e</span><span class="p">.</span><span class="nx">action</span><span class="p">,</span> <span class="nx">e</span><span class="p">.</span><span class="nx">trigger</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kr">const</span> <span class="nx">originalIcon</span> <span class="o">=</span> <span class="nx">e</span><span class="p">.</span><span class="nx">trigger</span><span class="p">.</span><span class="nx">innerHTML</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">e</span><span class="p">.</span><span class="nx">trigger</span><span class="p">.</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="nx">icons</span><span class="p">.</span><span class="nx">faBomb</span><span class="p">;</span> <span class="c1">// Assuming you have a cross or &#39;times&#39; icon
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl">    <span class="nx">setTimeout</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">e</span><span class="p">.</span><span class="nx">trigger</span><span class="p">.</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="nx">originalIcon</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">},</span> <span class="nx">iconChangeTimeout</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">});</span>
+</span></span></code></pre></div><p>It&rsquo;s actually quite elegant as it is, the only gripe I really had with it is that it requires loading a whole bunch of stuff that likely unused. So based on this, we can quite easily swap out the parts that matter.</p>
+<h2 id="copy-to-clipboard-buttons-in-hugo-with-vanilla-javascript">Copy to clipboard buttons in Hugo with vanilla JavaScript</h2>
+<p>Step 1 of the above breakdown is actually perfect as it is. There is nothing other than native JS and we end up with some useful bits we can come back to later.</p>
+<p>Step 2 is where we can start to swap out the library for the native API. I had them side by side as I was working out the bugs so we&rsquo;ll give it a &ldquo;new&rdquo; name for now</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl">  <span class="kr">const</span> <span class="nx">newClipboard</span> <span class="o">=</span> <span class="nb">window</span><span class="p">.</span><span class="nx">navigator</span><span class="p">.</span><span class="nx">clipboard</span>
+</span></span></code></pre></div><p>Next, our main difference between the ClipboardJS implementation and the native API is that the former is very similar to jquery and offers an <code>on()</code> method to deal with either a success or failed operation, while the latter is more aligned with the <code>fetch()</code> API which has <code>then()</code> and <code>catch()</code> methods for dealing with the successfully resolved promise or the failure to do so. This means, that unlike our steps 3 and 4 above being totally separated, we can write a more &ldquo;try/catch&rdquo; (hooray for PHP) style chain of instructions.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="nx">containers</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="nx">container</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">const</span> <span class="nx">button</span> <span class="o">=</span> <span class="nx">container</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="sb">`.</span><span class="si">${</span><span class="nx">buttonClass</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">button</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;click&#39;</span><span class="p">,</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="kr">const</span> <span class="nx">text</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">nextElementSibling</span><span class="p">.</span><span class="nx">textContent</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">newClipboard</span><span class="p">.</span><span class="nx">writeText</span><span class="p">(</span><span class="nx">text</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="nx">then</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">          <span class="kr">const</span> <span class="nx">originalIcon</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">innerHTML</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">          <span class="k">this</span><span class="p">.</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="nx">icons</span><span class="p">.</span><span class="nx">faCheck</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">          <span class="nx">setTimeout</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">this</span><span class="p">.</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="nx">originalIcon</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">          <span class="p">},</span> <span class="nx">iconChangeTimeout</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="p">})</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="k">catch</span><span class="p">((</span><span class="nx">e</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="s1">&#39;Error copying to clipboard:&#39;</span><span class="p">,</span> <span class="nx">e</span><span class="p">.</span><span class="nx">action</span><span class="p">,</span> <span class="nx">e</span><span class="p">.</span><span class="nx">trigger</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">          <span class="kr">const</span> <span class="nx">originalIcon</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">innerHTML</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">          <span class="k">this</span><span class="p">.</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="nx">icons</span><span class="p">.</span><span class="nx">faBomb</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">          <span class="nx">setTimeout</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">this</span><span class="p">.</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="nx">originalIcon</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">          <span class="p">},</span> <span class="nx">iconChangeTimeout</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="p">});</span>
+</span></span><span class="line"><span class="cl">    <span class="p">});</span>
+</span></span><span class="line"><span class="cl">  <span class="p">});</span>
+</span></span></code></pre></div><p>This actually reads quite nicely already for describing what it is doing:</p>
+<ol>
+<li>Grab our containers</li>
+<li>For each of them;
+<ol>
+<li>Find the button</li>
+<li>Add a click event listener in which we;
+<ol>
+<li>Capture the next element sibling&rsquo;s text content (Our demonstration code)</li>
+<li>Write that text to the operating system&rsquo;s clipboard</li>
+<li>Then do nice things like show the user something has happened by swapping the icon to a check mark</li>
+<li>If there was an error, show a bomb icon instead and write the error to the console</li>
+<li>After a set amount of time, swap the icon back to the clipboard icon</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<p>Now that it&rsquo;s converted, we can see how simple this action really is. That means that there is room for improvement! Did you notice how we&rsquo;ve got a couple of places where we&rsquo;re repeating actions or redeclaring the same thing? By moving one of the <code>const</code> declarations up a scope level, it becomes accessible everywhere it is required, and we also seem to be doing two <em>nested</em> forEach loops of the same things. In the end I thought this was a nice enough level of squished to retain it&rsquo;s readability and still work just as we want it to.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="kr">import</span> <span class="o">*</span> <span class="nx">as</span> <span class="nx">icons</span> <span class="nx">from</span> <span class="s1">&#39;./icons.js&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">addCopyToClipboardButtons</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="kr">const</span> <span class="nx">iconChangeTimeout</span> <span class="o">=</span> <span class="mi">1300</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="kr">const</span> <span class="nx">containers</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="s1">&#39;.highlight&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="nx">containers</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="nx">container</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">const</span> <span class="nx">button</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s1">&#39;button&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">button</span><span class="p">.</span><span class="nx">className</span> <span class="o">=</span> <span class="s1">&#39;copy-button&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">button</span><span class="p">.</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="nx">icons</span><span class="p">.</span><span class="nx">faCopyRegular</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">container</span><span class="p">.</span><span class="nx">prepend</span><span class="p">(</span><span class="nx">button</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="nx">button</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;click&#39;</span><span class="p">,</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="kr">const</span> <span class="nx">originalIcon</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">innerHTML</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="kr">const</span> <span class="nx">text</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">nextElementSibling</span><span class="p">.</span><span class="nx">textContent</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="nb">window</span><span class="p">.</span><span class="nx">navigator</span><span class="p">.</span><span class="nx">clipboard</span><span class="p">.</span><span class="nx">writeText</span><span class="p">(</span><span class="nx">text</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="nx">then</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">          <span class="k">this</span><span class="p">.</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="nx">icons</span><span class="p">.</span><span class="nx">faCheck</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">          <span class="nx">setTimeout</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">this</span><span class="p">.</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="nx">originalIcon</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">          <span class="p">},</span> <span class="nx">iconChangeTimeout</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="p">})</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="k">catch</span><span class="p">((</span><span class="nx">e</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="s1">&#39;Error copying to clipboard:&#39;</span><span class="p">,</span> <span class="nx">e</span><span class="p">.</span><span class="nx">action</span><span class="p">,</span> <span class="nx">e</span><span class="p">.</span><span class="nx">trigger</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">          <span class="k">this</span><span class="p">.</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="nx">icons</span><span class="p">.</span><span class="nx">faBomb</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">          <span class="nx">setTimeout</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">this</span><span class="p">.</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="nx">originalIcon</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">          <span class="p">},</span> <span class="nx">iconChangeTimeout</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="p">});</span>
+</span></span><span class="line"><span class="cl">    <span class="p">});</span>
+</span></span><span class="line"><span class="cl">  <span class="p">});</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">export</span> <span class="p">{</span> <span class="nx">addCopyToClipboardButtons</span> <span class="p">}</span>
+</span></span></code></pre></div><p>It&rsquo;s very likely that there are further optimisations that could be made. The <code>setTimeout()</code>s could probably go on one line, for instance, but as I said, I was waiting for a Taekwondo lesson to finish, and at this point, it did, so that&rsquo;s as far as I went.</p>
+<p>Once I got home I went and did my favourite thing to do and went through my files and hit <strong>delete</strong> on package.json, package-lock.json and all of node_modules and even got to go back into my .github/workflows/*.yaml files and remove the entire JS build step &#x1f389;. And then I took the great feeling that gave me and came straight into a new markdown file and started writing out this here post.</p>
+<p>Seeing how simple yet powerful modern JavaScript can be does make me appreciate this strange little language at times. And when it is put together with something as fast and elegant as a nice static website? Forget about it. So Go Hugo some sites and see what else can be wrangled!</p>
+<div class="footer-copyright">
+      <div class="footer">
+        <h4>Share this Post:</h4>
+
+<div class="share-buttons">
+    <a target="_blank" rel="noopener noreferrer" aria-label="share Code Block Click Copy on twitter"
+        href="https://twitter.com/intent/tweet/?text=Code%20Block%20Click%20Copy&amp;url=https%3a%2f%2fwww.mizouzie.dev%2farticles%2fcode-block-click-copy%2f">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-253.927,424.544c135.939,0 210.268,-112.643 210.268,-210.268c0,-3.218 0,-6.437 -0.153,-9.502c14.406,-10.421 26.973,-23.448 36.935,-38.314c-13.18,5.824 -27.433,9.809 -42.452,11.648c15.326,-9.196 26.973,-23.602 32.49,-40.92c-14.252,8.429 -30.038,14.56 -46.896,17.931c-13.487,-14.406 -32.644,-23.295 -53.946,-23.295c-40.767,0 -73.87,33.104 -73.87,73.87c0,5.824 0.613,11.494 1.992,16.858c-61.456,-3.065 -115.862,-32.49 -152.337,-77.241c-6.284,10.881 -9.962,23.601 -9.962,37.088c0,25.594 13.027,48.276 32.95,61.456c-12.107,-0.307 -23.448,-3.678 -33.41,-9.196l0,0.92c0,35.862 25.441,65.594 59.311,72.49c-6.13,1.686 -12.72,2.606 -19.464,2.606c-4.751,0 -9.348,-0.46 -13.946,-1.38c9.349,29.426 36.628,50.728 68.965,51.341c-25.287,19.771 -57.164,31.571 -91.8,31.571c-5.977,0 -11.801,-0.306 -17.625,-1.073c32.337,21.15 71.264,33.41 112.95,33.41Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share Code Block Click Copy on linkedin"
+        href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fwww.mizouzie.dev%2farticles%2fcode-block-click-copy%2f&amp;title=Code%20Block%20Click%20Copy&amp;summary=Code%20Block%20Click%20Copy&amp;source=https%3a%2f%2fwww.mizouzie.dev%2farticles%2fcode-block-click-copy%2f">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-288.985,423.278l0,-225.717l-75.04,0l0,225.717l75.04,0Zm270.539,0l0,-129.439c0,-69.333 -37.018,-101.586 -86.381,-101.586c-39.804,0 -57.634,21.891 -67.617,37.266l0,-31.958l-75.021,0c0.995,21.181 0,225.717 0,225.717l75.02,0l0,-126.056c0,-6.748 0.486,-13.492 2.474,-18.315c5.414,-13.475 17.767,-27.434 38.494,-27.434c27.135,0 38.007,20.707 38.007,51.037l0,120.768l75.024,0Zm-307.552,-334.556c-25.674,0 -42.448,16.879 -42.448,39.002c0,21.658 16.264,39.002 41.455,39.002l0.484,0c26.165,0 42.452,-17.344 42.452,-39.002c-0.485,-22.092 -16.241,-38.954 -41.943,-39.002Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share Code Block Click Copy on reddit"
+        href="https://reddit.com/submit?url=https%3a%2f%2fwww.mizouzie.dev%2farticles%2fcode-block-click-copy%2f&title=Code%20Block%20Click%20Copy">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-3.446,265.638c0,-22.964 -18.616,-41.58 -41.58,-41.58c-11.211,0 -21.361,4.457 -28.841,11.666c-28.424,-20.508 -67.586,-33.757 -111.204,-35.278l18.941,-89.121l61.884,13.157c0.756,15.734 13.642,28.29 29.56,28.29c16.407,0 29.706,-13.299 29.706,-29.701c0,-16.403 -13.299,-29.702 -29.706,-29.702c-11.666,0 -21.657,6.792 -26.515,16.578l-69.105,-14.69c-1.922,-0.418 -3.939,-0.042 -5.585,1.036c-1.658,1.073 -2.811,2.761 -3.224,4.686l-21.152,99.438c-44.258,1.228 -84.046,14.494 -112.837,35.232c-7.468,-7.164 -17.589,-11.591 -28.757,-11.591c-22.965,0 -41.585,18.616 -41.585,41.58c0,16.896 10.095,31.41 24.568,37.918c-0.639,4.135 -0.99,8.328 -0.99,12.576c0,63.977 74.469,115.836 166.33,115.836c91.861,0 166.334,-51.859 166.334,-115.836c0,-4.218 -0.347,-8.387 -0.977,-12.493c14.564,-6.47 24.735,-21.034 24.735,-38.001Zm-119.474,108.193c-20.27,20.241 -59.115,21.816 -70.534,21.816c-11.428,0 -50.277,-1.575 -70.522,-21.82c-3.007,-3.008 -3.007,-7.882 0,-10.889c3.003,-2.999 7.882,-3.003 10.885,0c12.777,12.781 40.11,17.317 59.637,17.317c19.522,0 46.86,-4.536 59.657,-17.321c3.016,-2.999 7.886,-2.995 10.885,0.008c3.008,3.011 3.003,7.882 -0.008,10.889Zm-5.23,-48.781c-16.373,0 -29.701,-13.324 -29.701,-29.698c0,-16.381 13.328,-29.714 29.701,-29.714c16.378,0 29.706,13.333 29.706,29.714c0,16.374 -13.328,29.698 -29.706,29.698Zm-160.386,-29.702c0,-16.381 13.328,-29.71 29.714,-29.71c16.369,0 29.689,13.329 29.689,29.71c0,16.373 -13.32,29.693 -29.689,29.693c-16.386,0 -29.714,-13.32 -29.714,-29.693Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share Code Block Click Copy on facebook"
+        href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fwww.mizouzie.dev%2farticles%2fcode-block-click-copy%2f">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-106.468,0l0,-192.915l66.6,0l12.672,-82.621l-79.272,0l0,-53.617c0,-22.603 11.073,-44.636 46.58,-44.636l36.042,0l0,-70.34c0,0 -32.71,-5.582 -63.982,-5.582c-65.288,0 -107.96,39.569 -107.96,111.204l0,62.971l-72.573,0l0,82.621l72.573,0l0,192.915l-191.104,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share Code Block Click Copy on whatsapp"
+        href="https://api.whatsapp.com/send?text=Code%20Block%20Click%20Copy%20-%20https%3a%2f%2fwww.mizouzie.dev%2farticles%2fcode-block-click-copy%2f">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-58.673,127.703c-33.842,-33.881 -78.847,-52.548 -126.798,-52.568c-98.799,0 -179.21,80.405 -179.249,179.234c-0.013,31.593 8.241,62.428 23.927,89.612l-25.429,92.884l95.021,-24.925c26.181,14.28 55.659,21.807 85.658,21.816l0.074,0c98.789,0 179.206,-80.413 179.247,-179.243c0.018,-47.895 -18.61,-92.93 -52.451,-126.81Zm-126.797,275.782l-0.06,0c-26.734,-0.01 -52.954,-7.193 -75.828,-20.767l-5.441,-3.229l-56.386,14.792l15.05,-54.977l-3.542,-5.637c-14.913,-23.72 -22.791,-51.136 -22.779,-79.287c0.033,-82.142 66.867,-148.971 149.046,-148.971c39.793,0.014 77.199,15.531 105.329,43.692c28.128,28.16 43.609,65.592 43.594,105.4c-0.034,82.149 -66.866,148.983 -148.983,148.984Zm81.721,-111.581c-4.479,-2.242 -26.499,-13.075 -30.604,-14.571c-4.105,-1.495 -7.091,-2.241 -10.077,2.241c-2.986,4.483 -11.569,14.572 -14.182,17.562c-2.612,2.988 -5.225,3.364 -9.703,1.12c-4.479,-2.241 -18.91,-6.97 -36.017,-22.23c-13.314,-11.876 -22.304,-26.542 -24.916,-31.026c-2.612,-4.484 -0.279,-6.908 1.963,-9.14c2.016,-2.007 4.48,-5.232 6.719,-7.847c2.24,-2.615 2.986,-4.484 4.479,-7.472c1.493,-2.99 0.747,-5.604 -0.374,-7.846c-1.119,-2.241 -10.077,-24.288 -13.809,-33.256c-3.635,-8.733 -7.327,-7.55 -10.077,-7.688c-2.609,-0.13 -5.598,-0.158 -8.583,-0.158c-2.986,0 -7.839,1.121 -11.944,5.604c-4.105,4.484 -15.675,15.32 -15.675,37.364c0,22.046 16.048,43.342 18.287,46.332c2.24,2.99 31.582,48.227 76.511,67.627c10.685,4.615 19.028,7.371 25.533,9.434c10.728,3.41 20.492,2.929 28.209,1.775c8.605,-1.285 26.499,-10.833 30.231,-21.295c3.732,-10.464 3.732,-19.431 2.612,-21.298c-1.119,-1.869 -4.105,-2.99 -8.583,-5.232Z" />
+        </svg>
+    </a>
+</div>
+</div>
+    </div>
+  </section></main>
+        <footer id="main-footer"><div class="footer">
+  <a href="#">Scroll to Top</a>
+  <div class="footer-copyright">
+    <div class="dim">© 2025 Sam Anglin</div>
+    <div>
+      <a href="/privacy-policy">Privacy Policy</a> |
+      <a href="/about">About Me</a>
+    </div>
+  </div>
+</div>
+</footer>
+      </div><aside id="side-pane" class="side-sticky"><div class="side-details">
+    <span>1277 words</span>
+    <span>8 - 10 minutes read</span><div class="side-details-taxonomy">
+        <small>categories: 
+          <span class="details-taxonomy"><a href="https://www.mizouzie.dev/categories/web-development">web development</a></span><span class="details-taxonomy"><a href="https://www.mizouzie.dev/categories/tutorial">tutorial</a></span></small>
+      </div></div><h3>Table Of Contents</h3><nav id="TableOfContents">
+  <ul>
+    <li><a href="#adding-copy-to-clipboard-functionality-to-code-blocks">Adding copy to clipboard functionality to code blocks</a></li>
+    <li><a href="#using-clipboardjs-in-a-hugo-site">Using Clipboard.js in a Hugo site</a></li>
+    <li><a href="#copy-to-clipboard-buttons-in-hugo-with-vanilla-javascript">Copy to clipboard buttons in Hugo with vanilla JavaScript</a></li>
+  </ul>
+</nav><h3>Related</h3>
+    <ul><li><a href="/articles/benefits-of-os/">My Top 3 Benefits of Open Source Contribution</a></li><li><a href="/articles/then-now-after/">Tum | Modo | Postea</a></li><li><a href="/articles/how-to-test-protected-functions-with-phpunit/">How to test protected functions with PHPUnit in your Laravel app</a></li><li><a href="/articles/space-is-the-place/">Space is the Place: Reasons to explore Twitter Spaces</a></li><li><a href="/articles/best-senior-developer/">3 things the best senior developers do</a></li></ul></aside></div>
+  </div>
+</body>
+</html>

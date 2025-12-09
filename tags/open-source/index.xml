@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>made by MizouziE</copyright>
-    <lastBuildDate>Thu, 16 Feb 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 09 Dec 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://www.mizouzie.dev/tags/open-source/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Code Block Click Copy</title>
+      <link>https://www.mizouzie.dev/articles/code-block-click-copy/</link>
+      <pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/articles/code-block-click-copy/</guid>
+      <description>How to swap a Clipboard.js dependency for vanilla JavaScript</description>
+    </item>
     <item>
       <title>How to make your GitHub project pop on social media</title>
       <link>https://www.mizouzie.dev/articles/make-your-github-project-stand-out/</link>
