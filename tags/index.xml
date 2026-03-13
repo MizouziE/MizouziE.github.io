@@ -7,8 +7,36 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>made by MizouziE</copyright>
-    <lastBuildDate>Tue, 09 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 25 Dec 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://www.mizouzie.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Behaviour</title>
+      <link>https://www.mizouzie.dev/tags/behaviour/</link>
+      <pubDate>Thu, 25 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/tags/behaviour/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Emotions</title>
+      <link>https://www.mizouzie.dev/tags/emotions/</link>
+      <pubDate>Thu, 25 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/tags/emotions/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Parenting</title>
+      <link>https://www.mizouzie.dev/tags/parenting/</link>
+      <pubDate>Thu, 25 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/tags/parenting/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Relationships</title>
+      <link>https://www.mizouzie.dev/tags/relationships/</link>
+      <pubDate>Thu, 25 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/tags/relationships/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Hugo</title>
       <link>https://www.mizouzie.dev/tags/hugo/</link>
@@ -220,6 +248,13 @@
       <description></description>
     </item>
     <item>
+      <title>Habits</title>
+      <link>https://www.mizouzie.dev/tags/habits/</link>
+      <pubDate>Sun, 12 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/tags/habits/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Api</title>
       <link>https://www.mizouzie.dev/tags/api/</link>
       <pubDate>Sun, 05 Feb 2023 00:00:00 +0000</pubDate>
@@ -266,6 +301,41 @@
       <link>https://www.mizouzie.dev/tags/html/</link>
       <pubDate>Tue, 19 Apr 2022 00:00:00 +0000</pubDate>
       <guid>https://www.mizouzie.dev/tags/html/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Culture</title>
+      <link>https://www.mizouzie.dev/tags/culture/</link>
+      <pubDate>Mon, 18 Jul 2016 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/tags/culture/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Evolution</title>
+      <link>https://www.mizouzie.dev/tags/evolution/</link>
+      <pubDate>Mon, 18 Jul 2016 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/tags/evolution/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Society</title>
+      <link>https://www.mizouzie.dev/tags/society/</link>
+      <pubDate>Mon, 18 Jul 2016 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/tags/society/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Absurdism</title>
+      <link>https://www.mizouzie.dev/tags/absurdism/</link>
+      <pubDate>Tue, 01 Mar 2016 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/tags/absurdism/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Existentialism</title>
+      <link>https://www.mizouzie.dev/tags/existentialism/</link>
+      <pubDate>Tue, 01 Mar 2016 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/tags/existentialism/</guid>
       <description></description>
     </item>
   </channel>

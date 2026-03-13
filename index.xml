@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>made by MizouziE</copyright>
-    <lastBuildDate>Tue, 09 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 25 Dec 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://www.mizouzie.dev/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Emotional Intelligence</title>
+      <link>https://www.mizouzie.dev/tldr/emotional-intelligence/</link>
+      <pubDate>Thu, 25 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/tldr/emotional-intelligence/</guid>
+      <description>A compelling argument that how one manages emotions matters more to life&amp;rsquo;s outcomes than raw intellectual ability</description>
+    </item>
     <item>
       <title>Code Block Click Copy</title>
       <link>https://www.mizouzie.dev/articles/code-block-click-copy/</link>
@@ -143,6 +150,13 @@
       <description>Artificial Intelligence is the hottest topic in a long while and we are certain to see it creep into content on the web. However, I will try to avoid the trend.</description>
     </item>
     <item>
+      <title>Atomic Habits</title>
+      <link>https://www.mizouzie.dev/tldr/atomic-habits/</link>
+      <pubDate>Sun, 12 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/tldr/atomic-habits/</guid>
+      <description>A systematic breakdown of how small repeated behaviours compound into who you become</description>
+    </item>
+    <item>
       <title>Developing a Laravel Application using Tinker</title>
       <link>https://www.mizouzie.dev/articles/developing-a-laravel-app-using-tinker/</link>
       <pubDate>Wed, 08 Feb 2023 00:00:00 +0000</pubDate>
@@ -232,6 +246,20 @@
       <pubDate>Tue, 19 Apr 2022 00:00:00 +0000</pubDate>
       <guid>https://www.mizouzie.dev/articles/customised-featured-link-thumbnail/</guid>
       <description>How to make sure that any thumbnail of a link shared to my page looked how I wanted it to.</description>
+    </item>
+    <item>
+      <title>Sapiens</title>
+      <link>https://www.mizouzie.dev/tldr/sapiens/</link>
+      <pubDate>Mon, 18 Jul 2016 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/tldr/sapiens/</guid>
+      <description>A unique perspective on the evolution of the human species, exploring the most beneficial characteristics</description>
+    </item>
+    <item>
+      <title>The Stranger</title>
+      <link>https://www.mizouzie.dev/tldr/the-stranger/</link>
+      <pubDate>Tue, 01 Mar 2016 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/tldr/the-stranger/</guid>
+      <description>A story of a man faced with absurdity in it&amp;rsquo;s purest form and how he navigates it in simple terms</description>
     </item>
   </channel>
 </rss>

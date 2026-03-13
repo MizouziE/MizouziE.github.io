@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Author on web with mizouzie</title>
+    <link>https://www.mizouzie.dev/author/</link>
+    <description>Recent content in Author on web with mizouzie</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>made by MizouziE</copyright>
+    <lastBuildDate>Thu, 25 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://www.mizouzie.dev/author/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Daniel Goleman</title>
+      <link>https://www.mizouzie.dev/author/daniel-goleman/</link>
+      <pubDate>Thu, 25 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/author/daniel-goleman/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>James Clear</title>
+      <link>https://www.mizouzie.dev/author/james-clear/</link>
+      <pubDate>Sun, 12 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/author/james-clear/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Yuval Noah Harari</title>
+      <link>https://www.mizouzie.dev/author/yuval-noah-harari/</link>
+      <pubDate>Mon, 18 Jul 2016 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/author/yuval-noah-harari/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Albert Camus</title>
+      <link>https://www.mizouzie.dev/author/albert-camus/</link>
+      <pubDate>Tue, 01 Mar 2016 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/author/albert-camus/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
