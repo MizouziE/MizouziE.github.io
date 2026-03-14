@@ -7,8 +7,29 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>made by MizouziE</copyright>
-    <lastBuildDate>Thu, 25 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 13 Mar 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://www.mizouzie.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Artificial Intelligence</title>
+      <link>https://www.mizouzie.dev/tags/artificial-intelligence/</link>
+      <pubDate>Fri, 13 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/tags/artificial-intelligence/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>ChatGPT</title>
+      <link>https://www.mizouzie.dev/tags/chatgpt/</link>
+      <pubDate>Fri, 13 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/tags/chatgpt/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Opinion</title>
+      <link>https://www.mizouzie.dev/tags/opinion/</link>
+      <pubDate>Fri, 13 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/tags/opinion/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Behaviour</title>
       <link>https://www.mizouzie.dev/tags/behaviour/</link>
@@ -206,13 +227,6 @@
       <description></description>
     </item>
     <item>
-      <title>Artificial Intelligence</title>
-      <link>https://www.mizouzie.dev/tags/artificial-intelligence/</link>
-      <pubDate>Tue, 21 Feb 2023 00:00:00 +0000</pubDate>
-      <guid>https://www.mizouzie.dev/tags/artificial-intelligence/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Midjourney</title>
       <link>https://www.mizouzie.dev/tags/midjourney/</link>
       <pubDate>Tue, 21 Feb 2023 00:00:00 +0000</pubDate>
@@ -238,13 +252,6 @@
       <link>https://www.mizouzie.dev/tags/meta-tag/</link>
       <pubDate>Thu, 16 Feb 2023 00:00:00 +0000</pubDate>
       <guid>https://www.mizouzie.dev/tags/meta-tag/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>ChatGPT</title>
-      <link>https://www.mizouzie.dev/tags/chatgpt/</link>
-      <pubDate>Tue, 14 Feb 2023 00:00:00 +0000</pubDate>
-      <guid>https://www.mizouzie.dev/tags/chatgpt/</guid>
       <description></description>
     </item>
     <item>

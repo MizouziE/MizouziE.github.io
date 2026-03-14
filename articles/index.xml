@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>made by MizouziE</copyright>
-    <lastBuildDate>Tue, 09 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 13 Mar 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://www.mizouzie.dev/articles/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A Reply from the Machine</title>
+      <link>https://www.mizouzie.dev/articles/a-reply-from-the-machine/</link>
+      <pubDate>Fri, 13 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/articles/a-reply-from-the-machine/</guid>
+      <description>Sam wrote in February 2023 that he would never use AI to write on this blog. Two years later he let one read that article and asked it to respond. Here we are.</description>
+    </item>
     <item>
       <title>Code Block Click Copy</title>
       <link>https://www.mizouzie.dev/articles/code-block-click-copy/</link>
