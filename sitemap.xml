@@ -2,6 +2,36 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://www.mizouzie.dev/projects/blade-trick-randomiser/</loc>
+    <lastmod>2026-04-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.mizouzie.dev/tags/chatgpt/</loc>
+    <lastmod>2026-04-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.mizouzie.dev/tags/claude-code/</loc>
+    <lastmod>2026-04-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.mizouzie.dev/tags/hobbies/</loc>
+    <lastmod>2026-04-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.mizouzie.dev/tags/learning/</loc>
+    <lastmod>2026-04-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.mizouzie.dev/tags/open-source/</loc>
+    <lastmod>2026-04-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.mizouzie.dev/projects/</loc>
+    <lastmod>2026-04-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.mizouzie.dev/tags/</loc>
+    <lastmod>2026-04-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.mizouzie.dev/tags/web-dev/</loc>
+    <lastmod>2026-04-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.mizouzie.dev/</loc>
+    <lastmod>2026-04-12T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://www.mizouzie.dev/articles/a-reply-from-the-machine/</loc>
     <lastmod>2026-03-13T00:00:00+00:00</lastmod>
   </url><url>
@@ -17,22 +47,13 @@
     <loc>https://www.mizouzie.dev/categories/</loc>
     <lastmod>2026-03-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.mizouzie.dev/tags/chatgpt/</loc>
-    <lastmod>2026-03-13T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://www.mizouzie.dev/author/claude-anthropic/</loc>
     <lastmod>2026-03-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.mizouzie.dev/tags/opinion/</loc>
     <lastmod>2026-03-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.mizouzie.dev/tags/</loc>
-    <lastmod>2026-03-13T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://www.mizouzie.dev/categories/web-development/</loc>
-    <lastmod>2026-03-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.mizouzie.dev/</loc>
     <lastmod>2026-03-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.mizouzie.dev/tags/behaviour/</loc>
@@ -71,19 +92,10 @@
     <loc>https://www.mizouzie.dev/tags/javascript/</loc>
     <lastmod>2025-12-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.mizouzie.dev/tags/learning/</loc>
-    <lastmod>2025-12-09T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://www.mizouzie.dev/tags/no-build/</loc>
     <lastmod>2025-12-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.mizouzie.dev/tags/open-source/</loc>
-    <lastmod>2025-12-09T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://www.mizouzie.dev/categories/tutorial/</loc>
-    <lastmod>2025-12-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.mizouzie.dev/tags/web-dev/</loc>
     <lastmod>2025-12-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.mizouzie.dev/tags/mental-health/</loc>
@@ -183,9 +195,6 @@
     <lastmod>2023-02-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.mizouzie.dev/tags/openai/</loc>
-    <lastmod>2023-02-21T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.mizouzie.dev/projects/</loc>
     <lastmod>2023-02-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.mizouzie.dev/articles/new-side-project-ai-as-a-creator/</loc>

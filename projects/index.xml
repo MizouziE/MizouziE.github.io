@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>made by MizouziE</copyright>
-    <lastBuildDate>Tue, 21 Feb 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 12 Apr 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://www.mizouzie.dev/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blade Trick Randomiser</title>
+      <link>https://www.mizouzie.dev/projects/blade-trick-randomiser/</link>
+      <pubDate>Sun, 12 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/projects/blade-trick-randomiser/</guid>
+      <description>A simple project to create a web app version of the classic roller blading game B.L.A.D.E., which turned into a huge learning opportunity</description>
+    </item>
     <item>
       <title>AI as a Creator</title>
       <link>https://www.mizouzie.dev/projects/ai-as-a-creator/</link>

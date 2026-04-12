@@ -7,20 +7,55 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>made by MizouziE</copyright>
-    <lastBuildDate>Fri, 13 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 12 Apr 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://www.mizouzie.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ChatGPT</title>
+      <link>https://www.mizouzie.dev/tags/chatgpt/</link>
+      <pubDate>Sun, 12 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/tags/chatgpt/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Claude Code</title>
+      <link>https://www.mizouzie.dev/tags/claude-code/</link>
+      <pubDate>Sun, 12 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/tags/claude-code/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hobbies</title>
+      <link>https://www.mizouzie.dev/tags/hobbies/</link>
+      <pubDate>Sun, 12 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/tags/hobbies/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Learning</title>
+      <link>https://www.mizouzie.dev/tags/learning/</link>
+      <pubDate>Sun, 12 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/tags/learning/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Open Source</title>
+      <link>https://www.mizouzie.dev/tags/open-source/</link>
+      <pubDate>Sun, 12 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/tags/open-source/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Web Dev</title>
+      <link>https://www.mizouzie.dev/tags/web-dev/</link>
+      <pubDate>Sun, 12 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://www.mizouzie.dev/tags/web-dev/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Artificial Intelligence</title>
       <link>https://www.mizouzie.dev/tags/artificial-intelligence/</link>
       <pubDate>Fri, 13 Mar 2026 00:00:00 +0000</pubDate>
       <guid>https://www.mizouzie.dev/tags/artificial-intelligence/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>ChatGPT</title>
-      <link>https://www.mizouzie.dev/tags/chatgpt/</link>
-      <pubDate>Fri, 13 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://www.mizouzie.dev/tags/chatgpt/</guid>
       <description></description>
     </item>
     <item>
@@ -73,31 +108,10 @@
       <description></description>
     </item>
     <item>
-      <title>Learning</title>
-      <link>https://www.mizouzie.dev/tags/learning/</link>
-      <pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>https://www.mizouzie.dev/tags/learning/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>No Build</title>
       <link>https://www.mizouzie.dev/tags/no-build/</link>
       <pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate>
       <guid>https://www.mizouzie.dev/tags/no-build/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Open Source</title>
-      <link>https://www.mizouzie.dev/tags/open-source/</link>
-      <pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>https://www.mizouzie.dev/tags/open-source/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Web Dev</title>
-      <link>https://www.mizouzie.dev/tags/web-dev/</link>
-      <pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>https://www.mizouzie.dev/tags/web-dev/</guid>
       <description></description>
     </item>
     <item>
