@@ -1,20 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Existentialism on web with mizouzie</title>
-    <link>https://www.mizouzie.dev/tags/existentialism/</link>
-    <description>Recent content in Existentialism on web with mizouzie</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <copyright>made by MizouziE</copyright>
-    <lastBuildDate>Tue, 01 Mar 2016 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://www.mizouzie.dev/tags/existentialism/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>The Stranger</title>
-      <link>https://www.mizouzie.dev/tldr/the-stranger/</link>
-      <pubDate>Tue, 01 Mar 2016 00:00:00 +0000</pubDate>
-      <guid>https://www.mizouzie.dev/tldr/the-stranger/</guid>
-      <description>A story of a man faced with absurdity in it&amp;rsquo;s purest form and how he navigates it in simple terms</description>
-    </item>
-  </channel>
+	<channel>
+		<title>Existentialism on web with mizouzie</title>
+		<link>https://www.mizouzie.dev/tags/existentialism/</link>
+		<description>Recent content in Existentialism on web with mizouzie</description>
+		<generator>Hugo</generator>
+		<language>en</language>
+		
+		
+		
+			<copyright>made by MizouziE</copyright>
+		
+		
+			<lastBuildDate>Tue, 01 Mar 2016 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="https://www.mizouzie.dev/tags/existentialism/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>The Stranger</title>
+				<link>https://www.mizouzie.dev/tldr/the-stranger/</link>
+				<pubDate>Tue, 01 Mar 2016 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tldr/the-stranger/</guid>
+				<description>A story of a man faced with absurdity in it&amp;rsquo;s purest form and how he navigates it in simple terms</description>
+			</item>
+	</channel>
 </rss>

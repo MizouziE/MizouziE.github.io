@@ -46,11 +46,11 @@
       <link rel="stylesheet" href="/css/code-blocks.min.f24ec20c08410022a16ef09343a4cbbc363e435b7567f1398fb8e30d25cfb80e.css" integrity="sha256-8k7CDAhBACKhbvCTQ6TLvDY&#43;Q1t1Z/E5j7jjDSXPuA4=" crossorigin="anonymous">
       <link rel="stylesheet" href="/css/custom.min.aa71d137febf16cd0beca3147e408f32a67b05f41d031759b7ad78f379a9f686.css" integrity="sha256-qnHRN/6/Fs0L7KMUfkCPMqZ7BfQdAxdZt61483mp9oY=" crossorigin="anonymous">
       <link rel="stylesheet" href="/css/share-buttons.min.0ec86ea02de65aaad22a24618a496f925c7f09bad5044990846c4c9d46d3f6aa.css" integrity="sha256-DshuoC3mWqrSKiRhiklvklx/CbrVBEmQhGxMnUbT9qo=" crossorigin="anonymous">
-      <link rel="stylesheet" href="/css/root.min.0e732b812b9751962e01a7c4798a1211cd5f8ac8abec7f99793fe306989e459f.css" integrity="sha256-DnMrgSuXUZYuAafEeYoSEc1fisir7H&#43;ZeT/jBpieRZ8=" crossorigin="anonymous">
-      <link rel="stylesheet" href="/css/bundle.min.d95a325399a05b50fe47dcf35b8229b8a2a014fcee5435cfb28204c6ac335fc5.css" integrity="sha256-2VoyU5mgW1D&#43;R9zzW4IpuKKgFPzuVDXPsoIExqwzX8U=" crossorigin="anonymous">
+      <link rel="stylesheet" href="/css/root.min.c8b23162b3d441a3254a617720bfe44772e30bd483b0e46048d1985db7423f19.css" integrity="sha256-yLIxYrPUQaMlSmF3IL/kR3LjC9SDsORgSNGYXbdCPxk=" crossorigin="anonymous">
+      <link rel="stylesheet" href="/css/bundle.min.1446e4b8610e9318bf552531f096532b5935bce68fcaa788ca795fdc2bb7c36b.css" integrity="sha256-FEbkuGEOkxi/VSUx8JZTK1k1vOaPyqeIynlf3Cu3w2s=" crossorigin="anonymous">
 
       <script src="/js/main.a67363d931941ba3c0feb9ff74a8e824a37f8a1623f7eabd23a0fc4e7a4919fc.js" integrity="sha256-pnNj2TGUG6PA/rn/dKjoJKN/ihYj9&#43;q9I6D8TnpJGfw=" crossorigin="anonymous"></script>
-      <script src="/js/bundle.cc8ae9952dbfb731affafabdf26e5c60a6910047ff59ccdeaf1daebaa26c8830.js" integrity="sha256-zIrplS2/tzGv&#43;vq98m5cYKaRAEf/Wczerx2uuqJsiDA=" crossorigin="anonymous"></script><script defer src="/js/search/flexsearch.compact.64594b125f7b78bdf4fa8316955922bbebb1cd6baef3f16654bfca20309f18f8.js" integrity="sha256-ZFlLEl97eL30&#43;oMWlVkiu&#43;uxzWuu8/FmVL/KIDCfGPg="></script>
+      <script src="/js/bundle.cc8ae9952dbfb731affafabdf26e5c60a6910047ff59ccdeaf1daebaa26c8830.js" integrity="sha256-zIrplS2/tzGv&#43;vq98m5cYKaRAEf/Wczerx2uuqJsiDA=" crossorigin="anonymous"></script><script defer src="/js/search/flexsearch.compact.3928d3d2172bc0b5f75d9458fb9255f0befce1c7239ba6e5d2c58ed4b82c2073.js" integrity="sha256-OSjT0hcrwLX3XZRY&#43;5JV8L784ccjm6bl0sWO1LgsIHM="></script>
 <script defer src="/js/search/search.221545f425507db36bacce69b81457d3a83ecea5140ee7ecb6fc130736d5021f.js" integrity="sha256-IhVF9CVQfbNrrM5puBRX06g&#43;zqUUDufstvwTBzbVAh8="></script>
 
 
@@ -158,7 +158,7 @@
     <span>&nbsp»&nbsp</span>
 </ol>
 <h1>Why use Docker for databases and how</h1><time class="dim" datetime="2023-02-05T00:00:00&#43;00:00">February 5, 2023</time><div class="term-container"><div class="tag">
-        <a href="https://www.mizouzie.dev/tags/web-dev/">#web dev</a>
+        <a href="https://www.mizouzie.dev/tags/web-dev/">#Web Dev</a>
       </div><div class="tag">
         <a href="https://www.mizouzie.dev/tags/docker/">#docker</a>
       </div><div class="tag">
@@ -183,46 +183,46 @@
 <p>Now we will look at the basic command provided by the documentation and break down what each part is doing.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">docker run --detach --name mariadb-container --env <span class="nv">MARIADB_USER</span><span class="o">=</span>mizouzie --env <span class="nv">MARIADB_PASSWORD</span><span class="o">=</span>mizouzie_loves_mariadb --env <span class="nv">MARIADB_ROOT_PASSWORD</span><span class="o">=</span>root -p <span class="m">3306</span> -v mariadb-volume mariadb:latest
 </span></span></code></pre></div><table>
-  <thead>
-      <tr>
-          <th>command / option</th>
-          <th>explanation</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>docker</td>
-          <td>tells docker that we are talking to it, like shouting &lsquo;Hey!&rsquo;</td>
-      </tr>
-      <tr>
-          <td>run</td>
-          <td>we want what follows to be run BY docker</td>
-      </tr>
-      <tr>
-          <td>--detach</td>
-          <td>flag to say &lsquo;please carry this out in the background and don&rsquo;t occupy the terminal&rsquo; (the short version is <code>-d</code>)</td>
-      </tr>
-      <tr>
-          <td>--name</td>
-          <td>the string following this flag will be assigned as the container name</td>
-      </tr>
-      <tr>
-          <td>--env</td>
-          <td>the string following should be added as an environment variable, handy for passwords etc (the short version is <code>-e</code>)</td>
-      </tr>
-      <tr>
-          <td>-p</td>
-          <td>specify which port(s) to expose to the host machine</td>
-      </tr>
-      <tr>
-          <td>-v</td>
-          <td>create and specify the name of the volume for this container</td>
-      </tr>
-      <tr>
-          <td>mariadb:latest</td>
-          <td>the name and version of the image you wish docker to pull</td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>command / option</th>
+					<th>explanation</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>docker</td>
+					<td>tells docker that we are talking to it, like shouting &lsquo;Hey!&rsquo;</td>
+			</tr>
+			<tr>
+					<td>run</td>
+					<td>we want what follows to be run BY docker</td>
+			</tr>
+			<tr>
+					<td>--detach</td>
+					<td>flag to say &lsquo;please carry this out in the background and don&rsquo;t occupy the terminal&rsquo; (the short version is <code>-d</code>)</td>
+			</tr>
+			<tr>
+					<td>--name</td>
+					<td>the string following this flag will be assigned as the container name</td>
+			</tr>
+			<tr>
+					<td>--env</td>
+					<td>the string following should be added as an environment variable, handy for passwords etc (the short version is <code>-e</code>)</td>
+			</tr>
+			<tr>
+					<td>-p</td>
+					<td>specify which port(s) to expose to the host machine</td>
+			</tr>
+			<tr>
+					<td>-v</td>
+					<td>create and specify the name of the volume for this container</td>
+			</tr>
+			<tr>
+					<td>mariadb:latest</td>
+					<td>the name and version of the image you wish docker to pull</td>
+			</tr>
+	</tbody>
 </table>
 <h3 id="some-things-to-note">Some things to note</h3>
 <p>After running this command with all you own details, docker will first check your local images for the one you have specified. If it doesn&rsquo;t find it already downloaded, it will then <code>pull</code> the image from <a href="https://hub.docker.com/">docker hub</a> and use that to build the container with any and all of your given arguments like the environment variables and name.</p>
@@ -239,50 +239,50 @@
 <p>The official image docs show how to connect a MySQL command line client, so again we&rsquo;ll break down what means what.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">docker run -it --network some-network --rm mariadb mariadb -hmariadb-container -umizouzie -p
 </span></span></code></pre></div><table>
-  <thead>
-      <tr>
-          <th>command / option</th>
-          <th>explanation</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>docker</td>
-          <td>tells docker that we are talking to it, like shouting &lsquo;Hey!&rsquo;</td>
-      </tr>
-      <tr>
-          <td>run</td>
-          <td>we want what follows to be run BY docker</td>
-      </tr>
-      <tr>
-          <td>-it</td>
-          <td>tells docker to keep an interactive terminal open to allow us to actually use the connection</td>
-      </tr>
-      <tr>
-          <td>--network</td>
-          <td>the name of the network the desired container is on, therefore we wish to join (don&rsquo;t worry, we will talk about these below)</td>
-      </tr>
-      <tr>
-          <td>--rm</td>
-          <td>remove this container once it is closed</td>
-      </tr>
-      <tr>
-          <td>mariadb mariadb</td>
-          <td>the first is the image we&rsquo;re using, the second is the command to run this container against the running container and connect using the following arguments</td>
-      </tr>
-      <tr>
-          <td>-h</td>
-          <td>the name of the host container <strong>must match what you put earlier</strong></td>
-      </tr>
-      <tr>
-          <td>-u</td>
-          <td>the name of the user we want to connect as, equal to the MARIADB_USER environment variable <strong>must match what you put earlier</strong></td>
-      </tr>
-      <tr>
-          <td>-p</td>
-          <td>upon creating the container, prompt me for the password which will be equal to the MARIADB_PASSWORD environment variable</td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>command / option</th>
+					<th>explanation</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>docker</td>
+					<td>tells docker that we are talking to it, like shouting &lsquo;Hey!&rsquo;</td>
+			</tr>
+			<tr>
+					<td>run</td>
+					<td>we want what follows to be run BY docker</td>
+			</tr>
+			<tr>
+					<td>-it</td>
+					<td>tells docker to keep an interactive terminal open to allow us to actually use the connection</td>
+			</tr>
+			<tr>
+					<td>--network</td>
+					<td>the name of the network the desired container is on, therefore we wish to join (don&rsquo;t worry, we will talk about these below)</td>
+			</tr>
+			<tr>
+					<td>--rm</td>
+					<td>remove this container once it is closed</td>
+			</tr>
+			<tr>
+					<td>mariadb mariadb</td>
+					<td>the first is the image we&rsquo;re using, the second is the command to run this container against the running container and connect using the following arguments</td>
+			</tr>
+			<tr>
+					<td>-h</td>
+					<td>the name of the host container <strong>must match what you put earlier</strong></td>
+			</tr>
+			<tr>
+					<td>-u</td>
+					<td>the name of the user we want to connect as, equal to the MARIADB_USER environment variable <strong>must match what you put earlier</strong></td>
+			</tr>
+			<tr>
+					<td>-p</td>
+					<td>upon creating the container, prompt me for the password which will be equal to the MARIADB_PASSWORD environment variable</td>
+			</tr>
+	</tbody>
 </table>
 <blockquote>
 <p>Notice that the <code>-u</code>, <code>-h</code> &amp; <code>-p</code> flags come after specifying the container? That is because they are &ldquo;arguments&rdquo; for the container itself rather than &ldquo;options&rdquo; for the command. Don&rsquo;t mix up the <code>-p</code> with the port exposing option from earlier!</p>
@@ -473,7 +473,8 @@ mariadb-container
   </div>
 </div>
 </footer>
-      </div><aside id="side-pane" class="side-sticky"><div class="side-details">
+      </div><aside id="side-pane" class="side-sticky">
+<div class="side-details">
     <span>2938 words</span>
     <span>17 - 21 minutes read</span><div class="side-details-taxonomy">
         <small>categories: 

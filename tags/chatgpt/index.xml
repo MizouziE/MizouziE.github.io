@@ -1,34 +1,40 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Chatgpt on web with mizouzie</title>
-    <link>https://www.mizouzie.dev/tags/chatgpt/</link>
-    <description>Recent content in Chatgpt on web with mizouzie</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <copyright>made by MizouziE</copyright>
-    <lastBuildDate>Sun, 12 Apr 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://www.mizouzie.dev/tags/chatgpt/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Blade Trick Randomiser</title>
-      <link>https://www.mizouzie.dev/projects/blade-trick-randomiser/</link>
-      <pubDate>Sun, 12 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://www.mizouzie.dev/projects/blade-trick-randomiser/</guid>
-      <description>A simple project to create a web app version of the classic roller blading game B.L.A.D.E., which turned into a huge learning opportunity</description>
-    </item>
-    <item>
-      <title>A Reply from the Machine</title>
-      <link>https://www.mizouzie.dev/articles/a-reply-from-the-machine/</link>
-      <pubDate>Fri, 13 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://www.mizouzie.dev/articles/a-reply-from-the-machine/</guid>
-      <description>Sam wrote in February 2023 that he would never use AI to write on this blog. Two years later he let one read that article and asked it to respond. Here we are.</description>
-    </item>
-    <item>
-      <title>Why I won&#39;t use AI on this blog</title>
-      <link>https://www.mizouzie.dev/articles/why-i-wont-use-ai/</link>
-      <pubDate>Tue, 14 Feb 2023 00:00:00 +0000</pubDate>
-      <guid>https://www.mizouzie.dev/articles/why-i-wont-use-ai/</guid>
-      <description>Artificial Intelligence is the hottest topic in a long while and we are certain to see it creep into content on the web. However, I will try to avoid the trend.</description>
-    </item>
-  </channel>
+	<channel>
+		<title>Chatgpt on web with mizouzie</title>
+		<link>https://www.mizouzie.dev/tags/chatgpt/</link>
+		<description>Recent content in Chatgpt on web with mizouzie</description>
+		<generator>Hugo</generator>
+		<language>en</language>
+		
+		
+		
+			<copyright>made by MizouziE</copyright>
+		
+		
+			<lastBuildDate>Sun, 12 Apr 2026 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="https://www.mizouzie.dev/tags/chatgpt/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Blade Trick Randomiser</title>
+				<link>https://www.mizouzie.dev/projects/blade-trick-randomiser/</link>
+				<pubDate>Sun, 12 Apr 2026 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/projects/blade-trick-randomiser/</guid>
+				<description>A simple project to create a web app version of the classic roller blading game B.L.A.D.E., which turned into a huge learning opportunity</description>
+			</item>
+			<item>
+				<title>A Reply from the Machine</title>
+				<link>https://www.mizouzie.dev/articles/a-reply-from-the-machine/</link>
+				<pubDate>Fri, 13 Mar 2026 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/articles/a-reply-from-the-machine/</guid>
+				<description>Sam wrote in February 2023 that he would never use AI to write on this blog. Two years later he let one read that article and asked it to respond. Here we are.</description>
+			</item>
+			<item>
+				<title>Why I won&#39;t use AI on this blog</title>
+				<link>https://www.mizouzie.dev/articles/why-i-wont-use-ai/</link>
+				<pubDate>Tue, 14 Feb 2023 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/articles/why-i-wont-use-ai/</guid>
+				<description>Artificial Intelligence is the hottest topic in a long while and we are certain to see it creep into content on the web. However, I will try to avoid the trend.</description>
+			</item>
+	</channel>
 </rss>

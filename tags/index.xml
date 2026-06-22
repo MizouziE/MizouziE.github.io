@@ -1,363 +1,376 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Tags on web with mizouzie</title>
-    <link>https://www.mizouzie.dev/tags/</link>
-    <description>Recent content in Tags on web with mizouzie</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <copyright>made by MizouziE</copyright>
-    <lastBuildDate>Sun, 12 Apr 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://www.mizouzie.dev/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Chatgpt</title>
-      <link>https://www.mizouzie.dev/tags/chatgpt/</link>
-      <pubDate>Sun, 12 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://www.mizouzie.dev/tags/chatgpt/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Claude Code</title>
-      <link>https://www.mizouzie.dev/tags/claude-code/</link>
-      <pubDate>Sun, 12 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://www.mizouzie.dev/tags/claude-code/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Hobbies</title>
-      <link>https://www.mizouzie.dev/tags/hobbies/</link>
-      <pubDate>Sun, 12 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://www.mizouzie.dev/tags/hobbies/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Learning</title>
-      <link>https://www.mizouzie.dev/tags/learning/</link>
-      <pubDate>Sun, 12 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://www.mizouzie.dev/tags/learning/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Open Source</title>
-      <link>https://www.mizouzie.dev/tags/open-source/</link>
-      <pubDate>Sun, 12 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://www.mizouzie.dev/tags/open-source/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Web Dev</title>
-      <link>https://www.mizouzie.dev/tags/web-dev/</link>
-      <pubDate>Sun, 12 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://www.mizouzie.dev/tags/web-dev/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Artificial Intelligence</title>
-      <link>https://www.mizouzie.dev/tags/artificial-intelligence/</link>
-      <pubDate>Fri, 13 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://www.mizouzie.dev/tags/artificial-intelligence/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Opinion</title>
-      <link>https://www.mizouzie.dev/tags/opinion/</link>
-      <pubDate>Fri, 13 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://www.mizouzie.dev/tags/opinion/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Behaviour</title>
-      <link>https://www.mizouzie.dev/tags/behaviour/</link>
-      <pubDate>Thu, 25 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>https://www.mizouzie.dev/tags/behaviour/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Emotions</title>
-      <link>https://www.mizouzie.dev/tags/emotions/</link>
-      <pubDate>Thu, 25 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>https://www.mizouzie.dev/tags/emotions/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Parenting</title>
-      <link>https://www.mizouzie.dev/tags/parenting/</link>
-      <pubDate>Thu, 25 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>https://www.mizouzie.dev/tags/parenting/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Relationships</title>
-      <link>https://www.mizouzie.dev/tags/relationships/</link>
-      <pubDate>Thu, 25 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>https://www.mizouzie.dev/tags/relationships/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Hugo</title>
-      <link>https://www.mizouzie.dev/tags/hugo/</link>
-      <pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>https://www.mizouzie.dev/tags/hugo/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>JavaScript</title>
-      <link>https://www.mizouzie.dev/tags/javascript/</link>
-      <pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>https://www.mizouzie.dev/tags/javascript/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>No Build</title>
-      <link>https://www.mizouzie.dev/tags/no-build/</link>
-      <pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>https://www.mizouzie.dev/tags/no-build/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Mental Health</title>
-      <link>https://www.mizouzie.dev/tags/mental-health/</link>
-      <pubDate>Mon, 01 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>https://www.mizouzie.dev/tags/mental-health/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Self-Care</title>
-      <link>https://www.mizouzie.dev/tags/self-care/</link>
-      <pubDate>Mon, 01 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>https://www.mizouzie.dev/tags/self-care/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>CLI</title>
-      <link>https://www.mizouzie.dev/tags/cli/</link>
-      <pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>https://www.mizouzie.dev/tags/cli/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Linux</title>
-      <link>https://www.mizouzie.dev/tags/linux/</link>
-      <pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>https://www.mizouzie.dev/tags/linux/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Mysql</title>
-      <link>https://www.mizouzie.dev/tags/mysql/</link>
-      <pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>https://www.mizouzie.dev/tags/mysql/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Tutorial</title>
-      <link>https://www.mizouzie.dev/tags/tutorial/</link>
-      <pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>https://www.mizouzie.dev/tags/tutorial/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Dev Ops</title>
-      <link>https://www.mizouzie.dev/tags/dev-ops/</link>
-      <pubDate>Fri, 30 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>https://www.mizouzie.dev/tags/dev-ops/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Documentation</title>
-      <link>https://www.mizouzie.dev/tags/documentation/</link>
-      <pubDate>Fri, 30 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>https://www.mizouzie.dev/tags/documentation/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>PHP</title>
-      <link>https://www.mizouzie.dev/tags/php/</link>
-      <pubDate>Fri, 30 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>https://www.mizouzie.dev/tags/php/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Laravel</title>
-      <link>https://www.mizouzie.dev/tags/laravel/</link>
-      <pubDate>Sat, 13 May 2023 00:00:00 +0000</pubDate>
-      <guid>https://www.mizouzie.dev/tags/laravel/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>VSCode</title>
-      <link>https://www.mizouzie.dev/tags/vscode/</link>
-      <pubDate>Thu, 13 Apr 2023 00:00:00 +0000</pubDate>
-      <guid>https://www.mizouzie.dev/tags/vscode/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Twitter</title>
-      <link>https://www.mizouzie.dev/tags/twitter/</link>
-      <pubDate>Tue, 28 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>https://www.mizouzie.dev/tags/twitter/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Career</title>
-      <link>https://www.mizouzie.dev/tags/career/</link>
-      <pubDate>Fri, 24 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>https://www.mizouzie.dev/tags/career/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Productivity</title>
-      <link>https://www.mizouzie.dev/tags/productivity/</link>
-      <pubDate>Fri, 24 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>https://www.mizouzie.dev/tags/productivity/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Formkit</title>
-      <link>https://www.mizouzie.dev/tags/formkit/</link>
-      <pubDate>Thu, 09 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>https://www.mizouzie.dev/tags/formkit/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Inertia</title>
-      <link>https://www.mizouzie.dev/tags/inertia/</link>
-      <pubDate>Thu, 09 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>https://www.mizouzie.dev/tags/inertia/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Vue</title>
-      <link>https://www.mizouzie.dev/tags/vue/</link>
-      <pubDate>Thu, 09 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>https://www.mizouzie.dev/tags/vue/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Golang</title>
-      <link>https://www.mizouzie.dev/tags/golang/</link>
-      <pubDate>Thu, 23 Feb 2023 00:00:00 +0000</pubDate>
-      <guid>https://www.mizouzie.dev/tags/golang/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Midjourney</title>
-      <link>https://www.mizouzie.dev/tags/midjourney/</link>
-      <pubDate>Tue, 21 Feb 2023 00:00:00 +0000</pubDate>
-      <guid>https://www.mizouzie.dev/tags/midjourney/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>OpenAI</title>
-      <link>https://www.mizouzie.dev/tags/openai/</link>
-      <pubDate>Tue, 21 Feb 2023 00:00:00 +0000</pubDate>
-      <guid>https://www.mizouzie.dev/tags/openai/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>GitHub</title>
-      <link>https://www.mizouzie.dev/tags/github/</link>
-      <pubDate>Sat, 18 Feb 2023 00:00:00 +0000</pubDate>
-      <guid>https://www.mizouzie.dev/tags/github/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Meta Tag</title>
-      <link>https://www.mizouzie.dev/tags/meta-tag/</link>
-      <pubDate>Thu, 16 Feb 2023 00:00:00 +0000</pubDate>
-      <guid>https://www.mizouzie.dev/tags/meta-tag/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Habits</title>
-      <link>https://www.mizouzie.dev/tags/habits/</link>
-      <pubDate>Sun, 12 Feb 2023 00:00:00 +0000</pubDate>
-      <guid>https://www.mizouzie.dev/tags/habits/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Api</title>
-      <link>https://www.mizouzie.dev/tags/api/</link>
-      <pubDate>Sun, 05 Feb 2023 00:00:00 +0000</pubDate>
-      <guid>https://www.mizouzie.dev/tags/api/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Docker</title>
-      <link>https://www.mizouzie.dev/tags/docker/</link>
-      <pubDate>Sun, 05 Feb 2023 00:00:00 +0000</pubDate>
-      <guid>https://www.mizouzie.dev/tags/docker/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>NodeJS</title>
-      <link>https://www.mizouzie.dev/tags/nodejs/</link>
-      <pubDate>Sun, 05 Feb 2023 00:00:00 +0000</pubDate>
-      <guid>https://www.mizouzie.dev/tags/nodejs/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Heroku</title>
-      <link>https://www.mizouzie.dev/tags/heroku/</link>
-      <pubDate>Tue, 26 Apr 2022 00:00:00 +0000</pubDate>
-      <guid>https://www.mizouzie.dev/tags/heroku/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>AlpineJS</title>
-      <link>https://www.mizouzie.dev/tags/alpinejs/</link>
-      <pubDate>Wed, 20 Apr 2022 00:00:00 +0000</pubDate>
-      <guid>https://www.mizouzie.dev/tags/alpinejs/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Livewire</title>
-      <link>https://www.mizouzie.dev/tags/livewire/</link>
-      <pubDate>Wed, 20 Apr 2022 00:00:00 +0000</pubDate>
-      <guid>https://www.mizouzie.dev/tags/livewire/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Html</title>
-      <link>https://www.mizouzie.dev/tags/html/</link>
-      <pubDate>Tue, 19 Apr 2022 00:00:00 +0000</pubDate>
-      <guid>https://www.mizouzie.dev/tags/html/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Culture</title>
-      <link>https://www.mizouzie.dev/tags/culture/</link>
-      <pubDate>Mon, 18 Jul 2016 00:00:00 +0000</pubDate>
-      <guid>https://www.mizouzie.dev/tags/culture/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Evolution</title>
-      <link>https://www.mizouzie.dev/tags/evolution/</link>
-      <pubDate>Mon, 18 Jul 2016 00:00:00 +0000</pubDate>
-      <guid>https://www.mizouzie.dev/tags/evolution/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Society</title>
-      <link>https://www.mizouzie.dev/tags/society/</link>
-      <pubDate>Mon, 18 Jul 2016 00:00:00 +0000</pubDate>
-      <guid>https://www.mizouzie.dev/tags/society/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Absurdism</title>
-      <link>https://www.mizouzie.dev/tags/absurdism/</link>
-      <pubDate>Tue, 01 Mar 2016 00:00:00 +0000</pubDate>
-      <guid>https://www.mizouzie.dev/tags/absurdism/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Existentialism</title>
-      <link>https://www.mizouzie.dev/tags/existentialism/</link>
-      <pubDate>Tue, 01 Mar 2016 00:00:00 +0000</pubDate>
-      <guid>https://www.mizouzie.dev/tags/existentialism/</guid>
-      <description></description>
-    </item>
-  </channel>
+	<channel>
+		<title>Tags on web with mizouzie</title>
+		<link>https://www.mizouzie.dev/tags/</link>
+		<description>Recent content in Tags on web with mizouzie</description>
+		<generator>Hugo</generator>
+		<language>en</language>
+		
+		
+		
+			<copyright>made by MizouziE</copyright>
+		
+		
+			<lastBuildDate>Sat, 20 Jun 2026 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="https://www.mizouzie.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Career</title>
+				<link>https://www.mizouzie.dev/tags/career/</link>
+				<pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tags/career/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Community</title>
+				<link>https://www.mizouzie.dev/tags/community/</link>
+				<pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tags/community/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Laravel</title>
+				<link>https://www.mizouzie.dev/tags/laravel/</link>
+				<pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tags/laravel/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>PHP</title>
+				<link>https://www.mizouzie.dev/tags/php/</link>
+				<pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tags/php/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Web Dev</title>
+				<link>https://www.mizouzie.dev/tags/web-dev/</link>
+				<pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tags/web-dev/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Chatgpt</title>
+				<link>https://www.mizouzie.dev/tags/chatgpt/</link>
+				<pubDate>Sun, 12 Apr 2026 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tags/chatgpt/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Claude Code</title>
+				<link>https://www.mizouzie.dev/tags/claude-code/</link>
+				<pubDate>Sun, 12 Apr 2026 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tags/claude-code/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Hobbies</title>
+				<link>https://www.mizouzie.dev/tags/hobbies/</link>
+				<pubDate>Sun, 12 Apr 2026 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tags/hobbies/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Learning</title>
+				<link>https://www.mizouzie.dev/tags/learning/</link>
+				<pubDate>Sun, 12 Apr 2026 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tags/learning/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Open Source</title>
+				<link>https://www.mizouzie.dev/tags/open-source/</link>
+				<pubDate>Sun, 12 Apr 2026 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tags/open-source/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Artificial Intelligence</title>
+				<link>https://www.mizouzie.dev/tags/artificial-intelligence/</link>
+				<pubDate>Fri, 13 Mar 2026 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tags/artificial-intelligence/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Opinion</title>
+				<link>https://www.mizouzie.dev/tags/opinion/</link>
+				<pubDate>Fri, 13 Mar 2026 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tags/opinion/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Behaviour</title>
+				<link>https://www.mizouzie.dev/tags/behaviour/</link>
+				<pubDate>Thu, 25 Dec 2025 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tags/behaviour/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Emotions</title>
+				<link>https://www.mizouzie.dev/tags/emotions/</link>
+				<pubDate>Thu, 25 Dec 2025 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tags/emotions/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Parenting</title>
+				<link>https://www.mizouzie.dev/tags/parenting/</link>
+				<pubDate>Thu, 25 Dec 2025 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tags/parenting/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Relationships</title>
+				<link>https://www.mizouzie.dev/tags/relationships/</link>
+				<pubDate>Thu, 25 Dec 2025 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tags/relationships/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Hugo</title>
+				<link>https://www.mizouzie.dev/tags/hugo/</link>
+				<pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tags/hugo/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>JavaScript</title>
+				<link>https://www.mizouzie.dev/tags/javascript/</link>
+				<pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tags/javascript/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>No Build</title>
+				<link>https://www.mizouzie.dev/tags/no-build/</link>
+				<pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tags/no-build/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Mental Health</title>
+				<link>https://www.mizouzie.dev/tags/mental-health/</link>
+				<pubDate>Mon, 01 Dec 2025 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tags/mental-health/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Self-Care</title>
+				<link>https://www.mizouzie.dev/tags/self-care/</link>
+				<pubDate>Mon, 01 Dec 2025 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tags/self-care/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>CLI</title>
+				<link>https://www.mizouzie.dev/tags/cli/</link>
+				<pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tags/cli/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Linux</title>
+				<link>https://www.mizouzie.dev/tags/linux/</link>
+				<pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tags/linux/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Mysql</title>
+				<link>https://www.mizouzie.dev/tags/mysql/</link>
+				<pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tags/mysql/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Tutorial</title>
+				<link>https://www.mizouzie.dev/tags/tutorial/</link>
+				<pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tags/tutorial/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Dev Ops</title>
+				<link>https://www.mizouzie.dev/tags/dev-ops/</link>
+				<pubDate>Fri, 30 Jun 2023 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tags/dev-ops/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Documentation</title>
+				<link>https://www.mizouzie.dev/tags/documentation/</link>
+				<pubDate>Fri, 30 Jun 2023 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tags/documentation/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>VSCode</title>
+				<link>https://www.mizouzie.dev/tags/vscode/</link>
+				<pubDate>Thu, 13 Apr 2023 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tags/vscode/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Twitter</title>
+				<link>https://www.mizouzie.dev/tags/twitter/</link>
+				<pubDate>Tue, 28 Mar 2023 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tags/twitter/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Productivity</title>
+				<link>https://www.mizouzie.dev/tags/productivity/</link>
+				<pubDate>Fri, 24 Mar 2023 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tags/productivity/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Formkit</title>
+				<link>https://www.mizouzie.dev/tags/formkit/</link>
+				<pubDate>Thu, 09 Mar 2023 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tags/formkit/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Inertia</title>
+				<link>https://www.mizouzie.dev/tags/inertia/</link>
+				<pubDate>Thu, 09 Mar 2023 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tags/inertia/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Vue</title>
+				<link>https://www.mizouzie.dev/tags/vue/</link>
+				<pubDate>Thu, 09 Mar 2023 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tags/vue/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Golang</title>
+				<link>https://www.mizouzie.dev/tags/golang/</link>
+				<pubDate>Thu, 23 Feb 2023 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tags/golang/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Midjourney</title>
+				<link>https://www.mizouzie.dev/tags/midjourney/</link>
+				<pubDate>Tue, 21 Feb 2023 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tags/midjourney/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>OpenAI</title>
+				<link>https://www.mizouzie.dev/tags/openai/</link>
+				<pubDate>Tue, 21 Feb 2023 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tags/openai/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>GitHub</title>
+				<link>https://www.mizouzie.dev/tags/github/</link>
+				<pubDate>Sat, 18 Feb 2023 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tags/github/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Meta Tag</title>
+				<link>https://www.mizouzie.dev/tags/meta-tag/</link>
+				<pubDate>Thu, 16 Feb 2023 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tags/meta-tag/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Habits</title>
+				<link>https://www.mizouzie.dev/tags/habits/</link>
+				<pubDate>Sun, 12 Feb 2023 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tags/habits/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Api</title>
+				<link>https://www.mizouzie.dev/tags/api/</link>
+				<pubDate>Sun, 05 Feb 2023 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tags/api/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Docker</title>
+				<link>https://www.mizouzie.dev/tags/docker/</link>
+				<pubDate>Sun, 05 Feb 2023 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tags/docker/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>NodeJS</title>
+				<link>https://www.mizouzie.dev/tags/nodejs/</link>
+				<pubDate>Sun, 05 Feb 2023 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tags/nodejs/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Heroku</title>
+				<link>https://www.mizouzie.dev/tags/heroku/</link>
+				<pubDate>Tue, 26 Apr 2022 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tags/heroku/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>AlpineJS</title>
+				<link>https://www.mizouzie.dev/tags/alpinejs/</link>
+				<pubDate>Wed, 20 Apr 2022 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tags/alpinejs/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Livewire</title>
+				<link>https://www.mizouzie.dev/tags/livewire/</link>
+				<pubDate>Wed, 20 Apr 2022 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tags/livewire/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Html</title>
+				<link>https://www.mizouzie.dev/tags/html/</link>
+				<pubDate>Tue, 19 Apr 2022 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tags/html/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Culture</title>
+				<link>https://www.mizouzie.dev/tags/culture/</link>
+				<pubDate>Mon, 18 Jul 2016 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tags/culture/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Evolution</title>
+				<link>https://www.mizouzie.dev/tags/evolution/</link>
+				<pubDate>Mon, 18 Jul 2016 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tags/evolution/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Society</title>
+				<link>https://www.mizouzie.dev/tags/society/</link>
+				<pubDate>Mon, 18 Jul 2016 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tags/society/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Absurdism</title>
+				<link>https://www.mizouzie.dev/tags/absurdism/</link>
+				<pubDate>Tue, 01 Mar 2016 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tags/absurdism/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Existentialism</title>
+				<link>https://www.mizouzie.dev/tags/existentialism/</link>
+				<pubDate>Tue, 01 Mar 2016 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tags/existentialism/</guid>
+				<description></description>
+			</item>
+	</channel>
 </rss>
