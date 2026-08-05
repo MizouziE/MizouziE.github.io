@@ -44,7 +44,7 @@
 <link rel="canonical" href="https://www.mizouzie.dev/articles/heroku-vs-laravel/" />
       <link rel="stylesheet" href="/css/about.min.18edcb8cec83177e608ae70124de05a34b3f1d26ce8278837b62a6641e537bdf.css" integrity="sha256-GO3LjOyDF35giucBJN4Fo0s/HSbOgniDe2KmZB5Te98=" crossorigin="anonymous">
       <link rel="stylesheet" href="/css/code-blocks.min.f24ec20c08410022a16ef09343a4cbbc363e435b7567f1398fb8e30d25cfb80e.css" integrity="sha256-8k7CDAhBACKhbvCTQ6TLvDY&#43;Q1t1Z/E5j7jjDSXPuA4=" crossorigin="anonymous">
-      <link rel="stylesheet" href="/css/custom.min.aa71d137febf16cd0beca3147e408f32a67b05f41d031759b7ad78f379a9f686.css" integrity="sha256-qnHRN/6/Fs0L7KMUfkCPMqZ7BfQdAxdZt61483mp9oY=" crossorigin="anonymous">
+      <link rel="stylesheet" href="/css/custom.min.eb467356a44de371ba8cbdae6c49035de152c7a505a7e057ccd7b348e6f37403.css" integrity="sha256-60ZzVqRN43G6jL2ubEkDXeFSx6UFp&#43;BXzNezSObzdAM=" crossorigin="anonymous">
       <link rel="stylesheet" href="/css/share-buttons.min.0ec86ea02de65aaad22a24618a496f925c7f09bad5044990846c4c9d46d3f6aa.css" integrity="sha256-DshuoC3mWqrSKiRhiklvklx/CbrVBEmQhGxMnUbT9qo=" crossorigin="anonymous">
       <link rel="stylesheet" href="/css/root.min.c8b23162b3d441a3254a617720bfe44772e30bd483b0e46048d1985db7423f19.css" integrity="sha256-yLIxYrPUQaMlSmF3IL/kR3LjC9SDsORgSNGYXbdCPxk=" crossorigin="anonymous">
       <link rel="stylesheet" href="/css/bundle.min.1446e4b8610e9318bf552531f096532b5935bce68fcaa788ca795fdc2bb7c36b.css" integrity="sha256-FEbkuGEOkxi/VSUx8JZTK1k1vOaPyqeIynlf3Cu3w2s=" crossorigin="anonymous">
@@ -164,18 +164,50 @@
       </div><div class="tag">
         <a href="https://www.mizouzie.dev/tags/laravel/">#laravel</a>
       </div></ol></div>
-  <section class="page-section"><p><img src="/images/heroku-vs-laravel.jpeg" alt="Heroku (Heihachi) against Laravel (Kazuya)"></p>
+  <section class="page-section"><img loading="lazy"
+    src="/images/heroku-vs-laravel_hu_83f7d4d5d48dd661.webp"
+    srcset="/images/heroku-vs-laravel_hu_358b27536d05f1da.webp 350w, /images/heroku-vs-laravel_hu_83f7d4d5d48dd661.webp 497w"
+    sizes="(min-width: 768px) 736px, 100vw"
+    width="497"
+    height="380"
+    
+    alt="Heroku (Heihachi) against Laravel (Kazuya)"
+    />
 <p>The first time I attempted to deploy a Laravel project onto the popular hosting service Heroku I did not get very far. I found a number of helpful tutorials just with a few google searches, but none of them actually got me across the finish line. It was my first actual attempt at &ldquo;going live&rdquo; and the whole thing left me somewhat bemused and painfully aware of my lack of understanding. Both Laravel and Heroku come with ample documentation, but it may as well have been written in a foreign language as I could not make heads nor tails of it.</p>
 <p>Today, thankfully, was a different story.</p>
 <p>Only a few weeks after my first failed attempts, I had been away and deployed a much more simple static site version of the failed project, <a href="https://enkle-word-game.github.io/enkle/">which you can see here</a>, using GitHub Pages. It wasn&rsquo;t very difficult to transfer my blade template over to an <code>index.html</code> file and make the necessary changes and imports of the JavaScript files that made it all tick. That in itself was a nice learning experience, but still left my Laravel-Deployment itch very much unscratched.</p>
 <p>I had a recent personal project on the back burner that was in danger of fizzling out, so I figured I had nothing to lose by firing it up again, trying to remember where I left off, making it presentable to a degree and then having one more crack at Heroku because I had read in a number of places that it was very much possible to run a PHP web-app on a framework like Laravel. The difference now was that I had gone up a level or two in my search engine ability and that made all the difference. I had hit a number of stumbling blocks in my first run and they&rsquo;d worn me down to the point I was unable to overcome the last few. I went right ahead and got to that same point, only this time more energized.</p>
 <p>I am using <a href="https://laravel.com/docs/9.x">Laravel 9</a> with <a href="https://tailwindcss.com/">Tailwind CSS</a> and deploying via the <a href="https://devcenter.heroku.com/articles/heroku-cli">Heroku CLI</a>.</p>
 <p>Here are the bits that were harder to find out about than the obvious googles:</p>
-<p><img src="/images/heroku-vs-laravel-01.png" alt="Procfile containing the string &ldquo;web: vendor/bin/heroku-php-apache2 public/&ldquo;​"></p>
+<img loading="lazy"
+    src="/images/heroku-vs-laravel-01_hu_113e202871ee777e.webp"
+    srcset="/images/heroku-vs-laravel-01_hu_47d7b04989142785.webp 350w, /images/heroku-vs-laravel-01_hu_113e202871ee777e.webp 491w"
+    sizes="(min-width: 768px) 736px, 100vw"
+    width="491"
+    height="170"
+    
+    alt="Procfile containing the string &#34;web: vendor/bin/heroku-php-apache2 public/&#34;​"
+    />
 <p>The <code>Procfile</code> not only has to be capitalised, but MUST be present in and pushed to the heroku master branch <strong>from the local master branch</strong>. Being a fan of git and not a huge fan of Heroku, I always made heroku changes on a separate branch and pushed from there but continually saw &ldquo;no Procfile found&rdquo; and then that lead to the app not being run from my public/ folder on the route&hellip; which was <strong>clearly</strong> specified in the Procfile.</p>
-<p><img src="/images/heroku-vs-laravel-02.png" alt="config/logging.php where value for the key &ldquo;driver&quot;​ has been changed to &ldquo;errorlog&quot;​"></p>
+<img loading="lazy"
+    src="/images/heroku-vs-laravel-02_hu_32953dc7a20e9142.webp"
+    srcset="/images/heroku-vs-laravel-02_hu_2afb92f353c7f850.webp 350w, /images/heroku-vs-laravel-02_hu_32953dc7a20e9142.webp 552w"
+    sizes="(min-width: 768px) 736px, 100vw"
+    width="552"
+    height="325"
+    
+    alt="config/logging.php where value for the key &#34;driver&#34;​ has been changed to &#34;errorlog&#34;​"
+    />
 <p>Set the logging to &ldquo;errorlog&rdquo; so that Heroku can read and display the application&rsquo;s logs through both the CLI and the GUI on their handy dashboard.</p>
-<p><img src="/images/heroku-vs-laravel-03.png" alt="Laravel docs showing asset URL configuration"></p>
+<img loading="lazy"
+    src="/images/heroku-vs-laravel-03_hu_ec3babb99ae651a8.webp"
+    srcset="/images/heroku-vs-laravel-03_hu_47dc045fcc56ad0b.webp 350w, /images/heroku-vs-laravel-03_hu_ec3babb99ae651a8.webp 710w"
+    sizes="(min-width: 768px) 736px, 100vw"
+    width="710"
+    height="395"
+    
+    alt="Laravel docs showing asset URL configuration"
+    />
 <p>Tailwind will throw a curveball if your stylesheet reference is the same as the above, and I found the reason for this in the console of the browser. When I was looking at my &ldquo;deployed&rdquo; site it just seemed to be a garbled mess. I was so happy to no longer be getting 500 errors or 403 errors&hellip; but what I was looking at tainted my happiness. On inspection, it seemed that the CSS files were being called for, but on &ldquo;http://&rdquo; rather than &ldquo;https://&rdquo; and were therefore blocked. Heroku automatically makes your main page&rsquo;s root securely accessible, but it isn&rsquo;t automatic about anything else. You&rsquo;ll need to set a previously non-existent variable in the .env file on the server. This can be done painlessly in two ways. Either through the CLI with the command <code>heroku config:set ASSET_URL=&lt;insert your root url here&gt;</code> or if you already have the heroku dashboard open you can view settings and click on &ldquo;reveal config vars&rdquo; where you have a place to add/edit as many variables as you need.</p>
 <p>They were the final pieces to my puzzle that were not apparent to me the first time. I hope this list of them can save someone the pain I felt when I couldn&rsquo;t get it working before. At the very least, I hope that by writing it all out and going over the process once more I, myself, might have learnt some kind of valuable lesson. Time will tell.</p>
 <p>In the meantime, why don&rsquo;t you check out the micro nutrient tracking site I am <strong>still</strong> developing and let me know what you think of it. (<em>Editor note 2023-01-21: Of course Heroku is no longer free so this app is not live any more, sorry!</em>) If anything is a particular pain point then I&rsquo;d be very open to receiving issues or even pull requests on it&rsquo;s <a href="https://github.com/MizouziE/Minerals/issues">github repo</a>.</p>
@@ -238,7 +270,7 @@
       </div><aside id="side-pane" class="side-sticky">
 <div class="side-details">
     <span>808 words</span>
-    <span>4 - 5 minutes read</span><div class="side-details-taxonomy">
+    <span>4 - 6 minutes read</span><div class="side-details-taxonomy">
         <small>categories: 
           <span class="details-taxonomy"><a href="https://www.mizouzie.dev/categories/web-development">web development</a></span></small>
       </div></div><h3>Related</h3>

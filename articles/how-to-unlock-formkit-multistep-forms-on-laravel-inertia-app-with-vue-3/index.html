@@ -44,7 +44,7 @@
 <link rel="canonical" href="https://www.mizouzie.dev/articles/how-to-unlock-formkit-multistep-forms-on-laravel-inertia-app-with-vue-3/" />
       <link rel="stylesheet" href="/css/about.min.18edcb8cec83177e608ae70124de05a34b3f1d26ce8278837b62a6641e537bdf.css" integrity="sha256-GO3LjOyDF35giucBJN4Fo0s/HSbOgniDe2KmZB5Te98=" crossorigin="anonymous">
       <link rel="stylesheet" href="/css/code-blocks.min.f24ec20c08410022a16ef09343a4cbbc363e435b7567f1398fb8e30d25cfb80e.css" integrity="sha256-8k7CDAhBACKhbvCTQ6TLvDY&#43;Q1t1Z/E5j7jjDSXPuA4=" crossorigin="anonymous">
-      <link rel="stylesheet" href="/css/custom.min.aa71d137febf16cd0beca3147e408f32a67b05f41d031759b7ad78f379a9f686.css" integrity="sha256-qnHRN/6/Fs0L7KMUfkCPMqZ7BfQdAxdZt61483mp9oY=" crossorigin="anonymous">
+      <link rel="stylesheet" href="/css/custom.min.eb467356a44de371ba8cbdae6c49035de152c7a505a7e057ccd7b348e6f37403.css" integrity="sha256-60ZzVqRN43G6jL2ubEkDXeFSx6UFp&#43;BXzNezSObzdAM=" crossorigin="anonymous">
       <link rel="stylesheet" href="/css/share-buttons.min.0ec86ea02de65aaad22a24618a496f925c7f09bad5044990846c4c9d46d3f6aa.css" integrity="sha256-DshuoC3mWqrSKiRhiklvklx/CbrVBEmQhGxMnUbT9qo=" crossorigin="anonymous">
       <link rel="stylesheet" href="/css/root.min.c8b23162b3d441a3254a617720bfe44772e30bd483b0e46048d1985db7423f19.css" integrity="sha256-yLIxYrPUQaMlSmF3IL/kR3LjC9SDsORgSNGYXbdCPxk=" crossorigin="anonymous">
       <link rel="stylesheet" href="/css/bundle.min.1446e4b8610e9318bf552531f096532b5935bce68fcaa788ca795fdc2bb7c36b.css" integrity="sha256-FEbkuGEOkxi/VSUx8JZTK1k1vOaPyqeIynlf3Cu3w2s=" crossorigin="anonymous">
@@ -168,12 +168,28 @@
       </div><div class="tag">
         <a href="https://www.mizouzie.dev/tags/formkit/">#formkit</a>
       </div></ol></div>
-  <section class="page-section"><p><img src="/images/unlock-formkit-in-vue.png" alt="unlocking formkit in vue 3 for laravel inertia"></p>
+  <section class="page-section"><img loading="lazy"
+    src="/images/unlock-formkit-in-vue_hu_b5e1c48a221a0921.webp"
+    srcset="/images/unlock-formkit-in-vue_hu_4b78d79399082fed.webp 350w, /images/unlock-formkit-in-vue_hu_b5e1c48a221a0921.webp 629w"
+    sizes="(min-width: 768px) 736px, 100vw"
+    width="629"
+    height="421"
+    
+    alt="unlocking formkit in vue 3 for laravel inertia"
+    />
 <p>Formkit is a supercharger for developing applications on the already turbo platform of Laravel Inertia with Vue 3. It is a library of ready made components for building forms that make it very easy to construct any kind of form for retrieving user input. One of the features of this library that stood out the most for me was the <code>Multi-Step</code> forms.</p>
 <h2 id="multi-step-forms">Multi-Step Forms</h2>
 <p>So what is a multi-step form?</p>
 <p>It is a format that breaks the usual monotony of filling out a form for the user. It splits the form into smaller form-lets that helps to give a much nicer UX because they&rsquo;re not faced with such a huge list of questions all at once. The multi-step form can be split and navigated by tabs or a progress-map that resembles a London Underground map 😍</p>
-<p><img src="/images/formkit-example.png" alt="An example of Formkit Multi-Step"></p>
+<img loading="lazy"
+    src="/images/formkit-example_hu_156dde28b9d9effa.webp"
+    srcset="/images/formkit-example_hu_e7ac986fd8601a96.webp 350w, /images/formkit-example_hu_156dde28b9d9effa.webp 521w"
+    sizes="(min-width: 768px) 736px, 100vw"
+    width="521"
+    height="430"
+    
+    alt="An example of Formkit Multi-Step"
+    />
 <p>So as developers, we want to provide this kind of experience for our application users. Formkit is a very well provided for library with extensive documentation for it&rsquo;s implementation into a standard Vue 3 project, but when I tried to put it into a Laravel Inertia app <em>using</em> Vue 3, it needed a little thinking outside of the dox.</p>
 <h2 id="installing-formkit">Installing Formkit</h2>
 <h3 id="what-do-the-docs-say">What do the docs say?</h3>
