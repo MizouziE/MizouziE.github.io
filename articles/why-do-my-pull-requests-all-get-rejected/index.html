@@ -5,8 +5,8 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>Heroku vs Laravel (vs me...) | web with mizouzie</title>
-<meta name="keywords" content="web dev, heroku, laravel" />
+<title>Why Do My Pull Requests All Get Rejected? | web with mizouzie</title>
+<meta name="keywords" content="web dev, php, laravel, open source" />
 <script src="https://cdn.jsdelivr.net/gh/manucaralmo/GlowCookies@3.1.7/src/glowCookies.min.js"></script>
 <script>
     glowCookies.start('en', { 
@@ -26,22 +26,22 @@
     });
 </script>
 <meta name="google-site-verification" content="psw8-5863N9APj0ZK5Lg3BMygE0vQEYIB7q2uJq-FPo" />
-<meta property="og:image" content="https://www.mizouzie.dev/images/heroku-vs-laravel.jpeg">
-<meta property="og:image:width" content="497">
-<meta property="og:image:height" content="380">
-<meta property="og:title" content="Heroku vs Laravel (vs me...) | web with mizouzie">
-<meta name="og:description" content="Deploying a Laravel app on a (then) popular free hosting platform proved tricky, so here are the steps that no-one told me.">
+<meta property="og:image" content="https://www.mizouzie.dev/images/always-be-closing.jpeg">
+<meta property="og:image:width" content="396">
+<meta property="og:image:height" content="274">
+<meta property="og:title" content="Why Do My Pull Requests All Get Rejected? | web with mizouzie">
+<meta name="og:description" content="I have made many PRs as open source contributions, and only now realise why so many were closed">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://www.mizouzie.dev/articles/heroku-vs-laravel/">
-<meta property="twitter:title" content="Heroku vs Laravel (vs me...) | web with mizouzie">
-<meta name="twitter:description" content="Deploying a Laravel app on a (then) popular free hosting platform proved tricky, so here are the steps that no-one told me.">
-<meta property="twitter:image" content="https://www.mizouzie.dev/images/heroku-vs-laravel.jpeg">
+<meta property="og:url" content="https://www.mizouzie.dev/articles/why-do-my-pull-requests-all-get-rejected/">
+<meta property="twitter:title" content="Why Do My Pull Requests All Get Rejected? | web with mizouzie">
+<meta name="twitter:description" content="I have made many PRs as open source contributions, and only now realise why so many were closed">
+<meta property="twitter:image" content="https://www.mizouzie.dev/images/always-be-closing.jpeg">
 <meta property="twitter:card" content="summary_large_image">
 <meta property="twitter:site" content="@mizouzie">
 <meta property="twitter:creator" content="@mizouzie">
-<meta name="description" content="Deploying a Laravel app on a (then) popular free hosting platform proved tricky, so here are the steps that no-one told me.">
+<meta name="description" content="I have made many PRs as open source contributions, and only now realise why so many were closed">
 <meta name="author" content="Sam Anglin">
-<link rel="canonical" href="https://www.mizouzie.dev/articles/heroku-vs-laravel/" />
+<link rel="canonical" href="https://www.mizouzie.dev/articles/why-do-my-pull-requests-all-get-rejected/" />
       <link rel="stylesheet" href="/css/about.min.18edcb8cec83177e608ae70124de05a34b3f1d26ce8278837b62a6641e537bdf.css" integrity="sha256-GO3LjOyDF35giucBJN4Fo0s/HSbOgniDe2KmZB5Te98=" crossorigin="anonymous">
       <link rel="stylesheet" href="/css/code-blocks.min.f24ec20c08410022a16ef09343a4cbbc363e435b7567f1398fb8e30d25cfb80e.css" integrity="sha256-8k7CDAhBACKhbvCTQ6TLvDY&#43;Q1t1Z/E5j7jjDSXPuA4=" crossorigin="anonymous">
       <link rel="stylesheet" href="/css/custom.min.eb467356a44de371ba8cbdae6c49035de152c7a505a7e057ccd7b348e6f37403.css" integrity="sha256-60ZzVqRN43G6jL2ubEkDXeFSx6UFp&#43;BXzNezSObzdAM=" crossorigin="anonymous">
@@ -66,7 +66,7 @@
 <link rel="mask-icon" href="https://www.mizouzie.dev/images/apple-touch-icon.png">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="https://www.mizouzie.dev/articles/heroku-vs-laravel/" />
+<link rel="alternate" hreflang="en" href="https://www.mizouzie.dev/articles/why-do-my-pull-requests-all-get-rejected/" />
 
 </head>
 <body class="notransition">
@@ -157,96 +157,120 @@
     </li>
     <span>&nbsp»&nbsp</span>
 </ol>
-<h1>Heroku vs Laravel (vs me...)</h1><time class="dim" datetime="2022-04-26T00:00:00&#43;00:00">April 26, 2022</time><div class="term-container"><div class="tag">
+<h1>Why Do My Pull Requests All Get Rejected?</h1><time class="dim" datetime="2026-08-11T00:00:00&#43;00:00">August 11, 2026</time><div class="term-container"><div class="tag">
         <a href="https://www.mizouzie.dev/tags/web-dev/">#web dev</a>
       </div><div class="tag">
-        <a href="https://www.mizouzie.dev/tags/heroku/">#heroku</a>
+        <a href="https://www.mizouzie.dev/tags/php/">#php</a>
       </div><div class="tag">
         <a href="https://www.mizouzie.dev/tags/laravel/">#laravel</a>
+      </div><div class="tag">
+        <a href="https://www.mizouzie.dev/tags/open-source/">#open source</a>
       </div></ol></div>
   <section class="page-section"><img loading="lazy"
-    src="/images/heroku-vs-laravel_hu_83f7d4d5d48dd661.webp"
-    srcset="/images/heroku-vs-laravel_hu_358b27536d05f1da.webp 350w, /images/heroku-vs-laravel_hu_83f7d4d5d48dd661.webp 497w"
-    sizes="(min-width: 768px) 736px, 100vw"
-    width="497"
-    height="380"
+    src="/images/always-be-closing_hu_d864839cda8b3530.webp"
+    srcset="/images/always-be-closing_hu_3468d80bbf6aef07.webp 350w, /images/always-be-closing_hu_d864839cda8b3530.webp 396w"
+    sizes="(min-width: 396px) 274px, 100vw"
+    width="396"
+    height="274"
     
-    alt="Heroku (Heihachi) against Laravel (Kazuya)"
+    alt="they Always Be Closing (my PRs)"
     />
-<p>The first time I attempted to deploy a Laravel project onto the popular hosting service Heroku I did not get very far. I found a number of helpful tutorials just with a few google searches, but none of them actually got me across the finish line. It was my first actual attempt at &ldquo;going live&rdquo; and the whole thing left me somewhat bemused and painfully aware of my lack of understanding. Both Laravel and Heroku come with ample documentation, but it may as well have been written in a foreign language as I could not make heads nor tails of it.</p>
-<p>Today, thankfully, was a different story.</p>
-<p>Only a few weeks after my first failed attempts, I had been away and deployed a much more simple static site version of the failed project, <a href="https://enkle-word-game.github.io/enkle/">which you can see here</a>, using GitHub Pages. It wasn&rsquo;t very difficult to transfer my blade template over to an <code>index.html</code> file and make the necessary changes and imports of the JavaScript files that made it all tick. That in itself was a nice learning experience, but still left my Laravel-Deployment itch very much unscratched.</p>
-<p>I had a recent personal project on the back burner that was in danger of fizzling out, so I figured I had nothing to lose by firing it up again, trying to remember where I left off, making it presentable to a degree and then having one more crack at Heroku because I had read in a number of places that it was very much possible to run a PHP web-app on a framework like Laravel. The difference now was that I had gone up a level or two in my search engine ability and that made all the difference. I had hit a number of stumbling blocks in my first run and they&rsquo;d worn me down to the point I was unable to overcome the last few. I went right ahead and got to that same point, only this time more energized.</p>
-<p>I am using <a href="https://laravel.com/docs/9.x">Laravel 9</a> with <a href="https://tailwindcss.com/">Tailwind CSS</a> and deploying via the <a href="https://devcenter.heroku.com/articles/heroku-cli">Heroku CLI</a>.</p>
-<p>Here are the bits that were harder to find out about than the obvious googles:</p>
-<img loading="lazy"
-    src="/images/heroku-vs-laravel-01_hu_113e202871ee777e.webp"
-    srcset="/images/heroku-vs-laravel-01_hu_47d7b04989142785.webp 350w, /images/heroku-vs-laravel-01_hu_113e202871ee777e.webp 491w"
-    sizes="(min-width: 768px) 736px, 100vw"
-    width="491"
-    height="170"
-    
-    alt="Procfile containing the string &#34;web: vendor/bin/heroku-php-apache2 public/&#34;​"
-    />
-<p>The <code>Procfile</code> not only has to be capitalised, but MUST be present in and pushed to the heroku master branch <strong>from the local master branch</strong>. Being a fan of git and not a huge fan of Heroku, I always made heroku changes on a separate branch and pushed from there but continually saw &ldquo;no Procfile found&rdquo; and then that lead to the app not being run from my public/ folder on the route&hellip; which was <strong>clearly</strong> specified in the Procfile.</p>
-<img loading="lazy"
-    src="/images/heroku-vs-laravel-02_hu_32953dc7a20e9142.webp"
-    srcset="/images/heroku-vs-laravel-02_hu_2afb92f353c7f850.webp 350w, /images/heroku-vs-laravel-02_hu_32953dc7a20e9142.webp 552w"
-    sizes="(min-width: 768px) 736px, 100vw"
-    width="552"
-    height="325"
-    
-    alt="config/logging.php where value for the key &#34;driver&#34;​ has been changed to &#34;errorlog&#34;​"
-    />
-<p>Set the logging to &ldquo;errorlog&rdquo; so that Heroku can read and display the application&rsquo;s logs through both the CLI and the GUI on their handy dashboard.</p>
-<img loading="lazy"
-    src="/images/heroku-vs-laravel-03_hu_ec3babb99ae651a8.webp"
-    srcset="/images/heroku-vs-laravel-03_hu_47dc045fcc56ad0b.webp 350w, /images/heroku-vs-laravel-03_hu_ec3babb99ae651a8.webp 710w"
-    sizes="(min-width: 768px) 736px, 100vw"
-    width="710"
-    height="395"
-    
-    alt="Laravel docs showing asset URL configuration"
-    />
-<p>Tailwind will throw a curveball if your stylesheet reference is the same as the above, and I found the reason for this in the console of the browser. When I was looking at my &ldquo;deployed&rdquo; site it just seemed to be a garbled mess. I was so happy to no longer be getting 500 errors or 403 errors&hellip; but what I was looking at tainted my happiness. On inspection, it seemed that the CSS files were being called for, but on &ldquo;http://&rdquo; rather than &ldquo;https://&rdquo; and were therefore blocked. Heroku automatically makes your main page&rsquo;s root securely accessible, but it isn&rsquo;t automatic about anything else. You&rsquo;ll need to set a previously non-existent variable in the .env file on the server. This can be done painlessly in two ways. Either through the CLI with the command <code>heroku config:set ASSET_URL=&lt;insert your root url here&gt;</code> or if you already have the heroku dashboard open you can view settings and click on &ldquo;reveal config vars&rdquo; where you have a place to add/edit as many variables as you need.</p>
-<p>They were the final pieces to my puzzle that were not apparent to me the first time. I hope this list of them can save someone the pain I felt when I couldn&rsquo;t get it working before. At the very least, I hope that by writing it all out and going over the process once more I, myself, might have learnt some kind of valuable lesson. Time will tell.</p>
-<p>In the meantime, why don&rsquo;t you check out the micro nutrient tracking site I am <strong>still</strong> developing and let me know what you think of it. (<em>Editor note 2023-01-21: Of course Heroku is no longer free so this app is not live any more, sorry!</em>) If anything is a particular pain point then I&rsquo;d be very open to receiving issues or even pull requests on it&rsquo;s <a href="https://github.com/MizouziE/Minerals/issues">github repo</a>.</p>
-<p>Thanks for reading, and if you got the Tekken reference at the top of this article you NEED to send me a DM or email or something, we&rsquo;re basically already friends.</p>
+<h2 id="is-it-something-personal">Is it something personal?</h2>
+<p>I recently looked to see how many Laravel PRs I&rsquo;ve had closed vs how many were merged and was not all that shocked to see that I am 7-0 in that respect. It hits even harder because I work with a guy who is currently sitting in 15th place for most contributions to the framework, which is <strong>incredible</strong> work from him! I never thought I&rsquo;d be anywhere near that level, but apparently the merge rate overall is around 55%, so I&rsquo;m definitely right down at the bottom of the barrel. But why?</p>
+<p>Did I do something to offend someone in their offices? Did I insult their grandmother or something?</p>
+<p>I&rsquo;ve only ever tried to add things to the framework which <em>I</em> felt were missing and assumed there must be others out there that needed the thing I proposed. But each and every attempt was met with the infamous:</p>
+<blockquote>
+<p>&ldquo;Unfortunately, I&rsquo;m going to delay merging this code for now&hellip;&rdquo;</p>
+</blockquote>
+<p>Surely <em>every</em> idea I have can&rsquo;t be garbage. Can it?</p>
+<h2 id="look-at-the-hard-facts">Look at the hard facts</h2>
+<p>I have a habit of getting too caught up in my own head. I often pursue curiosities that are so far removed from my task that I can forget why I even started. It&rsquo;s something I appreciate, because it helps me go that extra mile <strong>but</strong> I have been making a real effort to stay on top of it so I don&rsquo;t waste my energy on things that aren&rsquo;t needed in that precise moment. The thing was, I was only applying this reflective mindset to work. I needed to apply it more to my personal projects and the open source contributions I was trying to make.</p>
+<p>So where do I start reflecting?</p>
+<p>I started by revisiting the PRs I had submitted. All of them.</p>
+<h3 id="are-my-pr-descriptions-too-thin">Are my PR descriptions too thin?</h3>
+<p>Looking through them all, surely it&rsquo;s a resounding NO. One thing I&rsquo;m often guilty of is over-explaining things. Dev calls with my team go on for over an hour when I&rsquo;m leading them because I&rsquo;ll go into way too much detail, mostly to make sure I actually understand what it is I&rsquo;m talking about! But the result is that I&rsquo;ve covered pretty much everything most of the time.</p>
+<p>I also second guess myself a lot, and I&rsquo;ll mention the questions and concerns I aimed at myself and give some explanation of why it <em>was not</em> a problem.</p>
+<h3 id="is-my-test-coverage-insufficient">Is my test coverage insufficient?</h3>
+<p>Heavens no! PHPUnit testing framework author <strong>Sebastian Bergmann</strong> is THE most iconic name in the PHP world, hands down. Literally the very first name I knew of when I started in all this because I learnt the TDD way first and foremost. I&rsquo;m a very firm believer in well tested code. So all my changes definitely had coverage and I even used the changes made to existing tests to illustrate how my change worked.</p>
+<p>On the flip-side to my terrible track record in Laravel, I did once get something merged into <code>nesbot/carbon</code> and it was thanks to showing the changes required to the tests that the maintainers immediately gave my direction the green light. Probably the contribution I&rsquo;m most proud of.</p>
+<h3 id="do-i-waffle-too-much">Do I waffle too much?</h3>
+<p>As already mentioned&hellip; <em>maybe</em>. But it&rsquo;s only a maybe. I always tried to frame things well and give before and afters as well as a fair reason <em>why</em> I believed the change was worthwhile. I mean, an over-explanation should not be a reason to reject a change proposed to some code.</p>
+<h3 id="what-kind-of-changes-are-being-proposed">What kind of changes are being proposed?</h3>
+<p>This is the key, right here. What is the general type of change that I am trying to get included in an already large and widely used framework?</p>
+<p>I have tended to try to add entirely new features or convenience additions where I&rsquo;ve tried to combine existing things because I was tired of repeating the same combinations. Now think about that kind of suggestion when you are maintaining an already quite huge framework. Do you really want to expand the surface of an existing API? Has there been any visible demand for this addition? Or is it just some guy punting an idea across the interwebs?</p>
+<p>That&rsquo;s it.</p>
+<h2 id="a-little-breakdown">A little breakdown</h2>
+<ul>
+<li><a href="https://github.com/laravel/framework/pull/60937">#60937/#59609</a>
+<ul>
+<li><code>whereDoesntBelongTo()</code>: This was emulating what I thought was proper symmetry like how other eloquent methods have their counterparts. I&rsquo;d never seen any public discussion of a need for these, but I had wanted to use them once or twice myself. I had not considered that a developer can already write <code>whereNotIn(...)</code>, so it&rsquo;s added surface for a very small gain.</li>
+<li>I had also committed the cardinal sin of just resubmitting the same code twice out of spite &#x1f648; and that is <strong>never</strong> a well received action.</li>
+</ul>
+</li>
+<li><a href="https://github.com/laravel/framework/pull/58342">#58342</a>
+<ul>
+<li><code>forEachCrossJoinSequence()</code>: Same thing here where I&rsquo;m just smooshing two existing methods together to save myself typing 6 extra characters. To be fair, in this one I actually got a reply saying that the problem I&rsquo;m solving isn&rsquo;t really all that bad.</li>
+</ul>
+</li>
+<li><a href="https://github.com/laravel/framework/pull/60604">#60604</a>
+<ul>
+<li><code>Arr::exceptValues()</code>: Do we see the pattern emerging? It&rsquo;s the same thing. Small convenience, tiny gain.</li>
+</ul>
+</li>
+<li><a href="https://github.com/laravel/framework/pull/61088">#61088</a>
+<ul>
+<li><code>SoftDeletes</code> + <code>PivotModel</code>: This one was me scratching an itch where the repo I work on for my day-job has a few unconventional ways of doing things that (as it turns out) go completely against Laravel doctrine. I discovered later that the docs literally say &ldquo;do not do the thing here as we won&rsquo;t support it&rdquo;, but here I was, trying to <em>fix</em> a problem they outright said they were not interested in.</li>
+</ul>
+</li>
+<li><a href="https://github.com/laravel/framework/pull/53527">#53527</a>
+<ul>
+<li><code>$this-&gt;artisan(...)-&gt;expectsTable(...)</code> default style param: This one I did slack on explanation, but it was also short sighted on my part. If I&rsquo;d have thought more from a maintainer&rsquo;s point of view, I may have at least started a discussion about the issue I thought I was fixing.</li>
+</ul>
+</li>
+<li><a href="https://github.com/laravel/framework/pull/53843">#53843</a>
+<ul>
+<li>This one was a real bug fix and the only one that almost made it. I had unfortunately not covered one thing and someone else got in there first but kindly mentioned on my PR what I&rsquo;d missed and linked to their correct fix which nicely did reference the issue I had opened about the bug. Pity it was only downhill from there.</li>
+</ul>
+</li>
+</ul>
+<p>So the issue is mostly that I&rsquo;m pitching cold feature ideas into a reputable repo that has a history of rejecting them. And on real reflection, that close guarding of the repo&rsquo;s maintainability is a <strong>huge</strong> factor in the success story of Laravel. It&rsquo;s been around for yonks and looks set to continue. In order to be a part of it, I need to get on the same wavelength.</p>
+<h2 id="so-where-do-i-go-from-here">So where do I go from here?</h2>
+<p>Onwards. Take the lessons learned. Keep up the pausing and reflecting rather than just keep doing the same things and expecting different results. Keep contributing to a range of different projects, as each one will teach me something different. Most importantly keep my ego in check and don&rsquo;t take it personally, it quite literally isn&rsquo;t.</p>
 <div class="footer-copyright">
       <div class="footer">
         <h4>Share this Post:</h4>
 
 <div class="share-buttons">
-    <a target="_blank" rel="noopener noreferrer" aria-label="share Heroku vs Laravel (vs me...) on twitter"
-        href="https://twitter.com/intent/tweet/?text=Heroku%20vs%20Laravel%20%28vs%20me...%29&amp;url=https%3a%2f%2fwww.mizouzie.dev%2farticles%2fheroku-vs-laravel%2f">
+    <a target="_blank" rel="noopener noreferrer" aria-label="share Why Do My Pull Requests All Get Rejected? on twitter"
+        href="https://twitter.com/intent/tweet/?text=Why%20Do%20My%20Pull%20Requests%20All%20Get%20Rejected%3f&amp;url=https%3a%2f%2fwww.mizouzie.dev%2farticles%2fwhy-do-my-pull-requests-all-get-rejected%2f">
         <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
             <path
                 d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-253.927,424.544c135.939,0 210.268,-112.643 210.268,-210.268c0,-3.218 0,-6.437 -0.153,-9.502c14.406,-10.421 26.973,-23.448 36.935,-38.314c-13.18,5.824 -27.433,9.809 -42.452,11.648c15.326,-9.196 26.973,-23.602 32.49,-40.92c-14.252,8.429 -30.038,14.56 -46.896,17.931c-13.487,-14.406 -32.644,-23.295 -53.946,-23.295c-40.767,0 -73.87,33.104 -73.87,73.87c0,5.824 0.613,11.494 1.992,16.858c-61.456,-3.065 -115.862,-32.49 -152.337,-77.241c-6.284,10.881 -9.962,23.601 -9.962,37.088c0,25.594 13.027,48.276 32.95,61.456c-12.107,-0.307 -23.448,-3.678 -33.41,-9.196l0,0.92c0,35.862 25.441,65.594 59.311,72.49c-6.13,1.686 -12.72,2.606 -19.464,2.606c-4.751,0 -9.348,-0.46 -13.946,-1.38c9.349,29.426 36.628,50.728 68.965,51.341c-25.287,19.771 -57.164,31.571 -91.8,31.571c-5.977,0 -11.801,-0.306 -17.625,-1.073c32.337,21.15 71.264,33.41 112.95,33.41Z" />
         </svg>
     </a>
-    <a target="_blank" rel="noopener noreferrer" aria-label="share Heroku vs Laravel (vs me...) on linkedin"
-        href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fwww.mizouzie.dev%2farticles%2fheroku-vs-laravel%2f&amp;title=Heroku%20vs%20Laravel%20%28vs%20me...%29&amp;summary=Heroku%20vs%20Laravel%20%28vs%20me...%29&amp;source=https%3a%2f%2fwww.mizouzie.dev%2farticles%2fheroku-vs-laravel%2f">
+    <a target="_blank" rel="noopener noreferrer" aria-label="share Why Do My Pull Requests All Get Rejected? on linkedin"
+        href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fwww.mizouzie.dev%2farticles%2fwhy-do-my-pull-requests-all-get-rejected%2f&amp;title=Why%20Do%20My%20Pull%20Requests%20All%20Get%20Rejected%3f&amp;summary=Why%20Do%20My%20Pull%20Requests%20All%20Get%20Rejected%3f&amp;source=https%3a%2f%2fwww.mizouzie.dev%2farticles%2fwhy-do-my-pull-requests-all-get-rejected%2f">
         <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
             <path
                 d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-288.985,423.278l0,-225.717l-75.04,0l0,225.717l75.04,0Zm270.539,0l0,-129.439c0,-69.333 -37.018,-101.586 -86.381,-101.586c-39.804,0 -57.634,21.891 -67.617,37.266l0,-31.958l-75.021,0c0.995,21.181 0,225.717 0,225.717l75.02,0l0,-126.056c0,-6.748 0.486,-13.492 2.474,-18.315c5.414,-13.475 17.767,-27.434 38.494,-27.434c27.135,0 38.007,20.707 38.007,51.037l0,120.768l75.024,0Zm-307.552,-334.556c-25.674,0 -42.448,16.879 -42.448,39.002c0,21.658 16.264,39.002 41.455,39.002l0.484,0c26.165,0 42.452,-17.344 42.452,-39.002c-0.485,-22.092 -16.241,-38.954 -41.943,-39.002Z" />
         </svg>
     </a>
-    <a target="_blank" rel="noopener noreferrer" aria-label="share Heroku vs Laravel (vs me...) on reddit"
-        href="https://reddit.com/submit?url=https%3a%2f%2fwww.mizouzie.dev%2farticles%2fheroku-vs-laravel%2f&title=Heroku%20vs%20Laravel%20%28vs%20me...%29">
+    <a target="_blank" rel="noopener noreferrer" aria-label="share Why Do My Pull Requests All Get Rejected? on reddit"
+        href="https://reddit.com/submit?url=https%3a%2f%2fwww.mizouzie.dev%2farticles%2fwhy-do-my-pull-requests-all-get-rejected%2f&title=Why%20Do%20My%20Pull%20Requests%20All%20Get%20Rejected%3f">
         <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
             <path
                 d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-3.446,265.638c0,-22.964 -18.616,-41.58 -41.58,-41.58c-11.211,0 -21.361,4.457 -28.841,11.666c-28.424,-20.508 -67.586,-33.757 -111.204,-35.278l18.941,-89.121l61.884,13.157c0.756,15.734 13.642,28.29 29.56,28.29c16.407,0 29.706,-13.299 29.706,-29.701c0,-16.403 -13.299,-29.702 -29.706,-29.702c-11.666,0 -21.657,6.792 -26.515,16.578l-69.105,-14.69c-1.922,-0.418 -3.939,-0.042 -5.585,1.036c-1.658,1.073 -2.811,2.761 -3.224,4.686l-21.152,99.438c-44.258,1.228 -84.046,14.494 -112.837,35.232c-7.468,-7.164 -17.589,-11.591 -28.757,-11.591c-22.965,0 -41.585,18.616 -41.585,41.58c0,16.896 10.095,31.41 24.568,37.918c-0.639,4.135 -0.99,8.328 -0.99,12.576c0,63.977 74.469,115.836 166.33,115.836c91.861,0 166.334,-51.859 166.334,-115.836c0,-4.218 -0.347,-8.387 -0.977,-12.493c14.564,-6.47 24.735,-21.034 24.735,-38.001Zm-119.474,108.193c-20.27,20.241 -59.115,21.816 -70.534,21.816c-11.428,0 -50.277,-1.575 -70.522,-21.82c-3.007,-3.008 -3.007,-7.882 0,-10.889c3.003,-2.999 7.882,-3.003 10.885,0c12.777,12.781 40.11,17.317 59.637,17.317c19.522,0 46.86,-4.536 59.657,-17.321c3.016,-2.999 7.886,-2.995 10.885,0.008c3.008,3.011 3.003,7.882 -0.008,10.889Zm-5.23,-48.781c-16.373,0 -29.701,-13.324 -29.701,-29.698c0,-16.381 13.328,-29.714 29.701,-29.714c16.378,0 29.706,13.333 29.706,29.714c0,16.374 -13.328,29.698 -29.706,29.698Zm-160.386,-29.702c0,-16.381 13.328,-29.71 29.714,-29.71c16.369,0 29.689,13.329 29.689,29.71c0,16.373 -13.32,29.693 -29.689,29.693c-16.386,0 -29.714,-13.32 -29.714,-29.693Z" />
         </svg>
     </a>
-    <a target="_blank" rel="noopener noreferrer" aria-label="share Heroku vs Laravel (vs me...) on facebook"
-        href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fwww.mizouzie.dev%2farticles%2fheroku-vs-laravel%2f">
+    <a target="_blank" rel="noopener noreferrer" aria-label="share Why Do My Pull Requests All Get Rejected? on facebook"
+        href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fwww.mizouzie.dev%2farticles%2fwhy-do-my-pull-requests-all-get-rejected%2f">
         <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
             <path
                 d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-106.468,0l0,-192.915l66.6,0l12.672,-82.621l-79.272,0l0,-53.617c0,-22.603 11.073,-44.636 46.58,-44.636l36.042,0l0,-70.34c0,0 -32.71,-5.582 -63.982,-5.582c-65.288,0 -107.96,39.569 -107.96,111.204l0,62.971l-72.573,0l0,82.621l72.573,0l0,192.915l-191.104,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Z" />
         </svg>
     </a>
-    <a target="_blank" rel="noopener noreferrer" aria-label="share Heroku vs Laravel (vs me...) on whatsapp"
-        href="https://api.whatsapp.com/send?text=Heroku%20vs%20Laravel%20%28vs%20me...%29%20-%20https%3a%2f%2fwww.mizouzie.dev%2farticles%2fheroku-vs-laravel%2f">
+    <a target="_blank" rel="noopener noreferrer" aria-label="share Why Do My Pull Requests All Get Rejected? on whatsapp"
+        href="https://api.whatsapp.com/send?text=Why%20Do%20My%20Pull%20Requests%20All%20Get%20Rejected%3f%20-%20https%3a%2f%2fwww.mizouzie.dev%2farticles%2fwhy-do-my-pull-requests-all-get-rejected%2f">
         <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
             <path
                 d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-58.673,127.703c-33.842,-33.881 -78.847,-52.548 -126.798,-52.568c-98.799,0 -179.21,80.405 -179.249,179.234c-0.013,31.593 8.241,62.428 23.927,89.612l-25.429,92.884l95.021,-24.925c26.181,14.28 55.659,21.807 85.658,21.816l0.074,0c98.789,0 179.206,-80.413 179.247,-179.243c0.018,-47.895 -18.61,-92.93 -52.451,-126.81Zm-126.797,275.782l-0.06,0c-26.734,-0.01 -52.954,-7.193 -75.828,-20.767l-5.441,-3.229l-56.386,14.792l15.05,-54.977l-3.542,-5.637c-14.913,-23.72 -22.791,-51.136 -22.779,-79.287c0.033,-82.142 66.867,-148.971 149.046,-148.971c39.793,0.014 77.199,15.531 105.329,43.692c28.128,28.16 43.609,65.592 43.594,105.4c-0.034,82.149 -66.866,148.983 -148.983,148.984Zm81.721,-111.581c-4.479,-2.242 -26.499,-13.075 -30.604,-14.571c-4.105,-1.495 -7.091,-2.241 -10.077,2.241c-2.986,4.483 -11.569,14.572 -14.182,17.562c-2.612,2.988 -5.225,3.364 -9.703,1.12c-4.479,-2.241 -18.91,-6.97 -36.017,-22.23c-13.314,-11.876 -22.304,-26.542 -24.916,-31.026c-2.612,-4.484 -0.279,-6.908 1.963,-9.14c2.016,-2.007 4.48,-5.232 6.719,-7.847c2.24,-2.615 2.986,-4.484 4.479,-7.472c1.493,-2.99 0.747,-5.604 -0.374,-7.846c-1.119,-2.241 -10.077,-24.288 -13.809,-33.256c-3.635,-8.733 -7.327,-7.55 -10.077,-7.688c-2.609,-0.13 -5.598,-0.158 -8.583,-0.158c-2.986,0 -7.839,1.121 -11.944,5.604c-4.105,4.484 -15.675,15.32 -15.675,37.364c0,22.046 16.048,43.342 18.287,46.332c2.24,2.99 31.582,48.227 76.511,67.627c10.685,4.615 19.028,7.371 25.533,9.434c10.728,3.41 20.492,2.929 28.209,1.775c8.605,-1.285 26.499,-10.833 30.231,-21.295c3.732,-10.464 3.732,-19.431 2.612,-21.298c-1.119,-1.869 -4.105,-2.99 -8.583,-5.232Z" />
@@ -269,12 +293,26 @@
 </footer>
       </div><aside id="side-pane" class="side-sticky">
 <div class="side-details">
-    <span>808 words</span>
-    <span>4 - 6 minutes read</span><div class="side-details-taxonomy">
+    <span>1166 words</span>
+    <span>6 - 8 minutes read</span><div class="side-details-taxonomy">
         <small>categories: 
           <span class="details-taxonomy"><a href="https://www.mizouzie.dev/categories/web-development">web development</a></span></small>
-      </div></div><h3>Related</h3>
-    <ul><li><a href="/articles/quickadminpanel/">Why I&#39;m glad I used QuickAdminPanel today</a></li><li><a href="/articles/know-when-to-stop/">Starting is one thing, STOPPING is another</a></li><li><a href="/articles/customised-featured-link-thumbnail/">How I just customised my featured link thumbnail</a></li></ul></aside></div>
+      </div></div><h3>Table Of Contents</h3><nav id="TableOfContents">
+  <ul>
+    <li><a href="#is-it-something-personal">Is it something personal?</a></li>
+    <li><a href="#look-at-the-hard-facts">Look at the hard facts</a>
+      <ul>
+        <li><a href="#are-my-pr-descriptions-too-thin">Are my PR descriptions too thin?</a></li>
+        <li><a href="#is-my-test-coverage-insufficient">Is my test coverage insufficient?</a></li>
+        <li><a href="#do-i-waffle-too-much">Do I waffle too much?</a></li>
+        <li><a href="#what-kind-of-changes-are-being-proposed">What kind of changes are being proposed?</a></li>
+      </ul>
+    </li>
+    <li><a href="#a-little-breakdown">A little breakdown</a></li>
+    <li><a href="#so-where-do-i-go-from-here">So where do I go from here?</a></li>
+  </ul>
+</nav><h3>Related</h3>
+    <ul><li><a href="/projects/blade-trick-randomiser/">Blade Trick Randomiser</a></li><li><a href="/articles/code-block-click-copy/">Code Block Click Copy</a></li><li><a href="/articles/how-to-test-protected-functions-with-phpunit/">How to test protected functions with PHPUnit in your Laravel app</a></li><li><a href="/articles/undefined-type-spatie-permission/">Undefined type &#39;Spatie\Permission\Models\&#39; . &#39;Permission&#39; | &#39;Role&#39; | &#39;HasRoles&#39;</a></li><li><a href="/articles/how-to-unlock-formkit-multistep-forms-on-laravel-inertia-app-with-vue-3/">How to Unlock Formkit Multistep forms on a Laravel Inertia app with Vue 3</a></li></ul></aside></div>
   </div>
 </body>
 </html>

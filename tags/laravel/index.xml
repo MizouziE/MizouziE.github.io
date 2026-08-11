@@ -12,9 +12,16 @@
 			<copyright>made by MizouziE</copyright>
 		
 		
-			<lastBuildDate>Sat, 20 Jun 2026 00:00:00 +0000</lastBuildDate>
+			<lastBuildDate>Tue, 11 Aug 2026 00:00:00 +0000</lastBuildDate>
 		
 			<atom:link href="https://www.mizouzie.dev/tags/laravel/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Why Do My Pull Requests All Get Rejected?</title>
+				<link>https://www.mizouzie.dev/articles/why-do-my-pull-requests-all-get-rejected/</link>
+				<pubDate>Tue, 11 Aug 2026 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/articles/why-do-my-pull-requests-all-get-rejected/</guid>
+				<description>I have made many PRs as open source contributions, and only now realise why so many were closed</description>
+			</item>
 			<item>
 				<title>Laravel Live London 2026 Takeaways</title>
 				<link>https://www.mizouzie.dev/articles/laravel-live-london-2026-takeaways/</link>
