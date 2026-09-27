@@ -43,5 +43,12 @@
 				<guid>https://www.mizouzie.dev/articles/why-i-wont-use-ai/</guid>
 				<description>Artificial Intelligence is the hottest topic in a long while and we are certain to see it creep into content on the web. However, I will try to avoid the trend.</description>
 			</item>
+			<item>
+				<title>The Machine Stops</title>
+				<link>https://www.mizouzie.dev/tldr/the-machine-stops/</link>
+				<pubDate>Fri, 10 Feb 2017 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tldr/the-machine-stops/</guid>
+				<description>A man in 1909 describing video calls, on demand lectures and a species that has forgotten how to go outside</description>
+			</item>
 	</channel>
 </rss>

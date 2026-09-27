@@ -12,9 +12,16 @@
 			<copyright>made by MizouziE</copyright>
 		
 		
-			<lastBuildDate>Thu, 25 Dec 2025 00:00:00 +0000</lastBuildDate>
+			<lastBuildDate>Mon, 02 Mar 2026 00:00:00 +0000</lastBuildDate>
 		
 			<atom:link href="https://www.mizouzie.dev/categories/psychology/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>The Checklist Manifesto</title>
+				<link>https://www.mizouzie.dev/tldr/the-checklist-manifesto/</link>
+				<pubDate>Mon, 02 Mar 2026 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tldr/the-checklist-manifesto/</guid>
+				<description>Why expertise keeps failing at things it already knows, and how a bit of paper fixes it</description>
+			</item>
 			<item>
 				<title>Emotional Intelligence</title>
 				<link>https://www.mizouzie.dev/tldr/emotional-intelligence/</link>

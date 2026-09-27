@@ -12,15 +12,29 @@
 			<copyright>made by MizouziE</copyright>
 		
 		
-			<lastBuildDate>Mon, 18 Jul 2016 00:00:00 +0000</lastBuildDate>
+			<lastBuildDate>Tue, 16 Aug 2016 00:00:00 +0000</lastBuildDate>
 		
 			<atom:link href="https://www.mizouzie.dev/categories/history/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>The Earth Chronicles</title>
+				<link>https://www.mizouzie.dev/tldr/the-earth-chronicles/</link>
+				<pubDate>Tue, 16 Aug 2016 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tldr/the-earth-chronicles/</guid>
+				<description>Sumerian tablets read as a literal record of visitors who came here to mine gold</description>
+			</item>
 			<item>
 				<title>Sapiens</title>
 				<link>https://www.mizouzie.dev/tldr/sapiens/</link>
 				<pubDate>Mon, 18 Jul 2016 00:00:00 +0000</pubDate>
 				<guid>https://www.mizouzie.dev/tldr/sapiens/</guid>
 				<description>A unique perspective on the evolution of the human species, exploring the most beneficial characteristics</description>
+			</item>
+			<item>
+				<title>Prisoners of Geography</title>
+				<link>https://www.mizouzie.dev/tldr/prisoners-of-geography/</link>
+				<pubDate>Thu, 14 Jul 2016 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tldr/prisoners-of-geography/</guid>
+				<description>Ten maps arguing that leaders matter far less than rivers, mountains and where the ports are</description>
 			</item>
 	</channel>
 </rss>

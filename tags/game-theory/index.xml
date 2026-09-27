@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Game Theory on web with mizouzie</title>
+		<link>https://www.mizouzie.dev/tags/game-theory/</link>
+		<description>Recent content in Game Theory on web with mizouzie</description>
+		<generator>Hugo</generator>
+		<language>en</language>
+		
+		
+		
+			<copyright>made by MizouziE</copyright>
+		
+		
+			<lastBuildDate>Thu, 15 May 2025 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="https://www.mizouzie.dev/tags/game-theory/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>The Dark Forest</title>
+				<link>https://www.mizouzie.dev/tldr/the-dark-forest/</link>
+				<pubDate>Thu, 15 May 2025 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tldr/the-dark-forest/</guid>
+				<description>What you do when the enemy is four hundred years out and you can&amp;rsquo;t keep a single secret</description>
+			</item>
+	</channel>
+</rss>

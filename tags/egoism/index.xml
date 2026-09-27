@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Egoism on web with mizouzie</title>
+		<link>https://www.mizouzie.dev/tags/egoism/</link>
+		<description>Recent content in Egoism on web with mizouzie</description>
+		<generator>Hugo</generator>
+		<language>en</language>
+		
+		
+		
+			<copyright>made by MizouziE</copyright>
+		
+		
+			<lastBuildDate>Tue, 26 Dec 2023 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="https://www.mizouzie.dev/tags/egoism/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Why I Am So Clever</title>
+				<link>https://www.mizouzie.dev/tldr/why-i-am-so-clever/</link>
+				<pubDate>Tue, 26 Dec 2023 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tldr/why-i-am-so-clever/</guid>
+				<description>Nietzsche on diet, climate and what to read, which turns out to be the same subject as how to be yourself</description>
+			</item>
+	</channel>
+</rss>

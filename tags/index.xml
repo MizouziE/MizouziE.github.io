@@ -102,8 +102,50 @@
 			<item>
 				<title>Behaviour</title>
 				<link>https://www.mizouzie.dev/tags/behaviour/</link>
-				<pubDate>Thu, 25 Dec 2025 00:00:00 +0000</pubDate>
+				<pubDate>Mon, 02 Mar 2026 00:00:00 +0000</pubDate>
 				<guid>https://www.mizouzie.dev/tags/behaviour/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Process</title>
+				<link>https://www.mizouzie.dev/tags/process/</link>
+				<pubDate>Mon, 02 Mar 2026 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tags/process/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Productivity</title>
+				<link>https://www.mizouzie.dev/tags/productivity/</link>
+				<pubDate>Mon, 02 Mar 2026 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tags/productivity/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Absurdism</title>
+				<link>https://www.mizouzie.dev/tags/absurdism/</link>
+				<pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tags/absurdism/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Existentialism</title>
+				<link>https://www.mizouzie.dev/tags/existentialism/</link>
+				<pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tags/existentialism/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Databases</title>
+				<link>https://www.mizouzie.dev/tags/databases/</link>
+				<pubDate>Wed, 28 Jan 2026 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tags/databases/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Distributed Systems</title>
+				<link>https://www.mizouzie.dev/tags/distributed-systems/</link>
+				<pubDate>Wed, 28 Jan 2026 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tags/distributed-systems/</guid>
 				<description></description>
 			</item>
 			<item>
@@ -163,6 +205,48 @@
 				<description></description>
 			</item>
 			<item>
+				<title>Cosmology</title>
+				<link>https://www.mizouzie.dev/tags/cosmology/</link>
+				<pubDate>Sun, 15 Jun 2025 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tags/cosmology/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Physics</title>
+				<link>https://www.mizouzie.dev/tags/physics/</link>
+				<pubDate>Sun, 15 Jun 2025 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tags/physics/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Time</title>
+				<link>https://www.mizouzie.dev/tags/time/</link>
+				<pubDate>Sun, 15 Jun 2025 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tags/time/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Game Theory</title>
+				<link>https://www.mizouzie.dev/tags/game-theory/</link>
+				<pubDate>Thu, 15 May 2025 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tags/game-theory/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Society</title>
+				<link>https://www.mizouzie.dev/tags/society/</link>
+				<pubDate>Thu, 15 May 2025 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tags/society/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Egoism</title>
+				<link>https://www.mizouzie.dev/tags/egoism/</link>
+				<pubDate>Tue, 26 Dec 2023 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tags/egoism/</guid>
+				<description></description>
+			</item>
+			<item>
 				<title>CLI</title>
 				<link>https://www.mizouzie.dev/tags/cli/</link>
 				<pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate>
@@ -216,13 +300,6 @@
 				<link>https://www.mizouzie.dev/tags/twitter/</link>
 				<pubDate>Tue, 28 Mar 2023 00:00:00 +0000</pubDate>
 				<guid>https://www.mizouzie.dev/tags/twitter/</guid>
-				<description></description>
-			</item>
-			<item>
-				<title>Productivity</title>
-				<link>https://www.mizouzie.dev/tags/productivity/</link>
-				<pubDate>Fri, 24 Mar 2023 00:00:00 +0000</pubDate>
-				<guid>https://www.mizouzie.dev/tags/productivity/</guid>
 				<description></description>
 			</item>
 			<item>
@@ -310,6 +387,13 @@
 				<description></description>
 			</item>
 			<item>
+				<title>Work</title>
+				<link>https://www.mizouzie.dev/tags/work/</link>
+				<pubDate>Sat, 08 Oct 2022 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tags/work/</guid>
+				<description></description>
+			</item>
+			<item>
 				<title>Heroku</title>
 				<link>https://www.mizouzie.dev/tags/heroku/</link>
 				<pubDate>Tue, 26 Apr 2022 00:00:00 +0000</pubDate>
@@ -340,8 +424,36 @@
 			<item>
 				<title>Culture</title>
 				<link>https://www.mizouzie.dev/tags/culture/</link>
-				<pubDate>Mon, 18 Jul 2016 00:00:00 +0000</pubDate>
+				<pubDate>Fri, 30 Apr 2021 00:00:00 +0000</pubDate>
 				<guid>https://www.mizouzie.dev/tags/culture/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Morality</title>
+				<link>https://www.mizouzie.dev/tags/morality/</link>
+				<pubDate>Fri, 30 Apr 2021 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tags/morality/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Dystopia</title>
+				<link>https://www.mizouzie.dev/tags/dystopia/</link>
+				<pubDate>Fri, 10 Feb 2017 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tags/dystopia/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Ancient History</title>
+				<link>https://www.mizouzie.dev/tags/ancient-history/</link>
+				<pubDate>Tue, 16 Aug 2016 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tags/ancient-history/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Mythology</title>
+				<link>https://www.mizouzie.dev/tags/mythology/</link>
+				<pubDate>Tue, 16 Aug 2016 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tags/mythology/</guid>
 				<description></description>
 			</item>
 			<item>
@@ -352,24 +464,31 @@
 				<description></description>
 			</item>
 			<item>
-				<title>Society</title>
-				<link>https://www.mizouzie.dev/tags/society/</link>
-				<pubDate>Mon, 18 Jul 2016 00:00:00 +0000</pubDate>
-				<guid>https://www.mizouzie.dev/tags/society/</guid>
+				<title>Geography</title>
+				<link>https://www.mizouzie.dev/tags/geography/</link>
+				<pubDate>Thu, 14 Jul 2016 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tags/geography/</guid>
 				<description></description>
 			</item>
 			<item>
-				<title>Absurdism</title>
-				<link>https://www.mizouzie.dev/tags/absurdism/</link>
-				<pubDate>Tue, 01 Mar 2016 00:00:00 +0000</pubDate>
-				<guid>https://www.mizouzie.dev/tags/absurdism/</guid>
+				<title>Geopolitics</title>
+				<link>https://www.mizouzie.dev/tags/geopolitics/</link>
+				<pubDate>Thu, 14 Jul 2016 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tags/geopolitics/</guid>
 				<description></description>
 			</item>
 			<item>
-				<title>Existentialism</title>
-				<link>https://www.mizouzie.dev/tags/existentialism/</link>
-				<pubDate>Tue, 01 Mar 2016 00:00:00 +0000</pubDate>
-				<guid>https://www.mizouzie.dev/tags/existentialism/</guid>
+				<title>Post-Apocalyptic</title>
+				<link>https://www.mizouzie.dev/tags/post-apocalyptic/</link>
+				<pubDate>Sat, 10 Apr 2010 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tags/post-apocalyptic/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Violence</title>
+				<link>https://www.mizouzie.dev/tags/violence/</link>
+				<pubDate>Sat, 19 Sep 2009 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tags/violence/</guid>
 				<description></description>
 			</item>
 	</channel>

@@ -12,15 +12,29 @@
 			<copyright>made by MizouziE</copyright>
 		
 		
-			<lastBuildDate>Thu, 25 Dec 2025 00:00:00 +0000</lastBuildDate>
+			<lastBuildDate>Mon, 02 Mar 2026 00:00:00 +0000</lastBuildDate>
 		
 			<atom:link href="https://www.mizouzie.dev/tags/behaviour/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>The Checklist Manifesto</title>
+				<link>https://www.mizouzie.dev/tldr/the-checklist-manifesto/</link>
+				<pubDate>Mon, 02 Mar 2026 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tldr/the-checklist-manifesto/</guid>
+				<description>Why expertise keeps failing at things it already knows, and how a bit of paper fixes it</description>
+			</item>
 			<item>
 				<title>Emotional Intelligence</title>
 				<link>https://www.mizouzie.dev/tldr/emotional-intelligence/</link>
 				<pubDate>Thu, 25 Dec 2025 00:00:00 +0000</pubDate>
 				<guid>https://www.mizouzie.dev/tldr/emotional-intelligence/</guid>
 				<description>A compelling argument that how one manages emotions matters more to life&amp;rsquo;s outcomes than raw intellectual ability</description>
+			</item>
+			<item>
+				<title>Why I Am So Clever</title>
+				<link>https://www.mizouzie.dev/tldr/why-i-am-so-clever/</link>
+				<pubDate>Tue, 26 Dec 2023 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tldr/why-i-am-so-clever/</guid>
+				<description>Nietzsche on diet, climate and what to read, which turns out to be the same subject as how to be yourself</description>
 			</item>
 			<item>
 				<title>Atomic Habits</title>

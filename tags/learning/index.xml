@@ -127,5 +127,12 @@
 				<guid>https://www.mizouzie.dev/articles/benefits-of-os/</guid>
 				<description>There are so many good things about Open Source, but here are my current top 3 from the perspective of an emerging developer</description>
 			</item>
+			<item>
+				<title>Learning Go</title>
+				<link>https://www.mizouzie.dev/tldr/learning-go/</link>
+				<pubDate>Wed, 03 Nov 2021 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tldr/learning-go/</guid>
+				<description>Idiomatic Go rather than a syntax tour, which is the harder and more useful book to write</description>
+			</item>
 	</channel>
 </rss>

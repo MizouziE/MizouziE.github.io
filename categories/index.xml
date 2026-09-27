@@ -32,8 +32,22 @@
 			<item>
 				<title>Psychology</title>
 				<link>https://www.mizouzie.dev/categories/psychology/</link>
-				<pubDate>Thu, 25 Dec 2025 00:00:00 +0000</pubDate>
+				<pubDate>Mon, 02 Mar 2026 00:00:00 +0000</pubDate>
 				<guid>https://www.mizouzie.dev/categories/psychology/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Philosophy</title>
+				<link>https://www.mizouzie.dev/categories/philosophy/</link>
+				<pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/categories/philosophy/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Technology</title>
+				<link>https://www.mizouzie.dev/categories/technology/</link>
+				<pubDate>Wed, 28 Jan 2026 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/categories/technology/</guid>
 				<description></description>
 			</item>
 			<item>
@@ -51,24 +65,31 @@
 				<description></description>
 			</item>
 			<item>
-				<title>History</title>
-				<link>https://www.mizouzie.dev/categories/history/</link>
-				<pubDate>Mon, 18 Jul 2016 00:00:00 +0000</pubDate>
-				<guid>https://www.mizouzie.dev/categories/history/</guid>
+				<title>Science Fiction</title>
+				<link>https://www.mizouzie.dev/categories/science-fiction/</link>
+				<pubDate>Sun, 15 Jun 2025 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/categories/science-fiction/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Science</title>
 				<link>https://www.mizouzie.dev/categories/science/</link>
-				<pubDate>Mon, 18 Jul 2016 00:00:00 +0000</pubDate>
+				<pubDate>Sun, 02 Apr 2023 00:00:00 +0000</pubDate>
 				<guid>https://www.mizouzie.dev/categories/science/</guid>
 				<description></description>
 			</item>
 			<item>
-				<title>Philosophy</title>
-				<link>https://www.mizouzie.dev/categories/philosophy/</link>
-				<pubDate>Tue, 01 Mar 2016 00:00:00 +0000</pubDate>
-				<guid>https://www.mizouzie.dev/categories/philosophy/</guid>
+				<title>History</title>
+				<link>https://www.mizouzie.dev/categories/history/</link>
+				<pubDate>Tue, 16 Aug 2016 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/categories/history/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Fiction</title>
+				<link>https://www.mizouzie.dev/categories/fiction/</link>
+				<pubDate>Sat, 10 Apr 2010 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/categories/fiction/</guid>
 				<description></description>
 			</item>
 	</channel>

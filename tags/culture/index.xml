@@ -12,9 +12,16 @@
 			<copyright>made by MizouziE</copyright>
 		
 		
-			<lastBuildDate>Mon, 18 Jul 2016 00:00:00 +0000</lastBuildDate>
+			<lastBuildDate>Fri, 30 Apr 2021 00:00:00 +0000</lastBuildDate>
 		
 			<atom:link href="https://www.mizouzie.dev/tags/culture/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Lila</title>
+				<link>https://www.mizouzie.dev/tldr/lila/</link>
+				<pubDate>Fri, 30 Apr 2021 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tldr/lila/</guid>
+				<description>The sequel to the motorcycle one, trying to build an actual working system out of Quality</description>
+			</item>
 			<item>
 				<title>Sapiens</title>
 				<link>https://www.mizouzie.dev/tldr/sapiens/</link>

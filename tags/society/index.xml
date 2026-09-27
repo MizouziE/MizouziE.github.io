@@ -12,15 +12,50 @@
 			<copyright>made by MizouziE</copyright>
 		
 		
-			<lastBuildDate>Mon, 18 Jul 2016 00:00:00 +0000</lastBuildDate>
+			<lastBuildDate>Thu, 15 May 2025 00:00:00 +0000</lastBuildDate>
 		
 			<atom:link href="https://www.mizouzie.dev/tags/society/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>The Dark Forest</title>
+				<link>https://www.mizouzie.dev/tldr/the-dark-forest/</link>
+				<pubDate>Thu, 15 May 2025 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tldr/the-dark-forest/</guid>
+				<description>What you do when the enemy is four hundred years out and you can&amp;rsquo;t keep a single secret</description>
+			</item>
+			<item>
+				<title>The Three-Body Problem</title>
+				<link>https://www.mizouzie.dev/tldr/the-three-body-problem/</link>
+				<pubDate>Tue, 15 Apr 2025 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tldr/the-three-body-problem/</guid>
+				<description>First contact, except the invitation was sent by someone who&amp;rsquo;d given up on humanity entirely</description>
+			</item>
+			<item>
+				<title>The Plague</title>
+				<link>https://www.mizouzie.dev/tldr/the-plague/</link>
+				<pubDate>Sun, 29 Mar 2020 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tldr/the-plague/</guid>
+				<description>A town sealed off and a doctor who keeps working, mostly because the alternative is nothing</description>
+			</item>
+			<item>
+				<title>The Machine Stops</title>
+				<link>https://www.mizouzie.dev/tldr/the-machine-stops/</link>
+				<pubDate>Fri, 10 Feb 2017 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tldr/the-machine-stops/</guid>
+				<description>A man in 1909 describing video calls, on demand lectures and a species that has forgotten how to go outside</description>
+			</item>
 			<item>
 				<title>Sapiens</title>
 				<link>https://www.mizouzie.dev/tldr/sapiens/</link>
 				<pubDate>Mon, 18 Jul 2016 00:00:00 +0000</pubDate>
 				<guid>https://www.mizouzie.dev/tldr/sapiens/</guid>
 				<description>A unique perspective on the evolution of the human species, exploring the most beneficial characteristics</description>
+			</item>
+			<item>
+				<title>Prisoners of Geography</title>
+				<link>https://www.mizouzie.dev/tldr/prisoners-of-geography/</link>
+				<pubDate>Thu, 14 Jul 2016 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tldr/prisoners-of-geography/</guid>
+				<description>Ten maps arguing that leaders matter far less than rivers, mountains and where the ports are</description>
 			</item>
 	</channel>
 </rss>

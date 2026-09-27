@@ -12,15 +12,71 @@
 			<copyright>made by MizouziE</copyright>
 		
 		
-			<lastBuildDate>Thu, 25 Dec 2025 00:00:00 +0000</lastBuildDate>
+			<lastBuildDate>Mon, 02 Mar 2026 00:00:00 +0000</lastBuildDate>
 		
 			<atom:link href="https://www.mizouzie.dev/tldr/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>The Checklist Manifesto</title>
+				<link>https://www.mizouzie.dev/tldr/the-checklist-manifesto/</link>
+				<pubDate>Mon, 02 Mar 2026 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tldr/the-checklist-manifesto/</guid>
+				<description>Why expertise keeps failing at things it already knows, and how a bit of paper fixes it</description>
+			</item>
+			<item>
+				<title>The Myth of Sisyphus</title>
+				<link>https://www.mizouzie.dev/tldr/the-myth-of-sisyphus/</link>
+				<pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tldr/the-myth-of-sisyphus/</guid>
+				<description>The essay The Stranger was the story of, starting from whether life is worth living at all</description>
+			</item>
+			<item>
+				<title>Designing Data-Intensive Applications</title>
+				<link>https://www.mizouzie.dev/tldr/designing-data-intensive-applications/</link>
+				<pubDate>Wed, 28 Jan 2026 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tldr/designing-data-intensive-applications/</guid>
+				<description>The book that explains what your database is actually doing and why it occasionally lies to you</description>
+			</item>
 			<item>
 				<title>Emotional Intelligence</title>
 				<link>https://www.mizouzie.dev/tldr/emotional-intelligence/</link>
 				<pubDate>Thu, 25 Dec 2025 00:00:00 +0000</pubDate>
 				<guid>https://www.mizouzie.dev/tldr/emotional-intelligence/</guid>
 				<description>A compelling argument that how one manages emotions matters more to life&amp;rsquo;s outcomes than raw intellectual ability</description>
+			</item>
+			<item>
+				<title>Death&#39;s End</title>
+				<link>https://www.mizouzie.dev/tldr/deaths-end/</link>
+				<pubDate>Sun, 15 Jun 2025 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tldr/deaths-end/</guid>
+				<description>The bill for every decision the first two books managed to put off, paid in full</description>
+			</item>
+			<item>
+				<title>The Dark Forest</title>
+				<link>https://www.mizouzie.dev/tldr/the-dark-forest/</link>
+				<pubDate>Thu, 15 May 2025 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tldr/the-dark-forest/</guid>
+				<description>What you do when the enemy is four hundred years out and you can&amp;rsquo;t keep a single secret</description>
+			</item>
+			<item>
+				<title>The Three-Body Problem</title>
+				<link>https://www.mizouzie.dev/tldr/the-three-body-problem/</link>
+				<pubDate>Tue, 15 Apr 2025 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tldr/the-three-body-problem/</guid>
+				<description>First contact, except the invitation was sent by someone who&amp;rsquo;d given up on humanity entirely</description>
+			</item>
+			<item>
+				<title>Why I Am So Clever</title>
+				<link>https://www.mizouzie.dev/tldr/why-i-am-so-clever/</link>
+				<pubDate>Tue, 26 Dec 2023 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tldr/why-i-am-so-clever/</guid>
+				<description>Nietzsche on diet, climate and what to read, which turns out to be the same subject as how to be yourself</description>
+			</item>
+			<item>
+				<title>Seven Brief Lessons on Physics</title>
+				<link>https://www.mizouzie.dev/tldr/seven-brief-lessons-on-physics/</link>
+				<pubDate>Sun, 02 Apr 2023 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tldr/seven-brief-lessons-on-physics/</guid>
+				<description>Eighty pages that get from Einstein to quantum gravity without a single equation</description>
 			</item>
 			<item>
 				<title>Atomic Habits</title>
@@ -30,6 +86,48 @@
 				<description>A systematic breakdown of how small repeated behaviours compound into who you become</description>
 			</item>
 			<item>
+				<title>REWORK</title>
+				<link>https://www.mizouzie.dev/tldr/rework/</link>
+				<pubDate>Sat, 08 Oct 2022 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tldr/rework/</guid>
+				<description>A business book that mostly argues against doing the things business books tell you to do</description>
+			</item>
+			<item>
+				<title>Learning Go</title>
+				<link>https://www.mizouzie.dev/tldr/learning-go/</link>
+				<pubDate>Wed, 03 Nov 2021 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tldr/learning-go/</guid>
+				<description>Idiomatic Go rather than a syntax tour, which is the harder and more useful book to write</description>
+			</item>
+			<item>
+				<title>Lila</title>
+				<link>https://www.mizouzie.dev/tldr/lila/</link>
+				<pubDate>Fri, 30 Apr 2021 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tldr/lila/</guid>
+				<description>The sequel to the motorcycle one, trying to build an actual working system out of Quality</description>
+			</item>
+			<item>
+				<title>The Plague</title>
+				<link>https://www.mizouzie.dev/tldr/the-plague/</link>
+				<pubDate>Sun, 29 Mar 2020 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tldr/the-plague/</guid>
+				<description>A town sealed off and a doctor who keeps working, mostly because the alternative is nothing</description>
+			</item>
+			<item>
+				<title>The Machine Stops</title>
+				<link>https://www.mizouzie.dev/tldr/the-machine-stops/</link>
+				<pubDate>Fri, 10 Feb 2017 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tldr/the-machine-stops/</guid>
+				<description>A man in 1909 describing video calls, on demand lectures and a species that has forgotten how to go outside</description>
+			</item>
+			<item>
+				<title>The Earth Chronicles</title>
+				<link>https://www.mizouzie.dev/tldr/the-earth-chronicles/</link>
+				<pubDate>Tue, 16 Aug 2016 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tldr/the-earth-chronicles/</guid>
+				<description>Sumerian tablets read as a literal record of visitors who came here to mine gold</description>
+			</item>
+			<item>
 				<title>Sapiens</title>
 				<link>https://www.mizouzie.dev/tldr/sapiens/</link>
 				<pubDate>Mon, 18 Jul 2016 00:00:00 +0000</pubDate>
@@ -37,11 +135,32 @@
 				<description>A unique perspective on the evolution of the human species, exploring the most beneficial characteristics</description>
 			</item>
 			<item>
+				<title>Prisoners of Geography</title>
+				<link>https://www.mizouzie.dev/tldr/prisoners-of-geography/</link>
+				<pubDate>Thu, 14 Jul 2016 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tldr/prisoners-of-geography/</guid>
+				<description>Ten maps arguing that leaders matter far less than rivers, mountains and where the ports are</description>
+			</item>
+			<item>
 				<title>The Stranger</title>
 				<link>https://www.mizouzie.dev/tldr/the-stranger/</link>
 				<pubDate>Tue, 01 Mar 2016 00:00:00 +0000</pubDate>
 				<guid>https://www.mizouzie.dev/tldr/the-stranger/</guid>
 				<description>A story of a man faced with absurdity in it&amp;rsquo;s purest form and how he navigates it in simple terms</description>
+			</item>
+			<item>
+				<title>The Road</title>
+				<link>https://www.mizouzie.dev/tldr/the-road/</link>
+				<pubDate>Sat, 10 Apr 2010 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tldr/the-road/</guid>
+				<description>A father, a son, a shopping trolley, and no explanation of what happened</description>
+			</item>
+			<item>
+				<title>No Country for Old Men</title>
+				<link>https://www.mizouzie.dev/tldr/no-country-for-old-men/</link>
+				<pubDate>Sat, 19 Sep 2009 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tldr/no-country-for-old-men/</guid>
+				<description>A man takes a case of money he shouldn&amp;rsquo;t have, and what comes after him doesn&amp;rsquo;t negotiate</description>
 			</item>
 	</channel>
 </rss>
