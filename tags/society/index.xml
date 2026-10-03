@@ -12,9 +12,16 @@
 			<copyright>made by MizouziE</copyright>
 		
 		
-			<lastBuildDate>Thu, 15 May 2025 00:00:00 +0000</lastBuildDate>
+			<lastBuildDate>Sat, 03 Oct 2026 00:00:00 +0000</lastBuildDate>
 		
 			<atom:link href="https://www.mizouzie.dev/tags/society/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>The Prince</title>
+				<link>https://www.mizouzie.dev/tldr/the-prince/</link>
+				<pubDate>Sat, 03 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tldr/the-prince/</guid>
+				<description>A user&amp;rsquo;s guide to power, with morality filed under tools</description>
+			</item>
 			<item>
 				<title>The Dark Forest</title>
 				<link>https://www.mizouzie.dev/tldr/the-dark-forest/</link>

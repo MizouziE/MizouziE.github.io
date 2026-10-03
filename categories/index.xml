@@ -12,9 +12,16 @@
 			<copyright>made by MizouziE</copyright>
 		
 		
-			<lastBuildDate>Tue, 11 Aug 2026 00:00:00 +0000</lastBuildDate>
+			<lastBuildDate>Sat, 03 Oct 2026 00:00:00 +0000</lastBuildDate>
 		
 			<atom:link href="https://www.mizouzie.dev/categories/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Philosophy</title>
+				<link>https://www.mizouzie.dev/categories/philosophy/</link>
+				<pubDate>Sat, 03 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/categories/philosophy/</guid>
+				<description></description>
+			</item>
 			<item>
 				<title>Web Development</title>
 				<link>https://www.mizouzie.dev/categories/web-development/</link>
@@ -34,13 +41,6 @@
 				<link>https://www.mizouzie.dev/categories/psychology/</link>
 				<pubDate>Mon, 02 Mar 2026 00:00:00 +0000</pubDate>
 				<guid>https://www.mizouzie.dev/categories/psychology/</guid>
-				<description></description>
-			</item>
-			<item>
-				<title>Philosophy</title>
-				<link>https://www.mizouzie.dev/categories/philosophy/</link>
-				<pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
-				<guid>https://www.mizouzie.dev/categories/philosophy/</guid>
 				<description></description>
 			</item>
 			<item>
