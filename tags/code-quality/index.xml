@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Code Quality on web with mizouzie</title>
+		<link>https://www.mizouzie.dev/tags/code-quality/</link>
+		<description>Recent content in Code Quality on web with mizouzie</description>
+		<generator>Hugo</generator>
+		<language>en</language>
+		
+		
+		
+			<copyright>made by MizouziE</copyright>
+		
+		
+			<lastBuildDate>Fri, 06 Nov 2026 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="https://www.mizouzie.dev/tags/code-quality/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>What&#39;s the Point of All the Static Analysis</title>
+				<link>https://www.mizouzie.dev/articles/whats-the-point-of-all-the-static-analysis/</link>
+				<pubDate>Fri, 06 Nov 2026 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/articles/whats-the-point-of-all-the-static-analysis/</guid>
+				<description>Often static analysis tools are lauded for their preventative powers, but they seem to have great value in retrospect too</description>
+			</item>
+	</channel>
+</rss>

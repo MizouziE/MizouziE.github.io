@@ -12,9 +12,16 @@
 			<copyright>made by MizouziE</copyright>
 		
 		
-			<lastBuildDate>Tue, 11 Aug 2026 00:00:00 +0000</lastBuildDate>
+			<lastBuildDate>Fri, 06 Nov 2026 00:00:00 +0000</lastBuildDate>
 		
 			<atom:link href="https://www.mizouzie.dev/tags/open-source/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>What&#39;s the Point of All the Static Analysis</title>
+				<link>https://www.mizouzie.dev/articles/whats-the-point-of-all-the-static-analysis/</link>
+				<pubDate>Fri, 06 Nov 2026 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/articles/whats-the-point-of-all-the-static-analysis/</guid>
+				<description>Often static analysis tools are lauded for their preventative powers, but they seem to have great value in retrospect too</description>
+			</item>
 			<item>
 				<title>Why Do My Pull Requests All Get Rejected?</title>
 				<link>https://www.mizouzie.dev/articles/why-do-my-pull-requests-all-get-rejected/</link>
