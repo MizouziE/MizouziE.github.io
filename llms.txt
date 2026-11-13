@@ -1,0 +1,76 @@
+# web with mizouzie
+
+> MizouziE the web app developer, on this page you'll find my contact details, my blog covering everything I learn on my journey through full stack development and health and well-being advice I pick up along the way, links to my social media and various other projects that I have worked on.
+
+## Posts
+
+- [What's the Point of All the Static Analysis](https://www.mizouzie.dev/articles/whats-the-point-of-all-the-static-analysis/index.md): Often static analysis tools are lauded for their preventative powers, but they seem to have great value in retrospect too
+- [Why Do My Pull Requests All Get Rejected?](https://www.mizouzie.dev/articles/why-do-my-pull-requests-all-get-rejected/index.md): I have made many PRs as open source contributions, and only now realise why so many were closed
+- [Laravel Live London 2026 Takeaways](https://www.mizouzie.dev/articles/laravel-live-london-2026-takeaways/index.md): A jam-packed couple of days with incredibly valuable talks throughout. Here is what I got out of it all.
+- [A Reply from the Machine](https://www.mizouzie.dev/articles/a-reply-from-the-machine/index.md): Sam wrote in February 2023 that he would never use AI to write on this blog. Two years later he let one read that article and asked it to respond. Here we are.
+- [Code Block Click Copy](https://www.mizouzie.dev/articles/code-block-click-copy/index.md): How to swap a Clipboard.js dependency for vanilla JavaScript
+- [Tum | Modo | Postea](https://www.mizouzie.dev/articles/then-now-after/index.md): A retrospective look at what I came from, assessment of where I currently am, and a prospective look at where I see myself going
+- [I Tried Working at 30,000ft](https://www.mizouzie.dev/articles/tried-working-at-30000ft/index.md): The rare occasion of me traveling alone came up and I was excited to have a few hours alone with my thoughts and make the most of the opportunity to get loads of work done.
+- [MySQL Database Migration to a Remote Server from a .gz mysqldump file](https://www.mizouzie.dev/articles/mysql-database-migration-to-remote-server-from-gz-file/index.md): Some bugs only appear when your web application is truly tested out in production. The actual use cases of your data structure may differ from what you imagined, so make a dump of the prod DB and play around on a development server.
+- [Send SMTP Mail from Hetzner Server with Firewall](https://www.mizouzie.dev/articles/send-smtp-mail-from-hetzner-server/index.md): Laravel Mail Working locally but not on server. Getting stream_socket_client timeout error. We must allow outgoing TCP Connections in Hetzner Firewall.
+- [How to test protected functions with PHPUnit in your Laravel app](https://www.mizouzie.dev/articles/how-to-test-protected-functions-with-phpunit/index.md): An essential part of developing an app is testing your code. My preferred method of testing my Laravel code is using PHPUnit and this is how I use reflection to test those 'harder to reach' protected and private methods inside classes.
+- [Undefined type 'Spatie\Permission\Models\' . 'Permission' | 'Role' | 'HasRoles'](https://www.mizouzie.dev/articles/undefined-type-spatie-permission/index.md): VSCode with intelephense throws a strange and hard to debug error when using the spatie/laravel-permissions package even when you follow the docs to the letter. Here is how to fix it.
+- [Space is the Place: Reasons to explore Twitter Spaces](https://www.mizouzie.dev/articles/space-is-the-place/index.md): Space! The Final Frontier... but what if it is the beginning? Twitter spaces are a great way to meet and trade ideas with people from across the globe from the comfort of your sofa!
+- [3 things the best senior developers do](https://www.mizouzie.dev/articles/best-senior-developer/index.md): Working under the care of a more experienced developer can make or break a junior developer's career. Here are 3 things the best senior developers do.
+- [How to Unlock Formkit Multistep forms on a Laravel Inertia app with Vue 3](https://www.mizouzie.dev/articles/how-to-unlock-formkit-multistep-forms-on-laravel-inertia-app-with-vue-3/index.md): Formkit offers a great Multi-Step tool for building forms in your Vue app, but getting it to work inside a Laravel Inertia app is a little tricky. Here is how to get it running.
+- [Common Function Comparisons in PHP](https://www.mizouzie.dev/articles/common-function-comparisons-in-php/index.md): How do you decide between two functions that, at a glance, seem to do the same thing? Let's pick apart the differences to try and make it easier.
+- [3 ways to read input with a Go CLI](https://www.mizouzie.dev/articles/3-ways-to-read-input-with-go-cli/index.md): Tutorial with examples showing 3 different ways to read user input when building a command line interface (CLI) with Go
+- [New Side Project - AI as a Creator](https://www.mizouzie.dev/articles/new-side-project-ai-as-a-creator/index.md): Working with AI tools is taking the web development world by storm. This is how I plan to make use of it though.
+- [How to make your GitHub project pop on social media](https://www.mizouzie.dev/articles/make-your-github-project-stand-out/index.md): Half the battle of progressing your open source project is getting it noticed and attracting contributors. So make the most of this simple trick.
+- [Why I won't use AI on this blog](https://www.mizouzie.dev/articles/why-i-wont-use-ai/index.md): Artificial Intelligence is the hottest topic in a long while and we are certain to see it creep into content on the web. However, I will try to avoid the trend.
+- [Developing a Laravel Application using Tinker](https://www.mizouzie.dev/articles/developing-a-laravel-app-using-tinker/index.md): The Laravel framework has a huge amount of helpful features, let's take a deeper look at one of the most powerful. Tinker.
+- [Why use Docker for databases and how](https://www.mizouzie.dev/articles/why-use-docker-for-databases-and-how/index.md): Docker is an invaluable piece to add to any tech stack for a multitude of reasons, but it can often be confusing to work with. Here we'll dive into my favourite way to use Docker containers and explain every step .
+- [Re-reading my old blogs](https://www.mizouzie.dev/articles/re-reading-old-blogs/index.md): Having finally made a site to house my own work, using old material from a year ago had some unexpected benefits.
+- [-r(ead)w(rite)x(ecute): Documentation](https://www.mizouzie.dev/articles/rwx/index.md): I wrote a big piece of documentation recently. Here's how it drastically improved my developer flow.
+- [L.I.F.T - the anti-advice that could save you](https://www.mizouzie.dev/articles/l-i-f-t/index.md): It's not bad advice when I say Leave It For Tomorrow!
+- [Recognise struggle for what it is](https://www.mizouzie.dev/articles/recognise-struggle/index.md): It is what it is. Learn what you can.
+- [If it doesn't make sense, build a little version](https://www.mizouzie.dev/articles/build-a-little-version/index.md): Been a while since I wrote a longer article, so here's a longer article explaining what it is I have been doing. Basically levelling up a bit. Learning to build and building to learn!
+- [My Top 3 Benefits of Open Source Contribution](https://www.mizouzie.dev/articles/benefits-of-os/index.md): There are so many good things about Open Source, but here are my current top 3 from the perspective of an emerging developer
+- [Heroku vs Laravel (vs me...)](https://www.mizouzie.dev/articles/heroku-vs-laravel/index.md): Deploying a Laravel app on a (then) popular free hosting platform proved tricky, so here are the steps that no-one told me.
+- [Starting is one thing, STOPPING is another](https://www.mizouzie.dev/articles/know-when-to-stop/index.md): It is vitally important to keep track of yourself when working. Let's explore a few of the pitfalls.
+- [Why I'm glad I used QuickAdminPanel today](https://www.mizouzie.dev/articles/quickadminpanel/index.md): My first impression when using a third party tool to speed up the development process of a Laravel web app.
+- [How I just customised my featured link thumbnail](https://www.mizouzie.dev/articles/customised-featured-link-thumbnail/index.md): How to make sure that any thumbnail of a link shared to my page looked how I wanted it to.
+
+## Projects
+
+- [Blade Trick Randomiser](https://www.mizouzie.dev/projects/blade-trick-randomiser/index.md): A simple project to create a web app version of the classic roller blading game B.L.A.D.E., which turned into a huge learning opportunity
+- [AI as a Creator](https://www.mizouzie.dev/projects/ai-as-a-creator/index.md): A project using the bi-products of an ongoing AI application development.
+- [Go CLI User Input Experiment](https://www.mizouzie.dev/projects/go-input-gist/index.md): While building a CLI with Go, I ran a few little experiments without business logic to ensure that I was able to read user input exactly as expected.
+- [SEO Keyword Content Analysis](https://www.mizouzie.dev/projects/seo-keyword-content-analysis/index.md): This laravel application analyzes data gathered from your site and your competitor’s sites and gives you a comparative report to highlight where you are missing out on providing content that could help you to rank higher in search engine results. This is an example of the documentation I wrote during the development.
+- [Enkle Word Game](https://www.mizouzie.dev/projects/enkle-word-game/index.md): A game built using JavaScript based on the same concepts as Wordle. Designed to be customizable for my young son to enjoy.
+- [Energy Price News API](https://www.mizouzie.dev/projects/energy-price-news/index.md): A project to create a public API that scrapes news sites for anything concerning the changes in energy prices.
+
+## tl;dr
+
+- [The Prince](https://www.mizouzie.dev/tldr/the-prince/index.md): A user's guide to power, with morality filed under tools
+- [The Checklist Manifesto](https://www.mizouzie.dev/tldr/the-checklist-manifesto/index.md): Why expertise keeps failing at things it already knows, and how a bit of paper fixes it
+- [The Myth of Sisyphus](https://www.mizouzie.dev/tldr/the-myth-of-sisyphus/index.md): The essay The Stranger was the story of, starting from whether life is worth living at all
+- [Designing Data-Intensive Applications](https://www.mizouzie.dev/tldr/designing-data-intensive-applications/index.md): The book that explains what your database is actually doing and why it occasionally lies to you
+- [Emotional Intelligence](https://www.mizouzie.dev/tldr/emotional-intelligence/index.md): A compelling argument that how one manages emotions matters more to life's outcomes than raw intellectual ability
+- [Death's End](https://www.mizouzie.dev/tldr/deaths-end/index.md): The bill for every decision the first two books managed to put off, paid in full
+- [The Dark Forest](https://www.mizouzie.dev/tldr/the-dark-forest/index.md): What you do when the enemy is four hundred years out and you can't keep a single secret
+- [The Three-Body Problem](https://www.mizouzie.dev/tldr/the-three-body-problem/index.md): First contact, except the invitation was sent by someone who'd given up on humanity entirely
+- [Dopamine Nation](https://www.mizouzie.dev/tldr/dopamine-nation/index.md): A psychiatrist explains why more pleasure keeps making us feel worse, and what to do about it
+- [Why I Am So Clever](https://www.mizouzie.dev/tldr/why-i-am-so-clever/index.md): Nietzsche on diet, climate and what to read, which turns out to be the same subject as how to be yourself
+- [Seven Brief Lessons on Physics](https://www.mizouzie.dev/tldr/seven-brief-lessons-on-physics/index.md): Eighty pages that get from Einstein to quantum gravity without a single equation
+- [Atomic Habits](https://www.mizouzie.dev/tldr/atomic-habits/index.md): A systematic breakdown of how small repeated behaviours compound into who you become
+- [REWORK](https://www.mizouzie.dev/tldr/rework/index.md): A business book that mostly argues against doing the things business books tell you to do
+- [Learning Go](https://www.mizouzie.dev/tldr/learning-go/index.md): Idiomatic Go rather than a syntax tour, which is the harder and more useful book to write
+- [Lila](https://www.mizouzie.dev/tldr/lila/index.md): The sequel to the motorcycle one, trying to build an actual working system out of Quality
+- [The Plague](https://www.mizouzie.dev/tldr/the-plague/index.md): A town sealed off and a doctor who keeps working, mostly because the alternative is nothing
+- [The Machine Stops](https://www.mizouzie.dev/tldr/the-machine-stops/index.md): A man in 1909 describing video calls, on demand lectures and a species that has forgotten how to go outside
+- [The Earth Chronicles](https://www.mizouzie.dev/tldr/the-earth-chronicles/index.md): Sumerian tablets read as a literal record of visitors who came here to mine gold
+- [Sapiens](https://www.mizouzie.dev/tldr/sapiens/index.md): A unique perspective on the evolution of the human species, exploring the most beneficial characteristics
+- [Prisoners of Geography](https://www.mizouzie.dev/tldr/prisoners-of-geography/index.md): Ten maps arguing that leaders matter far less than rivers, mountains and where the ports are
+- [The Stranger](https://www.mizouzie.dev/tldr/the-stranger/index.md): A story of a man faced with absurdity in it's purest form and how he navigates it in simple terms
+- [The Road](https://www.mizouzie.dev/tldr/the-road/index.md): A father, a son, a shopping trolley, and no explanation of what happened
+- [No Country for Old Men](https://www.mizouzie.dev/tldr/no-country-for-old-men/index.md): A man takes a case of money he shouldn't have, and what comes after him doesn't negotiate
+
+## Optional
+
+- [About](https://www.mizouzie.dev/about/): An introduction to who I am and what you can find here

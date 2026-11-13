@@ -1,2 +1,4 @@
 User-agent: *
-Sitemap: sitemap.xml
+Disallow: /search/
+
+Sitemap: https://www.mizouzie.dev/sitemap.xml
