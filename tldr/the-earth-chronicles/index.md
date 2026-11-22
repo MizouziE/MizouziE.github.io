@@ -8,6 +8,8 @@ influence: "3.3/5"
 description: "Sumerian tablets read as a literal record of visitors who came here to mine gold"
 tags: ["ancient history","mythology"]
 related:
+  - title: "Guns, Germs and Steel"
+    url: https://www.mizouzie.dev/tldr/guns-germs-and-steel/index.md
   - title: "Sapiens"
     url: https://www.mizouzie.dev/tldr/sapiens/index.md
   - title: "Prisoners of Geography"

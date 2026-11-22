@@ -8,6 +8,8 @@ influence: "3.12/5"
 description: "Ten maps arguing that leaders matter far less than rivers, mountains and where the ports are"
 tags: ["geopolitics","geography","society"]
 related:
+  - title: "Guns, Germs and Steel"
+    url: https://www.mizouzie.dev/tldr/guns-germs-and-steel/index.md
   - title: "Sapiens"
     url: https://www.mizouzie.dev/tldr/sapiens/index.md
   - title: "The Trial"
@@ -16,8 +18,6 @@ related:
     url: https://www.mizouzie.dev/tldr/the-prince/index.md
   - title: "The Dark Forest"
     url: https://www.mizouzie.dev/tldr/the-dark-forest/index.md
-  - title: "The Three-Body Problem"
-    url: https://www.mizouzie.dev/tldr/the-three-body-problem/index.md
 ---
 
 # Prisoners of Geography

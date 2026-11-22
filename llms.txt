@@ -66,6 +66,7 @@
 - [The Plague](https://www.mizouzie.dev/tldr/the-plague/index.md): A town sealed off and a doctor who keeps working, mostly because the alternative is nothing
 - [The Machine Stops](https://www.mizouzie.dev/tldr/the-machine-stops/index.md): A man in 1909 describing video calls, on demand lectures and a species that has forgotten how to go outside
 - [The Earth Chronicles](https://www.mizouzie.dev/tldr/the-earth-chronicles/index.md): Sumerian tablets read as a literal record of visitors who came here to mine gold
+- [Guns, Germs and Steel](https://www.mizouzie.dev/tldr/guns-germs-and-steel/index.md): Why some continents ended up with all the cargo, answered with crops, livestock and which way the land runs
 - [Sapiens](https://www.mizouzie.dev/tldr/sapiens/index.md): A unique perspective on the evolution of the human species, exploring the most beneficial characteristics
 - [Prisoners of Geography](https://www.mizouzie.dev/tldr/prisoners-of-geography/index.md): Ten maps arguing that leaders matter far less than rivers, mountains and where the ports are
 - [The Stranger](https://www.mizouzie.dev/tldr/the-stranger/index.md): A story of a man faced with absurdity in it's purest form and how he navigates it in simple terms

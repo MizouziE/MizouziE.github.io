@@ -8,6 +8,8 @@ influence: "2.3/5"
 description: "A unique perspective on the evolution of the human species, exploring the most beneficial characteristics"
 tags: ["evolution","society","culture"]
 related:
+  - title: "Guns, Germs and Steel"
+    url: https://www.mizouzie.dev/tldr/guns-germs-and-steel/index.md
   - title: "Prisoners of Geography"
     url: https://www.mizouzie.dev/tldr/prisoners-of-geography/index.md
   - title: "The Trial"
@@ -16,8 +18,6 @@ related:
     url: https://www.mizouzie.dev/tldr/the-prince/index.md
   - title: "The Dark Forest"
     url: https://www.mizouzie.dev/tldr/the-dark-forest/index.md
-  - title: "The Three-Body Problem"
-    url: https://www.mizouzie.dev/tldr/the-three-body-problem/index.md
 ---
 
 # Sapiens

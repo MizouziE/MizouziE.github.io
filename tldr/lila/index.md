@@ -8,6 +8,8 @@ influence: "4.68/5"
 description: "The sequel to the motorcycle one, trying to build an actual working system out of Quality"
 tags: ["morality","culture"]
 related:
+  - title: "Guns, Germs and Steel"
+    url: https://www.mizouzie.dev/tldr/guns-germs-and-steel/index.md
   - title: "Sapiens"
     url: https://www.mizouzie.dev/tldr/sapiens/index.md
   - title: "The Road"
@@ -16,8 +18,6 @@ related:
     url: https://www.mizouzie.dev/tldr/no-country-for-old-men/index.md
   - title: "The Trial"
     url: https://www.mizouzie.dev/tldr/the-trial/index.md
-  - title: "The Prince"
-    url: https://www.mizouzie.dev/tldr/the-prince/index.md
 ---
 
 # Lila

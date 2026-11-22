@@ -14,6 +14,8 @@ related:
     url: https://www.mizouzie.dev/tldr/the-dark-forest/index.md
   - title: "The Three-Body Problem"
     url: https://www.mizouzie.dev/tldr/the-three-body-problem/index.md
+  - title: "Guns, Germs and Steel"
+    url: https://www.mizouzie.dev/tldr/guns-germs-and-steel/index.md
   - title: "Sapiens"
     url: https://www.mizouzie.dev/tldr/sapiens/index.md
 ---
