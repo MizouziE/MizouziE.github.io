@@ -10,14 +10,14 @@ tags: ["geopolitics","geography","society"]
 related:
   - title: "Sapiens"
     url: https://www.mizouzie.dev/tldr/sapiens/index.md
+  - title: "The Trial"
+    url: https://www.mizouzie.dev/tldr/the-trial/index.md
   - title: "The Prince"
     url: https://www.mizouzie.dev/tldr/the-prince/index.md
   - title: "The Dark Forest"
     url: https://www.mizouzie.dev/tldr/the-dark-forest/index.md
   - title: "The Three-Body Problem"
     url: https://www.mizouzie.dev/tldr/the-three-body-problem/index.md
-  - title: "The Plague"
-    url: https://www.mizouzie.dev/tldr/the-plague/index.md
 ---
 
 # Prisoners of Geography

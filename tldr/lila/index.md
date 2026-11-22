@@ -14,10 +14,10 @@ related:
     url: https://www.mizouzie.dev/tldr/the-road/index.md
   - title: "No Country for Old Men"
     url: https://www.mizouzie.dev/tldr/no-country-for-old-men/index.md
+  - title: "The Trial"
+    url: https://www.mizouzie.dev/tldr/the-trial/index.md
   - title: "The Prince"
     url: https://www.mizouzie.dev/tldr/the-prince/index.md
-  - title: "The Myth of Sisyphus"
-    url: https://www.mizouzie.dev/tldr/the-myth-of-sisyphus/index.md
 ---
 
 # Lila

@@ -16,8 +16,8 @@ related:
     url: https://www.mizouzie.dev/tldr/dopamine-nation/index.md
   - title: "Atomic Habits"
     url: https://www.mizouzie.dev/tldr/atomic-habits/index.md
-  - title: "The Prince"
-    url: https://www.mizouzie.dev/tldr/the-prince/index.md
+  - title: "The Trial"
+    url: https://www.mizouzie.dev/tldr/the-trial/index.md
 ---
 
 # Why I Am So Clever

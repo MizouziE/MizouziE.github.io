@@ -47,6 +47,7 @@
 
 ## tl;dr
 
+- [The Trial](https://www.mizouzie.dev/tldr/the-trial/index.md): A man is arrested and thrust into a pantomime of western legalism, all the while never being told what for
 - [The Prince](https://www.mizouzie.dev/tldr/the-prince/index.md): A user's guide to power, with morality filed under tools
 - [The Checklist Manifesto](https://www.mizouzie.dev/tldr/the-checklist-manifesto/index.md): Why expertise keeps failing at things it already knows, and how a bit of paper fixes it
 - [The Myth of Sisyphus](https://www.mizouzie.dev/tldr/the-myth-of-sisyphus/index.md): The essay The Stranger was the story of, starting from whether life is worth living at all

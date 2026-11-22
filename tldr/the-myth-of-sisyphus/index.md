@@ -12,12 +12,12 @@ related:
     url: https://www.mizouzie.dev/tldr/the-plague/index.md
   - title: "The Stranger"
     url: https://www.mizouzie.dev/tldr/the-stranger/index.md
+  - title: "The Trial"
+    url: https://www.mizouzie.dev/tldr/the-trial/index.md
   - title: "The Prince"
     url: https://www.mizouzie.dev/tldr/the-prince/index.md
   - title: "Why I Am So Clever"
     url: https://www.mizouzie.dev/tldr/why-i-am-so-clever/index.md
-  - title: "Lila"
-    url: https://www.mizouzie.dev/tldr/lila/index.md
 ---
 
 # The Myth of Sisyphus

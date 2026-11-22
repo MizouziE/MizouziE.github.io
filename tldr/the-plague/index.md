@@ -8,6 +8,8 @@ influence: "2.96/5"
 description: "A town sealed off and a doctor who keeps working, mostly because the alternative is nothing"
 tags: ["absurdism","existentialism","society"]
 related:
+  - title: "The Trial"
+    url: https://www.mizouzie.dev/tldr/the-trial/index.md
   - title: "The Myth of Sisyphus"
     url: https://www.mizouzie.dev/tldr/the-myth-of-sisyphus/index.md
   - title: "The Stranger"
@@ -16,8 +18,6 @@ related:
     url: https://www.mizouzie.dev/tldr/the-prince/index.md
   - title: "The Dark Forest"
     url: https://www.mizouzie.dev/tldr/the-dark-forest/index.md
-  - title: "The Three-Body Problem"
-    url: https://www.mizouzie.dev/tldr/the-three-body-problem/index.md
 ---
 
 # The Plague

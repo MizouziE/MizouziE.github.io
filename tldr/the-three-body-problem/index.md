@@ -14,10 +14,10 @@ related:
     url: https://www.mizouzie.dev/tldr/the-dark-forest/index.md
   - title: "The Machine Stops"
     url: https://www.mizouzie.dev/tldr/the-machine-stops/index.md
+  - title: "The Trial"
+    url: https://www.mizouzie.dev/tldr/the-trial/index.md
   - title: "The Prince"
     url: https://www.mizouzie.dev/tldr/the-prince/index.md
-  - title: "Seven Brief Lessons on Physics"
-    url: https://www.mizouzie.dev/tldr/seven-brief-lessons-on-physics/index.md
 ---
 
 # The Three-Body Problem

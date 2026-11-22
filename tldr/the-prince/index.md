@@ -8,6 +8,8 @@ influence: "3.92/5"
 description: "A user's guide to power, with morality filed under tools"
 tags: ["politics","society"]
 related:
+  - title: "The Trial"
+    url: https://www.mizouzie.dev/tldr/the-trial/index.md
   - title: "The Plague"
     url: https://www.mizouzie.dev/tldr/the-plague/index.md
   - title: "The Dark Forest"
@@ -16,8 +18,6 @@ related:
     url: https://www.mizouzie.dev/tldr/the-three-body-problem/index.md
   - title: "The Machine Stops"
     url: https://www.mizouzie.dev/tldr/the-machine-stops/index.md
-  - title: "Sapiens"
-    url: https://www.mizouzie.dev/tldr/sapiens/index.md
 ---
 
 # The Prince

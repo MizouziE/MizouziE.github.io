@@ -10,14 +10,14 @@ tags: ["evolution","society","culture"]
 related:
   - title: "Prisoners of Geography"
     url: https://www.mizouzie.dev/tldr/prisoners-of-geography/index.md
+  - title: "The Trial"
+    url: https://www.mizouzie.dev/tldr/the-trial/index.md
   - title: "The Prince"
     url: https://www.mizouzie.dev/tldr/the-prince/index.md
   - title: "The Dark Forest"
     url: https://www.mizouzie.dev/tldr/the-dark-forest/index.md
   - title: "The Three-Body Problem"
     url: https://www.mizouzie.dev/tldr/the-three-body-problem/index.md
-  - title: "Lila"
-    url: https://www.mizouzie.dev/tldr/lila/index.md
 ---
 
 # Sapiens
