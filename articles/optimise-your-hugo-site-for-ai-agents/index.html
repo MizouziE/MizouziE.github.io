@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Optimise Your Hugo Site for AI Agents | web with mizouzie</title>
+<meta name="keywords" content="hugo, no build, artificial intelligence" />
+<script src="https://cdn.jsdelivr.net/gh/manucaralmo/GlowCookies@3.1.7/src/glowCookies.min.js"></script>
+<script>
+    glowCookies.start('en', { 
+        style: 2,
+        analytics: "G-3GS3F0HJ0N", 
+        hideAfterClick: true,
+        policyLink: '/privacy-policy',
+        bannerDescription: '<p align="center">As I am a web developer, I use cookies to learn about ways to make this site better, nothing sinister.</p><br><p align="center">However, feel free to disable them here.</p>',
+        bannerLinkText: '<p align="center">Read Privacy policy<p>',
+        bannerHeading: '<h2 align="center">Cookies</h2>',
+        acceptBtnText: 'Accept',
+        acceptBtnColor: '#097969',
+        acceptBtnBackground: '#ECFFDC',
+        rejectBtnText: 'Disable',
+        rejectBtnBackground: '#cd5c5c',
+        rejectBtnColor: '#880808'
+    });
+</script>
+<meta name="google-site-verification" content="psw8-5863N9APj0ZK5Lg3BMygE0vQEYIB7q2uJq-FPo" />
+<meta property="og:image" content="https://www.mizouzie.dev/images/agent-loves-clean-markdown.webp">
+<meta property="og:image:width" content="1672">
+<meta property="og:image:height" content="941">
+<meta property="og:title" content="Optimise Your Hugo Site for AI Agents | web with mizouzie">
+<meta name="og:description" content="If you have used a Hugo generated static site to record your thoughts, it&#39;s easy to modernise and make it accessible to LLM agents">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.mizouzie.dev/articles/optimise-your-hugo-site-for-ai-agents/">
+<meta property="twitter:title" content="Optimise Your Hugo Site for AI Agents | web with mizouzie">
+<meta name="twitter:description" content="If you have used a Hugo generated static site to record your thoughts, it&#39;s easy to modernise and make it accessible to LLM agents">
+<meta property="twitter:image" content="https://www.mizouzie.dev/images/agent-loves-clean-markdown.webp">
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:site" content="@mizouzie">
+<meta property="twitter:creator" content="@mizouzie">
+<meta name="description" content="If you have used a Hugo generated static site to record your thoughts, it&#39;s easy to modernise and make it accessible to LLM agents">
+<meta name="author" content="Sam Anglin">
+<link rel="canonical" href="https://www.mizouzie.dev/articles/optimise-your-hugo-site-for-ai-agents/" />
+      <link rel="stylesheet" href="/css/about.min.18edcb8cec83177e608ae70124de05a34b3f1d26ce8278837b62a6641e537bdf.css" integrity="sha256-GO3LjOyDF35giucBJN4Fo0s/HSbOgniDe2KmZB5Te98=" crossorigin="anonymous">
+      <link rel="stylesheet" href="/css/code-blocks.min.14f90cca99e3382631c3f0f81c55f6522a065b2d92f1ec496eeda196cd90cbc9.css" integrity="sha256-FPkMypnjOCYxw/D4HFX2UioGWy2S8exJbu2hls2Qy8k=" crossorigin="anonymous">
+      <link rel="stylesheet" href="/css/custom.min.722ce597efeb832fc1a77a046ecaa6c774618e0435ee24264823847607d615a4.css" integrity="sha256-cizll&#43;/rgy/Bp3oEbsqmx3RhjgQ17iQmSCOEdgfWFaQ=" crossorigin="anonymous">
+      <link rel="stylesheet" href="/css/share-buttons.min.0ec86ea02de65aaad22a24618a496f925c7f09bad5044990846c4c9d46d3f6aa.css" integrity="sha256-DshuoC3mWqrSKiRhiklvklx/CbrVBEmQhGxMnUbT9qo=" crossorigin="anonymous">
+      <link rel="stylesheet" href="/css/root.min.7a7624df7efd96a9ee34013485b611b6c852e6a4835c3d476a485bbde7f23978.css" integrity="sha256-enYk3379lqnuNAE0hbYRtshS5qSDXD1HakhbvefyOXg=" crossorigin="anonymous">
+      <link rel="stylesheet" href="/css/bundle.min.e735cd1c41e6b7ba15433438fa484f2804322027ee8348fcff2adbf14976ce28.css" integrity="sha256-5zXNHEHmt7oVQzQ4&#43;khPKAQyICfug0j8/yrb8Ul2zig=" crossorigin="anonymous">
+
+      <script src="/js/main.a67363d931941ba3c0feb9ff74a8e824a37f8a1623f7eabd23a0fc4e7a4919fc.js" integrity="sha256-pnNj2TGUG6PA/rn/dKjoJKN/ihYj9&#43;q9I6D8TnpJGfw=" crossorigin="anonymous"></script>
+      <script src="/js/bundle.cc8ae9952dbfb731affafabdf26e5c60a6910047ff59ccdeaf1daebaa26c8830.js" integrity="sha256-zIrplS2/tzGv&#43;vq98m5cYKaRAEf/Wczerx2uuqJsiDA=" crossorigin="anonymous"></script><script defer src="/js/search/flexsearch.compact.3928d3d2172bc0b5f75d9458fb9255f0befce1c7239ba6e5d2c58ed4b82c2073.js" integrity="sha256-OSjT0hcrwLX3XZRY&#43;5JV8L784ccjm6bl0sWO1LgsIHM="></script>
+<script defer src="/js/search/search.221545f425507db36bacce69b81457d3a83ecea5140ee7ecb6fc130736d5021f.js" integrity="sha256-IhVF9CVQfbNrrM5puBRX06g&#43;zqUUDufstvwTBzbVAh8="></script>
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+<link rel="icon" href="https://www.mizouzie.dev/images/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://www.mizouzie.dev/images/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://www.mizouzie.dev/images/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://www.mizouzie.dev/images/apple-touch-icon.png">
+<link rel="mask-icon" href="https://www.mizouzie.dev/images/apple-touch-icon.png">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="text/markdown" href="https://www.mizouzie.dev/articles/optimise-your-hugo-site-for-ai-agents/index.md">
+<link rel="describedby" href="https://www.mizouzie.dev/llms.txt">
+<link rel="alternate" hreflang="en" href="https://www.mizouzie.dev/articles/optimise-your-hugo-site-for-ai-agents/" />
+
+</head>
+<body class="notransition">
+  <div id="container">
+    <header id="main-header"><div role="navigation" aria-label="Main">
+  <div class="nav-left">
+    <a href="https://www.mizouzie.dev/" style="color: inherit;">web with mizouzie</a>
+  </div>
+  <div class="nav-right">
+    <div style="position:absolute;width:0px;height:0px;">
+      <div id="nav-dropdown-menu" class="hidden" href="#">
+    <div class="nav-item">
+      <a href="/articles/"
+      >Articles</a>
+    </div>
+    <div class="nav-item">
+      <a href="/categories/"
+      >Categories</a>
+    </div>
+    <div class="nav-item">
+      <a href="/projects/"
+      >Projects</a>
+    </div>
+    <div class="nav-item">
+      <a href="/tldr/"
+      >tl;dr</a>
+    </div>
+    <div class="nav-item">
+      <a href="/contact/"
+      >Contact</a>
+    </div>
+</div>
+    </div>
+    <a id="nav-dropdown-button" href="#"><svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 6H20M4 12H20M4 18H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</a>
+    <div id="nav-menu">
+    <div class="nav-item">
+      <a href="/articles/"
+      >Articles</a>
+    </div>
+    <div class="nav-item">
+      <a href="/categories/"
+      >Categories</a>
+    </div>
+    <div class="nav-item">
+      <a href="/projects/"
+      >Projects</a>
+    </div>
+    <div class="nav-item">
+      <a href="/tldr/"
+      >tl;dr</a>
+    </div>
+    <div class="nav-item">
+      <a href="/contact/"
+      >Contact</a>
+    </div>
+</div>
+    <a id="theme-switcher" href="#">
+<svg class="light-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 3V4M12 20V21M4 12H3M6.31412 6.31412L5.5 5.5M17.6859 6.31412L18.5 5.5M6.31412 17.69L5.5 18.5001M17.6859 17.69L18.5 18.5001M21 12H20M16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+<svg class="dark-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.32031 11.6835C3.32031 16.6541 7.34975 20.6835 12.3203 20.6835C16.1075 20.6835 19.3483 18.3443 20.6768 15.032C19.6402 15.4486 18.5059 15.6834 17.3203 15.6834C12.3497 15.6834 8.32031 11.654 8.32031 6.68342C8.32031 5.50338 8.55165 4.36259 8.96453 3.32996C5.65605 4.66028 3.32031 7.89912 3.32031 11.6835Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</a>
+  </div>
+</div>
+</header>
+    <div class="flex grow">
+      <div id="main-pane">
+        <main id="main-content"><div class="single-header">
+<ol class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <a itemprop="item" href="https://www.mizouzie.dev/">
+        <span itemprop="name">Home</span>
+      </a>
+      <meta itemprop="position" content='1' />
+    </li>
+    <span>&nbsp»&nbsp</span>
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <a itemprop="item" href="https://www.mizouzie.dev/articles/">
+        <span itemprop="name">Articles</span>
+      </a>
+      <meta itemprop="position" content='2' />
+    </li>
+    <span>&nbsp»&nbsp</span>
+</ol>
+<h1>Optimise Your Hugo Site for AI Agents</h1><time class="dim" datetime="2026-11-24T00:00:00&#43;00:00">November 24, 2026</time><div class="term-container"><div class="tag">
+        <a href="https://www.mizouzie.dev/tags/hugo/">#hugo</a>
+      </div><div class="tag">
+        <a href="https://www.mizouzie.dev/tags/no-build/">#no build</a>
+      </div><div class="tag">
+        <a href="https://www.mizouzie.dev/tags/artificial-intelligence/">#artificial intelligence</a>
+      </div></ol></div>
+  <section class="page-section"><img loading="lazy"
+    src="/images/agent-loves-clean-markdown_hu_6592994e2848a5bd.webp"
+    srcset="/images/agent-loves-clean-markdown_hu_2d20de1f80a8dc5b.webp 350w, /images/agent-loves-clean-markdown_hu_c91cebf07134021c.webp 736w, /images/agent-loves-clean-markdown_hu_6592994e2848a5bd.webp 1472w"
+    sizes="(min-width: 768px) 736px, 100vw"
+    width="1472"
+    height="828"
+    
+    alt="A happy robot hugging a gift box labelled Clean Markdown Content, next to a table of token savings, rwx 6k to 1.3k (79%), MySQL tutorial 15k to 4.8k (68%), The Road 6.4k to 350 (94%)"
+    />
+<p>With the rapid improvement and adoption of AI, I would argue that it makes perfect sense to optimise things for agentic usage. When a blog, like this one for example, is optimised, it can not only make it clearer for our silicon based friends, but also save some tokens along the way. This article walks you through the steps that I took to make all the useful content on this site ready for LLM consumption.</p>
+<h2 id="the-goal">The goal</h2>
+<ul>
+<li>a clean markdown copy of every post, sitting next to its HTML at <code>&lt;permalink&gt;index.md</code></li>
+<li>each HTML page pointing at its copy from the <code>&lt;head&gt;</code></li>
+<li>one <code>/llms.txt</code> index of the whole site, linking to those copies</li>
+<li>nothing to install, Hugo can do all of it out of the box</li>
+</ul>
+<h2 id="what-is-readily-available">What is readily available?</h2>
+<p>Hugo already ships a markdown output format that fits the bill perfectly. Sure, there are some modules that suit more complex site structures, but for a simple blog like this one, the built in Hugo features are perfect.</p>
+<ul>
+<li><code>baseName</code> is <code>index</code></li>
+<li>media type <code>text/markdown</code></li>
+<li>plain text</li>
+<li><code>rel</code> is <code>alternate</code></li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">hugo config --format json <span class="p">|</span> jq -c <span class="s1">&#39;.outputformats.markdown&#39;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span><span class="nt">&#34;basename&#34;</span><span class="p">:</span><span class="s2">&#34;index&#34;</span><span class="p">,</span><span class="nt">&#34;isplaintext&#34;</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="nt">&#34;mediatype&#34;</span><span class="p">:</span><span class="s2">&#34;text/markdown&#34;</span><span class="p">,</span><span class="nt">&#34;rel&#34;</span><span class="p">:</span><span class="s2">&#34;alternate&#34;</span><span class="p">}</span>
+</span></span></code></pre></div><p>It&rsquo;s a case of switching it on for regular pages (like articles) in the site config. Be sure to only touch <strong>page</strong> though, as the list pages will not require the additional output. Instead, we&rsquo;ll provide a whole list up front to the LLMs in their own index home page. <a href="#index-the-whole-site">But more on that below</a>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">outputs</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">page</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="l">HTML</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="l">markdown</span><span class="w">
+</span></span></span></code></pre></div><blockquote>
+<p>WATCH OUT!</p>
+<p><code>outputs</code> for a page kind <em>replaces</em> Hugo&rsquo;s defaults rather than adding to them, so make sure to leave <code>HTML</code> in the list or the normal pages vanish</p>
+</blockquote>
+<h2 id="where-the-template-goes">Where the template goes</h2>
+<p>Depending on your version (you should really be using the most up to date&hellip; security these days is a bit scary!):</p>
+<ul>
+<li>newer Hugo layout naming, <code>layouts/single.md</code></li>
+<li>older naming, <code>layouts/_default/single.md</code></li>
+<li><code>.Permalink</code> inside it still gives the HTML URL, handy for a <code>url</code> field</li>
+</ul>
+<h2 id="the-markdown-template">The markdown template</h2>
+<ol>
+<li>Front matter first, strings through <code>jsonify</code> so titles with quotes, colons or backslashes stay valid YAML</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go-text-template" data-lang="go-text-template"><span class="line"><span class="cl"><span class="cp">{{-</span><span class="w"> </span><span class="nx">$json</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">dict</span><span class="w"> </span><span class="s">&#34;noHTMLEscape&#34;</span><span class="w"> </span><span class="k">true</span><span class="w"> </span><span class="cp">-}}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">---
+</span></span></span><span class="line"><span class="cl"><span class="x">title: </span><span class="cp">{{</span><span class="w"> </span><span class="na">.Title</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nx">jsonify</span><span class="w"> </span><span class="nx">$json</span><span class="w"> </span><span class="cp">}}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">url: </span><span class="cp">{{</span><span class="w"> </span><span class="na">.Permalink</span><span class="w"> </span><span class="cp">}}</span><span class="x">
+</span></span></span></code></pre></div><ul>
+<li><code>noHTMLEscape</code> is very important here because without it <code>jsonify</code> will turn characters like <code>&amp;</code> and <code>&lt;</code> into unicode escapes</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-txt" data-lang="txt"><span class="line"><span class="cl">default: &#34;Q\u0026A \u003ctips\u003e&#34;
+</span></span><span class="line"><span class="cl">noHTMLEscape: &#34;Q&amp;A &lt;tips&gt;&#34;
+</span></span></code></pre></div><ol start="2">
+<li>Body, the obvious choice is <code>.RawContent</code>, but that leaves shortcodes as raw <code>{{&lt; ... &gt;}}</code> syntax, noise for anything reading it</li>
+</ol>
+<ul>
+<li><code>.RenderShortcodes</code> runs the shortcodes but leaves the rest of the markdown alone</li>
+<li>Note: this requires Hugo v0.117 or above</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go-text-template" data-lang="go-text-template"><span class="line"><span class="cl"><span class="x"># </span><span class="cp">{{</span><span class="w"> </span><span class="na">.Title</span><span class="w"> </span><span class="cp">}}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="cp">{{</span><span class="w"> </span><span class="na">.RenderShortcodes</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nx">strings</span><span class="na">.TrimSpace</span><span class="w"> </span><span class="cp">}}</span><span class="x">
+</span></span></span></code></pre></div><ol start="3">
+<li>Shortcodes can have a template per output format. For example, a custom image shortcode can get an <code>img.md</code> next to its <code>img.html</code></li>
+</ol>
+<ul>
+<li>the HTML pages keep their full <code>&lt;img&gt;</code>, the markdown copies get a plain markdown image with an absolute URL</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go-text-template" data-lang="go-text-template"><span class="line"><span class="cl"><span class="x">![</span><span class="cp">{{</span><span class="w"> </span><span class="na">.Get</span><span class="w"> </span><span class="s">&#34;alt&#34;</span><span class="w"> </span><span class="cp">}}</span><span class="x">](</span><span class="cp">{{</span><span class="w"> </span><span class="k">printf</span><span class="w"> </span><span class="s">&#34;/%s&#34;</span><span class="w"> </span><span class="o">(</span><span class="na">.Get</span><span class="w"> </span><span class="s">&#34;src&#34;</span><span class="o">)</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nx">absURL</span><span class="w"> </span><span class="cp">}}</span><span class="x">)
+</span></span></span></code></pre></div><ul>
+<li>so <code>{{&lt; img src=&quot;images/rwx.jpeg&quot; alt=&quot;working on a laptop&quot; &gt;}}</code> comes out as</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">![<span class="nt">working on a laptop</span>](<span class="na">https://www.mizouzie.dev/images/rwx.jpeg</span>)
+</span></span></code></pre></div><ul>
+<li>built in shortcodes like <code>{{&lt; param &gt;}}</code> just work</li>
+</ul>
+<h2 id="point-to-related-links">Point to related links</h2>
+<p>The main bit of polish I wanted to add was making sure the related links showed up for the LLMs too, similar to how my site theme renders them automatically for the HTML output. At first I had just tacked them on at the end with a <code>## Related Links</code> heading, but they looked like an extension of the article, which they were not. Seeing as the <code>.md</code> versions were a super stripped down version of the theme generated pages, I found it best if the related links went in the front matter, not the body. I would imagine this approach would suit a number of applications.</p>
+<ul>
+<li>front matter is the boundary most markdown tools and models already read as &ldquo;about this document&rdquo;</li>
+<li>body stays exactly what I wrote as that is the <strong>content</strong>, so a summary or quote won&rsquo;t sweep the links in</li>
+<li>uses Hugo&rsquo;s related content, the same lookup as a Related list on the HTML page</li>
+<li>links point at the related pages&rsquo; own <code>index.md</code>, so an agent can keep following markdown</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go-text-template" data-lang="go-text-template"><span class="line"><span class="cl"><span class="cp">{{-</span><span class="w"> </span><span class="k">with</span><span class="w"> </span><span class="nx">site</span><span class="na">.RegularPages.Related</span><span class="w"> </span><span class="na">.</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nx">first</span><span class="w"> </span><span class="nx">5</span><span class="w"> </span><span class="cp">}}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">related:
+</span></span></span><span class="line"><span class="cl"><span class="cp">{{-</span><span class="w"> </span><span class="k">range</span><span class="w"> </span><span class="na">.</span><span class="w"> </span><span class="cp">}}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">  - title: </span><span class="cp">{{</span><span class="w"> </span><span class="na">.Title</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nx">jsonify</span><span class="w"> </span><span class="nx">$json</span><span class="w"> </span><span class="cp">}}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">    url: </span><span class="cp">{{</span><span class="w"> </span><span class="k">with</span><span class="w"> </span><span class="na">.OutputFormats.Get</span><span class="w"> </span><span class="s">&#34;markdown&#34;</span><span class="w"> </span><span class="cp">}}{{</span><span class="w"> </span><span class="na">.Permalink</span><span class="w"> </span><span class="cp">}}{{</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="cp">}}{{</span><span class="w"> </span><span class="na">.Permalink</span><span class="w"> </span><span class="cp">}}{{</span><span class="w"> </span><span class="k">end</span><span class="w"> </span><span class="cp">}}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="cp">{{-</span><span class="w"> </span><span class="k">end</span><span class="w"> </span><span class="cp">}}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="cp">{{-</span><span class="w"> </span><span class="k">end</span><span class="w"> </span><span class="cp">}}</span><span class="x">
+</span></span></span></code></pre></div><h2 id="the-whole-markdown-template">The whole markdown template</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go-text-template" data-lang="go-text-template"><span class="line"><span class="cl"><span class="cp">{{-</span><span class="w"> </span><span class="nx">$json</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">dict</span><span class="w"> </span><span class="s">&#34;noHTMLEscape&#34;</span><span class="w"> </span><span class="k">true</span><span class="w"> </span><span class="cp">-}}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">---
+</span></span></span><span class="line"><span class="cl"><span class="x">title: </span><span class="cp">{{</span><span class="w"> </span><span class="na">.Title</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nx">jsonify</span><span class="w"> </span><span class="nx">$json</span><span class="w"> </span><span class="cp">}}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">url: </span><span class="cp">{{</span><span class="w"> </span><span class="na">.Permalink</span><span class="w"> </span><span class="cp">}}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">date: </span><span class="cp">{{</span><span class="w"> </span><span class="na">.Date.Format</span><span class="w"> </span><span class="s">&#34;2006-01-02&#34;</span><span class="w"> </span><span class="cp">}}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="cp">{{-</span><span class="w"> </span><span class="k">with</span><span class="w"> </span><span class="k">or</span><span class="w"> </span><span class="na">.Description</span><span class="w"> </span><span class="na">.Params.summary</span><span class="w"> </span><span class="cp">}}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">description: </span><span class="cp">{{</span><span class="w"> </span><span class="na">.</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nx">jsonify</span><span class="w"> </span><span class="nx">$json</span><span class="w"> </span><span class="cp">}}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="cp">{{-</span><span class="w"> </span><span class="k">end</span><span class="w"> </span><span class="cp">}}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="cp">{{-</span><span class="w"> </span><span class="k">with</span><span class="w"> </span><span class="na">.Params.tags</span><span class="w"> </span><span class="cp">}}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">tags: </span><span class="cp">{{</span><span class="w"> </span><span class="na">.</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nx">jsonify</span><span class="w"> </span><span class="nx">$json</span><span class="w"> </span><span class="cp">}}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="cp">{{-</span><span class="w"> </span><span class="k">end</span><span class="w"> </span><span class="cp">}}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="cp">{{-</span><span class="w"> </span><span class="k">with</span><span class="w"> </span><span class="nx">site</span><span class="na">.RegularPages.Related</span><span class="w"> </span><span class="na">.</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nx">first</span><span class="w"> </span><span class="nx">5</span><span class="w"> </span><span class="cp">}}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">related:
+</span></span></span><span class="line"><span class="cl"><span class="cp">{{-</span><span class="w"> </span><span class="k">range</span><span class="w"> </span><span class="na">.</span><span class="w"> </span><span class="cp">}}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">  - title: </span><span class="cp">{{</span><span class="w"> </span><span class="na">.Title</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nx">jsonify</span><span class="w"> </span><span class="nx">$json</span><span class="w"> </span><span class="cp">}}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">    url: </span><span class="cp">{{</span><span class="w"> </span><span class="k">with</span><span class="w"> </span><span class="na">.OutputFormats.Get</span><span class="w"> </span><span class="s">&#34;markdown&#34;</span><span class="w"> </span><span class="cp">}}{{</span><span class="w"> </span><span class="na">.Permalink</span><span class="w"> </span><span class="cp">}}{{</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="cp">}}{{</span><span class="w"> </span><span class="na">.Permalink</span><span class="w"> </span><span class="cp">}}{{</span><span class="w"> </span><span class="k">end</span><span class="w"> </span><span class="cp">}}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="cp">{{-</span><span class="w"> </span><span class="k">end</span><span class="w"> </span><span class="cp">}}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="cp">{{-</span><span class="w"> </span><span class="k">end</span><span class="w"> </span><span class="cp">}}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">---
+</span></span></span><span class="line"><span class="cl"><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x"># </span><span class="cp">{{</span><span class="w"> </span><span class="na">.Title</span><span class="w"> </span><span class="cp">}}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="cp">{{</span><span class="w"> </span><span class="na">.RenderShortcodes</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nx">strings</span><span class="na">.TrimSpace</span><span class="w"> </span><span class="cp">}}</span><span class="x">
+</span></span></span></code></pre></div><ul>
+<li>what a post&rsquo;s copy ends up looking like</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl"><span class="nn">---</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;-r(ead)w(rite)x(ecute): Documentation&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="l">https://www.mizouzie.dev/articles/rwx/</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nt">date</span><span class="p">:</span><span class="w"> </span><span class="ld">2022-08-09</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;I wrote a big piece of documentation recently. Here&#39;s how it drastically improved my developer flow.&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nt">tags</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&#34;web dev&#34;</span><span class="p">,</span><span class="s2">&#34;documentation&#34;</span><span class="p">,</span><span class="s2">&#34;learning&#34;</span><span class="p">]</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nt">related</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;Code Block Click Copy&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="l">https://www.mizouzie.dev/articles/code-block-click-copy/index.md</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;Tum | Modo | Postea&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="l">https://www.mizouzie.dev/articles/then-now-after/index.md</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="c"># ...three more</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nn">---</span><span class="w">
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="gh"># -r(ead)w(rite)x(ecute): Documentation
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">![<span class="nt">working on a laptop</span>](<span class="na">https://www.mizouzie.dev/images/rwx.jpeg</span>)
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">I&#39;ve hit a year now working as part of a development team with PHP and Laravel...
+</span></span></code></pre></div><h2 id="pointing-each-page-at-its-copy">Pointing each page at its copy</h2>
+<ul>
+<li><code>&lt;link rel=&quot;alternate&quot; type=&quot;text/markdown&quot;&gt;</code> in the <code>&lt;head&gt;</code>, so anything landing on the HTML can find the clean version</li>
+<li>if your head partial already loops over <code>.AlternativeOutputFormats</code> (lots of themes do, for RSS) you get it for free, otherwise add the loop</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="line"><span class="cl"><span class="cp">{{</span><span class="w"> </span><span class="k">range</span><span class="w"> </span><span class="na">.AlternativeOutputFormats</span><span class="w"> </span><span class="cp">-}}</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;</span><span class="cp">{{</span><span class="w"> </span><span class="na">.Rel</span><span class="w"> </span><span class="cp">}}</span><span class="s">&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;</span><span class="cp">{{</span><span class="w"> </span><span class="na">.MediaType.Type</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="k">html</span><span class="w"> </span><span class="cp">}}</span><span class="s">&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;</span><span class="cp">{{</span><span class="w"> </span><span class="na">.Permalink</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nx">safeURL</span><span class="w"> </span><span class="cp">}}</span><span class="s">&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="cp">{{</span><span class="w"> </span><span class="k">end</span><span class="w"> </span><span class="cp">-}}</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;alternate&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text/markdown&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://www.mizouzie.dev/articles/rwx/index.md&#34;</span><span class="p">&gt;</span>
+</span></span></code></pre></div><h2 id="index-the-whole-site">Index the whole site</h2>
+<ul>
+<li>the <a href="https://llmstxt.org/">llmstxt.org</a> proposal sets out a single file at <code>/llms.txt</code> listing everything on a site worth an agent&rsquo;s time</li>
+<li><code>index.md</code> next to <code>index.html</code> is one of the forms it accepts for pages without a file name in the URL, so the copies above already fit</li>
+<li>an H1 with the site name is the only required part, after that a blockquote summary and H2 sections of <code>- [name](url): notes</code> lists</li>
+<li>a <code>## Optional</code> section, by convention, holds links an agent can skip when it&rsquo;s short on context</li>
+</ul>
+<ol>
+<li>A custom output format, switched on for the home page</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">outputFormats</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">llms</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">baseName</span><span class="p">:</span><span class="w"> </span><span class="l">llms</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">mediaType</span><span class="p">:</span><span class="w"> </span><span class="l">text/plain</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">isPlainText</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">notAlternative</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nt">outputs</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">home</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="l">HTML</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="l">RSS</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="l">llms</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">page</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="l">HTML</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="l">markdown</span><span class="w">
+</span></span></span></code></pre></div><ul>
+<li><code>notAlternative: true</code> keeps it out of the home page&rsquo;s <code>&lt;link rel=&quot;alternate&quot;&gt;</code> tags, as it&rsquo;s an index of the site rather than another copy of the home page</li>
+</ul>
+<blockquote>
+<p>Same WATCH OUT! as before</p>
+<p><code>home</code> outputs replace the defaults, so keep <code>HTML</code> and <code>RSS</code> in there</p>
+</blockquote>
+<ol start="2">
+<li>The template, newer naming <code>layouts/home.llms.txt</code>, older naming <code>layouts/index.llms.txt</code></li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go-text-template" data-lang="go-text-template"><span class="line"><span class="cl"><span class="x"># </span><span class="cp">{{</span><span class="w"> </span><span class="nx">site</span><span class="na">.Title</span><span class="w"> </span><span class="cp">}}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="cp">{{</span><span class="w"> </span><span class="k">with</span><span class="w"> </span><span class="nx">site</span><span class="na">.Params.description</span><span class="w"> </span><span class="cp">}}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">&gt; </span><span class="cp">{{</span><span class="w"> </span><span class="na">.</span><span class="w"> </span><span class="cp">}}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="cp">{{</span><span class="w"> </span><span class="k">end</span><span class="w"> </span><span class="cp">}}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">## Articles
+</span></span></span><span class="line"><span class="cl"><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="cp">{{</span><span class="w"> </span><span class="k">range</span><span class="w"> </span><span class="nx">where</span><span class="w"> </span><span class="nx">site</span><span class="na">.RegularPages</span><span class="w"> </span><span class="s">&#34;Section&#34;</span><span class="w"> </span><span class="s">&#34;articles&#34;</span><span class="w"> </span><span class="cp">-}}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">- [</span><span class="cp">{{</span><span class="w"> </span><span class="na">.Title</span><span class="w"> </span><span class="cp">}}</span><span class="x">](</span><span class="cp">{{</span><span class="w"> </span><span class="k">with</span><span class="w"> </span><span class="na">.OutputFormats.Get</span><span class="w"> </span><span class="s">&#34;markdown&#34;</span><span class="w"> </span><span class="cp">}}{{</span><span class="w"> </span><span class="na">.Permalink</span><span class="w"> </span><span class="cp">}}{{</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="cp">}}{{</span><span class="w"> </span><span class="na">.Permalink</span><span class="w"> </span><span class="cp">}}{{</span><span class="w"> </span><span class="k">end</span><span class="w"> </span><span class="cp">}}</span><span class="x">)
+</span></span></span><span class="line"><span class="cl"><span class="cp">{{-</span><span class="w"> </span><span class="k">with</span><span class="w"> </span><span class="na">.Description</span><span class="w"> </span><span class="cp">}}</span><span class="x">: </span><span class="cp">{{</span><span class="w"> </span><span class="na">.</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nx">plainify</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nx">replaceRE</span><span class="w"> </span><span class="s">`\s+`</span><span class="w"> </span><span class="s">&#34; &#34;</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nx">strings</span><span class="na">.TrimSpace</span><span class="w"> </span><span class="cp">}}{{</span><span class="w"> </span><span class="k">end</span><span class="w"> </span><span class="cp">}}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="cp">{{</span><span class="w"> </span><span class="k">end</span><span class="w"> </span><span class="cp">-}}</span><span class="x">
+</span></span></span></code></pre></div><ul>
+<li>swap <code>articles</code> for whatever your section is called, and point the blockquote at wherever your config keeps a site description</li>
+<li>links go to the <code>index.md</code> copies, using the same <code>.OutputFormats.Get &quot;markdown&quot;</code> trick as the related links</li>
+<li><code>replaceRE</code> squashes a description that runs over several lines onto one, so each item stays a single list line</li>
+<li>pages come out newest first without any sorting, as that&rsquo;s Hugo&rsquo;s default order</li>
+</ul>
+<h2 id="check-the-output">Check the output</h2>
+<p>While you decide exactly what you want included in your agent friendly pages, it&rsquo;s simple enough to see what is generated, the same way you&rsquo;d check how your articles render as you&rsquo;re writing them. Generate your site and have a peek:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">hugo -D
+</span></span><span class="line"><span class="cl">cat public/articles/&lt;your-post&gt;/index.md
+</span></span><span class="line"><span class="cl">cat public/llms.txt
+</span></span></code></pre></div><p>Or, simpler still with <code>hugo server -D</code> running, open <code>http://localhost:1313/articles/&lt;your-post&gt;/index.md</code>.</p>
+<h2 id="to-wrap-up">To wrap up</h2>
+<p>With just those few little tweaks, your whole static site just got an upgrade and became more accessible to LLMs. Seeing as I&rsquo;ve already been through all this with this site, why not point your agent at <a href="https://www.mizouzie.dev/articles/optimise-your-hugo-site-for-ai-agents/index.md">this page&rsquo;s <code>index.md</code></a> and tell it to have a crack at your site?</p>
+<p>I&rsquo;ve found it quite helpful in my day to day work too, because I can treat my whole site as a knowledge base (I did before anyway, just now it costs far fewer tokens!) and when I come across something in my work that I have tackled before, I can point my agent at how I wrote up the way I like it done. Also it&rsquo;s served me well in self-reflection because I can get it to scan, quite quickly, through all my articles and it gets a pretty good picture of my career progression, so I dare say it&rsquo;s even helped me set my own goals more clearly.</p>
+<p>All in all, it depends on whether or not you <em>want</em> to feed the greedy, corporate machine that&rsquo;s out here stealing creative people&rsquo;s hard work. In my humble opinion, it&rsquo;s gonna take it anyway, so I&rsquo;m just gonna lean into it and make it work for me.</p>
+<div class="footer-copyright">
+      <div class="footer">
+        <h4>Share this Post:</h4>
+
+<div class="share-buttons">
+    <a target="_blank" rel="noopener noreferrer" aria-label="share Optimise Your Hugo Site for AI Agents on twitter"
+        href="https://twitter.com/intent/tweet/?text=Optimise%20Your%20Hugo%20Site%20for%20AI%20Agents&amp;url=https%3a%2f%2fwww.mizouzie.dev%2farticles%2foptimise-your-hugo-site-for-ai-agents%2f">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-253.927,424.544c135.939,0 210.268,-112.643 210.268,-210.268c0,-3.218 0,-6.437 -0.153,-9.502c14.406,-10.421 26.973,-23.448 36.935,-38.314c-13.18,5.824 -27.433,9.809 -42.452,11.648c15.326,-9.196 26.973,-23.602 32.49,-40.92c-14.252,8.429 -30.038,14.56 -46.896,17.931c-13.487,-14.406 -32.644,-23.295 -53.946,-23.295c-40.767,0 -73.87,33.104 -73.87,73.87c0,5.824 0.613,11.494 1.992,16.858c-61.456,-3.065 -115.862,-32.49 -152.337,-77.241c-6.284,10.881 -9.962,23.601 -9.962,37.088c0,25.594 13.027,48.276 32.95,61.456c-12.107,-0.307 -23.448,-3.678 -33.41,-9.196l0,0.92c0,35.862 25.441,65.594 59.311,72.49c-6.13,1.686 -12.72,2.606 -19.464,2.606c-4.751,0 -9.348,-0.46 -13.946,-1.38c9.349,29.426 36.628,50.728 68.965,51.341c-25.287,19.771 -57.164,31.571 -91.8,31.571c-5.977,0 -11.801,-0.306 -17.625,-1.073c32.337,21.15 71.264,33.41 112.95,33.41Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share Optimise Your Hugo Site for AI Agents on linkedin"
+        href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fwww.mizouzie.dev%2farticles%2foptimise-your-hugo-site-for-ai-agents%2f&amp;title=Optimise%20Your%20Hugo%20Site%20for%20AI%20Agents&amp;summary=Optimise%20Your%20Hugo%20Site%20for%20AI%20Agents&amp;source=https%3a%2f%2fwww.mizouzie.dev%2farticles%2foptimise-your-hugo-site-for-ai-agents%2f">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-288.985,423.278l0,-225.717l-75.04,0l0,225.717l75.04,0Zm270.539,0l0,-129.439c0,-69.333 -37.018,-101.586 -86.381,-101.586c-39.804,0 -57.634,21.891 -67.617,37.266l0,-31.958l-75.021,0c0.995,21.181 0,225.717 0,225.717l75.02,0l0,-126.056c0,-6.748 0.486,-13.492 2.474,-18.315c5.414,-13.475 17.767,-27.434 38.494,-27.434c27.135,0 38.007,20.707 38.007,51.037l0,120.768l75.024,0Zm-307.552,-334.556c-25.674,0 -42.448,16.879 -42.448,39.002c0,21.658 16.264,39.002 41.455,39.002l0.484,0c26.165,0 42.452,-17.344 42.452,-39.002c-0.485,-22.092 -16.241,-38.954 -41.943,-39.002Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share Optimise Your Hugo Site for AI Agents on reddit"
+        href="https://reddit.com/submit?url=https%3a%2f%2fwww.mizouzie.dev%2farticles%2foptimise-your-hugo-site-for-ai-agents%2f&title=Optimise%20Your%20Hugo%20Site%20for%20AI%20Agents">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-3.446,265.638c0,-22.964 -18.616,-41.58 -41.58,-41.58c-11.211,0 -21.361,4.457 -28.841,11.666c-28.424,-20.508 -67.586,-33.757 -111.204,-35.278l18.941,-89.121l61.884,13.157c0.756,15.734 13.642,28.29 29.56,28.29c16.407,0 29.706,-13.299 29.706,-29.701c0,-16.403 -13.299,-29.702 -29.706,-29.702c-11.666,0 -21.657,6.792 -26.515,16.578l-69.105,-14.69c-1.922,-0.418 -3.939,-0.042 -5.585,1.036c-1.658,1.073 -2.811,2.761 -3.224,4.686l-21.152,99.438c-44.258,1.228 -84.046,14.494 -112.837,35.232c-7.468,-7.164 -17.589,-11.591 -28.757,-11.591c-22.965,0 -41.585,18.616 -41.585,41.58c0,16.896 10.095,31.41 24.568,37.918c-0.639,4.135 -0.99,8.328 -0.99,12.576c0,63.977 74.469,115.836 166.33,115.836c91.861,0 166.334,-51.859 166.334,-115.836c0,-4.218 -0.347,-8.387 -0.977,-12.493c14.564,-6.47 24.735,-21.034 24.735,-38.001Zm-119.474,108.193c-20.27,20.241 -59.115,21.816 -70.534,21.816c-11.428,0 -50.277,-1.575 -70.522,-21.82c-3.007,-3.008 -3.007,-7.882 0,-10.889c3.003,-2.999 7.882,-3.003 10.885,0c12.777,12.781 40.11,17.317 59.637,17.317c19.522,0 46.86,-4.536 59.657,-17.321c3.016,-2.999 7.886,-2.995 10.885,0.008c3.008,3.011 3.003,7.882 -0.008,10.889Zm-5.23,-48.781c-16.373,0 -29.701,-13.324 -29.701,-29.698c0,-16.381 13.328,-29.714 29.701,-29.714c16.378,0 29.706,13.333 29.706,29.714c0,16.374 -13.328,29.698 -29.706,29.698Zm-160.386,-29.702c0,-16.381 13.328,-29.71 29.714,-29.71c16.369,0 29.689,13.329 29.689,29.71c0,16.373 -13.32,29.693 -29.689,29.693c-16.386,0 -29.714,-13.32 -29.714,-29.693Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share Optimise Your Hugo Site for AI Agents on facebook"
+        href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fwww.mizouzie.dev%2farticles%2foptimise-your-hugo-site-for-ai-agents%2f">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-106.468,0l0,-192.915l66.6,0l12.672,-82.621l-79.272,0l0,-53.617c0,-22.603 11.073,-44.636 46.58,-44.636l36.042,0l0,-70.34c0,0 -32.71,-5.582 -63.982,-5.582c-65.288,0 -107.96,39.569 -107.96,111.204l0,62.971l-72.573,0l0,82.621l72.573,0l0,192.915l-191.104,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share Optimise Your Hugo Site for AI Agents on whatsapp"
+        href="https://api.whatsapp.com/send?text=Optimise%20Your%20Hugo%20Site%20for%20AI%20Agents%20-%20https%3a%2f%2fwww.mizouzie.dev%2farticles%2foptimise-your-hugo-site-for-ai-agents%2f">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-58.673,127.703c-33.842,-33.881 -78.847,-52.548 -126.798,-52.568c-98.799,0 -179.21,80.405 -179.249,179.234c-0.013,31.593 8.241,62.428 23.927,89.612l-25.429,92.884l95.021,-24.925c26.181,14.28 55.659,21.807 85.658,21.816l0.074,0c98.789,0 179.206,-80.413 179.247,-179.243c0.018,-47.895 -18.61,-92.93 -52.451,-126.81Zm-126.797,275.782l-0.06,0c-26.734,-0.01 -52.954,-7.193 -75.828,-20.767l-5.441,-3.229l-56.386,14.792l15.05,-54.977l-3.542,-5.637c-14.913,-23.72 -22.791,-51.136 -22.779,-79.287c0.033,-82.142 66.867,-148.971 149.046,-148.971c39.793,0.014 77.199,15.531 105.329,43.692c28.128,28.16 43.609,65.592 43.594,105.4c-0.034,82.149 -66.866,148.983 -148.983,148.984Zm81.721,-111.581c-4.479,-2.242 -26.499,-13.075 -30.604,-14.571c-4.105,-1.495 -7.091,-2.241 -10.077,2.241c-2.986,4.483 -11.569,14.572 -14.182,17.562c-2.612,2.988 -5.225,3.364 -9.703,1.12c-4.479,-2.241 -18.91,-6.97 -36.017,-22.23c-13.314,-11.876 -22.304,-26.542 -24.916,-31.026c-2.612,-4.484 -0.279,-6.908 1.963,-9.14c2.016,-2.007 4.48,-5.232 6.719,-7.847c2.24,-2.615 2.986,-4.484 4.479,-7.472c1.493,-2.99 0.747,-5.604 -0.374,-7.846c-1.119,-2.241 -10.077,-24.288 -13.809,-33.256c-3.635,-8.733 -7.327,-7.55 -10.077,-7.688c-2.609,-0.13 -5.598,-0.158 -8.583,-0.158c-2.986,0 -7.839,1.121 -11.944,5.604c-4.105,4.484 -15.675,15.32 -15.675,37.364c0,22.046 16.048,43.342 18.287,46.332c2.24,2.99 31.582,48.227 76.511,67.627c10.685,4.615 19.028,7.371 25.533,9.434c10.728,3.41 20.492,2.929 28.209,1.775c8.605,-1.285 26.499,-10.833 30.231,-21.295c3.732,-10.464 3.732,-19.431 2.612,-21.298c-1.119,-1.869 -4.105,-2.99 -8.583,-5.232Z" />
+        </svg>
+    </a>
+</div>
+</div>
+    </div>
+  </section></main>
+        <footer id="main-footer"><div class="footer">
+  <a href="#">Scroll to Top</a>
+  <div class="footer-copyright">
+    <div class="dim">© 2026 Sam Anglin</div>
+    <div>
+      <a href="/privacy-policy">Privacy Policy</a> |
+      <a href="/about">About Me</a>
+    </div>
+  </div>
+</div>
+</footer>
+      </div><aside id="side-pane" class="side-sticky">
+<div class="side-details">
+    <span>1565 words</span>
+    <span>9 - 12 minutes read</span><div class="side-details-taxonomy">
+        <small>categories:
+          <span class="details-taxonomy"><a href="https://www.mizouzie.dev/categories/web-development">web development</a></span><span class="details-taxonomy"><a href="https://www.mizouzie.dev/categories/tutorial">tutorial</a></span></small>
+      </div></div><h3>Table Of Contents</h3><nav id="TableOfContents">
+  <ul>
+    <li><a href="#the-goal">The goal</a></li>
+    <li><a href="#what-is-readily-available">What is readily available?</a></li>
+    <li><a href="#where-the-template-goes">Where the template goes</a></li>
+    <li><a href="#the-markdown-template">The markdown template</a></li>
+    <li><a href="#point-to-related-links">Point to related links</a></li>
+    <li><a href="#the-whole-markdown-template">The whole markdown template</a></li>
+    <li><a href="#pointing-each-page-at-its-copy">Pointing each page at its copy</a></li>
+    <li><a href="#index-the-whole-site">Index the whole site</a></li>
+    <li><a href="#check-the-output">Check the output</a></li>
+    <li><a href="#to-wrap-up">To wrap up</a></li>
+  </ul>
+</nav><h3>Related</h3>
+    <ul><li><a href="/articles/code-block-click-copy/">Code Block Click Copy</a></li><li><a href="/articles/whats-the-point-of-all-the-static-analysis/">What&#39;s the Point of All the Static Analysis</a></li><li><a href="/articles/a-reply-from-the-machine/">A Reply from the Machine</a></li><li><a href="/articles/new-side-project-ai-as-a-creator/">New Side Project - AI as a Creator</a></li><li><a href="/articles/why-i-wont-use-ai/">Why I won&#39;t use AI on this blog</a></li></ul></aside></div>
+  </div>
+</body>
+</html>

@@ -12,9 +12,30 @@
 			<copyright>made by MizouziE</copyright>
 		
 		
-			<lastBuildDate>Sun, 22 Nov 2026 00:00:00 +0000</lastBuildDate>
+			<lastBuildDate>Tue, 24 Nov 2026 00:00:00 +0000</lastBuildDate>
 		
 			<atom:link href="https://www.mizouzie.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Artificial Intelligence</title>
+				<link>https://www.mizouzie.dev/tags/artificial-intelligence/</link>
+				<pubDate>Tue, 24 Nov 2026 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tags/artificial-intelligence/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Hugo</title>
+				<link>https://www.mizouzie.dev/tags/hugo/</link>
+				<pubDate>Tue, 24 Nov 2026 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tags/hugo/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>No Build</title>
+				<link>https://www.mizouzie.dev/tags/no-build/</link>
+				<pubDate>Tue, 24 Nov 2026 00:00:00 +0000</pubDate>
+				<guid>https://www.mizouzie.dev/tags/no-build/</guid>
+				<description></description>
+			</item>
 			<item>
 				<title>Absurdism</title>
 				<link>https://www.mizouzie.dev/tags/absurdism/</link>
@@ -27,13 +48,6 @@
 				<link>https://www.mizouzie.dev/tags/society/</link>
 				<pubDate>Sun, 22 Nov 2026 00:00:00 +0000</pubDate>
 				<guid>https://www.mizouzie.dev/tags/society/</guid>
-				<description></description>
-			</item>
-			<item>
-				<title>Artificial Intelligence</title>
-				<link>https://www.mizouzie.dev/tags/artificial-intelligence/</link>
-				<pubDate>Fri, 06 Nov 2026 00:00:00 +0000</pubDate>
-				<guid>https://www.mizouzie.dev/tags/artificial-intelligence/</guid>
 				<description></description>
 			</item>
 			<item>
@@ -191,24 +205,10 @@
 				<description></description>
 			</item>
 			<item>
-				<title>Hugo</title>
-				<link>https://www.mizouzie.dev/tags/hugo/</link>
-				<pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate>
-				<guid>https://www.mizouzie.dev/tags/hugo/</guid>
-				<description></description>
-			</item>
-			<item>
 				<title>JavaScript</title>
 				<link>https://www.mizouzie.dev/tags/javascript/</link>
 				<pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate>
 				<guid>https://www.mizouzie.dev/tags/javascript/</guid>
-				<description></description>
-			</item>
-			<item>
-				<title>No Build</title>
-				<link>https://www.mizouzie.dev/tags/no-build/</link>
-				<pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate>
-				<guid>https://www.mizouzie.dev/tags/no-build/</guid>
 				<description></description>
 			</item>
 			<item>

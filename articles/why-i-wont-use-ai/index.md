@@ -11,10 +11,10 @@ related:
     url: https://www.mizouzie.dev/articles/new-side-project-ai-as-a-creator/index.md
   - title: "AI as a Creator"
     url: https://www.mizouzie.dev/projects/ai-as-a-creator/index.md
+  - title: "Optimise Your Hugo Site for AI Agents"
+    url: https://www.mizouzie.dev/articles/optimise-your-hugo-site-for-ai-agents/index.md
   - title: "What's the Point of All the Static Analysis"
     url: https://www.mizouzie.dev/articles/whats-the-point-of-all-the-static-analysis/index.md
-  - title: "Blade Trick Randomiser"
-    url: https://www.mizouzie.dev/projects/blade-trick-randomiser/index.md
 ---
 
 # Why I won't use AI on this blog

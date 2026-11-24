@@ -12,12 +12,12 @@ related:
     url: https://www.mizouzie.dev/tldr/the-dark-forest/index.md
   - title: "The Three-Body Problem"
     url: https://www.mizouzie.dev/tldr/the-three-body-problem/index.md
+  - title: "Optimise Your Hugo Site for AI Agents"
+    url: https://www.mizouzie.dev/articles/optimise-your-hugo-site-for-ai-agents/index.md
   - title: "The Trial"
     url: https://www.mizouzie.dev/tldr/the-trial/index.md
   - title: "What's the Point of All the Static Analysis"
     url: https://www.mizouzie.dev/articles/whats-the-point-of-all-the-static-analysis/index.md
-  - title: "The Prince"
-    url: https://www.mizouzie.dev/tldr/the-prince/index.md
 ---
 
 # The Machine Stops

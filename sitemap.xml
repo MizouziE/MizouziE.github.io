@@ -2,10 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.mizouzie.dev/tags/absurdism/</loc>
-    <lastmod>2026-11-22T00:00:00+00:00</lastmod>
+    <loc>https://www.mizouzie.dev/articles/</loc>
+    <lastmod>2026-11-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.mizouzie.dev/tags/artificial-intelligence/</loc>
+    <lastmod>2026-11-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.mizouzie.dev/categories/</loc>
+    <lastmod>2026-11-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.mizouzie.dev/tags/hugo/</loc>
+    <lastmod>2026-11-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.mizouzie.dev/tags/no-build/</loc>
+    <lastmod>2026-11-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.mizouzie.dev/articles/optimise-your-hugo-site-for-ai-agents/</loc>
+    <lastmod>2026-11-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.mizouzie.dev/tags/</loc>
+    <lastmod>2026-11-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.mizouzie.dev/categories/tutorial/</loc>
+    <lastmod>2026-11-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.mizouzie.dev/categories/web-development/</loc>
+    <lastmod>2026-11-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.mizouzie.dev/</loc>
+    <lastmod>2026-11-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.mizouzie.dev/tags/absurdism/</loc>
     <lastmod>2026-11-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.mizouzie.dev/categories/philosophy/</loc>
@@ -14,23 +41,11 @@
     <loc>https://www.mizouzie.dev/tags/society/</loc>
     <lastmod>2026-11-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.mizouzie.dev/tags/</loc>
-    <lastmod>2026-11-22T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://www.mizouzie.dev/tldr/the-trial/</loc>
     <lastmod>2026-11-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.mizouzie.dev/tldr/</loc>
     <lastmod>2026-11-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.mizouzie.dev/</loc>
-    <lastmod>2026-11-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.mizouzie.dev/articles/</loc>
-    <lastmod>2026-11-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.mizouzie.dev/tags/artificial-intelligence/</loc>
-    <lastmod>2026-11-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.mizouzie.dev/tags/code-quality/</loc>
     <lastmod>2026-11-06T00:00:00+00:00</lastmod>
@@ -42,9 +57,6 @@
     <lastmod>2026-11-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.mizouzie.dev/tags/web-dev/</loc>
-    <lastmod>2026-11-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.mizouzie.dev/categories/web-development/</loc>
     <lastmod>2026-11-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.mizouzie.dev/articles/whats-the-point-of-all-the-static-analysis/</loc>
@@ -149,16 +161,7 @@
     <loc>https://www.mizouzie.dev/articles/code-block-click-copy/</loc>
     <lastmod>2025-12-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.mizouzie.dev/tags/hugo/</loc>
-    <lastmod>2025-12-09T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://www.mizouzie.dev/tags/javascript/</loc>
-    <lastmod>2025-12-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.mizouzie.dev/tags/no-build/</loc>
-    <lastmod>2025-12-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.mizouzie.dev/categories/tutorial/</loc>
     <lastmod>2025-12-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.mizouzie.dev/tags/mental-health/</loc>

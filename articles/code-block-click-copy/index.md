@@ -7,14 +7,14 @@ tags: ["web dev","open source","learning","hugo","JavaScript","no build"]
 related:
   - title: "My Top 3 Benefits of Open Source Contribution"
     url: https://www.mizouzie.dev/articles/benefits-of-os/index.md
+  - title: "Optimise Your Hugo Site for AI Agents"
+    url: https://www.mizouzie.dev/articles/optimise-your-hugo-site-for-ai-agents/index.md
   - title: "Blade Trick Randomiser"
     url: https://www.mizouzie.dev/projects/blade-trick-randomiser/index.md
   - title: "How to test protected functions with PHPUnit in your Laravel app"
     url: https://www.mizouzie.dev/articles/how-to-test-protected-functions-with-phpunit/index.md
   - title: "3 ways to read input with a Go CLI"
     url: https://www.mizouzie.dev/articles/3-ways-to-read-input-with-go-cli/index.md
-  - title: "What's the Point of All the Static Analysis"
-    url: https://www.mizouzie.dev/articles/whats-the-point-of-all-the-static-analysis/index.md
 ---
 
 # Code Block Click Copy

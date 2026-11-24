@@ -11,10 +11,10 @@ related:
     url: https://www.mizouzie.dev/articles/whats-the-point-of-all-the-static-analysis/index.md
   - title: "Why I won't use AI on this blog"
     url: https://www.mizouzie.dev/articles/why-i-wont-use-ai/index.md
+  - title: "Optimise Your Hugo Site for AI Agents"
+    url: https://www.mizouzie.dev/articles/optimise-your-hugo-site-for-ai-agents/index.md
   - title: "Why Do My Pull Requests All Get Rejected?"
     url: https://www.mizouzie.dev/articles/why-do-my-pull-requests-all-get-rejected/index.md
-  - title: "Laravel Live London 2026 Takeaways"
-    url: https://www.mizouzie.dev/articles/laravel-live-london-2026-takeaways/index.md
 ---
 
 # New Side Project - AI as a Creator

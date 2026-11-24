@@ -10,12 +10,12 @@ related:
     url: https://www.mizouzie.dev/articles/new-side-project-ai-as-a-creator/index.md
   - title: "Why I won't use AI on this blog"
     url: https://www.mizouzie.dev/articles/why-i-wont-use-ai/index.md
+  - title: "Optimise Your Hugo Site for AI Agents"
+    url: https://www.mizouzie.dev/articles/optimise-your-hugo-site-for-ai-agents/index.md
   - title: "What's the Point of All the Static Analysis"
     url: https://www.mizouzie.dev/articles/whats-the-point-of-all-the-static-analysis/index.md
   - title: "A Reply from the Machine"
     url: https://www.mizouzie.dev/articles/a-reply-from-the-machine/index.md
-  - title: "The Machine Stops"
-    url: https://www.mizouzie.dev/tldr/the-machine-stops/index.md
 ---
 
 # AI as a Creator

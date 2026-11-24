@@ -4,6 +4,7 @@
 
 ## Posts
 
+- [Optimise Your Hugo Site for AI Agents](https://www.mizouzie.dev/articles/optimise-your-hugo-site-for-ai-agents/index.md): If you have used a Hugo generated static site to record your thoughts, it's easy to modernise and make it accessible to LLM agents
 - [What's the Point of All the Static Analysis](https://www.mizouzie.dev/articles/whats-the-point-of-all-the-static-analysis/index.md): Often static analysis tools are lauded for their preventative powers, but they seem to have great value in retrospect too
 - [Why Do My Pull Requests All Get Rejected?](https://www.mizouzie.dev/articles/why-do-my-pull-requests-all-get-rejected/index.md): I have made many PRs as open source contributions, and only now realise why so many were closed
 - [Laravel Live London 2026 Takeaways](https://www.mizouzie.dev/articles/laravel-live-london-2026-takeaways/index.md): A jam-packed couple of days with incredibly valuable talks throughout. Here is what I got out of it all.
